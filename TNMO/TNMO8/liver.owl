@@ -1,0 +1,489 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/thoma/ontologies/2018/3/liver#"
+     xml:base="http://www.semanticweb.org/thoma/ontologies/2018/3/liver"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#">
+    <owl:Ontology rdf:about="http://purl.org/tnmo/TNM-O_Liver">
+        <owl:imports rdf:resource="http://purl.org/tnmo/TNM-O_BodyParts.owl/1"/>
+        <owl:imports rdf:resource="http://purl.org/biotop/btl2.owl"/>
+        <owl:imports rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl/1"/>
+        <owl:imports rdf:resource="http://purl.org/tnmo/TNM-O.owl/1"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Liver#InvasiveLiverTumorOfNeighboringBodyParts -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Liver#InvasiveLiverTumorOfNeighboringBodyParts">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverTumor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cM -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cM">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Liver#RepresentationalUnitInLiverTNM8ClinicalClassification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cM0 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cM0">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cM"/>
+        <owl:disjointWith rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cM1"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cM1 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cM1">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cM"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cN -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cN">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Liver#RepresentationalUnitInLiverTNM8ClinicalClassification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cN0 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cN0">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cN"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cN1 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cN1">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cN"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cNX -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cNX">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cN"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cT -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cT">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Liver#RepresentationalUnitInLiverTNM8ClinicalClassification"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverTumor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cT0 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cT0">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cT1 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cT1">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cT1a -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cT1a">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cT1"/>
+        <owl:disjointWith rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cT1b"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cT1b -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cT1b">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cT1"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cT2 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cT2">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cT3 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cT3">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cT"/>
+        <owl:disjointWith rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cT4"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cT4 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cT4">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cTX -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cTX">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pM -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pM">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Liver#RepresentationalUnitInLiverTNM8PathologicalClassification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pM0 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pM0">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pM"/>
+        <owl:disjointWith rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pM1"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pM1 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pM1">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pM"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pN -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pN">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Liver#RepresentationalUnitInLiverTNM8PathologicalClassification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pN0 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pN0">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pN"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pN1 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pN1">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pN"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pNX -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pNX">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pN"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pT -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pT">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Liver#RepresentationalUnitInLiverTNM8PathologicalClassification"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverTumor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pT0 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pT0">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pT1 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pT1">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pT1a -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pT1a">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pT1"/>
+        <owl:disjointWith rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pT1b"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pT1b -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pT1b">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pT1"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pT2 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pT2">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pT3 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pT3">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pT4 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pT4">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pTX -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pTX">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Liver#LiverTumor -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTumor">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Liver#PrimaryTumor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Liver#NoAssessmentOfPrimaryLiverTumor -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Liver#NoAssessmentOfPrimaryLiverTumor">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#NotAssessedMalignantAnatomicalStructure"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTumor"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverTumor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Liver#NoEvidenceOfPrimaryLiverTumor -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Liver#NoEvidenceOfPrimaryLiverTumor">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverTumor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Liver#NonVascularInvasiveSolitaryLiverTumorMoreThan2cm -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Liver#NonVascularInvasiveSolitaryLiverTumorMoreThan2cm">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverTumor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Liver#OptionallyVascularInvasiveSolitaryLiverTumorMax2cm -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Liver#OptionallyVascularInvasiveSolitaryLiverTumorMax2cm">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverTumor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Liver#PerforatingLiverTumorOfVisceralPeritoneum -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Liver#PerforatingLiverTumorOfVisceralPeritoneum">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverTumor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Liver#PrimaryTumor -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Liver#PrimaryTumor">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#MalignantAnatomicalStructure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Liver#RepresentationalUnitInLiverTNM8Classification -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Liver#RepresentationalUnitInLiverTNM8Classification">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInTNM8Classification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Liver#RepresentationalUnitInLiverTNM8ClinicalClassification -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Liver#RepresentationalUnitInLiverTNM8ClinicalClassification">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Liver#RepresentationalUnitInLiverTNM8Classification"/>
+        <owl:disjointWith rdf:resource="http://purl.org/tnmo/TNM-O_Liver#RepresentationalUnitInLiverTNM8PathologicalClassification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Liver#RepresentationalUnitInLiverTNM8PathologicalClassification -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Liver#RepresentationalUnitInLiverTNM8PathologicalClassification">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Liver#RepresentationalUnitInLiverTNM8Classification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Liver#VascularInvasiveSolitaryLiverTumorMoreThan2cm -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Liver#VascularInvasiveSolitaryLiverTumorMoreThan2cm">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverTumor"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#InvasiveLiverTumorOfNeighboringBodyParts"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#NoAssessmentOfPrimaryLiverTumor"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#NoEvidenceOfPrimaryLiverTumor"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#NonVascularInvasiveSolitaryLiverTumorMoreThan2cm"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#OptionallyVascularInvasiveSolitaryLiverTumorMax2cm"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#PerforatingLiverTumorOfVisceralPeritoneum"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#VascularInvasiveSolitaryLiverTumorMoreThan2cm"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cM"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cN"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cT"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cN0"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cN1"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cNX"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cT0"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cT1"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cT2"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cT3"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cT4"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cTX"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pM"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pN"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pT"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pN0"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pN1"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pNX"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pT0"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pT1"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pT2"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pT3"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pT4"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pTX"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

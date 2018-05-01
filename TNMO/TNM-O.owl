@@ -4,6 +4,7 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:btl2="http://purl.org/biotop/btl2.owl#"
      xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
      xmlns:swrl="http://www.w3.org/2003/11/swrl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
@@ -63,9 +64,21 @@ Institute of Medical Informatics, Statistics and Documentation, Medical Universi
     
 
 
+    <!-- http://purl.org/biotop/btl2.owl#hasOutcome -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/biotop/btl2.owl#hasOutcome"/>
+    
+
+
     <!-- http://purl.org/biotop/btl2.owl#isBearerOf -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/biotop/btl2.owl#isBearerOf"/>
+    
+
+
+    <!-- http://purl.org/biotop/btl2.owl#isParticipantIn -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/biotop/btl2.owl#isParticipantIn"/>
     
 
 
@@ -103,9 +116,9 @@ Institute of Medical Informatics, Statistics and Documentation, Medical Universi
     
 
 
-    <!-- http://purl.org/biotop/btl2.owl#CollectiveMaterialEntity -->
+    <!-- http://purl.org/biotop/btl2.owl#Action -->
 
-    <owl:Class rdf:about="http://purl.org/biotop/btl2.owl#CollectiveMaterialEntity"/>
+    <owl:Class rdf:about="http://purl.org/biotop/btl2.owl#Action"/>
     
 
 
@@ -145,18 +158,39 @@ Institute of Medical Informatics, Statistics and Documentation, Medical Universi
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O.owl#AnatomicalCluster -->
-
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#AnatomicalCluster">
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#BodyPart"/>
-    </owl:Class>
-    
-
-
     <!-- http://purl.org/tnmo/TNM-O.owl#AnatomicalStructure -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#AnatomicalStructure">
         <rdfs:subClassOf rdf:resource="http://purl.org/biotop/btl2.owl#StructuredBiologicalEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#AnatomicalStructureClassifiedByMalignancy -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#AnatomicalStructureClassifiedByMalignancy">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#AnatomicalStructure"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isParticipantIn"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#ClassifyingForMalignancy"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#hasOutcome"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInTNMClassification"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#AnatomicalStructure"/>
     </owl:Class>
     
 
@@ -191,34 +225,10 @@ Institute of Medical Informatics, Statistics and Documentation, Medical Universi
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O.owl#BodyPart -->
+    <!-- http://purl.org/tnmo/TNM-O.owl#CarcinomaInSitu -->
 
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#BodyPart">
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#AnatomicalStructure"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/tnmo/TNM-O.owl#BodyPortion -->
-
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#BodyPortion">
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#AnatomicalStructure"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/tnmo/TNM-O.owl#BoneOrgan -->
-
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#BoneOrgan">
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#CavitatedOrgan"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/tnmo/TNM-O.owl#CardinalOrganPart -->
-
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#CardinalOrganPart">
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#BodyPart"/>
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#CarcinomaInSitu">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#ConfinementValueRegion"/>
     </owl:Class>
     
 
@@ -1019,10 +1029,10 @@ Institute of Medical Informatics, Statistics and Documentation, Medical Universi
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O.owl#CavitatedOrgan -->
+    <!-- http://purl.org/tnmo/TNM-O.owl#ClassifyingForMalignancy -->
 
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#CavitatedOrgan">
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Organ"/>
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#ClassifyingForMalignancy">
+        <rdfs:subClassOf rdf:resource="http://purl.org/biotop/btl2.owl#Action"/>
     </owl:Class>
     
 
@@ -1079,89 +1089,10 @@ Institute of Medical Informatics, Statistics and Documentation, Medical Universi
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O.owl#FasciaOrgan -->
-
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#FasciaOrgan">
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#SolidOrgan"/>
-    </owl:Class>
-    
-
-
     <!-- http://purl.org/tnmo/TNM-O.owl#GradeOfDifferentiationCannotBeAssessed -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#GradeOfDifferentiationCannotBeAssessed">
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#DifferentiationValueRegion"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/tnmo/TNM-O.owl#GroupOf1to3LymphNodes -->
-
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#GroupOf1to3LymphNodes">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#GroupOfLymphNodes"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isBearerOf"/>
-                        <owl:someValuesFrom>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#projectsOnto"/>
-                                <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to3"/>
-                            </owl:Restriction>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#GroupOfLymphNodes"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/tnmo/TNM-O.owl#GroupOf4orMoreLymphNodes -->
-
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#GroupOf4orMoreLymphNodes">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#GroupOfLymphNodes"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isBearerOf"/>
-                        <owl:someValuesFrom>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#projectsOnto"/>
-                                <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality4orMore"/>
-                            </owl:Restriction>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#GroupOfLymphNodes"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/tnmo/TNM-O.owl#GroupOfLymphNodes -->
-
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#GroupOfLymphNodes">
-        <rdfs:subClassOf rdf:resource="http://purl.org/biotop/btl2.owl#CollectiveMaterialEntity"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#hasGranularPart"/>
-                <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O.owl#LymphNode"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/tnmo/TNM-O.owl#HeterogeneousAnatomicalCluster -->
-
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#HeterogeneousAnatomicalCluster">
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#AnatomicalCluster"/>
-        <owl:disjointWith rdf:resource="http://purl.org/tnmo/TNM-O.owl#OrganCluster"/>
     </owl:Class>
     
 
@@ -1222,31 +1153,6 @@ Institute of Medical Informatics, Statistics and Documentation, Medical Universi
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O.owl#LobularOrgan -->
-
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#LobularOrgan">
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#SolidOrgan"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/tnmo/TNM-O.owl#Lobule -->
-
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Lobule">
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#OrganComponent"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/tnmo/TNM-O.owl#LymphNode -->
-
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#LymphNode">
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#OrganComponent"/>
-        <rdfs:comment>FMAID: 5034</rdfs:comment>
-    </owl:Class>
-    
-
-
     <!-- http://purl.org/tnmo/TNM-O.owl#Malignant -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Malignant">
@@ -1258,27 +1164,6 @@ Institute of Medical Informatics, Statistics and Documentation, Medical Universi
     <!-- http://purl.org/tnmo/TNM-O.owl#MalignantAnatomicalStructure -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#MalignantAnatomicalStructure">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#AnatomicalStructure"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isBearerOf"/>
-                        <owl:someValuesFrom>
-                            <owl:Class>
-                                <owl:intersectionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#TissueDignity"/>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#projectsOnto"/>
-                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O.owl#Malignant"/>
-                                    </owl:Restriction>
-                                </owl:intersectionOf>
-                            </owl:Class>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#AnatomicalStructure"/>
     </owl:Class>
     
@@ -1300,14 +1185,6 @@ Institute of Medical Informatics, Statistics and Documentation, Medical Universi
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O.owl#MuscleOrgan -->
-
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#MuscleOrgan">
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#SolidOrgan"/>
-    </owl:Class>
-    
-
-
     <!-- http://purl.org/tnmo/TNM-O.owl#NoAssessment -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#NoAssessment">
@@ -1324,50 +1201,19 @@ Institute of Medical Informatics, Statistics and Documentation, Medical Universi
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O.owl#Organ -->
+    <!-- http://purl.org/tnmo/TNM-O.owl#NotAssessedMalignantAnatomicalStructure -->
 
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Organ">
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#BodyPart"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/tnmo/TNM-O.owl#OrganCluster -->
-
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#OrganCluster">
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#AnatomicalCluster"/>
-    </owl:Class>
-    
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#NotAssessedMalignantAnatomicalStructure">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#AnatomicalStructure"/>
+        <rdfs:comment>epistemic, non-rigid property. 
+For convenience.
+A 100% correct definition would be much more difficult.
 
 
-    <!-- http://purl.org/tnmo/TNM-O.owl#OrganComponent -->
+in the line of...
 
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#OrganComponent">
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#CardinalOrganPart"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/tnmo/TNM-O.owl#OrganComponentLayer -->
-
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#OrganComponentLayer">
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#OrganComponent"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/tnmo/TNM-O.owl#OrganSegment -->
-
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#OrganSegment">
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#CardinalOrganPart"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/tnmo/TNM-O.owl#OrganSystemSubdivision -->
-
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#OrganSystemSubdivision">
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#BodyPart"/>
+NotAssessedMalignantAnatomicalStructure subclassOf
+   isParticipantOf some (TNMassessmentProcedure and hasOutcome some UnclearAssessmentResult)</rdfs:comment>
     </owl:Class>
     
 
@@ -1380,18 +1226,10 @@ Institute of Medical Informatics, Statistics and Documentation, Medical Universi
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O.owl#PrimaryTumor -->
+    <!-- http://purl.org/tnmo/TNM-O.owl#PrimaryTumorSiteClassifiedByMalignancy -->
 
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#PrimaryTumor">
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#MalignantAnatomicalStructure"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/tnmo/TNM-O.owl#RegionOfOrganComponent -->
-
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#RegionOfOrganComponent">
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#CardinalOrganPart"/>
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#PrimaryTumorSiteClassifiedByMalignancy">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#AnatomicalStructureClassifiedByMalignancy"/>
     </owl:Class>
     
 
@@ -1472,7 +1310,7 @@ Institute of Medical Informatics, Statistics and Documentation, Medical Universi
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#Size"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#SizeMax2cm"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/tnmo/TNM-O.owl#hasSize"/>
                         <owl:someValuesFrom>
@@ -1513,7 +1351,7 @@ Institute of Medical Informatics, Statistics and Documentation, Medical Universi
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#Size"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#SizeMoreThan2cm"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/tnmo/TNM-O.owl#hasSize"/>
                         <owl:someValuesFrom>
@@ -1554,7 +1392,7 @@ Institute of Medical Informatics, Statistics and Documentation, Medical Universi
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#Size"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#SizeMax2cm"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/tnmo/TNM-O.owl#hasSize"/>
                         <owl:someValuesFrom>
@@ -1595,7 +1433,7 @@ Institute of Medical Informatics, Statistics and Documentation, Medical Universi
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#Size"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#SizeValueRegion"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/tnmo/TNM-O.owl#hasSize"/>
                         <owl:someValuesFrom>
@@ -1623,7 +1461,7 @@ Institute of Medical Informatics, Statistics and Documentation, Medical Universi
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#Size"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#SizeMax2cm"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/tnmo/TNM-O.owl#hasSize"/>
                         <owl:someValuesFrom>
@@ -1651,7 +1489,7 @@ Institute of Medical Informatics, Statistics and Documentation, Medical Universi
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#Size"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#SizeValueRegion"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/tnmo/TNM-O.owl#hasSize"/>
                         <owl:someValuesFrom>
@@ -1679,7 +1517,7 @@ Institute of Medical Informatics, Statistics and Documentation, Medical Universi
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#Size"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#SizeMoreThan2cm"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/tnmo/TNM-O.owl#hasSize"/>
                         <owl:someValuesFrom>
@@ -1709,22 +1547,6 @@ Institute of Medical Informatics, Statistics and Documentation, Medical Universi
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O.owl#SolidOrgan -->
-
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#SolidOrgan">
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Organ"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/tnmo/TNM-O.owl#SubdivisionOfCardinalOrganPart -->
-
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#SubdivisionOfCardinalOrganPart">
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#BodyPart"/>
-    </owl:Class>
-    
-
-
     <!-- http://purl.org/tnmo/TNM-O.owl#TNMClassification -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#TNMClassification">
@@ -1749,10 +1571,10 @@ Institute of Medical Informatics, Statistics and Documentation, Medical Universi
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O.owl#TumorAggregate -->
+    <!-- http://purl.org/tnmo/TNM-O.owl#TumorAggregateClassifiedByMalignancy -->
 
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#TumorAggregate">
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#MalignantAnatomicalStructure"/>
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#TumorAggregateClassifiedByMalignancy">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#AnatomicalStructureClassifiedByMalignancy"/>
     </owl:Class>
     
 
@@ -1777,14 +1599,6 @@ Institute of Medical Informatics, Statistics and Documentation, Medical Universi
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Undifferentiated">
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#DifferentiationValueRegion"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/tnmo/TNM-O.owl#WallOfOrgan -->
-
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#WallOfOrgan">
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#OrganComponent"/>
     </owl:Class>
     
 
@@ -1843,15 +1657,6 @@ Institute of Medical Informatics, Statistics and Documentation, Medical Universi
             <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#HistopathologicalGrading_G3"/>
             <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#HistopathologicalGrading_G4"/>
             <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#HistopathologicalGrading_GX"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#Lobule"/>
-            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#LymphNode"/>
-            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#OrganComponentLayer"/>
-            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#WallOfOrgan"/>
         </owl:members>
     </rdf:Description>
 </rdf:RDF>
