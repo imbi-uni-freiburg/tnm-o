@@ -1,0 +1,29 @@
+Dokumentation von Modellierungsentscheidungen/-problemen der TNM-O liver:
+
+Anatomie:
+
+1. Problematische Bezeichung: inferior phrenic lymph nodes (exisitert als Gruppe inferior phrenic lymph nodes group)
+--> Aktuell nicht abgebildet
+
+2. Problematische Bezeichung hilar lymph nodes (Begriff besteht nur für Lungenhilus, keine Entsprechung gefunden)
+--> Aktuell nicht abgebildet
+
+3. Problematische Einordnung und Bezeichung BreastRegionalLymphNodes in TNM-Anatomy
+--> Aktuell nicht verändert
+
+4. Zur besseren Übersichtlichkeit Einführung einer Superklasse LymphNodeOfAbdomen? Frage der generellen SOPs bei TNM-Anatomy!!
+--> Aktuell Superklasse eingeführt
+
+5. FMAID für visceralperitoneum nicht vorhanden
+--> Aktuell nachgetragen
+
+
+Weitere:
+
+1. Bestmögliches Vorgehen bei HCC und Cholangiokarzinom mit unterschiedlichen Staging-Kriterien?
+--> Aktuell Setup als separate Module
+
+2. Abbildung der Bezeichnung von 'multiple tumors' in der 'primary tumor' Klassenhierarchie
+--> Aktuell nicht abgebildet
+
+3. 
