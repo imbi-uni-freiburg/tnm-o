@@ -1201,6 +1201,14 @@ Institute of Medical Informatics, Statistics and Documentation, Medical Universi
     
 
 
+    <!-- http://purl.org/tnmo/TNM-O.owl#NonVascularInvasive -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#NonVascularInvasive">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#VascularInvasivenessValueRegion"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/tnmo/TNM-O.owl#NotAssessedMalignantAnatomicalStructure -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#NotAssessedMalignantAnatomicalStructure">
@@ -1571,6 +1579,14 @@ NotAssessedMalignantAnatomicalStructure subclassOf
     
 
 
+    <!-- http://purl.org/tnmo/TNM-O.owl#TumorAggregate -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#TumorAggregate">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#MalignantAnatomicalStructure"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/tnmo/TNM-O.owl#TumorAggregateClassifiedByMalignancy -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#TumorAggregateClassifiedByMalignancy">
@@ -1599,6 +1615,36 @@ NotAssessedMalignantAnatomicalStructure subclassOf
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Undifferentiated">
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#DifferentiationValueRegion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#VascularInvasive -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#VascularInvasive">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#VascularInvasivenessValueRegion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#VascularInvasiveness -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#VascularInvasiveness">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#TumorQuality"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#projectsOnto"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O.owl#VascularInvasivenessValueRegion"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#VascularInvasivenessValueRegion -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#VascularInvasivenessValueRegion">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#TumorQualityValueRegion"/>
     </owl:Class>
     
 

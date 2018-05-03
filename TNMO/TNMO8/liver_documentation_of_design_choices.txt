@@ -1,6 +1,6 @@
 Dokumentation von Modellierungsentscheidungen/-problemen der TNM-O liver:
 
-Anatomie:
+TNM-Anatomy:
 
 1. Problematische Bezeichung: inferior phrenic lymph nodes (exisitert als Gruppe inferior phrenic lymph nodes group)
 --> Aktuell nicht abgebildet
@@ -14,16 +14,42 @@ Anatomie:
 4. Zur besseren Übersichtlichkeit Einführung einer Superklasse LymphNodeOfAbdomen? Frage der generellen SOPs bei TNM-Anatomy!!
 --> Aktuell Superklasse eingeführt
 
-5. FMAID für visceralperitoneum nicht vorhanden
+5. FMAID für VisceralPeritoneum nicht vorhanden
 --> Aktuell nachgetragen
 
+6. Klasse BodyPart in Organontologien mit keiner Entsprechung in TNM-Anatomy, was korrespondiert dazu?
 
-Weitere:
+
+
+TNM-O_Liver:
 
 1. Bestmögliches Vorgehen bei HCC und Cholangiokarzinom mit unterschiedlichen Staging-Kriterien?
---> Aktuell Setup als separate Module
+--> Aktuell Modellierung als separate Module
 
-2. Abbildung der Bezeichnung von 'multiple tumors' in der 'primary tumor' Klassenhierarchie
+2. Abbildung der Bezeichnung von 'multiple tumors' und 'solitary tumor' in der 'primary tumor' Klassenhierarchiebeide, geführt unter T-Stadium, nicht als regionale Metastasen.
 --> Aktuell nicht abgebildet
 
-3. 
+3. PrimaryTumor 'NoEvidence' und 'NoAssessment' in allen Modulen unterschiedlich gelöst
+Beispiel: NoEvidenceOfPrimaryTumor: 	ExocrinePankreasTumor and (isBearerOf some (projectsOnto only NoEvidence))
+					BreastTumor and (isBearerOf some (AssessmentQuality and (projectsOnto some NoEvidence) and (projectsOnto only NoEvidence)))
+--> Aktuell:	NoEvidenceOfPrimaryLiverTumor: LiverTumor and ('is bearer of' some Assessment and ('projects onto' some NoEvidence) and ('projects onto' only NoEvidence))
+		NoAssessmentOfPrimaryLiverTumor: NotAssessedMalignantAnatomicalStructure and LiverTumor
+
+4. Umbenennung NoAssessmentOfPrimaryTumor in NotAssessedPrimaryTumor
+--> Aktuell: NoAssessmentOfPrimaryTumor
+
+5. Auslagerung von NoEvidenceOfPrimaryLiverTumor außerhalb von PrimaryTumor, ist streng genommen kein PrimaryTumor!
+--> Aktuell: Geführt innerhalb von PrimaryTumor
+
+6. Soll VascularInvasiveness als getrennte TumorQuality geführt werden (pathologisch different von Confinement)
+--> Aktuell in TNM-O: Einführung getrennter VascularInvasiveness subclass of TumorQuality, VascularInvasivenessValueRegion subclass of TumorQualityValueRegion
+
+7. Disjointness von gleichwertigen Tochterklassen vielfach nicht umgesetzt (Bsp. TumorQualityValueRegion-Klassen)
+
+TNM-O:
+
+1. TumorAggregate als Klasse in TNM-O im Gegensatz zu aktueller Realisierung in Organ-Ontologien
+--> Aktuell: Klasse TumorAggregate in TNM-O eingeführt.
+
+2. Frage: in welchem Kontext soll AnatomicalStructureClassifiedByMalignancy genutzt werden?
+	
