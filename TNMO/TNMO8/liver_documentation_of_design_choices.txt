@@ -84,4 +84,17 @@ TNM-O:
 3. Warum sind zentrale Klassen wie Primary Tumor nicht im TNM-O File realisiert, kann die Klasse in beiden Files coexistieren?
 
 
-	
+Biotop Lite:
+
+1. Durch Disjunkte Klassen ist NoEvidenceOfPrimaryLiverTumor äquivalent zu Nothing:
+
+        NoEvidenceOfPrimaryLiverTumor SubClass Of LiverTumor and [...] ('projects onto' only NoEvidence)
+         -NoEvidence SubClass Of [...] 'value region'
+         -LiverTumor SubClass Of [...] 'material Object'
+            'material Object' SubClass Of 'projects Onto' only 'immaterial three dimensional physical entity' // Oxymoron?
+              'immaterial three dimensional physical entity' SubClass Of 'immaterial Object'
+     
+     Aber: 'immaterial Object' und 'value Region' sind disjunkt
+--> Aktuell: NoEvidenceOfPrimaryLiverTumor is Equivalent to: LiverTumor and ('is bearer of' some ('projects onto' only NoEvidence))
+
+
