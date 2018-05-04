@@ -19,6 +19,30 @@ TNM-Anatomy:
 
 6. Klasse BodyPart in Organontologien mit keiner Entsprechung in TNM-Anatomy, was korrespondiert dazu?
 
+7. LiverRegionalLymphnode: Laut Klassifikation:	-- 		Aktuell abgebildet durch:
+{	Leberhilus-LK				--		??	
+	hepatische (an A. hepatica.)LK		--		HepaticProperLymphNode rdfs:comment "FMAID: 277067"
+	periportale (an V.portae)LK		--		HepatoportalLymphNode rdfs:comment "FMAID: 277271"
+	an abdom. V.cava inf. LK		--		RetroCavalLymphNode+PrecavalLymphNode rdfs:comment "FMAID: 66174" + rdfs:comment "FMAID: 66173"
+	'inferiorphrenicnodes' LK		--		SubdiaphragmaticPreAorticLymphNode rdfs:comment "FMAID: 281254"	
+}
+	Zu diskutieren:	Renal lymph node (subclass of Lateral Caval Lymph Node) FMAID: 276799, Intermediate lumbar lymph node (interaorticocaval lymph node) FMAID: 66175
+
+8. Modellierung OrganAdjacentToLiver:
+	Liste laut FMA:
+	Anterior to:
+		Descending aorta
+		Inferior vena cava
+	Direct left of:
+		Ascending colon
+		Gallbladder
+		Right kidney
+		Superior part of duodenum
+		Transverse colon
+	Direct right of:
+		Body of stomach
+	Laut Klassifikation außerdem: Zwerchfell
+--> Aktuell alle eingefügt!
 
 
 TNM-O_Liver:
@@ -46,10 +70,18 @@ Beispiel: NoEvidenceOfPrimaryTumor: 	ExocrinePankreasTumor and (isBearerOf some 
 
 7. Disjointness von gleichwertigen Tochterklassen vielfach nicht umgesetzt (Bsp. TumorQualityValueRegion-Klassen)
 
+8. Modellierung von T4-Tumor Leber mit Perforation des visz. Peritoneums (Alternative: hasPart some SerosaOfLiver (subclass of VisceralPeritoneum))
+--> Aktuell gelöst: hasPart some VisceralPeritoneum
+
+
 TNM-O:
 
 1. TumorAggregate als Klasse in TNM-O im Gegensatz zu aktueller Realisierung in Organ-Ontologien
 --> Aktuell: Klasse TumorAggregate in TNM-O eingeführt.
 
 2. Frage: in welchem Kontext soll AnatomicalStructureClassifiedByMalignancy genutzt werden?
+
+3. Warum sind zentrale Klassen wie Primary Tumor nicht im TNM-O File realisiert, kann die Klasse in beiden Files coexistieren?
+
+
 	

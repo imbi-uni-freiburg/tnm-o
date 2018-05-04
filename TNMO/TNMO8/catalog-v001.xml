@@ -8,8 +8,8 @@
     <uri id="Imports Wizard Entry" name="http://purl.org/tnmo/TNM-O_Anatomy.owl/1" uri="file:/home/joe/imbi/git/tnm-o/TNMO/TNM-O_Anatomy_Liver_Added.owl"/>
     <uri id="Imports Wizard Entry" name="http://purl.org/biotop/btl2.owl" uri="file:/home/joe/imbi/git/tnm-o/TNMO/btl2.owl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1525370406124" name="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl" uri="pancreas_exocrine.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1525370406124" name="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl" uri="pancreas_neuroendocrine.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1525370406124" name="http://www.semanticweb.org/thoma/ontologies/2018/3/liver" uri="liver.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1525450945953" name="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl" uri="pancreas_exocrine.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1525450945953" name="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl" uri="pancreas_neuroendocrine.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1525450945953" name="http://www.semanticweb.org/thoma/ontologies/2018/3/liver" uri="liver.owl"/>
     </group>
 </catalog>

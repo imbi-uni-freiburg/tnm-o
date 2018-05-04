@@ -114,7 +114,9 @@
     <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#AscendingColon -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#AscendingColon">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#OrganAdjecentToLiver"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#SegmentOfColon"/>
+        <rdfs:comment>FMAID: 14545</rdfs:comment>
     </owl:Class>
     
 
@@ -294,6 +296,15 @@
     
 
 
+    <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#DescendingAorta -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#DescendingAorta">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#OrganAdjecentToLiver"/>
+        <rdfs:comment>FMAID: 3784</rdfs:comment>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#DescendingColon -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#DescendingColon">
@@ -306,6 +317,7 @@
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#Diaphragm">
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#MuscleOrgan"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#OrganAdjecentToLiver"/>
         <rdfs:comment>FMAID: 13295</rdfs:comment>
     </owl:Class>
     
@@ -397,6 +409,7 @@
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#Gallbladder">
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#CavitatedOrgan"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#OrganAdjecentToLiver"/>
         <rdfs:comment>FMAID: 7202</rdfs:comment>
     </owl:Class>
     
@@ -422,6 +435,7 @@
     <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#HepaticProperLymphNode -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#HepaticProperLymphNode">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#LiverRegionalLymphNode"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#LymphNodeOfAbdomen"/>
         <rdfs:comment>FMAID: 277067</rdfs:comment>
     </owl:Class>
@@ -431,6 +445,7 @@
     <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#HepatoportalLymphNode -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#HepatoportalLymphNode">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#LiverRegionalLymphNode"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#LymphNodeOfAbdomen"/>
         <rdfs:comment>FMAID: 277271</rdfs:comment>
     </owl:Class>
@@ -473,6 +488,15 @@
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#InferiorRectalLymphNode">
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#ColonAndRectumRegionalLymphNode"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#InferiorVenaCava -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#InferiorVenaCava">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#OrganAdjecentToLiver"/>
+        <rdfs:comment>FMAID: 10951</rdfs:comment>
     </owl:Class>
     
 
@@ -926,6 +950,14 @@
     
 
 
+    <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#OrganAdjecentToLiver -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#OrganAdjecentToLiver">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#Organ"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#OrganCluster -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#OrganCluster">
@@ -1111,6 +1143,7 @@
     <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#PrecavalLymphNode -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#PrecavalLymphNode">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#LiverRegionalLymphNode"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#LymphNodeOfAbdomen"/>
         <rdfs:comment>FMAID: 66173</rdfs:comment>
     </owl:Class>
@@ -1224,6 +1257,7 @@
     <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#RetroCavalLymphNode -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#RetroCavalLymphNode">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#LiverRegionalLymphNode"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#LymphNodeOfAbdomen"/>
         <rdfs:comment>FMAID: 66174</rdfs:comment>
     </owl:Class>
@@ -1259,6 +1293,15 @@
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#RightColicLymphNode">
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#ColicLymphNode"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#RightKidney -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#RightKidney">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#OrganAdjecentToLiver"/>
+        <rdfs:comment>FMAID: 7204</rdfs:comment>
     </owl:Class>
     
 
@@ -1441,6 +1484,16 @@
     
 
 
+    <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#SubdiaphragmaticPreAorticLymphNode -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#SubdiaphragmaticPreAorticLymphNode">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#LiverRegionalLymphNode"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#LymphNodeOfAbdomen"/>
+        <rdfs:comment>FMAID: 281254</rdfs:comment>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#SubdivisionOfCardinalOrganPart -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#SubdivisionOfCardinalOrganPart">
@@ -1513,6 +1566,15 @@
     
 
 
+    <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#SuperiorPartOfDuodenum -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#SuperiorPartOfDuodenum">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#OrganAdjecentToLiver"/>
+        <rdfs:comment>FMAID: 14926</rdfs:comment>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#SuperiorPhrenicLymphNode -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#SuperiorPhrenicLymphNode">
@@ -1549,7 +1611,9 @@
     <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#TransverseColon -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#TransverseColon">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#OrganAdjecentToLiver"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#SegmentOfColon"/>
+        <rdfs:comment>FMAID: 14546</rdfs:comment>
     </owl:Class>
     
 
@@ -1640,6 +1704,28 @@
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#ZoneOfVertebra">
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#OrganZone"/>
     </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#HepaticProperLymphNode"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#HepatoportalLymphNode"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#PancreaticLymphNode"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#PrecavalLymphNode"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#RetroCavalLymphNode"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#SubdiaphragmaticPreAorticLymphNode"/>
+        </owl:members>
+    </rdf:Description>
 </rdf:RDF>
 
 
