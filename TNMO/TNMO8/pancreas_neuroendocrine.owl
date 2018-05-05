@@ -5,11 +5,16 @@
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:Pn8="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#"
-     xmlns:dc="http://purl.org/dc/elements/1.1/">
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#">
     <owl:Ontology rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl">
         <owl:versionIRI rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl/1"/>
+        <owl:imports rdf:resource="http://purl.org/biotop/btl2.owl"/>
+        <owl:imports rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl/1"/>
+        <owl:imports rdf:resource="http://purl.org/tnmo/TNM-O.owl/1"/>
         <dc:creator>Susanne Zabka,Institute for Distance Learning (Medical Informatics), 
 Beuth University of Applied Sciences Berlin, Germany</dc:creator>
         <owl:versionInfo>protoype 0.1</owl:versionInfo>
