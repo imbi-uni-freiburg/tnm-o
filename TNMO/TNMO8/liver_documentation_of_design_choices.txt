@@ -44,6 +44,9 @@ TNM-Anatomy:
 	Laut Klassifikation außerdem: Zwerchfell
 --> Aktuell alle eingefügt!
 
+9. Problematische Bezeichnung Tumor mit Beteiligung größerer Äste der Portalvenen (PortalVein oder HepaticPortalVein?)  oder Lebervenen (HepaticVein)
+--> Aktuell abgebildet durch PortalVein und HepaticVein, die Abstufung "größere Äste" ist nicht abgebildet!
+
 
 TNM-O_Liver:
 
@@ -51,6 +54,9 @@ TNM-O_Liver:
 --> Aktuell Modellierung als separate Module
 
 2. Abbildung der Bezeichnung von 'multiple tumors' und 'solitary tumor' in der 'primary tumor' Klassenhierarchiebeide, geführt unter T-Stadium, nicht als regionale Metastasen.
+Mögliche Strategien:
+	a.	als LiverTumorAggregateAsRelatedToMultipleLiverTumors sublcass of LiverTumorAggregate
+		Zusätzliche Tumorquality CardinalityOfLiverTumors? 
 --> Aktuell nicht abgebildet
 
 3. PrimaryTumor 'NoEvidence' und 'NoAssessment' in allen Modulen unterschiedlich gelöst
@@ -69,6 +75,7 @@ Beispiel: NoEvidenceOfPrimaryTumor: 	ExocrinePankreasTumor and (isBearerOf some 
 --> Aktuell in TNM-O: Einführung getrennter VascularInvasiveness subclass of TumorQuality, VascularInvasivenessValueRegion subclass of TumorQualityValueRegion
 
 7. Disjointness von gleichwertigen Tochterklassen vielfach nicht umgesetzt (Bsp. TumorQualityValueRegion-Klassen)
+	Andererseits PrimaryTumor Entitäten mit Absicht nicht disjoint?
 
 8. Modellierung von T4-Tumor Leber mit Perforation des visz. Peritoneums (Alternative: hasPart some SerosaOfLiver (subclass of VisceralPeritoneum))
 --> Aktuell gelöst: hasPart some VisceralPeritoneum
