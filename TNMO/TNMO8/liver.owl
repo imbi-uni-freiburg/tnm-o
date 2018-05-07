@@ -10,6 +10,7 @@
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#">
     <owl:Ontology rdf:about="http://purl.org/tnmo/TNM-O_Liver">
+        <owl:imports rdf:resource="http://purl.org/tnmo/TNM-O_BodyParts.owl/1"/>
         <owl:imports rdf:resource="http://purl.org/biotop/btl2.owl"/>
         <owl:imports rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl/1"/>
         <owl:imports rdf:resource="http://purl.org/tnmo/TNM-O.owl/1"/>
@@ -90,6 +91,12 @@
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cM">
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Liver#RepresentationalUnitInLiverTNM8ClinicalClassification"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverTumorAggregateAsRelatedToDistantMetastasis"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -115,6 +122,12 @@
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cN">
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Liver#RepresentationalUnitInLiverTNM8ClinicalClassification"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverTumorAggregateAsRelatedToMetastaticRegionalLymphNodes"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -160,6 +173,21 @@
     <!-- http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cT0 -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cT0">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cT"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Liver#NoEvidenceOfPrimaryLiverTumor"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Liver#NoEvidenceOfPrimaryLiverTumor"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cT"/>
     </owl:Class>
     
@@ -218,6 +246,21 @@
     <!-- http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cTX -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cTX">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cT"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Liver#NoAssessmentOfPrimaryLiverTumor"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Liver#NoAssessmentOfPrimaryLiverTumor"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cT"/>
     </owl:Class>
     
@@ -363,6 +406,22 @@
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTumor">
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Liver#PrimaryTumor"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cT"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pT"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInTNM8Classification"/>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -418,6 +477,22 @@
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTumorAggregateAsRelatedToDistantMetastasis">
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverTumorAggregate"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cM"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pM"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInTNM8Classification"/>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -426,6 +501,22 @@
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTumorAggregateAsRelatedToMetastaticRegionalLymphNodes">
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverTumorAggregate"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cN"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pN"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInTNM8Classification"/>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -672,29 +763,6 @@
     <!-- http://purl.org/tnmo/TNM-O_Liver#NoEvidenceOfPrimaryLiverTumor -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Liver#NoEvidenceOfPrimaryLiverTumor">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTumor"/>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isBearerOf"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O.owl#Assessment"/>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#projectsOnto"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O.owl#NoEvidence"/>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#projectsOnto"/>
-                                <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O.owl#NoEvidence"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverTumor"/>
         <rdfs:subClassOf>
             <owl:Restriction>
