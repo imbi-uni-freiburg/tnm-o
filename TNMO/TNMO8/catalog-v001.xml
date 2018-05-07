@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://purl.org/tnmo/TNM-O_Anatomy.owl/1" uri="file:/C:/Users/thoma/Desktop/TNM-O-Ontologie/Thomas_tnm-o/TNMO/TNM-O_Anatomy.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.org/biotop/btl2.owl" uri="file:/C:/Users/thoma/Desktop/TNM-O-Ontologie/Thomas_tnm-o/TNMO/btl2.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.org/tnmo/TNM-O_breast_7.owl/1.0" uri="file:/C:/Users/thoma/Desktop/TNM-O-Ontologie/Thomas_tnm-o/TNMO/TNMO7/breast.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.org/tnmo/TNM-O.owl/1" uri="file:/C:/Users/thoma/Desktop/TNM-O-Ontologie/Thomas_tnm-o/TNMO/TNM-O.owl"/>
     <uri id="Imports Wizard Entry" name="http://purl.org/tnmo/TNM-O.owl/1" uri="file:/home/joe/imbi/git/tnm-o/TNMO/TNM-O.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.org/tnmo/TNM-O_Anatomy.owl/1" uri="file:/home/joe/imbi/git/tnm-o/TNMO/TNM-O_Anatomy.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.org/tnmo/TNM-O_BodyParts.owl/1" uri="file:/home/joe/imbi/git/tnm-o/TNMO/TNM-O_BodyParts.owl"/>

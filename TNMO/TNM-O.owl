@@ -1185,6 +1185,14 @@ Institute of Medical Informatics, Statistics and Documentation, Medical Universi
     
 
 
+    <!-- http://purl.org/tnmo/TNM-O.owl#Multiple -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Multiple">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#TumorCardinalityValueRegion"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/tnmo/TNM-O.owl#NoAssessment -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#NoAssessment">
@@ -1458,7 +1466,7 @@ NotAssessedMalignantAnatomicalStructure subclassOf
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#SizeValueRegion"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Liver#SizeMax5cm"/>
     </owl:Class>
     
 
@@ -1555,6 +1563,14 @@ NotAssessedMalignantAnatomicalStructure subclassOf
     
 
 
+    <!-- http://purl.org/tnmo/TNM-O.owl#Solitary -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Solitary">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#TumorCardinalityValueRegion"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/tnmo/TNM-O.owl#TNMClassification -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#TNMClassification">
@@ -1591,6 +1607,22 @@ NotAssessedMalignantAnatomicalStructure subclassOf
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#TumorAggregateClassifiedByMalignancy">
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#AnatomicalStructureClassifiedByMalignancy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#TumorCardinality -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#TumorCardinality">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#TumorQuality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#TumorCardinalityValueRegion -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#TumorCardinalityValueRegion">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#TumorQualityValueRegion"/>
     </owl:Class>
     
 
@@ -1654,6 +1686,12 @@ NotAssessedMalignantAnatomicalStructure subclassOf
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#WellDifferentiated">
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#DifferentiationValueRegion"/>
     </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Liver#SizeMax5cm -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Liver#SizeMax5cm"/>
     
 
 
