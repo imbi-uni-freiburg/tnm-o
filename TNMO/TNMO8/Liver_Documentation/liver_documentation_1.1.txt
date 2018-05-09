@@ -1,0 +1,98 @@
+Documentation of modelling decisions and unresolved problems of TNM-O_liver:
+_____________________________________________________________________________________________________________________________
+
+Reviewed decisions and unresolved problems (Johannes, Susanne, Thomas):
+
+TNM-O_Anatomy.owl
+
+1. Implementation of the definition of LiverRegionalLymphNode
+--> Current solution: 
+LiverRegionalLymphNode=
+{	Leberhilus-LK				--		(currently no FMA-class identified)	
+	hepatische (an A. hepatica.)LK		--		HepaticProperLymphNode rdfs:comment "FMAID: 277067"
+	periportale (an V.portae)LK		--		HepatoportalLymphNode rdfs:comment "FMAID: 277271"
+	an abdom. V.cava inf. LK		--		RetroCavalLymphNode+PrecavalLymphNode rdfs:comment "FMAID: 66174" + rdfs:comment "FMAID: 66173"
+	'inferiorphrenicnodes' LK		--		(suboptimal) SubdiaphragmaticPreAorticLymphNode rdfs:comment "FMAID: 281254"	
+} 
+--> To discuss: Renal lymph node (subclass of Lateral Caval Lymph Node) FMAID: 276799, Intermediate lumbar lymph node (interaorticocaval lymph node) FMAID: 66175
+
+2. Implementation of the construct 'Tumor with Invasion of larger branches of hepatic and portal veins'
+--> Current solution: [...]included in some 'HepaticVein and PortalVein'
+--> To discuss:	- Restriction of PortalVein to HepaticPortalVein
+		- Implementation of term 'larger branches'
+
+
+3. Implementation of the construct Neighboring Organ of Liver inlcuding Diaphragm
+--> Current solution:	OrganAdjacentToLiver subclassOf Organ
+			(List of organs adjacent to the liver according to FMA as subclasses:
+			Anterior to:
+				Descending aorta
+				Inferior vena cava
+			Direct left of:
+				Ascending colon
+				Gallbladder
+				Right kidney
+				Superior part of duodenum
+				Transverse colon
+			Direct right of:
+				Body of stomach
+			+ Diaphragm)	
+
+TNM-O_liver.owl
+
+1. Implementation of naming conventions for HCC and Bile Duct Cancer
+--> Current solution: Creation of a module LiverTumor for HCC, and HepaticBileDuctTumor for BileDuctCancer
+--> To discuss: For clarity replacement of LiverTumor with HCC or HCCTumor or HepatocellularCarcinoma, or ...
+
+TNM-O.owl
+
+2. Implementaton of term 'vascular invasive'
+--> Current solution:    
+
+___________________________________________________________________________________________________________________
+
+Current unreviewed questions, decisions, issues:
+
+TNM-O_Anatomy.owl
+
+1. Problematische Einordnung und Bezeichung BreastRegionalLymphNodes in TNM-Anatomy
+--> Aktuell nicht verändert
+
+2. Zur besseren Übersichtlichkeit Einführung einer Superklasse LymphNodeOfAbdomen? Frage der generellen SOPs bei TNM-Anatomy!!
+--> Aktuell Superklasse eingeführt
+
+
+TNM-O_Liver.owl
+
+1. PrimaryTumor subclasses need to be tweaked to eventually be disjoint
+
+2. Modellierung von T4-Tumor Leber mit Perforation des visz. Peritoneums (Alternative: hasPart some SerosaOfLiver (subclass of VisceralPeritoneum))
+--> Aktuell gelöst: hasPart some VisceralPeritoneum
+
+3. Umbenennung NoAssessmentOfPrimaryTumor in NotAssessedPrimaryTumor
+--> Aktuell: NoAssessmentOfPrimaryTumor
+
+4. Abbildung der Bezeichnung von 'multiple tumors' und 'solitary tumor' in der 'primary tumor' Klassenhierarchiebeide, geführt unter T-Stadium, nicht als regionale Metastasen.
+Mögliche Strategien:
+	a.	als LiverTumorAggregateAsRelatedToMultipleLiverTumors sublcass of LiverTumorAggregate
+		Zusätzliche Tumorquality CardinalityOfLiverTumors? 
+
+5. Auslagerung von NoEvidenceOfPrimaryLiverTumor außerhalb von PrimaryTumor, ist streng genommen kein PrimaryTumor!
+--> Aktuell: Geführt innerhalb von PrimaryTumor
+
+6. Soll VascularInvasiveness als getrennte TumorQuality geführt werden (pathologisch different von Confinement)
+--> Aktuell in TNM-O: Einführung getrennter VascularInvasiveness subclass of TumorQuality, VascularInvasivenessValueRegion subclass of TumorQualityValueRegion
+
+TNM-O:
+
+1. PrimaryTumor 'NoEvidence' und 'NoAssessment' in allen Modulen unterschiedlich gelöst
+Beispiel: NoEvidenceOfPrimaryTumor: 	ExocrinePankreasTumor and (isBearerOf some (projectsOnto only NoEvidence))
+					BreastTumor and (isBearerOf some (AssessmentQuality and (projectsOnto some NoEvidence) and (projectsOnto only NoEvidence)))
+--> Aktuell:	NoEvidenceOfPrimaryLiverTumor: LiverTumor and ('is bearer of' some Assessment and ('projects onto' some NoEvidence) and ('projects onto' only NoEvidence))
+		NoAssessmentOfPrimaryLiverTumor: NotAssessedMalignantAnatomicalStructure and LiverTumor
+
+
+
+
+
+

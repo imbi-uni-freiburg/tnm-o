@@ -1595,14 +1595,6 @@ NotAssessedMalignantAnatomicalStructure subclassOf
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O.owl#TumorAggregate -->
-
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#TumorAggregate">
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#MalignantAnatomicalStructure"/>
-    </owl:Class>
-    
-
-
     <!-- http://purl.org/tnmo/TNM-O.owl#TumorAggregateClassifiedByMalignancy -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#TumorAggregateClassifiedByMalignancy">

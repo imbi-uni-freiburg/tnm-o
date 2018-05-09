@@ -64,12 +64,6 @@
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O.owl#TumorAggregate -->
-
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#TumorAggregate"/>
-    
-
-
     <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#Gallbladder -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#Gallbladder"/>
@@ -470,7 +464,7 @@
     <!-- http://purl.org/tnmo/TNM-O_Liver#LiverTumor -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTumor">
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Liver#PrimaryTumor"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#PrimaryTumorSiteClassifiedByMalignancy"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
@@ -497,7 +491,7 @@
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#TumorAggregate"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#TumorAggregateClassifiedByMalignancy"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isPartOf"/>
                         <owl:someValuesFrom>
@@ -515,7 +509,6 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#TumorAggregate"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
@@ -1124,14 +1117,6 @@
                 </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/tnmo/TNM-O_Liver#PrimaryTumor -->
-
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Liver#PrimaryTumor">
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#MalignantAnatomicalStructure"/>
     </owl:Class>
     
 
