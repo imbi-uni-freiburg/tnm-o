@@ -47,7 +47,7 @@ TNM-O_liver.owl
 TNM-O.owl
 
 2. Implementaton of term 'vascular invasive'
---> Current solution:    
+--> Current solution: VascularInvasive subclassOf Invasive subclassOf ConfinementValueRegion, NonVascularInvasive subclassOf ConfinementValueregion    
 
 ___________________________________________________________________________________________________________________
 
