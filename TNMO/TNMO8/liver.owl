@@ -64,6 +64,19 @@
     
 
 
+    <!-- http://purl.org/tnmo/TNM-O.owl#TumorCardinality -->
+
+    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#TumorCardinality">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#projectsOnto"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O.owl#TumorCardinalityValueRegion"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
     <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#Gallbladder -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#Gallbladder"/>

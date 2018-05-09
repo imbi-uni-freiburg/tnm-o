@@ -1212,7 +1212,7 @@ Institute of Medical Informatics, Statistics and Documentation, Medical Universi
     <!-- http://purl.org/tnmo/TNM-O.owl#NonVascularInvasive -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#NonVascularInvasive">
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#VascularInvasivenessValueRegion"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#ConfinementValueRegion"/>
     </owl:Class>
     
 
@@ -1646,7 +1646,7 @@ NotAssessedMalignantAnatomicalStructure subclassOf
     <!-- http://purl.org/tnmo/TNM-O.owl#VascularInvasive -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#VascularInvasive">
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#VascularInvasivenessValueRegion"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Invasive"/>
     </owl:Class>
     
 
@@ -1655,20 +1655,6 @@ NotAssessedMalignantAnatomicalStructure subclassOf
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#VascularInvasiveness">
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#TumorQuality"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#projectsOnto"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O.owl#VascularInvasivenessValueRegion"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/tnmo/TNM-O.owl#VascularInvasivenessValueRegion -->
-
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#VascularInvasivenessValueRegion">
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#TumorQualityValueRegion"/>
     </owl:Class>
     
 
