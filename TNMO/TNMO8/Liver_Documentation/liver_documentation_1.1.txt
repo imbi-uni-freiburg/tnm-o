@@ -46,9 +46,13 @@ TNM-O_liver.owl
 
 TNM-O.owl
 
-2. Implementaton of term 'vascular invasive'
+1. Implementaton of term 'vascular invasive'
 --> Current solution: VascularInvasive subclassOf Invasive subclassOf ConfinementValueRegion, NonVascularInvasive subclassOf ConfinementValueregion    
 
+2. Implementation of solitary and multiple tumors in one organ (e.g. liver)
+--> Current solution: TumorCardinality subclassOf TumorQuality, [Solitary, Multiple] subclass(es)Of TumorCardinalityValueRegion subclassOf TumorQualityValueRegion 
+--> To discuss:	- other naming convention (NumberOfRegionalTumorLesions, TumorMultiplicity, ...)
+		- different way of modelling possibility of existence of multiple tumor within one organ
 ___________________________________________________________________________________________________________________
 
 Current unreviewed questions, decisions, issues:
@@ -72,16 +76,8 @@ TNM-O_Liver.owl
 3. Umbenennung NoAssessmentOfPrimaryTumor in NotAssessedPrimaryTumor
 --> Aktuell: NoAssessmentOfPrimaryTumor
 
-4. Abbildung der Bezeichnung von 'multiple tumors' und 'solitary tumor' in der 'primary tumor' Klassenhierarchiebeide, geführt unter T-Stadium, nicht als regionale Metastasen.
-Mögliche Strategien:
-	a.	als LiverTumorAggregateAsRelatedToMultipleLiverTumors sublcass of LiverTumorAggregate
-		Zusätzliche Tumorquality CardinalityOfLiverTumors? 
-
-5. Auslagerung von NoEvidenceOfPrimaryLiverTumor außerhalb von PrimaryTumor, ist streng genommen kein PrimaryTumor!
+4. Auslagerung von NoEvidenceOfPrimaryLiverTumor außerhalb von PrimaryTumor, ist streng genommen kein PrimaryTumor!
 --> Aktuell: Geführt innerhalb von PrimaryTumor
-
-6. Soll VascularInvasiveness als getrennte TumorQuality geführt werden (pathologisch different von Confinement)
---> Aktuell in TNM-O: Einführung getrennter VascularInvasiveness subclass of TumorQuality, VascularInvasivenessValueRegion subclass of TumorQualityValueRegion
 
 TNM-O:
 
