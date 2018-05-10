@@ -1,7 +1,7 @@
 Documentation of modelling decisions and unresolved problems of TNM-O_liver:
 _____________________________________________________________________________________________________________________________
 
-Reviewed decisions and unresolved problems (Johannes, Susanne, Thomas):
+Reviewed decisions, ideas and unresolved problems (Johannes, Susanne, Thomas):
 
 TNM-O_Anatomy.owl
 
@@ -55,7 +55,7 @@ TNM-O.owl
 		- different way of modelling possibility of existence of multiple tumor within one organ
 ___________________________________________________________________________________________________________________
 
-Current unreviewed questions, decisions, issues:
+Current unreviewed questions, ideas, decisions, issues:
 
 TNM-O_Anatomy.owl
 
@@ -68,12 +68,22 @@ TNM-O_Anatomy.owl
 
 TNM-O_Liver.owl
 
-1. LiverTumor definiert als 
-	PrimaryTumorSiteClassifiedByMalignancy
-	and 'has part' some ('is included in' some Liver)
+1. LiverTumor-Definition:
+--> Aktuell: 
+	LiverTumor ==	PrimaryTumorSiteClassifiedByMalignancy
+			and 'has part' some ('is included in' some Liver)
+--> Zu diskutieren: Irgendwie sollte ein histologisches Assessment 'HCC' bzw. 'LiverTumor' einfließen, has part some (is included in some Liver) nicht eindeutig für LiverTumor (bspw. Pankreas-CA mit Infiltration der Leber)
+		Andererseits ist keine Definition von LiverTumor in der TNM-Klassifikation enthalten!	
 
 2. PrimaryTumor subclasses need to be tweaked to eventually be disjoint
---> Möglicherweise Einführung von MultipleLiveTumorsMax5cm == [...] and 'is included in' only Liver / and 'has part' only (is included in' some Liver) ... 
+--> Möglicherweise Einführung von MultipleLiverTumorsMax5cm == [...] and 'is included in' only Liver / and 'has part' only (is included in' some Liver) ... 
+--> Einführung einer Hierarchischen Gliederung der Primärtumoren bspw. InvasiveLiverTumorOfOtherAnatomicalStructures {PerforatingLiverTumorOfVisceralPeritoneum, ...}
+--> generelle SOP die PrimaryTumor-Klassen so nah wie möglich an der Struktur des TNM-Texts zu modellieren?
+		Bsp.: VascularInvasiveLiverTumorOfLargerBranchesOfHepaticAndPortalVeins:= LiverTumor
+ 												and ('has part' some ('is included in' some 
+   												 (LargerBranchOfHepaticVein or LargerBranchOfPortalVein)))
+		Andererseits bedeutet dies automatisch eine Gefäßinvasivität -> Da Gefäßinvasivität als TumorQuality modelliert wurde, kann das nicht erfasst werden ohne Gefäßinvasivität explizit zur Definition hinzuzufügen.
+		Mögliche Lösung: VascularInvasive könnte so definiert werden, dass der zugehörige Tumor ein Gefäß infiltriert.	 
 
 3. Modellierung von T4-Tumor Leber mit Perforation des visz. Peritoneums (Alternative: hasPart some SerosaOfLiver (subclass of VisceralPeritoneum))
 --> Aktuell gelöst: hasPart some VisceralPeritoneum
@@ -100,6 +110,6 @@ Beispiel: NoEvidenceOfPrimaryTumor: 	ExocrinePankreasTumor and (isBearerOf some 
 
 2. Warum ist 'Size' als bspw. TumorSize keine TumorQuality subclassOf ObjectQuality, sondern in der TNM-O als Size subclassPf Quality eingeordnet? 
 
-
+3. Abbildung der UICC-Stadieneinteilung für Tumoren auf Basis der TNM-Klassifikation
 
 
