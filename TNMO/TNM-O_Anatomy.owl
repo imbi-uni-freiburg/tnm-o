@@ -590,6 +590,22 @@
     
 
 
+    <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#LargerBranchOfHepaticVein -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#LargerBranchOfHepaticVein">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#HepaticVein"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#LargerBranchOfPortalVein -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#LargerBranchOfPortalVein">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#PortalVein"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#LateralDiaphragmaticLymphNode -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#LateralDiaphragmaticLymphNode">

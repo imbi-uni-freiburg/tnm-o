@@ -17,9 +17,9 @@ LiverRegionalLymphNode=
 --> To discuss: Renal lymph node (subclass of Lateral Caval Lymph Node) FMAID: 276799, Intermediate lumbar lymph node (interaorticocaval lymph node) FMAID: 66175
 
 2. Implementation of the construct 'Tumor with Invasion of larger branches of hepatic and portal veins'
---> Current solution: [...]included in some 'HepaticVein and PortalVein'
+--> Current solution: [...]included in some 'LargerBranchOfHepaticVein' subclassOf HepaticVein (FMA) or 'LargerBranchOfPortalVein' subclassOf PortalVein (FMA)
 --> To discuss:	- Restriction of PortalVein to HepaticPortalVein
-		- Implementation of term 'larger branches'
+		- Different Implementation of term 'larger branches'
 
 
 3. Implementation of the construct Neighboring Organ of Liver inlcuding Diaphragm
@@ -68,22 +68,27 @@ TNM-O_Anatomy.owl
 
 TNM-O_Liver.owl
 
-1. PrimaryTumor subclasses need to be tweaked to eventually be disjoint
+1. LiverTumor definiert als 
+	PrimaryTumorSiteClassifiedByMalignancy
+	and 'has part' some ('is included in' some Liver)
 
-2. Modellierung von T4-Tumor Leber mit Perforation des visz. Peritoneums (Alternative: hasPart some SerosaOfLiver (subclass of VisceralPeritoneum))
+2. PrimaryTumor subclasses need to be tweaked to eventually be disjoint
+--> Möglicherweise Einführung von MultipleLiveTumorsMax5cm == [...] and 'is included in' only Liver / and 'has part' only (is included in' some Liver) ... 
+
+3. Modellierung von T4-Tumor Leber mit Perforation des visz. Peritoneums (Alternative: hasPart some SerosaOfLiver (subclass of VisceralPeritoneum))
 --> Aktuell gelöst: hasPart some VisceralPeritoneum
 
-3. Umbenennung NoAssessmentOfPrimaryTumor in NotAssessedPrimaryTumor
+4. Umbenennung NoAssessmentOfPrimaryTumor in NotAssessedPrimaryTumor
 --> Aktuell: NoAssessmentOfPrimaryTumor
 
-4. Auslagerung von NoEvidenceOfPrimaryLiverTumor außerhalb von PrimaryTumor, ist streng genommen kein PrimaryTumor!
+5. Auslagerung von NoEvidenceOfPrimaryLiverTumor außerhalb von PrimaryTumor, ist streng genommen kein PrimaryTumor!
 --> Aktuell: Geführt innerhalb von PrimaryTumor
 
-5. Im Konstrukt bearer of some (projects onto only y), warum keine existential restriction nach projects onto?
+6. Im Konstrukt bearer of some (projects onto only y), warum keine existential restriction nach projects onto?
 and ('is bearer of' some (TumorCardinality and ('projects onto' only Multiple)))
 and ('is bearer of' some ('projects onto' only SizeMoreThan5cm))
 
-3. Wird die KLasse Metastasis weiter definiert? MetastasisOfLiverTumor und Unterklassen müssen anders definiert werden, Metastasis sollte in das neue Konstrukt AnatomicalStructureClassifiedByMalignancy eingeordnet werden
+7. Wird die KLasse Metastasis weiter definiert? MetastasisOfLiverTumor und Unterklassen müssen anders definiert werden, Metastasis sollte in das neue Konstrukt AnatomicalStructureClassifiedByMalignancy eingeordnet werden
 
 TNM-O:
 

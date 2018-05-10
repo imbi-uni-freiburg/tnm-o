@@ -497,6 +497,22 @@
     <!-- http://purl.org/tnmo/TNM-O_Liver#LiverTumor -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTumor">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#PrimaryTumorSiteClassifiedByMalignancy"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#hasPart"/>
+                        <owl:someValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isIncludedIn"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#Liver"/>
+                            </owl:Restriction>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#PrimaryTumorSiteClassifiedByMalignancy"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1218,8 +1234,8 @@
                                 <owl:someValuesFrom>
                                     <owl:Class>
                                         <owl:unionOf rdf:parseType="Collection">
-                                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#HepaticVein"/>
-                                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#PortalVein"/>
+                                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#LargerBranchOfHepaticVein"/>
+                                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#LargerBranchOfPortalVein"/>
                                         </owl:unionOf>
                                     </owl:Class>
                                 </owl:someValuesFrom>
