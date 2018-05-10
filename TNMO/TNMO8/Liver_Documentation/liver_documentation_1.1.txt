@@ -79,6 +79,11 @@ TNM-O_Liver.owl
 4. Auslagerung von NoEvidenceOfPrimaryLiverTumor außerhalb von PrimaryTumor, ist streng genommen kein PrimaryTumor!
 --> Aktuell: Geführt innerhalb von PrimaryTumor
 
+5. Im Konstrukt bearer of some (projects onto only y), warum keine existential restriction nach projects onto?
+and ('is bearer of' some (TumorCardinality and ('projects onto' only Multiple)))
+and ('is bearer of' some ('projects onto' only SizeMoreThan5cm))
+
+
 TNM-O:
 
 1. PrimaryTumor 'NoEvidence' und 'NoAssessment' in allen Modulen unterschiedlich gelöst
@@ -87,8 +92,10 @@ Beispiel: NoEvidenceOfPrimaryTumor: 	ExocrinePankreasTumor and (isBearerOf some 
 --> Aktuell:	NoEvidenceOfPrimaryLiverTumor: LiverTumor and ('is bearer of' some Assessment and ('projects onto' some NoEvidence) and ('projects onto' only NoEvidence))
 		NoAssessmentOfPrimaryLiverTumor: NotAssessedMalignantAnatomicalStructure and LiverTumor
 
+2. Warum ist 'Size' als bspw. TumorSize keine TumorQuality subclassOf ObjectQuality, sondern in der TNM-O als Size subclassPf Quality eingeordnet? 
 
 
+and ('is bearer of' some ('projects onto' only SizeMoreThan5cm))
 
 
 

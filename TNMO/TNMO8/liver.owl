@@ -879,7 +879,7 @@
                         <owl:someValuesFrom>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#projectsOnto"/>
-                                <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Liver#SizeMoreThan5cm"/>
+                                <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O.owl#SizeMoreThan5cm"/>
                             </owl:Restriction>
                         </owl:someValuesFrom>
                     </owl:Restriction>
@@ -975,10 +975,10 @@
                         <owl:someValuesFrom>
                             <owl:Class>
                                 <owl:intersectionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#TumorCardinality"/>
+                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#Confinement"/>
                                     <owl:Restriction>
                                         <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#projectsOnto"/>
-                                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O.owl#Solitary"/>
+                                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O.owl#NonVascularInvasive"/>
                                     </owl:Restriction>
                                 </owl:intersectionOf>
                             </owl:Class>
@@ -989,10 +989,10 @@
                         <owl:someValuesFrom>
                             <owl:Class>
                                 <owl:intersectionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#VascularInvasiveness"/>
+                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#TumorCardinality"/>
                                     <owl:Restriction>
                                         <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#projectsOnto"/>
-                                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O.owl#NonVascularInvasive"/>
+                                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O.owl#Solitary"/>
                                     </owl:Restriction>
                                 </owl:intersectionOf>
                             </owl:Class>
@@ -1100,7 +1100,7 @@
                                     <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#Confinement"/>
                                     <owl:Restriction>
                                         <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#projectsOnto"/>
-                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O.owl#Invasive"/>
+                                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O.owl#Invasive"/>
                                     </owl:Restriction>
                                 </owl:intersectionOf>
                             </owl:Class>
@@ -1167,14 +1167,6 @@
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Liver#SizeMoreThan5cm -->
-
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Liver#SizeMoreThan5cm">
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#SizeMoreThan4cm"/>
-    </owl:Class>
-    
-
-
     <!-- http://purl.org/tnmo/TNM-O_Liver#VascularInvasiveLiverTumorOfLargerBranchesOfHepaticAndPortalVeins -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Liver#VascularInvasiveLiverTumorOfLargerBranchesOfHepaticAndPortalVeins">
@@ -1234,10 +1226,10 @@
                         <owl:someValuesFrom>
                             <owl:Class>
                                 <owl:intersectionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#TumorCardinality"/>
+                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#Confinement"/>
                                     <owl:Restriction>
                                         <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#projectsOnto"/>
-                                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O.owl#Solitary"/>
+                                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O.owl#VascularInvasive"/>
                                     </owl:Restriction>
                                 </owl:intersectionOf>
                             </owl:Class>
@@ -1248,10 +1240,10 @@
                         <owl:someValuesFrom>
                             <owl:Class>
                                 <owl:intersectionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#VascularInvasiveness"/>
+                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#TumorCardinality"/>
                                     <owl:Restriction>
                                         <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#projectsOnto"/>
-                                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O.owl#VascularInvasive"/>
+                                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O.owl#Solitary"/>
                                     </owl:Restriction>
                                 </owl:intersectionOf>
                             </owl:Class>
