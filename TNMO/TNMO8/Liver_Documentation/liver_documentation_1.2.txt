@@ -41,7 +41,7 @@ LiverRegionalLymphNode=
 				Transverse colon
 			Direct right of:
 				Body of stomach
-			+ Diaphragm)	
+			+ Diaphragm)
 
 TNM-O_liver.owl
 
@@ -49,7 +49,29 @@ TNM-O_liver.owl
 --> Current solution: Creation of a module LiverTumor for HCC, and HepaticBileDuctTumor for BileDuctCancer
 --> To discuss: For clarity replacement of LiverTumor with HCC or HCCTumor or HepatocellularCarcinoma, or ...
 
-2. General Design Principle for different PrimaryTumors
+2. General Design Principles for 'PrimaryTumor'-category:
+2.1 Should the respective Tumor Entity (LiverTumor, ExocrinePancreasTumor, etc.) be defined or is this beyond the scope of the ontology?
+--> Current solution: In some modules there is a definition such as:
+		ExocrinePancreasTumor == PrimaryTumor
+ 						and ((('is bearer of' some ('projects onto' only 
+   						 (GradeOfDifferentiationCannotBeAssessed or PoorlyDifferentiated or Undifferentiated)))
+						and ('is included in' some SetOfPancreaticIslets)) or ('is included in' some ExocrinePancreas))	 
+--> To discuss: - There is no definition of e.g. LiverTumor in TNM
+		- The current implementations 'is included in' some AnatomicalStructure does not account for other tumors infiltrating these structures and is thus not narrow enough to only include Tumors originating from a specific site.
+2.2 Implementation of ICD-O (localisation) Codes as rdf-comments for tumor entities in the format of ICD-O: X.yy
+--> To discuss: Different naming conventions, e.g. ICD-O-ID, ICD-O_ID, ... 
+2.3 General Modelling of different Tumors of a given entity
+--> Current solution in Liver.owl: subclasses of LiverTumor are modells of all different different types of Tumors described in the T-category of TNM, without combining several of these in one class which corresponds to a certain TNM-Repres.-Artef. and without introducing a hierarchical structure 
+--> To discuss:	- Pragmatic solution: Combination or hierarchical organisation with easiest structure with the benefit of in some cases less convoluted equivalent definitions, easier
+		- Solution closer to 'reality', involving:
+			- Structuring of types of tumors independent from their classification in T-category
+			- Introduction of hierarchical layers only if the category used significantly reduces complexity   	  
+
+3. Implementation of LiverTumorInfiltratingVisceralPeritoneum
+--> Current solution: ==	LiverTumor
+ 				and (isBearerOf some (Confinement and (projectsOnto only Invasive)))
+				and (isIncludedIn some VisceralPeritoneum)
+--> To discuss: 'isIncludedIn' cannot seperate between infiltration per continuitatem and distant metastasis, this could be resolved by chosing a more narrow term (such as serosa of the liver) or modelling infiltration.  
 
 TNM-O.owl
 
@@ -60,6 +82,9 @@ TNM-O.owl
 --> Current solution: TumorCardinality subclassOf TumorQuality, [Solitary, Multiple] subclass(es)Of TumorCardinalityValueRegion subclassOf TumorQualityValueRegion 
 --> To discuss:	- other naming convention (NumberOfRegionalTumorLesions, TumorMultiplicity, ...)
 		- different way of modelling possibility of existence of multiple tumor within one organ
+
+3. Implementation of Representational Artefacts for UICC tumor staging
+--> Current solution: 
 
 Issues involving other (previously created) tumor entity files:
 
@@ -76,16 +101,11 @@ TNM-O_Anatomy.owl
 
 TNM-O_Liver.owl
 
-1. LiverTumor-Definition:
---> Aktuell: 		ICD-O-Code anschauen!!!!
-	LiverTumor ==	PrimaryTumorSiteClassifiedByMalignancy
-			and 'has part' some ('is included in' some Liver)
---> Zu diskutieren: Irgendwie sollte ein histologisches Assessment 'HCC' bzw. 'LiverTumor' einfließen, has part some (is included in some Liver) nicht eindeutig für LiverTumor (bspw. Pankreas-CA mit Infiltration der Leber)
-		Andererseits ist keine Definition von LiverTumor in der TNM-Klassifikation enthalten!	
+1. PrimaryTumor subclasses need to be tweaked to eventually be disjoint
+--> Radically different solution: Instead not making classes disjoint but using a rule after classification to opt for the highest T-category of all primary tumor classes that fit the individual
 
-2. PrimaryTumor subclasses need to be tweaked to eventually be disjoint
 --> Möglicherweise Einführung von MultipleLiverTumorsMax5cm == [...] and 'is included in' only Liver / and 'has part' only (is included in' some Liver) ... 
---> Einführung einer Hierarchischen Gliederung der Primärtumoren bspw. InvasiveLiverTumorOfOtherAnatomicalStructures {PerforatingLiverTumorOfVisceralPeritoneum, ...}
+
 --> generelle SOP die PrimaryTumor-Klassen so nah wie möglich an der Struktur des TNM-Texts zu modellieren?
 		Bsp.: VascularInvasiveLiverTumorOfLargerBranchesOfHepaticAndPortalVeins:= LiverTumor
  												and ('has part' some ('is included in' some 
@@ -93,26 +113,23 @@ TNM-O_Liver.owl
 		Andererseits bedeutet dies automatisch eine Gefäßinvasivität -> Da Gefäßinvasivität als TumorQuality modelliert wurde, kann das nicht erfasst werden ohne Gefäßinvasivität explizit zur Definition hinzuzufügen.
 		Mögliche Lösung: VascularInvasive könnte so definiert werden, dass der zugehörige Tumor ein Gefäß infiltriert.	 
 
-3. Modellierung von T4-Tumor Leber mit Perforation des visz. Peritoneums (Alternative: hasPart some SerosaOfLiver (subclass of VisceralPeritoneum))
---> Aktuell gelöst: hasPart some VisceralPeritoneum
-
-4. Umbenennung NoAssessmentOfPrimaryTumor in NotAssessedPrimaryTumor
+2. Umbenennung NoAssessmentOfPrimaryTumor in NotAssessedPrimaryTumor
 --> Aktuell: NoAssessmentOfPrimaryTumor
 
-5. Auslagerung von NoEvidenceOfPrimaryLiverTumor außerhalb von PrimaryTumor, ist streng genommen kein PrimaryTumor!
+3. Auslagerung von NoEvidenceOfPrimaryLiverTumor außerhalb von PrimaryTumor, ist streng genommen kein PrimaryTumor!
 --> Aktuell: Geführt innerhalb von PrimaryTumor
 
-6. Im Konstrukt bearer of some (projects onto only y), warum keine existential restriction nach projects onto?
+4. Im Konstrukt bearer of some (projects onto only y), warum keine existential restriction nach projects onto?
 and ('is bearer of' some (TumorCardinality and ('projects onto' only Multiple)))
 and ('is bearer of' some ('projects onto' only SizeMoreThan5cm))
 --- Evtl liegt das daran, dass durch das "'is bearer of' some" vor der Klammer schon 'projects onto' existenz-quantifiziert wird? -Johannes
 
-7. Wird die KLasse Metastasis weiter definiert? MetastasisOfLiverTumor und Unterklassen müssen anders definiert werden, Metastasis sollte in das neue Konstrukt AnatomicalStructureClassifiedByMalignancy eingeordnet werden
+5. Wird die KLasse Metastasis weiter definiert? MetastasisOfLiverTumor und Unterklassen müssen anders definiert werden, Metastasis sollte in das neue Konstrukt AnatomicalStructureClassifiedByMalignancy eingeordnet werden
 
-8. Inder Englischen Klassifizierung gibt es die Tumorklassen T3a und T3b, aber dafür keine Tumorklassen T1a und T1b. In der deutschen Klassifizierung hingegen, gibt es T3a und T3b nicht, aber dafür T1a und T1b. Welche soll verwendet werden?
+6. Inder Englischen Klassifizierung gibt es die Tumorklassen T3a und T3b, aber dafür keine Tumorklassen T1a und T1b. In der deutschen Klassifizierung hingegen, gibt es T3a und T3b nicht, aber dafür T1a und T1b. Welche soll verwendet werden?
 --> Aktuell: Deutsche Klassifizierung
 
-9. Viele "oder" in Klassifikation machen Definition von LiverTumorTNM8_pT1,
+7. Viele "oder" in Klassifikation machen Definition von LiverTumorTNM8_pT1,
         LiverTumorTNM8_pT2 und LiverTumorTNM8_pT4 (wie auch cT) relativ komplex. Lösen
         durch weitere Unterklassen bei LiverTumor (siehe auch Punkt 2)?
 
@@ -126,6 +143,6 @@ Beispiel: NoEvidenceOfPrimaryTumor: 	ExocrinePankreasTumor and (isBearerOf some 
 
 2. Warum ist 'Size' als bspw. TumorSize keine TumorQuality subclassOf ObjectQuality, sondern in der TNM-O als Size subclassPf Quality eingeordnet? 
 
-3. Abbildung der UICC-Stadieneinteilung für Tumoren auf Basis der TNM-Klassifikation
+3. To do: Abbildung der UICC-Stadieneinteilung für Tumoren auf Basis der TNM-Klassifikation
 
 
