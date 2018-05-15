@@ -58,6 +58,8 @@ TNM-O_liver.owl
 						and ('is included in' some SetOfPancreaticIslets)) or ('is included in' some ExocrinePancreas))	 
 --> To discuss: - There is no definition of e.g. LiverTumor in TNM
 		- The current implementations 'is included in' some AnatomicalStructure does not account for other tumors infiltrating these structures and is thus not narrow enough to only include Tumors originating from a specific site.
+--> Similar Problem for e.g. LiverTumorAggregate ==	TumorAggregateClassifiedByMalignancy
+							and ('is part of' some (MalignantAnatomicalStructure and ('has part' some LiverTumor)))
 2.2 Implementation of ICD-O (localisation) Codes as rdf-comments for tumor entities in the format of ICD-O: X.yy
 --> To discuss: Different naming conventions, e.g. ICD-O-ID, ICD-O_ID, ... 
 2.3 General Modelling of different Tumors of a given entity
@@ -144,5 +146,10 @@ Beispiel: NoEvidenceOfPrimaryTumor: 	ExocrinePankreasTumor and (isBearerOf some 
 2. Warum ist 'Size' als bspw. TumorSize keine TumorQuality subclassOf ObjectQuality, sondern in der TNM-O als Size subclassPf Quality eingeordnet? 
 
 3. To do: Abbildung der UICC-Stadieneinteilung für Tumoren auf Basis der TNM-Klassifikation
+--> Frage: mit welcher Struktur wird der gesamte Tumor abgebildet, worauf sich dann die Stadieneinteilung beziehen könnte?
+--> Ist diese Klasse LiverTumorAggregate?
+--> Vorgeschlagene Nomenklaturänderung:
+		- LiverTumor --> LiverPrimaryTumor (bereits umgesetzt)
 
+4. Wie funktioniert das Klassifizierungsprogramm?
 

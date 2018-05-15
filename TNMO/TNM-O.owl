@@ -1309,6 +1309,22 @@ NotAssessedMalignantAnatomicalStructure subclassOf
     
 
 
+    <!-- http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInUICCStageGrouping -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInUICCStageGrouping">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInUICCStageGroupinginTNM8Classification -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInUICCStageGroupinginTNM8Classification">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInUICCStageGrouping"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/tnmo/TNM-O.owl#Size -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Size">
@@ -1662,6 +1678,14 @@ NotAssessedMalignantAnatomicalStructure subclassOf
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#TumorQualityValueRegion">
         <rdfs:subClassOf rdf:resource="http://purl.org/biotop/btl2.owl#ValueRegion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#UICCStaging -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#UICCStaging">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#RepresentationalArtefact"/>
     </owl:Class>
     
 

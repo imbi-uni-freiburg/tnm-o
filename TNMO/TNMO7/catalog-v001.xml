@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://purl.org/tnmo/TNM-O_Anatomy.owl/1" uri="file:/C:/Users/thoma/Desktop/TNM-O-Ontologie/Thomas/tnm-o/TNMO/TNM-O_Anatomy.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.org/biotop/btl2.owl" uri="file:/C:/Users/thoma/Desktop/TNM-O-Ontologie/Thomas/tnm-o/TNMO/btl2.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.org/tnmo/TNM-O.owl/1" uri="file:/C:/Users/thoma/Desktop/TNM-O-Ontologie/Thomas/tnm-o/TNMO/TNM-O.owl"/>
     <uri id="Imports Wizard Entry" name="http://purl.org/tnmo/TNM-O_Anatomy.owl/1" uri="file:/C:/Users/thoma/Desktop/TNM-O-Ontologie/Thomas_tnm-o/TNMO/TNM-O_Anatomy.owl"/>
     <uri id="Imports Wizard Entry" name="http://purl.org/biotop/btl2.owl" uri="file:/C:/Users/thoma/Desktop/TNM-O-Ontologie/Thomas_tnm-o/TNMO/btl2.owl"/>
     <uri id="Imports Wizard Entry" name="http://purl.org/tnmo/TNM-O.owl/1" uri="file:/C:/Users/thoma/Desktop/TNM-O-Ontologie/Thomas_tnm-o/TNMO/TNM-O.owl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1525978971614" name="http://purl.org/tnmo/TNM-O" uri="breast.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1525978971614" name="http://purl.org/tnmo/TNM-O_colorectal_7.owl" uri="colorectal.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1525978971614" name="http://purl.org/tnmo/TNM-O_lung_7.owl" uri="lung.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1526411220511" name="http://purl.org/tnmo/TNM-O" uri="breast.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1526411220511" name="http://purl.org/tnmo/TNM-O_colorectal_7.owl" uri="colorectal.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1526411220511" name="http://purl.org/tnmo/TNM-O_lung_7.owl" uri="lung.owl"/>
     </group>
 </catalog>
