@@ -1,14 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
-    <uri id="User Entered Import Resolution" name="http://purl.org/tnmo/TNM-O_Liver" uri="TNMO8/liver.owl"/>
-    <uri id="User Entered Import Resolution" name="http://purl.org/tnmo/TNM-O_Anatomy.owl/1" uri="TNM-O_Anatomy.owl"/>
-    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1526406894913" name="http://purl.org/biotop/btl2.owl" uri="btl2.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1526406894913" name="http://purl.org/tnmo/TNM-O" uri="TNMO7/breast.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1526406894913" name="http://purl.org/tnmo/TNM-O.owl" uri="TNM-O.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1526406894913" name="http://purl.org/tnmo/TNM-O_Anatomy.owl" uri="TNM-O_Anatomy.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1526406894913" name="http://purl.org/tnmo/TNM-O_colorectal_7.owl" uri="TNMO7/colorectal.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1526406894913" name="http://purl.org/tnmo/TNM-O_lung_7.owl" uri="TNMO7/lung.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1526406894913" name="http://www.semanticweb.org/thoma/ontologies/2018/3/liver" uri="TNMO8/liver.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.org/tnmo/TNM-O_Liver" uri="TNMO8/liver.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.org/tnmo/TNM-O_Anatomy.owl/1" uri="TNM-O_Anatomy.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.org/biotop/btl2.owl" uri="btl2.owl"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=false, version=2" prefer="public" xml:base="">
     </group>
 </catalog>
