@@ -483,6 +483,7 @@ public class BaseClassifier {
 			for (OWLClassAxiom x : set) {
 				OWLAxiom axiom = x.getAxiomWithoutAnnotations();
 				for (OWLClass classif : classifications) {
+                    // TODO String comparison in triple for-loop?!
 					if (axiom.toString().contains(classif.toString())) {
 						res.add(classif);
 					}
