@@ -127,6 +127,7 @@ and ('is bearer of' some ('projects onto' only SizeMoreThan5cm))
 --- Evtl liegt das daran, dass durch das "'is bearer of' some" vor der Klammer schon 'projects onto' existenz-quantifiziert wird? -Johannes
 
 5. Wird die KLasse Metastasis weiter definiert? MetastasisOfLiverTumor und Unterklassen müssen anders definiert werden, Metastasis sollte in das neue Konstrukt AnatomicalStructureClassifiedByMalignancy eingeordnet werden
+--> Aktuell: Metastasis ist Unterklasse von AnatomicalStructureClassifiedByMalignancy, Klasse MalignantAnatomicalStructure gelöscht
 
 6. Viele "oder" in Klassifikation machen Definition von LiverTumorTNM8_pT1,
         LiverTumorTNM8_pT2 und LiverTumorTNM8_pT4 (wie auch cT) relativ komplex. Lösen
@@ -148,9 +149,12 @@ Beispiel: NoEvidenceOfPrimaryTumor: 	ExocrinePankreasTumor and (isBearerOf some 
 
 3. To do: Abbildung der UICC-Stadieneinteilung für Tumoren auf Basis der TNM-Klassifikation
 --> Frage: mit welcher Struktur wird der gesamte Tumor abgebildet, worauf sich dann die Stadieneinteilung beziehen könnte?
+    - Auf die TNM Klassifikation. Tumor, Lymphknoten und Metastasen werden zuerst TNM-Code zugewiesen. Mit diesem Code kann eindeutig das UICC-Stadium bestimmt werden (Johannes)
 --> Ist diese Klasse LiverTumorAggregate?
 --> Vorgeschlagene Nomenklaturänderung:
 		- LiverTumor --> LiverPrimaryTumor (bereits umgesetzt)
+
+--> DONE. Definition wurde "gefreestyled". Beim nächsten Treffen Code Review
 
 4. Wie funktioniert das Klassifizierungsprogramm?
 
@@ -163,5 +167,5 @@ Johannes' Verständnis des Programms:
     - Individuen werden klassifiziert
         -> Subclasses werden mit Reasoner berechnet
         -> (Genaue Funktionsweise ist mir auch nicht klar)
-    - Klassifizierung wird zruückgegeben
+    - Klassifizierung wird zurückgegeben
     

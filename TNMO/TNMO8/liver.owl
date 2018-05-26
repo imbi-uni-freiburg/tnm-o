@@ -83,6 +83,12 @@
     
 
 
+    <!-- http://purl.org/tnmo/TNM-O.owl#AnatomicalStructureClassifiedByMalignancy -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#AnatomicalStructureClassifiedByMalignancy"/>
+    
+
+
     <!-- http://purl.org/tnmo/TNM-O.owl#Confinement -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Confinement"/>
@@ -95,15 +101,11 @@
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O.owl#MalignantAnatomicalStructure -->
-
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#MalignantAnatomicalStructure"/>
-    
-
-
     <!-- http://purl.org/tnmo/TNM-O.owl#Metastasis -->
 
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Metastasis"/>
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Metastasis">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#AnatomicalStructureClassifiedByMalignancy"/>
+    </owl:Class>
     
 
 
@@ -1880,27 +1882,6 @@
     <!-- http://purl.org/tnmo/TNM-O_Liver#LiverTumorAggregate -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTumorAggregate">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#TumorAggregateClassifiedByMalignancy"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isPartOf"/>
-                        <owl:someValuesFrom>
-                            <owl:Class>
-                                <owl:intersectionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#MalignantAnatomicalStructure"/>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#hasPart"/>
-                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverPrimaryTumor"/>
-                                    </owl:Restriction>
-                                </owl:intersectionOf>
-                            </owl:Class>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
