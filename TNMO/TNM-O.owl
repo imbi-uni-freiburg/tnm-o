@@ -1164,19 +1164,9 @@ Institute of Medical Informatics, Statistics and Documentation, Medical Universi
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O.owl#MalignantAnatomicalStructure -->
-
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#MalignantAnatomicalStructure">
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#AnatomicalStructure"/>
-    </owl:Class>
-    
-
-
     <!-- http://purl.org/tnmo/TNM-O.owl#Metastasis -->
 
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Metastasis">
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#MalignantAnatomicalStructure"/>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Metastasis"/>
     
 
 

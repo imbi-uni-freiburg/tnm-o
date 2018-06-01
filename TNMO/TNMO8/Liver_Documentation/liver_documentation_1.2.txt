@@ -106,38 +106,40 @@ TNM-O_Liver.owl
 1. PrimaryTumor subclasses need to be tweaked to eventually be disjoint
 --> Radically different solution: Instead not making classes disjoint but using a rule after classification to opt for the highest T-category of all primary tumor classes that fit the individual
 
---> Mˆglicherweise Einf¸hrung von MultipleLiverTumorsMax5cm == [...] and 'is included in' only Liver / and 'has part' only (is included in' some Liver) ... 
+--> M√∂glicherweise Einf√ºhrung von MultipleLiverTumorsMax5cm == [...] and 'is included in' only Liver / and 'has part' only (is included in' some Liver) ... 
 
---> generelle SOP die PrimaryTumor-Klassen so nah wie mˆglich an der Struktur des TNM-Texts zu modellieren?
+--> generelle SOP die PrimaryTumor-Klassen so nah wie m√∂glich an der Struktur des TNM-Texts zu modellieren?
 		Bsp.: VascularInvasiveLiverTumorOfLargerBranchesOfHepaticAndPortalVeins:= LiverTumor
  												and ('has part' some ('is included in' some 
    												 (LargerBranchOfHepaticVein or LargerBranchOfPortalVein)))
-		Andererseits bedeutet dies automatisch eine Gef‰ﬂinvasivit‰t -> Da Gef‰ﬂinvasivit‰t als TumorQuality modelliert wurde, kann das nicht erfasst werden ohne Gef‰ﬂinvasivit‰t explizit zur Definition hinzuzuf¸gen.
-		Mˆgliche Lˆsung: VascularInvasive kˆnnte so definiert werden, dass der zugehˆrige Tumor ein Gef‰ﬂ infiltriert.	 
+		Andererseits bedeutet dies automatisch eine Gef√§√üinvasivit√§t -> Da Gef√§√üinvasivit√§t als TumorQuality modelliert wurde, kann das nicht erfasst werden ohne Gef√§√üinvasivit√§t explizit zur Definition hinzuzuf√ºgen.
+		M√∂gliche L√∂sung: VascularInvasive k√∂nnte so definiert werden, dass der zugeh√∂rige Tumor ein Gef√§√ü infiltriert.	 
 
 2. Umbenennung NoAssessmentOfPrimaryTumor in NotAssessedPrimaryTumor
 --> Aktuell: NoAssessmentOfPrimaryTumor
 
-3. Auslagerung von NoEvidenceOfPrimaryLiverTumor auﬂerhalb von PrimaryTumor, ist streng genommen kein PrimaryTumor!
---> Aktuell: Gef¸hrt innerhalb von PrimaryTumor
+3. Auslagerung von NoEvidenceOfPrimaryLiverTumor au√üerhalb von PrimaryTumor, ist streng genommen kein PrimaryTumor!
+--> Aktuell: Gef√ºhrt innerhalb von PrimaryTumor
 
 4. Im Konstrukt bearer of some (projects onto only y), warum keine existential restriction nach projects onto?
 and ('is bearer of' some (TumorCardinality and ('projects onto' only Multiple)))
 and ('is bearer of' some ('projects onto' only SizeMoreThan5cm))
 --- Evtl liegt das daran, dass durch das "'is bearer of' some" vor der Klammer schon 'projects onto' existenz-quantifiziert wird? -Johannes
 
-5. Wird die KLasse Metastasis weiter definiert? MetastasisOfLiverTumor und Unterklassen m¸ssen anders definiert werden, Metastasis sollte in das neue Konstrukt AnatomicalStructureClassifiedByMalignancy eingeordnet werden
+5. Wird die KLasse Metastasis weiter definiert? MetastasisOfLiverTumor und Unterklassen m√ºssen anders definiert werden, Metastasis sollte in das neue Konstrukt AnatomicalStructureClassifiedByMalignancy eingeordnet werden
+--> Aktuell: Metastasis ist Unterklasse von AnatomicalStructureClassifiedByMalignancy, Klasse MalignantAnatomicalStructure gel√∂scht
 
-6. Inder Englischen Klassifizierung gibt es die Tumorklassen T3a und T3b, aber daf¸r keine Tumorklassen T1a und T1b. In der deutschen Klassifizierung hingegen, gibt es T3a und T3b nicht, aber daf¸r T1a und T1b. Welche soll verwendet werden?
---> Aktuell: Deutsche Klassifizierung
-
-7. Viele "oder" in Klassifikation machen Definition von LiverTumorTNM8_pT1,
-        LiverTumorTNM8_pT2 und LiverTumorTNM8_pT4 (wie auch cT) relativ komplex. Lˆsen
+6. Viele "oder" in Klassifikation machen Definition von LiverTumorTNM8_pT1,
+        LiverTumorTNM8_pT2 und LiverTumorTNM8_pT4 (wie auch cT) relativ komplex. L√∂sen
         durch weitere Unterklassen bei LiverTumor (siehe auch Punkt 2)?
+
+7. Test Individuals: Wie genau kann man mit Test Indivuals die Ontologie √ºberpr√ºfen? Also ob Tumor, Lymphknoten und Metastasen
+         als richtige TNM Klassifizierung bestimmt wird?
+--> Aktuell: Individuals TestTumor, TestLymphNodes und TestMetastasis wurden eingef√ºgt
 
 TNM-O:
 
-1. PrimaryTumor 'NoEvidence' und 'NoAssessment' in allen Modulen unterschiedlich gelˆst
+1. PrimaryTumor 'NoEvidence' und 'NoAssessment' in allen Modulen unterschiedlich gel√∂st
 Beispiel: NoEvidenceOfPrimaryTumor: 	ExocrinePankreasTumor and (isBearerOf some (projectsOnto only NoEvidence))
 					BreastTumor and (isBearerOf some (AssessmentQuality and (projectsOnto some NoEvidence) and (projectsOnto only NoEvidence)))
 --> Aktuell:	NoEvidenceOfPrimaryLiverTumor: LiverTumor and ('is bearer of' some ('projects onto' only NoEvidence)
@@ -145,11 +147,25 @@ Beispiel: NoEvidenceOfPrimaryTumor: 	ExocrinePankreasTumor and (isBearerOf some 
 
 2. Warum ist 'Size' als bspw. TumorSize keine TumorQuality subclassOf ObjectQuality, sondern in der TNM-O als Size subclassPf Quality eingeordnet? 
 
-3. To do: Abbildung der UICC-Stadieneinteilung f¸r Tumoren auf Basis der TNM-Klassifikation
---> Frage: mit welcher Struktur wird der gesamte Tumor abgebildet, worauf sich dann die Stadieneinteilung beziehen kˆnnte?
+3. To do: Abbildung der UICC-Stadieneinteilung f√ºr Tumoren auf Basis der TNM-Klassifikation
+--> Frage: mit welcher Struktur wird der gesamte Tumor abgebildet, worauf sich dann die Stadieneinteilung beziehen k√∂nnte?
+    - Auf die TNM Klassifikation. Tumor, Lymphknoten und Metastasen werden zuerst TNM-Code zugewiesen. Mit diesem Code kann eindeutig das UICC-Stadium bestimmt werden (Johannes)
 --> Ist diese Klasse LiverTumorAggregate?
---> Vorgeschlagene Nomenklatur‰nderung:
+--> Vorgeschlagene Nomenklatur√§nderung:
 		- LiverTumor --> LiverPrimaryTumor (bereits umgesetzt)
+
+--> DONE. Definition wurde "gefreestyled". Beim n√§chsten Treffen Code Review
 
 4. Wie funktioniert das Klassifizierungsprogramm?
 
+Johannes' Verst√§ndnis des Programms:
+    - Eingabe von TNMO-Version, Organ und Pfad zum Input File
+    - Classifier zu gew√§hltem Organ und Version wird erstellt
+        -> Entsprechende Ontologie wird geladen
+    - Individuen mit Eigenschaften aus Input File wird erzeugt
+        -> Tumor, Lymphknoten und Metastasen Individuen
+    - Individuen werden klassifiziert
+        -> Subclasses werden mit Reasoner berechnet
+        -> (Genaue Funktionsweise ist mir auch nicht klar)
+    - Klassifizierung wird zur√ºckgegeben
+    
