@@ -71,6 +71,12 @@
     
 
 
+    <!-- http://purl.org/tnmo/TNM-O.owl#Multiple -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Multiple"/>
+    
+
+
     <!-- http://purl.org/tnmo/TNM-O.owl#NoEvidence -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#NoEvidence"/>
@@ -101,9 +107,21 @@
     
 
 
+    <!-- http://purl.org/tnmo/TNM-O.owl#SizeMoreThan5cm -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#SizeMoreThan5cm"/>
+    
+
+
     <!-- http://purl.org/tnmo/TNM-O.owl#Solitary -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Solitary"/>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#VascularInvasive -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#VascularInvasive"/>
     
 
 
@@ -173,6 +191,18 @@
     
 
 
+    <!-- http://purl.org/tnmo/TNM-O_Liver#RepresentationalUnitInLiverTNM8ClinicalClassification -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Liver#RepresentationalUnitInLiverTNM8ClinicalClassification"/>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Liver#SizeMax5cm -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Liver#SizeMax5cm"/>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -214,7 +244,7 @@
     <!-- http://putl.org/tnmo/TNMO_LiverTest#Test_M1_TNM8 -->
 
     <owl:NamedIndividual rdf:about="http://putl.org/tnmo/TNMO_LiverTest#Test_M1_TNM8">
-        <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Liver#RepresentationalUnitInLiverTNM8Classification"/>
+        <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Liver#RepresentationalUnitInLiverTNM8ClinicalClassification"/>
     </owl:NamedIndividual>
     
 
@@ -237,7 +267,7 @@
     <!-- http://putl.org/tnmo/TNMO_LiverTest#Test_N0_TNM8 -->
 
     <owl:NamedIndividual rdf:about="http://putl.org/tnmo/TNMO_LiverTest#Test_N0_TNM8">
-        <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Liver#RepresentationalUnitInLiverTNM8Classification"/>
+        <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Liver#RepresentationalUnitInLiverTNM8ClinicalClassification"/>
     </owl:NamedIndividual>
     
 
@@ -246,6 +276,11 @@
 
     <owl:NamedIndividual rdf:about="http://putl.org/tnmo/TNMO_LiverTest#Test_N0_tumor">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverTumorAggregateAsRelatedToMetastaticRegionalLymphNodes"/>
+        <rdf:type>
+            <owl:Class>
+                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#NotAssessedMalignantAnatomicalStructure"/>
+            </owl:Class>
+        </rdf:type>
         <rdf:type>
             <owl:Class>
                 <owl:complementOf>
@@ -264,7 +299,7 @@
     <!-- http://putl.org/tnmo/TNMO_LiverTest#Test_N1_TNM8 -->
 
     <owl:NamedIndividual rdf:about="http://putl.org/tnmo/TNMO_LiverTest#Test_N1_TNM8">
-        <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Liver#RepresentationalUnitInLiverTNM8Classification"/>
+        <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Liver#RepresentationalUnitInLiverTNM8ClinicalClassification"/>
     </owl:NamedIndividual>
     
 
@@ -273,6 +308,11 @@
 
     <owl:NamedIndividual rdf:about="http://putl.org/tnmo/TNMO_LiverTest#Test_N1_tumor">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverTumorAggregateAsRelatedToMetastaticRegionalLymphNodes"/>
+        <rdf:type>
+            <owl:Class>
+                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#NotAssessedMalignantAnatomicalStructure"/>
+            </owl:Class>
+        </rdf:type>
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#hasPart"/>
@@ -287,7 +327,7 @@
     <!-- http://putl.org/tnmo/TNMO_LiverTest#Test_NX_TNM8 -->
 
     <owl:NamedIndividual rdf:about="http://putl.org/tnmo/TNMO_LiverTest#Test_NX_TNM8">
-        <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Liver#RepresentationalUnitInLiverTNM8Classification"/>
+        <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Liver#RepresentationalUnitInLiverTNM8ClinicalClassification"/>
     </owl:NamedIndividual>
     
 
@@ -305,7 +345,7 @@
     <!-- http://putl.org/tnmo/TNMO_LiverTest#Test_T0_TNM8 -->
 
     <owl:NamedIndividual rdf:about="http://putl.org/tnmo/TNMO_LiverTest#Test_T0_TNM8">
-        <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Liver#RepresentationalUnitInLiverTNM8Classification"/>
+        <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Liver#RepresentationalUnitInLiverTNM8ClinicalClassification"/>
     </owl:NamedIndividual>
     
 
@@ -333,7 +373,7 @@
     <!-- http://putl.org/tnmo/TNMO_LiverTest#Test_T1a_TNM8 -->
 
     <owl:NamedIndividual rdf:about="http://putl.org/tnmo/TNMO_LiverTest#Test_T1a_TNM8">
-        <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Liver#RepresentationalUnitInLiverTNM8Classification"/>
+        <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Liver#RepresentationalUnitInLiverTNM8ClinicalClassification"/>
     </owl:NamedIndividual>
     
 
@@ -428,7 +468,7 @@
     <!-- http://putl.org/tnmo/TNMO_LiverTest#Test_T1b_TNM8 -->
 
     <owl:NamedIndividual rdf:about="http://putl.org/tnmo/TNMO_LiverTest#Test_T1b_TNM8">
-        <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Liver#RepresentationalUnitInLiverTNM8Classification"/>
+        <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Liver#RepresentationalUnitInLiverTNM8ClinicalClassification"/>
     </owl:NamedIndividual>
     
 
@@ -531,45 +571,329 @@
     
 
 
-    <!-- http://putl.org/tnmo/TNMO_LiverTest#Test_T2_TNM8 -->
+    <!-- http://putl.org/tnmo/TNMO_LiverTest#Test_T2_TNM8_MultipleLiverTumorsMax5cm -->
 
-    <owl:NamedIndividual rdf:about="http://putl.org/tnmo/TNMO_LiverTest#Test_T2_TNM8">
-        <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Liver#RepresentationalUnitInLiverTNM8Classification"/>
+    <owl:NamedIndividual rdf:about="http://putl.org/tnmo/TNMO_LiverTest#Test_T2_TNM8_MultipleLiverTumorsMax5cm">
+        <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Liver#RepresentationalUnitInLiverTNM8ClinicalClassification"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://putl.org/tnmo/TNMO_LiverTest#Test_T2_tumor -->
+    <!-- http://putl.org/tnmo/TNMO_LiverTest#Test_T2_TNM8_VascularInvasiveSolitaryLiverTumorMoreThan2cm -->
 
-    <owl:NamedIndividual rdf:about="http://putl.org/tnmo/TNMO_LiverTest#Test_T2_tumor"/>
+    <owl:NamedIndividual rdf:about="http://putl.org/tnmo/TNMO_LiverTest#Test_T2_TNM8_VascularInvasiveSolitaryLiverTumorMoreThan2cm">
+        <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Liver#RepresentationalUnitInLiverTNM8ClinicalClassification"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://putl.org/tnmo/TNMO_LiverTest#Test_T2_tumor_MultipleLiverTumorsMax5cm -->
+
+    <owl:NamedIndividual rdf:about="http://putl.org/tnmo/TNMO_LiverTest#Test_T2_tumor_MultipleLiverTumorsMax5cm">
+        <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverPrimaryTumor"/>
+        <rdf:type>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#hasPart"/>
+                        <owl:someValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isIncludedIn"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#OrganAdjecentToLiver"/>
+                                            <owl:Class>
+                                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#Gallbladder"/>
+                                            </owl:Class>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:complementOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#hasPart"/>
+                        <owl:someValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isIncludedIn"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:unionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#LargerBranchOfHepaticVein"/>
+                                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#LargerBranchOfPortalVein"/>
+                                        </owl:unionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:complementOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isIncludedIn"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#VisceralPeritoneum"/>
+                    </owl:Restriction>
+                </owl:complementOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isBearerOf"/>
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#projectsOnto"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O.owl#Multiple"/>
+                    </owl:Restriction>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isBearerOf"/>
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#projectsOnto"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Liver#SizeMax5cm"/>
+                    </owl:Restriction>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+        <btl2:isRepresentedBy rdf:resource="http://putl.org/tnmo/TNMO_LiverTest#Test_T2_TNM8_MultipleLiverTumorsMax5cm"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://putl.org/tnmo/TNMO_LiverTest#Test_T2_tumor_VascularInvasiveSolitaryLiverTumorMoreThan2cm -->
+
+    <owl:NamedIndividual rdf:about="http://putl.org/tnmo/TNMO_LiverTest#Test_T2_tumor_VascularInvasiveSolitaryLiverTumorMoreThan2cm">
+        <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverPrimaryTumor"/>
+        <rdf:type>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#hasPart"/>
+                        <owl:someValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isIncludedIn"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#OrganAdjecentToLiver"/>
+                                            <owl:Class>
+                                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#Gallbladder"/>
+                                            </owl:Class>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:complementOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#hasPart"/>
+                        <owl:someValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isIncludedIn"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:unionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#LargerBranchOfHepaticVein"/>
+                                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#LargerBranchOfPortalVein"/>
+                                        </owl:unionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:complementOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isIncludedIn"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#VisceralPeritoneum"/>
+                    </owl:Restriction>
+                </owl:complementOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isBearerOf"/>
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#projectsOnto"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O.owl#SizeMoreThan2cm"/>
+                    </owl:Restriction>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isBearerOf"/>
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#projectsOnto"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O.owl#Solitary"/>
+                    </owl:Restriction>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isBearerOf"/>
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#projectsOnto"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O.owl#VascularInvasive"/>
+                    </owl:Restriction>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+        <btl2:isRepresentedBy rdf:resource="http://putl.org/tnmo/TNMO_LiverTest#Test_T2_TNM8_VascularInvasiveSolitaryLiverTumorMoreThan2cm"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://putl.org/tnmo/TNMO_LiverTest#Test_T3_TNM8 -->
 
     <owl:NamedIndividual rdf:about="http://putl.org/tnmo/TNMO_LiverTest#Test_T3_TNM8">
-        <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Liver#RepresentationalUnitInLiverTNM8Classification"/>
+        <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Liver#RepresentationalUnitInLiverTNM8ClinicalClassification"/>
     </owl:NamedIndividual>
     
 
 
     <!-- http://putl.org/tnmo/TNMO_LiverTest#Test_T3_tumor -->
 
-    <owl:NamedIndividual rdf:about="http://putl.org/tnmo/TNMO_LiverTest#Test_T3_tumor"/>
-    
-
-
-    <!-- http://putl.org/tnmo/TNMO_LiverTest#Test_T4_TNM8 -->
-
-    <owl:NamedIndividual rdf:about="http://putl.org/tnmo/TNMO_LiverTest#Test_T4_TNM8">
-        <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Liver#RepresentationalUnitInLiverTNM8Classification"/>
+    <owl:NamedIndividual rdf:about="http://putl.org/tnmo/TNMO_LiverTest#Test_T3_tumor">
+        <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverPrimaryTumor"/>
+        <rdf:type>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#hasPart"/>
+                        <owl:someValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isIncludedIn"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#OrganAdjecentToLiver"/>
+                                            <owl:Class>
+                                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#Gallbladder"/>
+                                            </owl:Class>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:complementOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#hasPart"/>
+                        <owl:someValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isIncludedIn"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:unionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#LargerBranchOfHepaticVein"/>
+                                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#LargerBranchOfPortalVein"/>
+                                        </owl:unionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:complementOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isIncludedIn"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#VisceralPeritoneum"/>
+                    </owl:Restriction>
+                </owl:complementOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isBearerOf"/>
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#projectsOnto"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O.owl#Multiple"/>
+                    </owl:Restriction>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isBearerOf"/>
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#projectsOnto"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O.owl#SizeMoreThan5cm"/>
+                    </owl:Restriction>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+        <btl2:isRepresentedBy rdf:resource="http://putl.org/tnmo/TNMO_LiverTest#Test_T3_TNM8"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://putl.org/tnmo/TNMO_LiverTest#Test_T4_tumor -->
+    <!-- http://putl.org/tnmo/TNMO_LiverTest#Test_T4_TNM8_InvasiveLiverTumorOfNeighboringBodyParts -->
 
-    <owl:NamedIndividual rdf:about="http://putl.org/tnmo/TNMO_LiverTest#Test_T4_tumor">
+    <owl:NamedIndividual rdf:about="http://putl.org/tnmo/TNMO_LiverTest#Test_T4_TNM8_InvasiveLiverTumorOfNeighboringBodyParts">
+        <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Liver#RepresentationalUnitInLiverTNM8ClinicalClassification"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://putl.org/tnmo/TNMO_LiverTest#Test_T4_TNM8_PerforatingLiverTumorOfVisceralPeritoneum -->
+
+    <owl:NamedIndividual rdf:about="http://putl.org/tnmo/TNMO_LiverTest#Test_T4_TNM8_PerforatingLiverTumorOfVisceralPeritoneum">
+        <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Liver#RepresentationalUnitInLiverTNM8ClinicalClassification"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://putl.org/tnmo/TNMO_LiverTest#Test_T4_TNM8_VascularInvasiveLiverTumorOfLargerBranchesOfHepaticAndPortalVeins -->
+
+    <owl:NamedIndividual rdf:about="http://putl.org/tnmo/TNMO_LiverTest#Test_T4_TNM8_VascularInvasiveLiverTumorOfLargerBranchesOfHepaticAndPortalVeins">
+        <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Liver#RepresentationalUnitInLiverTNM8ClinicalClassification"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://putl.org/tnmo/TNMO_LiverTest#Test_T4_tumor_InvasiveLiverTumorOfNeighboringBodyParts -->
+
+    <owl:NamedIndividual rdf:about="http://putl.org/tnmo/TNMO_LiverTest#Test_T4_tumor_InvasiveLiverTumorOfNeighboringBodyParts">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverPrimaryTumor"/>
         <rdf:type>
             <owl:Restriction>
@@ -591,6 +915,41 @@
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdf:type>
+        <btl2:isRepresentedBy rdf:resource="http://putl.org/tnmo/TNMO_LiverTest#Test_T4_TNM8_InvasiveLiverTumorOfNeighboringBodyParts"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://putl.org/tnmo/TNMO_LiverTest#Test_T4_tumor_PerforatingLiverTumorOfVisceralPeritoneum -->
+
+    <owl:NamedIndividual rdf:about="http://putl.org/tnmo/TNMO_LiverTest#Test_T4_tumor_PerforatingLiverTumorOfVisceralPeritoneum">
+        <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverPrimaryTumor"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isBearerOf"/>
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#projectsOnto"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O.owl#Invasive"/>
+                    </owl:Restriction>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isIncludedIn"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#VisceralPeritoneum"/>
+            </owl:Restriction>
+        </rdf:type>
+        <btl2:isRepresentedBy rdf:resource="http://putl.org/tnmo/TNMO_LiverTest#Test_T4_TNM8_PerforatingLiverTumorOfVisceralPeritoneum"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://putl.org/tnmo/TNMO_LiverTest#Test_T4_tumor_VascularInvasiveLiverTumorOfLargerBranchesOfHepaticAndPortalVeins -->
+
+    <owl:NamedIndividual rdf:about="http://putl.org/tnmo/TNMO_LiverTest#Test_T4_tumor_VascularInvasiveLiverTumorOfLargerBranchesOfHepaticAndPortalVeins">
+        <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverPrimaryTumor"/>
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#hasPart"/>
@@ -609,46 +968,7 @@
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isBearerOf"/>
-                <owl:someValuesFrom>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#projectsOnto"/>
-                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O.owl#Invasive"/>
-                    </owl:Restriction>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isBearerOf"/>
-                <owl:someValuesFrom>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#projectsOnto"/>
-                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O.owl#SizeMax2cm"/>
-                    </owl:Restriction>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isBearerOf"/>
-                <owl:someValuesFrom>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#projectsOnto"/>
-                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O.owl#Solitary"/>
-                    </owl:Restriction>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isIncludedIn"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#VisceralPeritoneum"/>
-            </owl:Restriction>
-        </rdf:type>
-        <btl2:isRepresentedBy rdf:resource="http://putl.org/tnmo/TNMO_LiverTest#Test_T4_TNM8"/>
+        <btl2:isRepresentedBy rdf:resource="http://putl.org/tnmo/TNMO_LiverTest#Test_T4_TNM8_VascularInvasiveLiverTumorOfLargerBranchesOfHepaticAndPortalVeins"/>
     </owl:NamedIndividual>
     
 
@@ -656,14 +976,18 @@
     <!-- http://putl.org/tnmo/TNMO_LiverTest#Test_TX_TNM8 -->
 
     <owl:NamedIndividual rdf:about="http://putl.org/tnmo/TNMO_LiverTest#Test_TX_TNM8">
-        <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Liver#RepresentationalUnitInLiverTNM8Classification"/>
+        <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Liver#RepresentationalUnitInLiverTNM8ClinicalClassification"/>
     </owl:NamedIndividual>
     
 
 
     <!-- http://putl.org/tnmo/TNMO_LiverTest#Test_TX_tumor -->
 
-    <owl:NamedIndividual rdf:about="http://putl.org/tnmo/TNMO_LiverTest#Test_TX_tumor"/>
+    <owl:NamedIndividual rdf:about="http://putl.org/tnmo/TNMO_LiverTest#Test_TX_tumor">
+        <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O.owl#NotAssessedMalignantAnatomicalStructure"/>
+        <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverPrimaryTumor"/>
+        <btl2:isRepresentedBy rdf:resource="http://putl.org/tnmo/TNMO_LiverTest#Test_TX_TNM8"/>
+    </owl:NamedIndividual>
 </rdf:RDF>
 
 
