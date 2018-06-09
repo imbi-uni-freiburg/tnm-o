@@ -197,6 +197,12 @@
     
 
 
+    <!-- http://purl.org/tnmo/TNM-O_Liver#RepresentationalUnitInLiverUICCStageGroupingInTNM8Classification -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Liver#RepresentationalUnitInLiverUICCStageGroupingInTNM8Classification"/>
+    
+
+
     <!-- http://purl.org/tnmo/TNM-O_Liver#SizeMax5cm -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Liver#SizeMax5cm"/>
@@ -218,6 +224,12 @@
 
     <owl:NamedIndividual rdf:about="http://putl.org/tnmo/TNMO_LiverTest#Test_M0_TNM8">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Liver#RepresentationalUnitInLiverTNM8Classification"/>
+        <btl2:isRepresentedBy rdf:resource="http://putl.org/tnmo/TNMO_LiverTest#Test_StageIA"/>
+        <btl2:isRepresentedBy rdf:resource="http://putl.org/tnmo/TNMO_LiverTest#Test_StageIB"/>
+        <btl2:isRepresentedBy rdf:resource="http://putl.org/tnmo/TNMO_LiverTest#Test_StageII"/>
+        <btl2:isRepresentedBy rdf:resource="http://putl.org/tnmo/TNMO_LiverTest#Test_StageIIIA"/>
+        <btl2:isRepresentedBy rdf:resource="http://putl.org/tnmo/TNMO_LiverTest#Test_StageIIIB"/>
+        <btl2:isRepresentedBy rdf:resource="http://putl.org/tnmo/TNMO_LiverTest#Test_StageIVA"/>
     </owl:NamedIndividual>
     
 
@@ -237,6 +249,7 @@
             </owl:Class>
         </rdf:type>
         <btl2:isRepresentedBy rdf:resource="http://putl.org/tnmo/TNMO_LiverTest#Test_M0_TNM8"/>
+        <btl2:isRepresentedBy rdf:resource="http://putl.org/tnmo/TNMO_LiverTest#Test_StageIA"/>
     </owl:NamedIndividual>
     
 
@@ -245,6 +258,7 @@
 
     <owl:NamedIndividual rdf:about="http://putl.org/tnmo/TNMO_LiverTest#Test_M1_TNM8">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Liver#RepresentationalUnitInLiverTNM8ClinicalClassification"/>
+        <btl2:isRepresentedBy rdf:resource="http://putl.org/tnmo/TNMO_LiverTest#Test_StageIVB"/>
     </owl:NamedIndividual>
     
 
@@ -268,6 +282,11 @@
 
     <owl:NamedIndividual rdf:about="http://putl.org/tnmo/TNMO_LiverTest#Test_N0_TNM8">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Liver#RepresentationalUnitInLiverTNM8ClinicalClassification"/>
+        <btl2:isRepresentedBy rdf:resource="http://putl.org/tnmo/TNMO_LiverTest#Test_StageIA"/>
+        <btl2:isRepresentedBy rdf:resource="http://putl.org/tnmo/TNMO_LiverTest#Test_StageIB"/>
+        <btl2:isRepresentedBy rdf:resource="http://putl.org/tnmo/TNMO_LiverTest#Test_StageII"/>
+        <btl2:isRepresentedBy rdf:resource="http://putl.org/tnmo/TNMO_LiverTest#Test_StageIIIA"/>
+        <btl2:isRepresentedBy rdf:resource="http://putl.org/tnmo/TNMO_LiverTest#Test_StageIIIB"/>
     </owl:NamedIndividual>
     
 
@@ -300,6 +319,8 @@
 
     <owl:NamedIndividual rdf:about="http://putl.org/tnmo/TNMO_LiverTest#Test_N1_TNM8">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Liver#RepresentationalUnitInLiverTNM8ClinicalClassification"/>
+        <btl2:isRepresentedBy rdf:resource="http://putl.org/tnmo/TNMO_LiverTest#Test_StageIVA"/>
+        <btl2:isRepresentedBy rdf:resource="http://putl.org/tnmo/TNMO_LiverTest#Test_StageIVB"/>
     </owl:NamedIndividual>
     
 
@@ -342,6 +363,62 @@
     
 
 
+    <!-- http://putl.org/tnmo/TNMO_LiverTest#Test_StageIA -->
+
+    <owl:NamedIndividual rdf:about="http://putl.org/tnmo/TNMO_LiverTest#Test_StageIA">
+        <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Liver#RepresentationalUnitInLiverUICCStageGroupingInTNM8Classification"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://putl.org/tnmo/TNMO_LiverTest#Test_StageIB -->
+
+    <owl:NamedIndividual rdf:about="http://putl.org/tnmo/TNMO_LiverTest#Test_StageIB">
+        <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Liver#RepresentationalUnitInLiverUICCStageGroupingInTNM8Classification"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://putl.org/tnmo/TNMO_LiverTest#Test_StageII -->
+
+    <owl:NamedIndividual rdf:about="http://putl.org/tnmo/TNMO_LiverTest#Test_StageII">
+        <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Liver#RepresentationalUnitInLiverUICCStageGroupingInTNM8Classification"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://putl.org/tnmo/TNMO_LiverTest#Test_StageIIIA -->
+
+    <owl:NamedIndividual rdf:about="http://putl.org/tnmo/TNMO_LiverTest#Test_StageIIIA">
+        <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Liver#RepresentationalUnitInLiverUICCStageGroupingInTNM8Classification"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://putl.org/tnmo/TNMO_LiverTest#Test_StageIIIB -->
+
+    <owl:NamedIndividual rdf:about="http://putl.org/tnmo/TNMO_LiverTest#Test_StageIIIB">
+        <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Liver#RepresentationalUnitInLiverUICCStageGroupingInTNM8Classification"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://putl.org/tnmo/TNMO_LiverTest#Test_StageIVA -->
+
+    <owl:NamedIndividual rdf:about="http://putl.org/tnmo/TNMO_LiverTest#Test_StageIVA">
+        <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Liver#RepresentationalUnitInLiverUICCStageGroupingInTNM8Classification"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://putl.org/tnmo/TNMO_LiverTest#Test_StageIVB -->
+
+    <owl:NamedIndividual rdf:about="http://putl.org/tnmo/TNMO_LiverTest#Test_StageIVB">
+        <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Liver#RepresentationalUnitInLiverUICCStageGroupingInTNM8Classification"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://putl.org/tnmo/TNMO_LiverTest#Test_T0_TNM8 -->
 
     <owl:NamedIndividual rdf:about="http://putl.org/tnmo/TNMO_LiverTest#Test_T0_TNM8">
@@ -374,6 +451,7 @@
 
     <owl:NamedIndividual rdf:about="http://putl.org/tnmo/TNMO_LiverTest#Test_T1a_TNM8">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Liver#RepresentationalUnitInLiverTNM8ClinicalClassification"/>
+        <btl2:isRepresentedBy rdf:resource="http://putl.org/tnmo/TNMO_LiverTest#Test_StageIA"/>
     </owl:NamedIndividual>
     
 
@@ -469,6 +547,7 @@
 
     <owl:NamedIndividual rdf:about="http://putl.org/tnmo/TNMO_LiverTest#Test_T1b_TNM8">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Liver#RepresentationalUnitInLiverTNM8ClinicalClassification"/>
+        <btl2:isRepresentedBy rdf:resource="http://putl.org/tnmo/TNMO_LiverTest#Test_StageIB"/>
     </owl:NamedIndividual>
     
 
@@ -575,6 +654,7 @@
 
     <owl:NamedIndividual rdf:about="http://putl.org/tnmo/TNMO_LiverTest#Test_T2_TNM8_MultipleLiverTumorsMax5cm">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Liver#RepresentationalUnitInLiverTNM8ClinicalClassification"/>
+        <btl2:isRepresentedBy rdf:resource="http://putl.org/tnmo/TNMO_LiverTest#Test_StageII"/>
     </owl:NamedIndividual>
     
 
@@ -583,6 +663,7 @@
 
     <owl:NamedIndividual rdf:about="http://putl.org/tnmo/TNMO_LiverTest#Test_T2_TNM8_VascularInvasiveSolitaryLiverTumorMoreThan2cm">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Liver#RepresentationalUnitInLiverTNM8ClinicalClassification"/>
+        <btl2:isRepresentedBy rdf:resource="http://putl.org/tnmo/TNMO_LiverTest#Test_StageIVA"/>
     </owl:NamedIndividual>
     
 
@@ -776,6 +857,7 @@
 
     <owl:NamedIndividual rdf:about="http://putl.org/tnmo/TNMO_LiverTest#Test_T3_TNM8">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Liver#RepresentationalUnitInLiverTNM8ClinicalClassification"/>
+        <btl2:isRepresentedBy rdf:resource="http://putl.org/tnmo/TNMO_LiverTest#Test_StageIIIA"/>
     </owl:NamedIndividual>
     
 
@@ -871,6 +953,7 @@
 
     <owl:NamedIndividual rdf:about="http://putl.org/tnmo/TNMO_LiverTest#Test_T4_TNM8_InvasiveLiverTumorOfNeighboringBodyParts">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Liver#RepresentationalUnitInLiverTNM8ClinicalClassification"/>
+        <btl2:isRepresentedBy rdf:resource="http://putl.org/tnmo/TNMO_LiverTest#Test_StageIIIB"/>
     </owl:NamedIndividual>
     
 
@@ -879,6 +962,7 @@
 
     <owl:NamedIndividual rdf:about="http://putl.org/tnmo/TNMO_LiverTest#Test_T4_TNM8_PerforatingLiverTumorOfVisceralPeritoneum">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Liver#RepresentationalUnitInLiverTNM8ClinicalClassification"/>
+        <btl2:isRepresentedBy rdf:resource="http://putl.org/tnmo/TNMO_LiverTest#Test_StageIVB"/>
     </owl:NamedIndividual>
     
 
