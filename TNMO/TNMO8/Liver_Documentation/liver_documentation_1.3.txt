@@ -62,7 +62,9 @@ TNM-O_liver.owl
 							and ('is part of' some (MalignantAnatomicalStructure and ('has part' some LiverTumor)))
 2.2 Implementation of ICD-O (localisation) Codes as rdf-comments for tumor entities in the format of ICD-O: X.yy
 --> To discuss: Different naming conventions, e.g. ICD-O-ID, ICD-O_ID, ... 
-2.3 General Modelling of different Tumors of a given entity
+2.3 General Modelling of different primary Tumors of a given entity
+--> Since primary tumors need to be disjoint additional statements have been added to the TNM text in order to achieve disjoint classes
+		- The lack of disjointness seems to be a general feature of TNM. T-Codes for TNM-Liver become disjoint only by introduction of a rule mandating ignoring of all classes that fit except the one with the highest rank (e.g. T4 over T1)   
 --> Current solution in Liver.owl: subclasses of LiverTumor are modells of all different different types of Tumors described in the T-category of TNM, without combining several of these in one class which corresponds to a certain TNM-Repres.-Artef. and without introducing a hierarchical structure 
 --> To discuss:	- Pragmatic solution: Combination or hierarchical organisation with easiest structure with the benefit of in some cases less convoluted equivalent definitions, easier
 		- Solution closer to 'reality', involving:
@@ -105,11 +107,7 @@ TNM-O_Anatomy.owl
 
 TNM-O_Liver.owl
 
-1. PrimaryTumor subclasses need to be tweaked to eventually be disjoint
---> Problem: zumindest die T-Kategorie der Leber-TNM ist nur dann eindeutig, dass zusätzlich die Regel "Bei mehrfacher Klassenzugehörigkeit wähle das höchste T-Stadium" befolgt wird.
-	- Daraus folgt für die Implementierung:
-			1. Die TNM ergänzen, sodass alle Klassen disjoint sind (aktuelle Lösung)
-			2. Möglichkeit finden, um die Regel an anderer Stelle umzusetzen.
+1.
 --> generelle SOP die PrimaryTumor-Klassen so nah wie möglich an der Struktur des TNM-Texts zu modellieren?
 		Bsp.: VascularInvasiveLiverTumorOfLargerBranchesOfHepaticAndPortalVeins:= LiverTumor
  												and ('has part' some ('is included in' some 
@@ -122,8 +120,6 @@ TNM-O_Liver.owl
 
 3. Auslagerung von NoEvidenceOfPrimaryLiverTumor außerhalb von PrimaryTumor, ist streng genommen kein PrimaryTumor!
 --> Aktuell: Geführt innerhalb von PrimaryTumor
-
-4. Wird die KLasse Metastasis weiter definiert? MetastasisOfLiverTumor und Unterklassen müssen anders definiert werden, Metastasis sollte in das neue Konstrukt AnatomicalStructureClassifiedByMalignancy eingeordnet werden
 
 
 TNM-O:
