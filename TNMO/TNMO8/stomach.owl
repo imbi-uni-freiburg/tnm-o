@@ -1,0 +1,631 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.org/tnmo/TNM-O_Stomach#"
+     xml:base="http://purl.org/tnmo/TNM-O_Stomach"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#">
+    <owl:Ontology rdf:about="http://purl.org/tnmo/TNM-O_Stomach">
+        <owl:imports rdf:resource="http://purl.org/tnmo/TNM-O.owl/1"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Stomach#DistantMetastasisOfStomachTumor -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Stomach#DistantMetastasisOfStomachTumor">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#MetastasisOfStomachTumor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Stomach#MetastasisOfStomachTumor -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Stomach#MetastasisOfStomachTumor">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Metastasis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Stomach#MetastaticRegionalLymphNodeOfStomachTumor -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Stomach#MetastaticRegionalLymphNodeOfStomachTumor">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#MetastasisOfStomachTumor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Stomach#NoAssessmentOfPrimaryStomachTumor -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Stomach#NoAssessmentOfPrimaryStomachTumor">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#NotAssessedMalignantAnatomicalStructure"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachPrimaryTumor"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#NotAssessedMalignantAnatomicalStructure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachTNM8Classification -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachTNM8Classification">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInTNM8Classification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachTNM8ClinicalClassification -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachTNM8ClinicalClassification">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachTNM8Classification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachTNM8PathologicalClassification -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachTNM8PathologicalClassification">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachTNM8Classification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachUICCStageGroupingInTNM8Classification -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachUICCStageGroupingInTNM8Classification">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInUICCStageGroupinginTNM8Classification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Stomach#StomachPrimaryTumor -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachPrimaryTumor">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#PrimaryTumorSiteClassifiedByMalignancy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cM -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cM">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachTNM8ClinicalClassification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cM0 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cM0">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cM"/>
+        <owl:disjointWith rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cM1"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cM1 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cM1">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cM"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cN -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cN">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachTNM8ClinicalClassification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cN0 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cN0">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cN"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cN1 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cN1">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cN"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cN2 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cN2">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cN"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cN3 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cN3">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cN"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cN3a -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cN3a">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cN3"/>
+        <owl:disjointWith rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cN3b"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cN3b -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cN3b">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cN3"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cNX -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cNX">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cN"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cT -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cT">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachTNM8ClinicalClassification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cT0 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cT0">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cT1 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cT1">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cT1a -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cT1a">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cT1"/>
+        <owl:disjointWith rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cT1b"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cT1b -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cT1b">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cT1"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cT2 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cT2">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cT3 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cT3">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cT4 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cT4">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cT4a -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cT4a">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cT4"/>
+        <owl:disjointWith rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cT4b"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cT4b -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cT4b">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cT4"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cTTis -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cTTis">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cTX -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cTX">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pM -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pM">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachTNM8PathologicalClassification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pM0 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pM0">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pM"/>
+        <owl:disjointWith rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pM1"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pM1 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pM1">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pM"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pN -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pN">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachTNM8PathologicalClassification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pN0 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pN0">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pN"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pN1 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pN1">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pN"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pN2 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pN2">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pN"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pN3 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pN3">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pN"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pN3a -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pN3a">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pN3"/>
+        <owl:disjointWith rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pN3b"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pN3b -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pN3b">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pN3"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pNX -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pNX">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pN"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pT -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pT">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachTNM8PathologicalClassification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pT0 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pT0">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pT1 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pT1">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pT1a -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pT1a">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pT1"/>
+        <owl:disjointWith rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pT1b"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pT1b -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pT1b">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pT1"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pT2 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pT2">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pT3 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pT3">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pT4 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pT4">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pT4a -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pT4a">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pT4"/>
+        <owl:disjointWith rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pT4b"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pT4b -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pT4b">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pT4"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pTTis -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pTTis">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pTX -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pTX">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Stomach#StomachTumorAggregate -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTumorAggregate">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#TumorAggregateClassifiedByMalignancy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Stomach#StomachTumorAggregateAsRelatedToDistantMetastasis -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTumorAggregateAsRelatedToDistantMetastasis">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTumorAggregate"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Stomach#StomachTumorAggregateAsRelatedToMetastaticRegionalLymphNodes -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTumorAggregateAsRelatedToMetastaticRegionalLymphNodes">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTumorAggregate"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Stomach#StomachTumorAggregateWithDistantMetastasis -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTumorAggregateWithDistantMetastasis">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTumorAggregateAsRelatedToDistantMetastasis"/>
+        <owl:disjointWith rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTumorAggregateWithoutDistantMetastasis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Stomach#StomachTumorAggregateWithMetastaticRegionalLymphNodes -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTumorAggregateWithMetastaticRegionalLymphNodes">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTumorAggregateAsRelatedToMetastaticRegionalLymphNodes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Stomach#StomachTumorAggregateWithNoAssessmentOfRegionalLymphNodes -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTumorAggregateWithNoAssessmentOfRegionalLymphNodes">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTumorAggregateAsRelatedToMetastaticRegionalLymphNodes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Stomach#StomachTumorAggregateWithoutDistantMetastasis -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTumorAggregateWithoutDistantMetastasis">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTumorAggregateAsRelatedToDistantMetastasis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Stomach#StomachTumorAggregateWithoutMetastaticRegionalLymphNodes -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTumorAggregateWithoutMetastaticRegionalLymphNodes">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTumorAggregateAsRelatedToMetastaticRegionalLymphNodes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Stomach#StomachTumorWithNoAssessmentOfRegionalLymphNodes -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTumorWithNoAssessmentOfRegionalLymphNodes">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#NotAssessedMalignantAnatomicalStructure"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTumorAggregateAsRelatedToMetastaticRegionalLymphNodes"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#NotAssessedMalignantAnatomicalStructure"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cN0"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cN1"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cN2"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cN3"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cNX"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cT0"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cT1"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cT2"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cT3"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cT4"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cTTis"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cTX"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pN0"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pN1"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pN2"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pN3"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pNX"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pT0"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pT1"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pT2"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pT3"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pT4"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pTTis"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pTX"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTumorAggregateWithMetastaticRegionalLymphNodes"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTumorAggregateWithNoAssessmentOfRegionalLymphNodes"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTumorAggregateWithoutMetastaticRegionalLymphNodes"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

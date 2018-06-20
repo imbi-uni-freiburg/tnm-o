@@ -53,6 +53,15 @@
     
 
 
+    <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#AdrenalGland -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#AdrenalGland">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#AnatomicalStructureAdjacentToStomach"/>
+        <rdfs:comment>FMAID: 9604</rdfs:comment>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#AdventitiaOfLargeIntestine -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#AdventitiaOfLargeIntestine">
@@ -91,6 +100,14 @@
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#AnatomicalStructureAdjacentToPancreas">
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#AnatomicalEntity"/>
         <rdfs:comment>No corresponding FMA-expression</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#AnatomicalStructureAdjacentToStomach -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#AnatomicalStructureAdjacentToStomach">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#AnatomicalStructure"/>
     </owl:Class>
     
 
@@ -316,6 +333,7 @@
     <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#Diaphragm -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#Diaphragm">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#AnatomicalStructureAdjacentToStomach"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#MuscleOrgan"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#OrganAdjecentToLiver"/>
         <rdfs:comment>FMAID: 13295</rdfs:comment>
@@ -415,6 +433,15 @@
     
 
 
+    <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#GastrocolicLigament -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#GastrocolicLigament">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#SubdivisionsOfGreaterOmentum"/>
+        <rdfs:comment>FMAID: 16552</rdfs:comment>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#GastrointestinalTract -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#GastrointestinalTract">
@@ -447,6 +474,15 @@
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#HepaticVein">
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#SegmentOfHollowTreeOrgan"/>
         <rdfs:comment>FMAID: 14337</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#HepatogastricLigament -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#HepatogastricLigament">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#SubdivisionOfLesserOmentum"/>
+        <rdfs:comment>FMAID: 16520</rdfs:comment>
     </owl:Class>
     
 
@@ -554,6 +590,15 @@
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#Intestine">
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#SubDivisionOfGastrointestinalSystem"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#Kidney -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#Kidney">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#AnatomicalStructureAdjacentToStomach"/>
+        <rdfs:comment>FMAID: 7203</rdfs:comment>
     </owl:Class>
     
 
@@ -690,6 +735,7 @@
     <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#Liver -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#Liver">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#AnatomicalStructureAdjacentToStomach"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#LobularOrgan"/>
         <rdfs:comment>FMAID: 7197</rdfs:comment>
     </owl:Class>
@@ -870,6 +916,14 @@
     
 
 
+    <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#Mesentery -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#Mesentery">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#HeterogeneousAnatomicalCluster"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#MesorectalLymphNode -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#MesorectalLymphNode">
@@ -1045,6 +1099,7 @@
     <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#Pancreas -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#Pancreas">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#AnatomicalStructureAdjacentToStomach"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#LobularOrgan"/>
         <rdfs:comment>FMAID: 7198</rdfs:comment>
     </owl:Class>
@@ -1298,6 +1353,15 @@
     
 
 
+    <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#RetroperitonealSpace -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#RetroperitonealSpace">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#AnatomicalStructureAdjacentToStomach"/>
+        <rdfs:comment>FMAID: 15080</rdfs:comment>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#Rib -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#Rib">
@@ -1486,10 +1550,28 @@
     
 
 
+    <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#SmallIntestine -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#SmallIntestine">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#AnatomicalStructureAdjacentToStomach"/>
+        <rdfs:comment>FMAID: 7200</rdfs:comment>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#SolidOrgan -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#SolidOrgan">
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#Organ"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#Spleen -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#Spleen">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#AnatomicalStructureAdjacentToStomach"/>
+        <rdfs:comment>FMAID: 7196</rdfs:comment>
     </owl:Class>
     
 
@@ -1536,10 +1618,26 @@
     
 
 
+    <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#SubdivisionOfLesserOmentum -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#SubdivisionOfLesserOmentum">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#Mesentery"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#SubdivisionOfThorax -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#SubdivisionOfThorax">
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#SubdivisionOfCardinalOrganPart"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#SubdivisionsOfGreaterOmentum -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#SubdivisionsOfGreaterOmentum">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#Mesentery"/>
     </owl:Class>
     
 
@@ -1645,6 +1743,7 @@
     <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#TransverseColon -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#TransverseColon">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#AnatomicalStructureAdjacentToStomach"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#OrganAdjecentToLiver"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#SegmentOfColon"/>
         <rdfs:comment>FMAID: 14546</rdfs:comment>
@@ -1717,6 +1816,15 @@
     
 
 
+    <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#WallOfAbdomen -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#WallOfAbdomen">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#AnatomicalStructureAdjacentToStomach"/>
+        <rdfs:comment>FMAID: 299989</rdfs:comment>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#WallOfLargeIntestine -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#WallOfLargeIntestine">
@@ -1749,6 +1857,21 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#AdrenalGland"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#Diaphragm"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#Kidney"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#Liver"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#Pancreas"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#RetroperitonealSpace"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#SmallIntestine"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#Spleen"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#TransverseColon"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#WallOfAbdomen"/>
+        </owl:members>
+    </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
