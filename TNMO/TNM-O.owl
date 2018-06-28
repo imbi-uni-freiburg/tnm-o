@@ -264,6 +264,15 @@ Institute of Medical Informatics, Statistics and Documentation, Medical Universi
     
 
 
+    <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality16OrMore -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality16OrMore">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality7OrMore"/>
+        <owl:disjointWith rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality7To15"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality1to2 -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality1to2">
@@ -935,6 +944,22 @@ Institute of Medical Informatics, Statistics and Documentation, Medical Universi
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality6to9"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality7to8"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality7to9"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality7OrMore -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality7OrMore">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#CardinalityValueRegion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality7To15 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality7To15">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality7OrMore"/>
     </owl:Class>
     
 
@@ -1768,6 +1793,14 @@ NotAssessedMalignantAnatomicalStructure subclassOf
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality1to9"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality4orMore"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality7OrMore"/>
+        </owl:members>
+    </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
