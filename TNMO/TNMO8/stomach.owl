@@ -182,7 +182,7 @@
                         <owl:complementOf>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isIncludedIn"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#SubmucosaOfZoneOfStomach"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#SubmucosaOfStomach"/>
                             </owl:Restriction>
                         </owl:complementOf>
                     </owl:Class>
@@ -239,7 +239,7 @@
                             </owl:Restriction>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isIncludedIn"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#SubmucosaOfZoneOfStomach"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#SubmucosaOfStomach"/>
                             </owl:Restriction>
                         </owl:unionOf>
                     </owl:Class>
@@ -271,7 +271,7 @@
                         <owl:complementOf>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isIncludedIn"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#SubmucosaOfZoneOfStomach"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#SubmucosaOfStomach"/>
                             </owl:Restriction>
                         </owl:complementOf>
                     </owl:Class>
@@ -335,7 +335,7 @@
                         <owl:complementOf>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isIncludedIn"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#SubmucosaOfZoneOfStomach"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#SubmucosaOfStomach"/>
                             </owl:Restriction>
                         </owl:complementOf>
                     </owl:Class>
@@ -531,7 +531,7 @@
                         <owl:complementOf>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isIncludedIn"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#SubmucosaOfZoneOfStomach"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#SubmucosaOfStomach"/>
                             </owl:Restriction>
                         </owl:complementOf>
                     </owl:Class>
@@ -546,7 +546,7 @@
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isIncludedIn"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#SubmucosaOfZoneOfStomach"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#SubmucosaOfStomach"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -812,6 +812,26 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cM"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cStage0"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cStageI"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cStageIIA"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cStageIIB"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cStageIII"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cStageIV"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachUICCClinicalStageGroupingInTNM8Classification"/>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cM1"/>
     </owl:Class>
     
@@ -836,6 +856,21 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cM"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cStageIV"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachUICCClinicalStageGroupingInTNM8Classification"/>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -852,6 +887,24 @@
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cN0">
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cN"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cStage0"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cStageI"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cStageIIB"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cStageIV"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachUICCClinicalStageGroupingInTNM8Classification"/>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -860,6 +913,23 @@
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cN1">
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cN"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cStageIIA"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cStageIII"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cStageIV"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachUICCClinicalStageGroupingInTNM8Classification"/>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -868,6 +938,23 @@
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cN2">
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cN"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cStageIIA"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cStageIII"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cStageIV"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachUICCClinicalStageGroupingInTNM8Classification"/>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -876,6 +963,23 @@
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cN3">
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cN"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cStageIIA"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cStageIII"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cStageIV"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachUICCClinicalStageGroupingInTNM8Classification"/>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -884,6 +988,23 @@
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cN3a">
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cN3"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cStageIIA"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cStageIII"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cStageIV"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachUICCClinicalStageGroupingInTNM8Classification"/>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cN3b"/>
     </owl:Class>
     
@@ -893,6 +1014,23 @@
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cN3b">
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cN3"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cStageIIA"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cStageIII"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cStageIV"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachUICCClinicalStageGroupingInTNM8Classification"/>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -901,6 +1039,21 @@
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cNX">
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cN"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cStageIV"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachUICCClinicalStageGroupingInTNM8Classification"/>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -908,6 +1061,25 @@
     <!-- http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cStage0 -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cStage0">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachUICCClinicalStageGroupingInTNM8Classification"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cM0"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cN0"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cTTis"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachUICCClinicalStageGroupingInTNM8Classification"/>
     </owl:Class>
     
@@ -916,6 +1088,32 @@
     <!-- http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cStageI -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cStageI">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachUICCClinicalStageGroupingInTNM8Classification"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cM0"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cN0"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cT1"/>
+                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cT2"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachUICCClinicalStageGroupingInTNM8Classification"/>
     </owl:Class>
     
@@ -924,6 +1122,40 @@
     <!-- http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cStageIIA -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cStageIIA">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachUICCClinicalStageGroupingInTNM8Classification"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cM0"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cN1"/>
+                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cN2"/>
+                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cN3"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cT1"/>
+                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cT2"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachUICCClinicalStageGroupingInTNM8Classification"/>
     </owl:Class>
     
@@ -932,6 +1164,32 @@
     <!-- http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cStageIIB -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cStageIIB">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachUICCClinicalStageGroupingInTNM8Classification"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cM0"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cN0"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cT3"/>
+                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cT4a"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachUICCClinicalStageGroupingInTNM8Classification"/>
     </owl:Class>
     
@@ -940,6 +1198,40 @@
     <!-- http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cStageIII -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cStageIII">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachUICCClinicalStageGroupingInTNM8Classification"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cM0"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cN1"/>
+                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cN2"/>
+                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cN3"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cT3"/>
+                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cT4a"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachUICCClinicalStageGroupingInTNM8Classification"/>
     </owl:Class>
     
@@ -948,6 +1240,49 @@
     <!-- http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cStageIV -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cStageIV">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachUICCClinicalStageGroupingInTNM8Classification"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cM0"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cN"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cT4b"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cM1"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cN"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cT"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachUICCClinicalStageGroupingInTNM8Classification"/>
     </owl:Class>
     
@@ -980,6 +1315,21 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cT"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cStageIV"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachUICCClinicalStageGroupingInTNM8Classification"/>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -1007,6 +1357,22 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cT"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cStageI"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cStageIIA"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachUICCClinicalStageGroupingInTNM8Classification"/>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -1034,6 +1400,22 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cT1"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cStageI"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cStageIIA"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachUICCClinicalStageGroupingInTNM8Classification"/>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cT1b"/>
     </owl:Class>
     
@@ -1062,6 +1444,22 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cT1"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cStageI"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cStageIIA"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachUICCClinicalStageGroupingInTNM8Classification"/>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -1089,6 +1487,22 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cT"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cStageI"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cStageIIA"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachUICCClinicalStageGroupingInTNM8Classification"/>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -1116,6 +1530,22 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cT"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cStageIIB"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cStageIII"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachUICCClinicalStageGroupingInTNM8Classification"/>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -1143,6 +1573,23 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cT"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cStageIIB"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cStageIII"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cStageIV"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachUICCClinicalStageGroupingInTNM8Classification"/>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -1170,6 +1617,22 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cT4"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cStageIIB"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cStageIII"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachUICCClinicalStageGroupingInTNM8Classification"/>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cT4b"/>
     </owl:Class>
     
@@ -1198,6 +1661,21 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cT4"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cStageIV"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachUICCClinicalStageGroupingInTNM8Classification"/>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -1221,6 +1699,21 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cT"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cStage0"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachUICCClinicalStageGroupingInTNM8Classification"/>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -1275,6 +1768,29 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pM"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStage0"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStageIA"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStageIB"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStageIIA"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStageIIB"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStageIIIA"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStageIIIB"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStageIIIC"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStageIV"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachUICCPathologicalStageGroupingInTNM8Classification"/>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pM1"/>
     </owl:Class>
     
@@ -1299,6 +1815,21 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pM"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStageIV"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachUICCPathologicalStageGroupingInTNM8Classification"/>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -1315,6 +1846,27 @@
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pN0">
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pN"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStage0"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStageIA"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStageIB"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStageIIA"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStageIIB"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStageIIIA"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStageIV"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachUICCPathologicalStageGroupingInTNM8Classification"/>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -1323,6 +1875,26 @@
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pN1">
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pN"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStageIB"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStageIIA"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStageIIB"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStageIIIA"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStageIIIB"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStageIV"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachUICCPathologicalStageGroupingInTNM8Classification"/>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -1331,6 +1903,25 @@
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pN2">
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pN"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStageIIA"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStageIIB"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStageIIIA"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStageIIIB"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStageIV"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachUICCPathologicalStageGroupingInTNM8Classification"/>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -1339,6 +1930,25 @@
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pN3">
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pN"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStageIIB"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStageIIIA"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStageIIIB"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStageIIIC"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStageIV"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachUICCPathologicalStageGroupingInTNM8Classification"/>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -1347,6 +1957,25 @@
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pN3a">
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pN3"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStageIIB"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStageIIIA"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStageIIIB"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStageIIIC"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStageIV"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachUICCPathologicalStageGroupingInTNM8Classification"/>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pN3b"/>
     </owl:Class>
     
@@ -1356,6 +1985,23 @@
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pN3b">
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pN3"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStageIIIB"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStageIIIC"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStageIV"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachUICCPathologicalStageGroupingInTNM8Classification"/>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -1364,6 +2010,21 @@
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pNX">
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pN"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStageIV"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachUICCPathologicalStageGroupingInTNM8Classification"/>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -1371,6 +2032,25 @@
     <!-- http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStage0 -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStage0">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachUICCPathologicalStageGroupingInTNM8Classification"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pM0"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pN0"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pTTis"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachUICCPathologicalStageGroupingInTNM8Classification"/>
     </owl:Class>
     
@@ -1379,6 +2059,25 @@
     <!-- http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStageIA -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStageIA">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachUICCPathologicalStageGroupingInTNM8Classification"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pM0"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pN0"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pT1"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachUICCPathologicalStageGroupingInTNM8Classification"/>
     </owl:Class>
     
@@ -1387,6 +2086,49 @@
     <!-- http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStageIB -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStageIB">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachUICCPathologicalStageGroupingInTNM8Classification"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pM0"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pN0"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pT2"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pM0"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pN1"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pT1"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachUICCPathologicalStageGroupingInTNM8Classification"/>
     </owl:Class>
     
@@ -1395,6 +2137,65 @@
     <!-- http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStageIIA -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStageIIA">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachUICCPathologicalStageGroupingInTNM8Classification"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pM0"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pN0"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pT3"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pM0"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pN1"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pT2"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pM0"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pN2"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pT1"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachUICCPathologicalStageGroupingInTNM8Classification"/>
     </owl:Class>
     
@@ -1403,6 +2204,81 @@
     <!-- http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStageIIB -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStageIIB">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachUICCPathologicalStageGroupingInTNM8Classification"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pM0"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pN0"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pT4a"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pM0"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pN1"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pT3"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pM0"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pN2"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pT2"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pM0"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pN3a"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pT1"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachUICCPathologicalStageGroupingInTNM8Classification"/>
     </owl:Class>
     
@@ -1411,6 +2287,88 @@
     <!-- http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStageIIIA -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStageIIIA">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachUICCPathologicalStageGroupingInTNM8Classification"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pM0"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pN0"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pT4b"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pM0"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pN2"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pT3"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pM0"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pN3a"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pT2"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pM0"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pT4a"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:unionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pN1"/>
+                                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pN2"/>
+                                                </owl:unionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachUICCPathologicalStageGroupingInTNM8Classification"/>
     </owl:Class>
     
@@ -1419,6 +2377,86 @@
     <!-- http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStageIIIB -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStageIIIB">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachUICCPathologicalStageGroupingInTNM8Classification"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pM0"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pN3a"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:unionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pT3"/>
+                                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pT4a"/>
+                                                </owl:unionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pM0"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pN3b"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:unionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pT1"/>
+                                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pT2"/>
+                                                </owl:unionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pM0"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pT4b"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:unionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pN1"/>
+                                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pN2"/>
+                                                </owl:unionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachUICCPathologicalStageGroupingInTNM8Classification"/>
     </owl:Class>
     
@@ -1427,6 +2465,63 @@
     <!-- http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStageIIIC -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStageIIIC">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachUICCPathologicalStageGroupingInTNM8Classification"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pM0"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pN3b"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:unionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pT3"/>
+                                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pT4a"/>
+                                                </owl:unionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pM0"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pT4b"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:unionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pN3a"/>
+                                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pN3b"/>
+                                                </owl:unionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachUICCPathologicalStageGroupingInTNM8Classification"/>
     </owl:Class>
     
@@ -1435,6 +2530,25 @@
     <!-- http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStageIV -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStageIV">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachUICCPathologicalStageGroupingInTNM8Classification"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pM1"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pN"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pT"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachUICCPathologicalStageGroupingInTNM8Classification"/>
     </owl:Class>
     
@@ -1467,6 +2581,21 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pT"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStageIV"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachUICCPathologicalStageGroupingInTNM8Classification"/>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -1494,6 +2623,26 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pT"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStageIA"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStageIB"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStageIIA"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStageIIB"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStageIIIB"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStageIV"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachUICCPathologicalStageGroupingInTNM8Classification"/>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -1521,6 +2670,26 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pT1"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStageIA"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStageIB"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStageIIA"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStageIIB"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStageIIIB"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStageIV"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachUICCPathologicalStageGroupingInTNM8Classification"/>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pT1b"/>
     </owl:Class>
     
@@ -1549,6 +2718,26 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pT1"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStageIA"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStageIB"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStageIIA"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStageIIB"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStageIIIB"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStageIV"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachUICCPathologicalStageGroupingInTNM8Classification"/>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -1576,6 +2765,26 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pT"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStageIB"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStageIIA"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStageIIB"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStageIIIA"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStageIIIB"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStageIV"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachUICCPathologicalStageGroupingInTNM8Classification"/>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -1603,6 +2812,26 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pT"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStageIIA"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStageIIB"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStageIIIA"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStageIIIB"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStageIIIC"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStageIV"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachUICCPathologicalStageGroupingInTNM8Classification"/>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -1630,6 +2859,25 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pT"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStageIIB"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStageIIIA"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStageIIIB"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStageIIIC"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStageIV"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachUICCPathologicalStageGroupingInTNM8Classification"/>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -1657,6 +2905,25 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pT4"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStageIIB"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStageIIIA"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStageIIIB"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStageIIIC"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStageIV"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachUICCPathologicalStageGroupingInTNM8Classification"/>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pT4b"/>
     </owl:Class>
     
@@ -1685,6 +2952,24 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pT4"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStageIIIA"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStageIIIB"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStageIIIC"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStageIV"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachUICCPathologicalStageGroupingInTNM8Classification"/>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -1708,6 +2993,22 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pT"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStage0"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStageIV"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachUICCPathologicalStageGroupingInTNM8Classification"/>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -1731,6 +3032,21 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pT"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pStageIV"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachUICCPathologicalStageGroupingInTNM8Classification"/>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
