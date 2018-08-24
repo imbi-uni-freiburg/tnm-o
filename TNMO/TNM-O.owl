@@ -15,13 +15,7 @@
      xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#">
     <owl:Ontology rdf:about="http://purl.org/tnmo/TNM-O.owl">
         <owl:versionIRI rdf:resource="http://purl.org/tnmo/TNM-O.owl/1"/>
-<<<<<<< HEAD
-        <owl:imports rdf:resource="http://putl.org/tnmo/TNMO_LiverTest/1.0"/>
-||||||| merged common ancestors
-        <owl:imports rdf:resource="http://purl.org/biotop/btl2.owl"/>
-=======
         <owl:imports rdf:resource="http://purl.org/tnmo/TNM-O_Stomach"/>
->>>>>>> c5629883742eb6cec993bace51d5ea16a2e3df9f
         <owl:imports rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl/1"/>
         <owl:imports rdf:resource="http://purl.org/tnmo/TNM-O_Stomach_Test"/>
         <owl:priorVersion>prototype 0.18, date: 2015-02-25</owl:priorVersion>
@@ -1424,9 +1418,19 @@ Institute of Medical Informatics, Statistics and Documentation, Medical Universi
     
 
 
+    <!-- http://purl.org/tnmo/TNM-O.owl#MalignantAnatomicalStructure -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#MalignantAnatomicalStructure">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#AnatomicalStructure"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/tnmo/TNM-O.owl#Metastasis -->
 
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Metastasis"/>
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Metastasis">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#MalignantAnatomicalStructure"/>
+    </owl:Class>
     
 
 
@@ -2039,9 +2043,9 @@ NotAssessedMalignantAnatomicalStructure subclassOf
 
     <!-- http://purl.org/tnmo/TNM-O_Stomach_Test#Test_Cardinality -->
 
-    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_Cardinality">
+    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_Cardinality">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality"/>
-    </rdf:Description>
+    </owl:NamedIndividual>
     
 
 
