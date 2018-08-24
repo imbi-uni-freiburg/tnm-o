@@ -44,6 +44,12 @@ Institute of Medical Informatics, Statistics and Documentation, Medical Universi
     
 
 
+    <!-- http://purl.org/biotop/btl2.owl#isRepresentedBy -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+    
+
+
     <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
 
     <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
