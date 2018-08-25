@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://purl.org/tnmo/TNM-O_liver(HCC)_8" uri="TNMO8/liver(HCC).owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.org/tnmo/TNM-O_lung_7.owl" uri="TNMO7/lung.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.org/tnmo/TNM-O_colorectal_7.owl/1" uri="TNMO7/colorectal.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.org/tnmo/TNM-O_breast_7.owl/1.0" uri="TNMO7/breast.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.org/tnmo/TNM-O_Liver" uri="TNMO8/liver.owl"/>
     <uri id="Imports Wizard Entry" name="http://purl.org/tnmo/TNM-O_Stomach_Test" uri="TNMO8/stomachTest.owl"/>
     <uri id="Imports Wizard Entry" name="http://purl.org/tnmo/TNM-O_Stomach" uri="TNMO8/stomach.owl"/>
     <uri id="Imports Wizard Entry" name="http://purl.org/tnmo/TNM-O_Anatomy.owl/1" uri="TNM-O_Anatomy.owl"/>

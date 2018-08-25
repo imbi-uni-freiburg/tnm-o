@@ -7,7 +7,7 @@
      xmlns:btl2="http://purl.org/biotop/btl2.owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test"/>
+    <owl:Ontology rdf:about="http://purl.org/tnmo/TNM-O_stomach_Test"/>
     
 
 
@@ -86,15 +86,15 @@
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality1to2 -->
+    <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality1To2 -->
 
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality1to2"/>
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality1To2"/>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality3to6 -->
+    <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality3To6 -->
 
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality3to6"/>
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality3To6"/>
     
 
 
@@ -289,17 +289,17 @@
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Stomach_Test#Test_Cardinality -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_Test#Test_Cardinality -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_Cardinality">
-        <btl2:projectsOnto rdf:resource="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_CardinalityOfLymphNodes"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_stomach_Test#Test_Cardinality">
+        <btl2:projectsOnto rdf:resource="http://purl.org/tnmo/TNM-O_stomach_Test#Test_CardinalityOfLymphNodes"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Stomach_Test#Test_CardinalityOfLymphNodes -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_Test#Test_CardinalityOfLymphNodes -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_CardinalityOfLymphNodes">
+    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_stomach_Test#Test_CardinalityOfLymphNodes">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O.owl#CardinalityValueRegion"/>
         <rdf:type>
             <owl:Class>
@@ -337,51 +337,51 @@
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Stomach_Test#Test_M0_TNM8_Clinical -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_Test#Test_M0_TNM8_Clinical -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_M0_TNM8_Clinical">
+    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_stomach_Test#Test_M0_TNM8_Clinical">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cM"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Stomach_Test#Test_M0_TNM8_Pathological -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_Test#Test_M0_TNM8_Pathological -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_M0_TNM8_Pathological">
+    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_stomach_Test#Test_M0_TNM8_Pathological">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pM"/>
-        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_Stage0_pTis_pN0_M0"/>
-        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_StageIA_pT1_pN0_M0"/>
-        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_StageIB_pT1_pN1_M0"/>
-        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_StageIB_pT2_N0_M0"/>
-        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_StageIIA_pT1_pN2_M0"/>
-        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_StageIIA_pT2_pN1_M0"/>
-        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_StageIIA_pT3_pN0_M0"/>
-        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_StageIIB_pT1_pN3a_M0"/>
-        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_StageIIB_pT2_pN2_M0"/>
-        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_StageIIB_pT3_pN1_M0"/>
-        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_StageIIB_pT4a_pN0_M0"/>
-        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_StageIIIA_pT2_pN3a_M0"/>
-        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_StageIIIA_pT3_pN2_M0"/>
-        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_StageIIIA_pT4a_pN1_pM0"/>
-        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_StageIIIA_pT4a_pN2_M0"/>
-        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_StageIIIA_pT4b_pN0_M0"/>
-        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_StageIIIB_pT1_pN3b_M0"/>
-        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_StageIIIB_pT2_pN3b_M0"/>
-        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_StageIIIB_pT3_pN3a_M0"/>
-        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_StageIIIB_pT4a_pN3a_M0"/>
-        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_StageIIIB_pT4b_pN1_M0"/>
-        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_StageIIIB_pT4b_pN2_M0"/>
-        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_StageIIIC_pT3_pN3b_M0"/>
-        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_StageIIIC_pT4a_pN3b_M0"/>
-        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_StageIIIC_pT4b_pN3a_M0"/>
-        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_StageIIIC_pT4b_pN3b_M0"/>
+        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_stomach_Test#Test_Stage0_pTis_pN0_M0"/>
+        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_stomach_Test#Test_StageIA_pT1_pN0_M0"/>
+        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_stomach_Test#Test_StageIB_pT1_pN1_M0"/>
+        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_stomach_Test#Test_StageIB_pT2_N0_M0"/>
+        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_stomach_Test#Test_StageIIA_pT1_pN2_M0"/>
+        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_stomach_Test#Test_StageIIA_pT2_pN1_M0"/>
+        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_stomach_Test#Test_StageIIA_pT3_pN0_M0"/>
+        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_stomach_Test#Test_StageIIB_pT1_pN3a_M0"/>
+        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_stomach_Test#Test_StageIIB_pT2_pN2_M0"/>
+        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_stomach_Test#Test_StageIIB_pT3_pN1_M0"/>
+        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_stomach_Test#Test_StageIIB_pT4a_pN0_M0"/>
+        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_stomach_Test#Test_StageIIIA_pT2_pN3a_M0"/>
+        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_stomach_Test#Test_StageIIIA_pT3_pN2_M0"/>
+        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_stomach_Test#Test_StageIIIA_pT4a_pN1_pM0"/>
+        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_stomach_Test#Test_StageIIIA_pT4a_pN2_M0"/>
+        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_stomach_Test#Test_StageIIIA_pT4b_pN0_M0"/>
+        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_stomach_Test#Test_StageIIIB_pT1_pN3b_M0"/>
+        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_stomach_Test#Test_StageIIIB_pT2_pN3b_M0"/>
+        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_stomach_Test#Test_StageIIIB_pT3_pN3a_M0"/>
+        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_stomach_Test#Test_StageIIIB_pT4a_pN3a_M0"/>
+        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_stomach_Test#Test_StageIIIB_pT4b_pN1_M0"/>
+        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_stomach_Test#Test_StageIIIB_pT4b_pN2_M0"/>
+        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_stomach_Test#Test_StageIIIC_pT3_pN3b_M0"/>
+        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_stomach_Test#Test_StageIIIC_pT4a_pN3b_M0"/>
+        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_stomach_Test#Test_StageIIIC_pT4b_pN3a_M0"/>
+        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_stomach_Test#Test_StageIIIC_pT4b_pN3b_M0"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Stomach_Test#Test_M0_tumor -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_Test#Test_M0_tumor -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_M0_tumor">
+    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_stomach_Test#Test_M0_tumor">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTumorAggregateAsRelatedToDistantMetastasis"/>
         <rdf:type>
             <owl:Class>
@@ -393,31 +393,31 @@
                 </owl:complementOf>
             </owl:Class>
         </rdf:type>
-        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_M0_TNM8_Clinical"/>
-        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_M0_TNM8_Pathological"/>
+        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_stomach_Test#Test_M0_TNM8_Clinical"/>
+        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_stomach_Test#Test_M0_TNM8_Pathological"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Stomach_Test#Test_M1_TNM8_Clinical -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_Test#Test_M1_TNM8_Clinical -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_M1_TNM8_Clinical">
+    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_stomach_Test#Test_M1_TNM8_Clinical">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cM"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Stomach_Test#Test_M1_TNM8_Pathological -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_Test#Test_M1_TNM8_Pathological -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_M1_TNM8_Pathological">
+    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_stomach_Test#Test_M1_TNM8_Pathological">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pM"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Stomach_Test#Test_M1_tumor -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_Test#Test_M1_tumor -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_M1_tumor">
+    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_stomach_Test#Test_M1_tumor">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTumorAggregateAsRelatedToDistantMetastasis"/>
         <rdf:type>
             <owl:Restriction>
@@ -425,38 +425,38 @@
                 <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#DistantMetastasisOfStomachTumor"/>
             </owl:Restriction>
         </rdf:type>
-        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_M1_TNM8_Clinical"/>
-        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_M1_TNM8_Pathological"/>
+        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_stomach_Test#Test_M1_TNM8_Clinical"/>
+        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_stomach_Test#Test_M1_TNM8_Pathological"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Stomach_Test#Test_N0_TNM8_Clinical -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_Test#Test_N0_TNM8_Clinical -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_N0_TNM8_Clinical">
+    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_stomach_Test#Test_N0_TNM8_Clinical">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cN"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Stomach_Test#Test_N0_TNM8_Pathological -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_Test#Test_N0_TNM8_Pathological -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_N0_TNM8_Pathological">
+    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_stomach_Test#Test_N0_TNM8_Pathological">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pN"/>
-        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_Stage0_pTis_pN0_M0"/>
-        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_StageIA_pT1_pN0_M0"/>
-        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_StageIB_pT2_N0_M0"/>
-        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_StageIIA_pT3_pN0_M0"/>
-        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_StageIIB_pT4a_pN0_M0"/>
-        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_StageIIIA_pT4b_pN0_M0"/>
-        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_StageIV_pT_pN_M1"/>
+        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_stomach_Test#Test_Stage0_pTis_pN0_M0"/>
+        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_stomach_Test#Test_StageIA_pT1_pN0_M0"/>
+        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_stomach_Test#Test_StageIB_pT2_N0_M0"/>
+        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_stomach_Test#Test_StageIIA_pT3_pN0_M0"/>
+        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_stomach_Test#Test_StageIIB_pT4a_pN0_M0"/>
+        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_stomach_Test#Test_StageIIIA_pT4b_pN0_M0"/>
+        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_stomach_Test#Test_StageIV_pT_pN_M1"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Stomach_Test#Test_N0_tumor -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_Test#Test_N0_tumor -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_N0_tumor">
+    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_stomach_Test#Test_N0_tumor">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTumorAggregateAsRelatedToMetastaticRegionalLymphNodes"/>
         <rdf:type>
             <owl:Restriction>
@@ -469,31 +469,31 @@
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdf:type>
-        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_N0_TNM8_Clinical"/>
-        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_N0_TNM8_Pathological"/>
+        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_stomach_Test#Test_N0_TNM8_Clinical"/>
+        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_stomach_Test#Test_N0_TNM8_Pathological"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Stomach_Test#Test_N1_TNM8_Clinical -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_Test#Test_N1_TNM8_Clinical -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_N1_TNM8_Clinical">
+    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_stomach_Test#Test_N1_TNM8_Clinical">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cN"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Stomach_Test#Test_N1_TNM8_Pathological -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_Test#Test_N1_TNM8_Pathological -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_N1_TNM8_Pathological">
+    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_stomach_Test#Test_N1_TNM8_Pathological">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pN"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Stomach_Test#Test_N1_tumor -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_Test#Test_N1_tumor -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_N1_tumor">
+    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_stomach_Test#Test_N1_tumor">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTumorAggregateAsRelatedToMetastaticRegionalLymphNodes"/>
         <rdf:type>
             <owl:Restriction>
@@ -501,36 +501,36 @@
                 <owl:someValuesFrom>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#projectsOnto"/>
-                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to2"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1To2"/>
                     </owl:Restriction>
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdf:type>
-        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_N1_TNM8_Clinical"/>
-        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_N1_TNM8_Pathological"/>
+        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_stomach_Test#Test_N1_TNM8_Clinical"/>
+        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_stomach_Test#Test_N1_TNM8_Pathological"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Stomach_Test#Test_N2_TNM8_Clinical -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_Test#Test_N2_TNM8_Clinical -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_N2_TNM8_Clinical">
+    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_stomach_Test#Test_N2_TNM8_Clinical">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cN"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Stomach_Test#Test_N2_TNM8_Pathological -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_Test#Test_N2_TNM8_Pathological -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_N2_TNM8_Pathological">
+    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_stomach_Test#Test_N2_TNM8_Pathological">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pN"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Stomach_Test#Test_N2_tumor -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_Test#Test_N2_tumor -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_N2_tumor">
+    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_stomach_Test#Test_N2_tumor">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTumorAggregateAsRelatedToMetastaticRegionalLymphNodes"/>
         <rdf:type>
             <owl:Restriction>
@@ -538,36 +538,36 @@
                 <owl:someValuesFrom>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#projectsOnto"/>
-                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to6"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3To6"/>
                     </owl:Restriction>
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdf:type>
-        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_N2_TNM8_Clinical"/>
-        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_N2_TNM8_Pathological"/>
+        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_stomach_Test#Test_N2_TNM8_Clinical"/>
+        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_stomach_Test#Test_N2_TNM8_Pathological"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Stomach_Test#Test_N3_TNM8_Clinical -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_Test#Test_N3_TNM8_Clinical -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_N3_TNM8_Clinical">
+    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_stomach_Test#Test_N3_TNM8_Clinical">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cN"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Stomach_Test#Test_N3_TNM8_Pathological -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_Test#Test_N3_TNM8_Pathological -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_N3_TNM8_Pathological">
+    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_stomach_Test#Test_N3_TNM8_Pathological">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pN"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Stomach_Test#Test_N3_tumor -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_Test#Test_N3_tumor -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_N3_tumor">
+    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_stomach_Test#Test_N3_tumor">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTumorAggregateAsRelatedToMetastaticRegionalLymphNodes"/>
         <rdf:type>
             <owl:Restriction>
@@ -580,31 +580,31 @@
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdf:type>
-        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_N3_TNM8_Clinical"/>
-        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_N3_TNM8_Pathological"/>
+        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_stomach_Test#Test_N3_TNM8_Clinical"/>
+        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_stomach_Test#Test_N3_TNM8_Pathological"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Stomach_Test#Test_N3a_TNM8_Clinical -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_Test#Test_N3a_TNM8_Clinical -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_N3a_TNM8_Clinical">
+    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_stomach_Test#Test_N3a_TNM8_Clinical">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cN"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Stomach_Test#Test_N3a_TNM8_Pathological -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_Test#Test_N3a_TNM8_Pathological -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_N3a_TNM8_Pathological">
+    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_stomach_Test#Test_N3a_TNM8_Pathological">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pN"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Stomach_Test#Test_N3a_tumor -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_Test#Test_N3a_tumor -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_N3a_tumor">
+    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_stomach_Test#Test_N3a_tumor">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTumorAggregateAsRelatedToMetastaticRegionalLymphNodes"/>
         <rdf:type>
             <owl:Restriction>
@@ -617,31 +617,31 @@
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdf:type>
-        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_N3a_TNM8_Clinical"/>
-        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_N3a_TNM8_Pathological"/>
+        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_stomach_Test#Test_N3a_TNM8_Clinical"/>
+        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_stomach_Test#Test_N3a_TNM8_Pathological"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Stomach_Test#Test_N3b_TNM8_Clinical -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_Test#Test_N3b_TNM8_Clinical -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_N3b_TNM8_Clinical">
+    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_stomach_Test#Test_N3b_TNM8_Clinical">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cN"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Stomach_Test#Test_N3b_TNM8_Pathological -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_Test#Test_N3b_TNM8_Pathological -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_N3b_TNM8_Pathological">
+    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_stomach_Test#Test_N3b_TNM8_Pathological">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pN"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Stomach_Test#Test_N3b_tumor -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_Test#Test_N3b_tumor -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_N3b_tumor">
+    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_stomach_Test#Test_N3b_tumor">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTumorAggregateAsRelatedToMetastaticRegionalLymphNodes"/>
         <rdf:type>
             <owl:Restriction>
@@ -654,58 +654,58 @@
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdf:type>
-        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_N3b_TNM8_Clinical"/>
-        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_N3b_TNM8_Pathological"/>
+        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_stomach_Test#Test_N3b_TNM8_Clinical"/>
+        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_stomach_Test#Test_N3b_TNM8_Pathological"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Stomach_Test#Test_NX_TNM8_Clinical -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_Test#Test_NX_TNM8_Clinical -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_NX_TNM8_Clinical">
+    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_stomach_Test#Test_NX_TNM8_Clinical">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cN"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Stomach_Test#Test_NX_TNM8_Pathological -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_Test#Test_NX_TNM8_Pathological -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_NX_TNM8_Pathological">
+    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_stomach_Test#Test_NX_TNM8_Pathological">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pN"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Stomach_Test#Test_NX_tumor -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_Test#Test_NX_tumor -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_NX_tumor">
+    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_stomach_Test#Test_NX_tumor">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O.owl#NotAssessedMalignantAnatomicalStructure"/>
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTumorAggregateAsRelatedToMetastaticRegionalLymphNodes"/>
-        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_NX_TNM8_Clinical"/>
-        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_NX_TNM8_Pathological"/>
+        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_stomach_Test#Test_NX_TNM8_Clinical"/>
+        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_stomach_Test#Test_NX_TNM8_Pathological"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Stomach_Test#Test_N_NonnegativeInteger_TNM8_N_Clinical -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_Test#Test_N_NonnegativeInteger_TNM8_N_Clinical -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_N_NonnegativeInteger_TNM8_N_Clinical">
+    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_stomach_Test#Test_N_NonnegativeInteger_TNM8_N_Clinical">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cN"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Stomach_Test#Test_N_NonnegativeInteger_TNM8_N_Pathological -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_Test#Test_N_NonnegativeInteger_TNM8_N_Pathological -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_N_NonnegativeInteger_TNM8_N_Pathological">
+    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_stomach_Test#Test_N_NonnegativeInteger_TNM8_N_Pathological">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pN"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Stomach_Test#Test_N_NonnegativeInteger_Tumor -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_Test#Test_N_NonnegativeInteger_Tumor -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_N_NonnegativeInteger_Tumor">
+    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_stomach_Test#Test_N_NonnegativeInteger_Tumor">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTumorAggregateAsRelatedToMetastaticRegionalLymphNodes"/>
         <rdf:type>
             <owl:Restriction>
@@ -750,248 +750,248 @@
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdf:type>
-        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_N_NonnegativeInteger_TNM8_N_Clinical"/>
-        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_N_NonnegativeInteger_TNM8_N_Pathological"/>
+        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_stomach_Test#Test_N_NonnegativeInteger_TNM8_N_Clinical"/>
+        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_stomach_Test#Test_N_NonnegativeInteger_TNM8_N_Pathological"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Stomach_Test#Test_Stage0_pTis_pN0_M0 -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_Test#Test_Stage0_pTis_pN0_M0 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_Stage0_pTis_pN0_M0">
+    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_stomach_Test#Test_Stage0_pTis_pN0_M0">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachUICCPathologicalStageGroupingInTNM8Classification"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Stomach_Test#Test_StageIA_pT1_pN0_M0 -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_Test#Test_StageIA_pT1_pN0_M0 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_StageIA_pT1_pN0_M0">
+    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_stomach_Test#Test_StageIA_pT1_pN0_M0">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachUICCPathologicalStageGroupingInTNM8Classification"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Stomach_Test#Test_StageIB_pT1_pN1_M0 -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_Test#Test_StageIB_pT1_pN1_M0 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_StageIB_pT1_pN1_M0">
+    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_stomach_Test#Test_StageIB_pT1_pN1_M0">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachUICCPathologicalStageGroupingInTNM8Classification"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Stomach_Test#Test_StageIB_pT2_N0_M0 -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_Test#Test_StageIB_pT2_N0_M0 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_StageIB_pT2_N0_M0">
+    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_stomach_Test#Test_StageIB_pT2_N0_M0">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachUICCPathologicalStageGroupingInTNM8Classification"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Stomach_Test#Test_StageIIA_pT1_pN2_M0 -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_Test#Test_StageIIA_pT1_pN2_M0 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_StageIIA_pT1_pN2_M0">
+    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_stomach_Test#Test_StageIIA_pT1_pN2_M0">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachUICCPathologicalStageGroupingInTNM8Classification"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Stomach_Test#Test_StageIIA_pT2_pN1_M0 -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_Test#Test_StageIIA_pT2_pN1_M0 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_StageIIA_pT2_pN1_M0">
+    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_stomach_Test#Test_StageIIA_pT2_pN1_M0">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachUICCPathologicalStageGroupingInTNM8Classification"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Stomach_Test#Test_StageIIA_pT3_pN0_M0 -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_Test#Test_StageIIA_pT3_pN0_M0 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_StageIIA_pT3_pN0_M0">
+    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_stomach_Test#Test_StageIIA_pT3_pN0_M0">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachUICCPathologicalStageGroupingInTNM8Classification"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Stomach_Test#Test_StageIIB_pT1_pN3a_M0 -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_Test#Test_StageIIB_pT1_pN3a_M0 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_StageIIB_pT1_pN3a_M0">
+    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_stomach_Test#Test_StageIIB_pT1_pN3a_M0">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachUICCPathologicalStageGroupingInTNM8Classification"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Stomach_Test#Test_StageIIB_pT2_pN2_M0 -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_Test#Test_StageIIB_pT2_pN2_M0 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_StageIIB_pT2_pN2_M0">
+    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_stomach_Test#Test_StageIIB_pT2_pN2_M0">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachUICCPathologicalStageGroupingInTNM8Classification"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Stomach_Test#Test_StageIIB_pT3_pN1_M0 -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_Test#Test_StageIIB_pT3_pN1_M0 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_StageIIB_pT3_pN1_M0">
+    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_stomach_Test#Test_StageIIB_pT3_pN1_M0">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachUICCPathologicalStageGroupingInTNM8Classification"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Stomach_Test#Test_StageIIB_pT4a_pN0_M0 -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_Test#Test_StageIIB_pT4a_pN0_M0 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_StageIIB_pT4a_pN0_M0">
+    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_stomach_Test#Test_StageIIB_pT4a_pN0_M0">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachUICCPathologicalStageGroupingInTNM8Classification"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Stomach_Test#Test_StageIIIA_pT2_pN3a_M0 -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_Test#Test_StageIIIA_pT2_pN3a_M0 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_StageIIIA_pT2_pN3a_M0">
+    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_stomach_Test#Test_StageIIIA_pT2_pN3a_M0">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachUICCPathologicalStageGroupingInTNM8Classification"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Stomach_Test#Test_StageIIIA_pT3_pN2_M0 -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_Test#Test_StageIIIA_pT3_pN2_M0 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_StageIIIA_pT3_pN2_M0">
+    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_stomach_Test#Test_StageIIIA_pT3_pN2_M0">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachUICCPathologicalStageGroupingInTNM8Classification"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Stomach_Test#Test_StageIIIA_pT4a_pN1_pM0 -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_Test#Test_StageIIIA_pT4a_pN1_pM0 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_StageIIIA_pT4a_pN1_pM0">
+    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_stomach_Test#Test_StageIIIA_pT4a_pN1_pM0">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachUICCPathologicalStageGroupingInTNM8Classification"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Stomach_Test#Test_StageIIIA_pT4a_pN2_M0 -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_Test#Test_StageIIIA_pT4a_pN2_M0 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_StageIIIA_pT4a_pN2_M0">
+    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_stomach_Test#Test_StageIIIA_pT4a_pN2_M0">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachUICCPathologicalStageGroupingInTNM8Classification"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Stomach_Test#Test_StageIIIA_pT4b_pN0_M0 -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_Test#Test_StageIIIA_pT4b_pN0_M0 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_StageIIIA_pT4b_pN0_M0">
+    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_stomach_Test#Test_StageIIIA_pT4b_pN0_M0">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachUICCPathologicalStageGroupingInTNM8Classification"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Stomach_Test#Test_StageIIIB_pT1_pN3b_M0 -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_Test#Test_StageIIIB_pT1_pN3b_M0 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_StageIIIB_pT1_pN3b_M0">
+    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_stomach_Test#Test_StageIIIB_pT1_pN3b_M0">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachUICCPathologicalStageGroupingInTNM8Classification"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Stomach_Test#Test_StageIIIB_pT2_pN3b_M0 -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_Test#Test_StageIIIB_pT2_pN3b_M0 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_StageIIIB_pT2_pN3b_M0">
+    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_stomach_Test#Test_StageIIIB_pT2_pN3b_M0">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachUICCPathologicalStageGroupingInTNM8Classification"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Stomach_Test#Test_StageIIIB_pT3_pN3a_M0 -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_Test#Test_StageIIIB_pT3_pN3a_M0 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_StageIIIB_pT3_pN3a_M0">
+    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_stomach_Test#Test_StageIIIB_pT3_pN3a_M0">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachUICCPathologicalStageGroupingInTNM8Classification"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Stomach_Test#Test_StageIIIB_pT4a_pN3a_M0 -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_Test#Test_StageIIIB_pT4a_pN3a_M0 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_StageIIIB_pT4a_pN3a_M0">
+    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_stomach_Test#Test_StageIIIB_pT4a_pN3a_M0">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachUICCPathologicalStageGroupingInTNM8Classification"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Stomach_Test#Test_StageIIIB_pT4b_pN1_M0 -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_Test#Test_StageIIIB_pT4b_pN1_M0 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_StageIIIB_pT4b_pN1_M0">
+    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_stomach_Test#Test_StageIIIB_pT4b_pN1_M0">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachUICCPathologicalStageGroupingInTNM8Classification"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Stomach_Test#Test_StageIIIB_pT4b_pN2_M0 -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_Test#Test_StageIIIB_pT4b_pN2_M0 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_StageIIIB_pT4b_pN2_M0">
+    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_stomach_Test#Test_StageIIIB_pT4b_pN2_M0">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachUICCPathologicalStageGroupingInTNM8Classification"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Stomach_Test#Test_StageIIIC_pT3_pN3b_M0 -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_Test#Test_StageIIIC_pT3_pN3b_M0 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_StageIIIC_pT3_pN3b_M0">
+    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_stomach_Test#Test_StageIIIC_pT3_pN3b_M0">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachUICCPathologicalStageGroupingInTNM8Classification"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Stomach_Test#Test_StageIIIC_pT4a_pN3b_M0 -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_Test#Test_StageIIIC_pT4a_pN3b_M0 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_StageIIIC_pT4a_pN3b_M0">
+    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_stomach_Test#Test_StageIIIC_pT4a_pN3b_M0">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachUICCPathologicalStageGroupingInTNM8Classification"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Stomach_Test#Test_StageIIIC_pT4b_pN3a_M0 -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_Test#Test_StageIIIC_pT4b_pN3a_M0 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_StageIIIC_pT4b_pN3a_M0">
+    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_stomach_Test#Test_StageIIIC_pT4b_pN3a_M0">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachUICCPathologicalStageGroupingInTNM8Classification"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Stomach_Test#Test_StageIIIC_pT4b_pN3b_M0 -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_Test#Test_StageIIIC_pT4b_pN3b_M0 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_StageIIIC_pT4b_pN3b_M0">
+    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_stomach_Test#Test_StageIIIC_pT4b_pN3b_M0">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachUICCPathologicalStageGroupingInTNM8Classification"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Stomach_Test#Test_StageIV_pT_pN_M1 -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_Test#Test_StageIV_pT_pN_M1 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_StageIV_pT_pN_M1">
+    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_stomach_Test#Test_StageIV_pT_pN_M1">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachUICCPathologicalStageGroupingInTNM8Classification"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Stomach_Test#Test_T0_TNM8_Clinical -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_Test#Test_T0_TNM8_Clinical -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_T0_TNM8_Clinical">
+    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_stomach_Test#Test_T0_TNM8_Clinical">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cT"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Stomach_Test#Test_T0_TNM8_Pathological -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_Test#Test_T0_TNM8_Pathological -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_T0_TNM8_Pathological">
+    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_stomach_Test#Test_T0_TNM8_Pathological">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pT"/>
-        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_StageIV_pT_pN_M1"/>
+        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_stomach_Test#Test_StageIV_pT_pN_M1"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Stomach_Test#Test_T0_tumor -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_Test#Test_T0_tumor -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_T0_tumor">
+    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_stomach_Test#Test_T0_tumor">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachPrimaryTumor"/>
         <rdf:type>
             <owl:Restriction>
@@ -1004,32 +1004,32 @@
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdf:type>
-        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_T0_TNM8_Clinical"/>
-        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_T0_TNM8_Pathological"/>
+        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_stomach_Test#Test_T0_TNM8_Clinical"/>
+        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_stomach_Test#Test_T0_TNM8_Pathological"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Stomach_Test#Test_T1_TNM8_Clinical -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_Test#Test_T1_TNM8_Clinical -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_T1_TNM8_Clinical">
+    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_stomach_Test#Test_T1_TNM8_Clinical">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cT"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Stomach_Test#Test_T1_TNM8_Pathological -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_Test#Test_T1_TNM8_Pathological -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_T1_TNM8_Pathological">
+    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_stomach_Test#Test_T1_TNM8_Pathological">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pT"/>
-        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_StageIV_pT_pN_M1"/>
+        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_stomach_Test#Test_StageIV_pT_pN_M1"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Stomach_Test#Test_T1_tumor -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_Test#Test_T1_tumor -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_T1_tumor">
+    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_stomach_Test#Test_T1_tumor">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachPrimaryTumor"/>
         <rdf:type>
             <owl:Class>
@@ -1070,32 +1070,32 @@
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdf:type>
-        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_T1_TNM8_Clinical"/>
-        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_T1_TNM8_Pathological"/>
+        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_stomach_Test#Test_T1_TNM8_Clinical"/>
+        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_stomach_Test#Test_T1_TNM8_Pathological"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Stomach_Test#Test_T1a_TNM8_Clinical -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_Test#Test_T1a_TNM8_Clinical -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_T1a_TNM8_Clinical">
+    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_stomach_Test#Test_T1a_TNM8_Clinical">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cT"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Stomach_Test#Test_T1a_TNM8_Pathological -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_Test#Test_T1a_TNM8_Pathological -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_T1a_TNM8_Pathological">
+    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_stomach_Test#Test_T1a_TNM8_Pathological">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pT"/>
-        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_StageIV_pT_pN_M1"/>
+        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_stomach_Test#Test_StageIV_pT_pN_M1"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Stomach_Test#Test_T1a_tumor -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_Test#Test_T1a_tumor -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_T1a_tumor">
+    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_stomach_Test#Test_T1a_tumor">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachPrimaryTumor"/>
         <rdf:type>
             <owl:Class>
@@ -1124,15 +1124,15 @@
                 <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#MuscularisMucosaeOfStomach"/>
             </owl:Restriction>
         </rdf:type>
-        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_T1a_TNM8_Clinical"/>
-        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_T1a_TNM8_Pathological"/>
+        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_stomach_Test#Test_T1a_TNM8_Clinical"/>
+        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_stomach_Test#Test_T1a_TNM8_Pathological"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Stomach_Test#Test_T1a_tumor_LaminaPropria -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_Test#Test_T1a_tumor_LaminaPropria -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_T1a_tumor_LaminaPropria">
+    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_stomach_Test#Test_T1a_tumor_LaminaPropria">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachPrimaryTumor"/>
         <rdf:type>
             <owl:Class>
@@ -1161,31 +1161,31 @@
                 <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#LaminaPropriaOfStomach"/>
             </owl:Restriction>
         </rdf:type>
-        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_T1a_TNM8_Clinical"/>
+        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_stomach_Test#Test_T1a_TNM8_Clinical"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Stomach_Test#Test_T1b_TNM8_Clinical -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_Test#Test_T1b_TNM8_Clinical -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_T1b_TNM8_Clinical">
+    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_stomach_Test#Test_T1b_TNM8_Clinical">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cT"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Stomach_Test#Test_T1b_TNM8_Pathological -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_Test#Test_T1b_TNM8_Pathological -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_T1b_TNM8_Pathological">
+    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_stomach_Test#Test_T1b_TNM8_Pathological">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pT"/>
-        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_StageIV_pT_pN_M1"/>
+        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_stomach_Test#Test_StageIV_pT_pN_M1"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Stomach_Test#Test_T1b_tumor -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_Test#Test_T1b_tumor -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_T1b_tumor">
+    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_stomach_Test#Test_T1b_tumor">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachPrimaryTumor"/>
         <rdf:type>
             <owl:Class>
@@ -1214,32 +1214,32 @@
                 <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#SubmucosaOfStomach"/>
             </owl:Restriction>
         </rdf:type>
-        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_T1b_TNM8_Clinical"/>
-        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_T1b_TNM8_Pathological"/>
+        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_stomach_Test#Test_T1b_TNM8_Clinical"/>
+        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_stomach_Test#Test_T1b_TNM8_Pathological"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Stomach_Test#Test_T2_TNM8_Clinical -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_Test#Test_T2_TNM8_Clinical -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_T2_TNM8_Clinical">
+    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_stomach_Test#Test_T2_TNM8_Clinical">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cT"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Stomach_Test#Test_T2_TNM8_Pathological -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_Test#Test_T2_TNM8_Pathological -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_T2_TNM8_Pathological">
+    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_stomach_Test#Test_T2_TNM8_Pathological">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pT"/>
-        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_StageIV_pT_pN_M1"/>
+        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_stomach_Test#Test_StageIV_pT_pN_M1"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Stomach_Test#Test_T2_tumor -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_Test#Test_T2_tumor -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_T2_tumor">
+    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_stomach_Test#Test_T2_tumor">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachPrimaryTumor"/>
         <rdf:type>
             <owl:Class>
@@ -1268,32 +1268,32 @@
                 <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#MuscleLayerOfStomach"/>
             </owl:Restriction>
         </rdf:type>
-        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_T2_TNM8_Clinical"/>
-        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_T2_TNM8_Pathological"/>
+        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_stomach_Test#Test_T2_TNM8_Clinical"/>
+        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_stomach_Test#Test_T2_TNM8_Pathological"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Stomach_Test#Test_T3_TNM8_Clinical -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_Test#Test_T3_TNM8_Clinical -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_T3_TNM8_Clinical">
+    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_stomach_Test#Test_T3_TNM8_Clinical">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cT"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Stomach_Test#Test_T3_TNM8_Pathological -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_Test#Test_T3_TNM8_Pathological -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_T3_TNM8_Pathological">
+    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_stomach_Test#Test_T3_TNM8_Pathological">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pT"/>
-        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_StageIV_pT_pN_M1"/>
+        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_stomach_Test#Test_StageIV_pT_pN_M1"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Stomach_Test#Test_T3_tumor -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_Test#Test_T3_tumor -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_T3_tumor">
+    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_stomach_Test#Test_T3_tumor">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachPrimaryTumor"/>
         <rdf:type>
             <owl:Class>
@@ -1322,15 +1322,15 @@
                 <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#SubserosaOfStomach"/>
             </owl:Restriction>
         </rdf:type>
-        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_T3_TNM8_Clinical"/>
-        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_T3_TNM8_Pathological"/>
+        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_stomach_Test#Test_T3_TNM8_Clinical"/>
+        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_stomach_Test#Test_T3_TNM8_Pathological"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Stomach_Test#Test_T3_tumor_nei -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_Test#Test_T3_tumor_nei -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_T3_tumor_nei">
+    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_stomach_Test#Test_T3_tumor_nei">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachPrimaryTumor"/>
         <rdf:type>
             <owl:Class>
@@ -1357,9 +1357,9 @@
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Stomach_Test#Test_T3_tumor_tmi -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_Test#Test_T3_tumor_tmi -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_T3_tumor_tmi">
+    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_stomach_Test#Test_T3_tumor_tmi">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachPrimaryTumor"/>
         <rdf:type>
             <owl:Class>
@@ -1398,26 +1398,26 @@
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Stomach_Test#Test_T4_TNM8_Clinical -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_Test#Test_T4_TNM8_Clinical -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_T4_TNM8_Clinical">
+    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_stomach_Test#Test_T4_TNM8_Clinical">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cT"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Stomach_Test#Test_T4_TNM8_Pathological -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_Test#Test_T4_TNM8_Pathological -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_T4_TNM8_Pathological">
+    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_stomach_Test#Test_T4_TNM8_Pathological">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pT"/>
-        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_StageIV_pT_pN_M1"/>
+        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_stomach_Test#Test_StageIV_pT_pN_M1"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Stomach_Test#Test_T4_tumor -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_Test#Test_T4_tumor -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_T4_tumor">
+    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_stomach_Test#Test_T4_tumor">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachPrimaryTumor"/>
         <rdf:type>
             <owl:Class>
@@ -1444,32 +1444,32 @@
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdf:type>
-        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_T4_TNM8_Clinical"/>
-        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_T4_TNM8_Pathological"/>
+        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_stomach_Test#Test_T4_TNM8_Clinical"/>
+        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_stomach_Test#Test_T4_TNM8_Pathological"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Stomach_Test#Test_T4a_TNM8_Clinical -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_Test#Test_T4a_TNM8_Clinical -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_T4a_TNM8_Clinical">
+    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_stomach_Test#Test_T4a_TNM8_Clinical">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cT"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Stomach_Test#Test_T4a_TNM8_Pathological -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_Test#Test_T4a_TNM8_Pathological -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_T4a_TNM8_Pathological">
+    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_stomach_Test#Test_T4a_TNM8_Pathological">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pT"/>
-        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_StageIV_pT_pN_M1"/>
+        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_stomach_Test#Test_StageIV_pT_pN_M1"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Stomach_Test#Test_T4a_tumor -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_Test#Test_T4a_tumor -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_T4a_tumor">
+    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_stomach_Test#Test_T4a_tumor">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachPrimaryTumor"/>
         <rdf:type>
             <owl:Restriction>
@@ -1488,32 +1488,32 @@
                 <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#Serosa"/>
             </owl:Restriction>
         </rdf:type>
-        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_T4a_TNM8_Clinical"/>
-        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_T4a_TNM8_Pathological"/>
+        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_stomach_Test#Test_T4a_TNM8_Clinical"/>
+        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_stomach_Test#Test_T4a_TNM8_Pathological"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Stomach_Test#Test_T4b_TNM8_Clinical -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_Test#Test_T4b_TNM8_Clinical -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_T4b_TNM8_Clinical">
+    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_stomach_Test#Test_T4b_TNM8_Clinical">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cT"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Stomach_Test#Test_T4b_TNM8_Pathological -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_Test#Test_T4b_TNM8_Pathological -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_T4b_TNM8_Pathological">
+    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_stomach_Test#Test_T4b_TNM8_Pathological">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pT"/>
-        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_StageIV_pT_pN_M1"/>
+        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_stomach_Test#Test_StageIV_pT_pN_M1"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Stomach_Test#Test_T4b_tumor -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_Test#Test_T4b_tumor -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_T4b_tumor">
+    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_stomach_Test#Test_T4b_tumor">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachPrimaryTumor"/>
         <rdf:type>
             <owl:Restriction>
@@ -1532,33 +1532,33 @@
                 <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#AnatomicalStructureAdjacentToStomach"/>
             </owl:Restriction>
         </rdf:type>
-        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_T4b_TNM8_Clinical"/>
-        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_T4b_TNM8_Pathological"/>
+        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_stomach_Test#Test_T4b_TNM8_Clinical"/>
+        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_stomach_Test#Test_T4b_TNM8_Pathological"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Stomach_Test#Test_TTis_TNM8_Clinical -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_Test#Test_TTis_TNM8_Clinical -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_TTis_TNM8_Clinical">
+    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_stomach_Test#Test_TTis_TNM8_Clinical">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cT"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Stomach_Test#Test_TTis_TNM8_Pathological -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_Test#Test_TTis_TNM8_Pathological -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_TTis_TNM8_Pathological">
+    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_stomach_Test#Test_TTis_TNM8_Pathological">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pT"/>
-        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_Stage0_pTis_pN0_M0"/>
-        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_StageIV_pT_pN_M1"/>
+        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_stomach_Test#Test_Stage0_pTis_pN0_M0"/>
+        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_stomach_Test#Test_StageIV_pT_pN_M1"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Stomach_Test#Test_TTis_tumor -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_Test#Test_TTis_tumor -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_TTis_tumor">
+    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_stomach_Test#Test_TTis_tumor">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachPrimaryTumor"/>
         <rdf:type>
             <owl:Restriction>
@@ -1577,43 +1577,43 @@
                 <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#EpitheliumOfStomach"/>
             </owl:Restriction>
         </rdf:type>
-        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_TTis_TNM8_Clinical"/>
-        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_TTis_TNM8_Pathological"/>
+        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_stomach_Test#Test_TTis_TNM8_Clinical"/>
+        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_stomach_Test#Test_TTis_TNM8_Pathological"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Stomach_Test#Test_TX_TNM8_Clinical -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_Test#Test_TX_TNM8_Clinical -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_TX_TNM8_Clinical">
+    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_stomach_Test#Test_TX_TNM8_Clinical">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_cT"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Stomach_Test#Test_TX_TNM8_Pathological -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_Test#Test_TX_TNM8_Pathological -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_TX_TNM8_Pathological">
+    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_stomach_Test#Test_TX_TNM8_Pathological">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pT"/>
-        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_StageIV_pT_pN_M1"/>
+        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_stomach_Test#Test_StageIV_pT_pN_M1"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Stomach_Test#Test_TX_tumor -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_Test#Test_TX_tumor -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_TX_tumor">
+    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_stomach_Test#Test_TX_tumor">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O.owl#NotAssessedMalignantAnatomicalStructure"/>
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachPrimaryTumor"/>
-        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_TX_TNM8_Clinical"/>
-        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_TX_TNM8_Pathological"/>
+        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_stomach_Test#Test_TX_TNM8_Clinical"/>
+        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_stomach_Test#Test_TX_TNM8_Pathological"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Stomach_Test#Test_Unclassifiable_tumor -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_Test#Test_Unclassifiable_tumor -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_Unclassifiable_tumor">
+    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_stomach_Test#Test_Unclassifiable_tumor">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachPrimaryTumor"/>
         <rdf:type>
             <owl:Class>
