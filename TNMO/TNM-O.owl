@@ -44,6 +44,12 @@ Institute of Medical Informatics, Statistics and Documentation, Medical Universi
     
 
 
+    <!-- http://purl.org/biotop/btl2.owl#isRepresentedBy -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+    
+
+
     <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
 
     <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
@@ -2043,9 +2049,9 @@ NotAssessedMalignantAnatomicalStructure subclassOf
 
     <!-- http://purl.org/tnmo/TNM-O_Stomach_Test#Test_Cardinality -->
 
-    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_Cardinality">
+    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_Cardinality">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality"/>
-    </rdf:Description>
+    </owl:NamedIndividual>
     
 
 
