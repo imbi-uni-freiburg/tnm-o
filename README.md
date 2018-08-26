@@ -17,14 +17,14 @@ Objective of this project is to represent the complete TNM Classification system
 
 ### Organ-specific modules 
 
-| represented organ |  v6  |  v7  |         v8         |
-| :---------------- | :--: | :--: | :----------------: |
-| Breast            |      |  X   | under construction |
-| Colon/ Rectum     |  X   |  X   | under construction |
-| Lung              |  X   |  X   | under construction |
-| Pancreas          |      |  X   |         X          |
-| Liver (HCC)       |      |      |         X          |
-| Stomach           |      |      |         X          |
+| represented organ |  v6  |       v7       |         v8         |
+| :---------------- | :--: | :------------: | :----------------: |
+| Breast            |      | under revision | under construction |
+| Colon/ Rectum     |  X   | under revision | under construction |
+| Lung              |  X   | under revision | under construction |
+| Pancreas          |      |       X        |         X          |
+| Liver (HCC)       |      |                |         X          |
+| Stomach           |      |                |         X          |
 
 
 ### Contributors

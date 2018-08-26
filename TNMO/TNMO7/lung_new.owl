@@ -1,0 +1,418 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#"
+     xml:base="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/biotop/btl2.owl#hasPart -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/biotop/btl2.owl#hasPart"/>
+    
+
+
+    <!-- http://purl.org/biotop/btl2.owl#isBearerOf -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/biotop/btl2.owl#isBearerOf"/>
+    
+
+
+    <!-- http://purl.org/biotop/btl2.owl#isIncludedIn -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/biotop/btl2.owl#isIncludedIn"/>
+    
+
+
+    <!-- http://purl.org/biotop/btl2.owl#projectsOnto -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/biotop/btl2.owl#projectsOnto"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#Invasive -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Invasive"/>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#Metastasis -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Metastasis"/>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#NoEvidence -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#NoEvidence"/>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#NotAssessedMalignantAnatomicalStructure -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#NotAssessedMalignantAnatomicalStructure"/>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#PrimaryTumorSiteClassifiedByMalignancy -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#PrimaryTumorSiteClassifiedByMalignancy"/>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#TumorAggregateClassifiedByMalignancy -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#TumorAggregateClassifiedByMalignancy"/>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#BodyOfVertebra -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#BodyOfVertebra"/>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#CarinaOfTrachea -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#CarinaOfTrachea"/>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#Esophagus -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#Esophagus"/>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#Heart -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#Heart"/>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#Mediastinum -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#Mediastinum"/>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#RecurrentLaryngealNerve -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#RecurrentLaryngealNerve"/>
+    
+
+
+    <!-- http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#CarcinomaInSituOfLung -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#CarcinomaInSituOfLung">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungPrimaryTumorTNM7"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#DistantMetastasisOfLungTumor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#DistantMetastasisOfLungTumor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#MetastasisOfLungTumor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#InvasiveLungTumorOfMainBronchusOrVisceralPleuraOrAssociatedWithAtelectasisOrObstructivePneumonitis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#InvasiveLungTumorOfMainBronchusOrVisceralPleuraOrAssociatedWithAtelectasisOrObstructivePneumonitis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungPrimaryTumorTNM7"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#InvasiveLungTumorOfNeighboringBodyParts -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#InvasiveLungTumorOfNeighboringBodyParts">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungPrimaryTumorTNM7"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#hasPart"/>
+                        <owl:someValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isIncludedIn"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:unionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#BodyOfVertebra"/>
+                                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#CarinaOfTrachea"/>
+                                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#Esophagus"/>
+                                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#Heart"/>
+                                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#Mediastinum"/>
+                                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#RecurrentLaryngealNerve"/>
+                                        </owl:unionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isBearerOf"/>
+                        <owl:someValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#projectsOnto"/>
+                                <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O.owl#Invasive"/>
+                            </owl:Restriction>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#PrimaryTumorSiteClassifiedByMalignancy"/>
+        <rdfs:comment>GreatVessels are not yet included!!</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungPrimaryTumorTNM7 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungPrimaryTumorTNM7">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#PrimaryTumorSiteClassifiedByMalignancy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumor2To3cmSurroundedByLungOrVisceralPleuraDistalToMainBronchus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumor2To3cmSurroundedByLungOrVisceralPleuraDistalToMainBronchus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumorMax3cmSurroundedByLungOrVisceralPleuraDistalToMainBronchus"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumor3To5cm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumor3To5cm">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumor3To7cm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumor3To7cm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumor3To7cm">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungPrimaryTumorTNM7"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumor5To7cm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumor5To7cm">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumor3To7cm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumorAggregate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumorAggregate">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#TumorAggregateClassifiedByMalignancy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumorAggregateAsRelatedToAssociatedOrganPathologies -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumorAggregateAsRelatedToAssociatedOrganPathologies">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumorAggregate"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumorAggregateAsRelatedToDistantMetastasis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumorAggregateAsRelatedToDistantMetastasis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumorAggregate"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumorAggregateAsRelatedToMetastaticRegionalLymphNodes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumorAggregateAsRelatedToMetastaticRegionalLymphNodes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumorAggregate"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumorAggregateWithDistantMetastasis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumorAggregateWithDistantMetastasis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumorAggregateAsRelatedToDistantMetastasis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumorAggregateWithDistantMetastasisNotConfinedToTheContralateralLobeOrPleuralNodulesOrMalignantPleuralOrPericardialEffusion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumorAggregateWithDistantMetastasisNotConfinedToTheContralateralLobeOrPleuralNodulesOrMalignantPleuralOrPericardialEffusion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumorAggregateWithDistantMetastasis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumorAggregateWithMetastasisConfinedToTheContralateralLobeOrPleuralNodulesOrPleuralOrPericardialEffusion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumorAggregateWithMetastasisConfinedToTheContralateralLobeOrPleuralNodulesOrPleuralOrPericardialEffusion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumorAggregateWithDistantMetastasis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumorAggregateWithMetastaticRegionalLymphNodesInContralateralMediastinalOrContralateralHilarOrIpsilateralScaleneOrContralateralScaleneOrSupraclavicularLymphNodes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumorAggregateWithMetastaticRegionalLymphNodesInContralateralMediastinalOrContralateralHilarOrIpsilateralScaleneOrContralateralScaleneOrSupraclavicularLymphNodes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumorAggregateAsRelatedToMetastaticRegionalLymphNodes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumorAggregateWithMetastaticRegionalLymphNodesInIpsilateralMediastinalOrSubcarinalLymphNodes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumorAggregateWithMetastaticRegionalLymphNodesInIpsilateralMediastinalOrSubcarinalLymphNodes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumorAggregateAsRelatedToMetastaticRegionalLymphNodes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumorAggregateWithMetastaticRegionalLymphNodesInIpsilateralPeribronchialOrIpsilateralHilarOrIpsilateralIntrapulmonaryLymphNodes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumorAggregateWithMetastaticRegionalLymphNodesInIpsilateralPeribronchialOrIpsilateralHilarOrIpsilateralIntrapulmonaryLymphNodes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumorAggregateAsRelatedToMetastaticRegionalLymphNodes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumorAggregateWithNoAssessmentOfRegionalLymphNodes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumorAggregateWithNoAssessmentOfRegionalLymphNodes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumorAggregateAsRelatedToMetastaticRegionalLymphNodes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumorAggregateWithoutMetastaticRegionalLymphNodes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumorAggregateWithoutMetastaticRegionalLymphNodes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumorAggregateAsRelatedToMetastaticRegionalLymphNodes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumorMax2cmSurroundedByLungOrVisceralPleuraDistalToMainBronchus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumorMax2cmSurroundedByLungOrVisceralPleuraDistalToMainBronchus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumorMax3cmSurroundedByLungOrVisceralPleuraDistalToMainBronchus"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumorMax3cmSurroundedByLungOrVisceralPleuraDistalToMainBronchus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumorMax3cmSurroundedByLungOrVisceralPleuraDistalToMainBronchus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungPrimaryTumorTNM7"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumorWithoutDistantMetastasis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumorWithoutDistantMetastasis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumorAggregateAsRelatedToDistantMetastasis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#MetastasisOfLungTumor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#MetastasisOfLungTumor">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Metastasis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#MetastaticRegionalLymphNodeOfLungTumor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#MetastaticRegionalLymphNodeOfLungTumor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#MetastasisOfLungTumor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#NoAssessmentOfPrimaryLungTumor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#NoAssessmentOfPrimaryLungTumor">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#NotAssessedMalignantAnatomicalStructure"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungPrimaryTumorTNM7"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungPrimaryTumorTNM7"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#NoEvidenceOfPrimaryLungTumor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#NoEvidenceOfPrimaryLungTumor">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungPrimaryTumorTNM7"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isBearerOf"/>
+                        <owl:someValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#projectsOnto"/>
+                                <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O.owl#NoEvidence"/>
+                            </owl:Restriction>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungPrimaryTumorTNM7"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
