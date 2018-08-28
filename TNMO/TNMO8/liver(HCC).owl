@@ -93,19 +93,8 @@
     
 
 
-<<<<<<< HEAD:TNMO/TNMO8/liver.owl
-    <!-- http://purl.org/tnmo/TNM-O.owl#Confinement -->
-||||||| merged common ancestors
-    <!-- http://purl.org/tnmo/TNM-O.owl#Invasive -->
-=======
     <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality0 -->
->>>>>>> 9f24a6f520b4d972132bfcb40508f2273f5ea511:TNMO/TNMO8/liver(HCC).owl
 
-<<<<<<< HEAD:TNMO/TNMO8/liver.owl
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Confinement"/>
-||||||| merged common ancestors
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Invasive"/>
-=======
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality0"/>
     
 
@@ -113,31 +102,18 @@
     <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality1OrMore -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality1OrMore"/>
->>>>>>> 9f24a6f520b4d972132bfcb40508f2273f5ea511:TNMO/TNMO8/liver(HCC).owl
     
 
 
-<<<<<<< HEAD:TNMO/TNMO8/liver.owl
-    <!-- http://purl.org/tnmo/TNM-O.owl#Invasive -->
-||||||| merged common ancestors
-    <!-- http://purl.org/tnmo/TNM-O.owl#MalignantAnatomicalStructure -->
-=======
     <!-- http://purl.org/tnmo/TNM-O.owl#Confinement -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Confinement"/>
     
->>>>>>> 9f24a6f520b4d972132bfcb40508f2273f5ea511:TNMO/TNMO8/liver(HCC).owl
 
-<<<<<<< HEAD:TNMO/TNMO8/liver.owl
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Invasive"/>
-||||||| merged common ancestors
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#MalignantAnatomicalStructure"/>
-=======
 
     <!-- http://purl.org/tnmo/TNM-O.owl#Invasive -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Invasive"/>
->>>>>>> 9f24a6f520b4d972132bfcb40508f2273f5ea511:TNMO/TNMO8/liver(HCC).owl
     
 
 
@@ -561,365 +537,7 @@
     
 
 
-<<<<<<< HEAD:TNMO/TNMO8/liver.owl
-    <!-- http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_StageIA -->
-
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_StageIA">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#RepresentationalUnitInLiverUICCStageGroupingInTNM8Classification"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
-                        <owl:someValuesFrom>
-                            <owl:Class>
-                                <owl:unionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cM0"/>
-                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pM0"/>
-                                </owl:unionOf>
-                            </owl:Class>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
-                        <owl:someValuesFrom>
-                            <owl:Class>
-                                <owl:unionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cN0"/>
-                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pN0"/>
-                                </owl:unionOf>
-                            </owl:Class>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
-                        <owl:someValuesFrom>
-                            <owl:Class>
-                                <owl:unionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cT1a"/>
-                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pT1a"/>
-                                </owl:unionOf>
-                            </owl:Class>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Liver#RepresentationalUnitInLiverUICCStageGroupingInTNM8Classification"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_StageIB -->
-
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_StageIB">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#RepresentationalUnitInLiverUICCStageGroupingInTNM8Classification"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
-                        <owl:someValuesFrom>
-                            <owl:Class>
-                                <owl:unionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cM0"/>
-                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pM0"/>
-                                </owl:unionOf>
-                            </owl:Class>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
-                        <owl:someValuesFrom>
-                            <owl:Class>
-                                <owl:unionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cN0"/>
-                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pN0"/>
-                                </owl:unionOf>
-                            </owl:Class>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
-                        <owl:someValuesFrom>
-                            <owl:Class>
-                                <owl:unionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cT1b"/>
-                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pT1b"/>
-                                </owl:unionOf>
-                            </owl:Class>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Liver#RepresentationalUnitInLiverUICCStageGroupingInTNM8Classification"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_StageII -->
-
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_StageII">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#RepresentationalUnitInLiverUICCStageGroupingInTNM8Classification"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
-                        <owl:someValuesFrom>
-                            <owl:Class>
-                                <owl:unionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cM0"/>
-                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pM0"/>
-                                </owl:unionOf>
-                            </owl:Class>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
-                        <owl:someValuesFrom>
-                            <owl:Class>
-                                <owl:unionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cN0"/>
-                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pN0"/>
-                                </owl:unionOf>
-                            </owl:Class>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
-                        <owl:someValuesFrom>
-                            <owl:Class>
-                                <owl:unionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cT2"/>
-                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pT2"/>
-                                </owl:unionOf>
-                            </owl:Class>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Liver#RepresentationalUnitInLiverUICCStageGroupingInTNM8Classification"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_StageIIIA -->
-
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_StageIIIA">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#RepresentationalUnitInLiverUICCStageGroupingInTNM8Classification"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
-                        <owl:someValuesFrom>
-                            <owl:Class>
-                                <owl:unionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cM0"/>
-                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pM0"/>
-                                </owl:unionOf>
-                            </owl:Class>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
-                        <owl:someValuesFrom>
-                            <owl:Class>
-                                <owl:unionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cN0"/>
-                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pN0"/>
-                                </owl:unionOf>
-                            </owl:Class>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
-                        <owl:someValuesFrom>
-                            <owl:Class>
-                                <owl:unionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cT3"/>
-                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pT3"/>
-                                </owl:unionOf>
-                            </owl:Class>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Liver#RepresentationalUnitInLiverUICCStageGroupingInTNM8Classification"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_StageIIIB -->
-
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_StageIIIB">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#RepresentationalUnitInLiverUICCStageGroupingInTNM8Classification"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
-                        <owl:someValuesFrom>
-                            <owl:Class>
-                                <owl:unionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cM0"/>
-                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pM0"/>
-                                </owl:unionOf>
-                            </owl:Class>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
-                        <owl:someValuesFrom>
-                            <owl:Class>
-                                <owl:unionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cN0"/>
-                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pN0"/>
-                                </owl:unionOf>
-                            </owl:Class>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
-                        <owl:someValuesFrom>
-                            <owl:Class>
-                                <owl:unionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cT4"/>
-                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pT4"/>
-                                </owl:unionOf>
-                            </owl:Class>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Liver#RepresentationalUnitInLiverUICCStageGroupingInTNM8Classification"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_StageIVA -->
-
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_StageIVA">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#RepresentationalUnitInLiverUICCStageGroupingInTNM8Classification"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
-                        <owl:someValuesFrom>
-                            <owl:Class>
-                                <owl:unionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cM0"/>
-                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pM0"/>
-                                </owl:unionOf>
-                            </owl:Class>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
-                        <owl:someValuesFrom>
-                            <owl:Class>
-                                <owl:unionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cN1"/>
-                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pN1"/>
-                                </owl:unionOf>
-                            </owl:Class>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
-                        <owl:someValuesFrom>
-                            <owl:Class>
-                                <owl:unionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cT1a"/>
-                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cT1b"/>
-                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cT2"/>
-                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cT3"/>
-                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cT4"/>
-                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pT1a"/>
-                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pT1b"/>
-                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pT2"/>
-                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pT3"/>
-                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pT4"/>
-                                </owl:unionOf>
-                            </owl:Class>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Liver#RepresentationalUnitInLiverUICCStageGroupingInTNM8Classification"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_StageIVB -->
-
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_StageIVB">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#RepresentationalUnitInLiverUICCStageGroupingInTNM8Classification"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
-                        <owl:someValuesFrom>
-                            <owl:Class>
-                                <owl:unionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cM1"/>
-                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pM1"/>
-                                </owl:unionOf>
-                            </owl:Class>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
-                        <owl:someValuesFrom>
-                            <owl:Class>
-                                <owl:unionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cN"/>
-                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pN"/>
-                                </owl:unionOf>
-                            </owl:Class>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
-                        <owl:someValuesFrom>
-                            <owl:Class>
-                                <owl:unionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cT1a"/>
-                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cT1b"/>
-                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cT2"/>
-                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cT3"/>
-                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cT4"/>
-                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pT1a"/>
-                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pT1b"/>
-                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pT2"/>
-                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pT3"/>
-                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pT4"/>
-                                </owl:unionOf>
-                            </owl:Class>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Liver#RepresentationalUnitInLiverUICCStageGroupingInTNM8Classification"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cM -->
-||||||| merged common ancestors
-    <!-- http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cM -->
-=======
     <!-- http://purl.org/tnmo/TNM-O_liver(HCC)_8#HCCTNM8_StageIIIB -->
->>>>>>> 9f24a6f520b4d972132bfcb40508f2273f5ea511:TNMO/TNMO8/liver(HCC).owl
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_liver(HCC)_8#HCCTNM8_StageIIIB">
         <owl:equivalentClass>
@@ -1055,33 +673,6 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-<<<<<<< HEAD:TNMO/TNMO8/liver.owl
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cM"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
-                <owl:allValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_StageIA"/>
-                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_StageIB"/>
-                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_StageII"/>
-                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_StageIIIA"/>
-                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_StageIIIB"/>
-                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_StageIVA"/>
-                            <owl:Class>
-                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInUICCStageGrouping"/>
-                            </owl:Class>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:allValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <owl:disjointWith rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cM1"/>
-||||||| merged common ancestors
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cM"/>
-        <owl:disjointWith rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cM1"/>
-=======
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_liver(HCC)_8#HCCTNM8_cM"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1104,7 +695,6 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.org/tnmo/TNM-O_liver(HCC)_8#HCCTNM8_cM1"/>
->>>>>>> 9f24a6f520b4d972132bfcb40508f2273f5ea511:TNMO/TNMO8/liver(HCC).owl
     </owl:Class>
     
 
@@ -1127,26 +717,6 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-<<<<<<< HEAD:TNMO/TNMO8/liver.owl
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cM"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
-                <owl:allValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_StageIVB"/>
-                            <owl:Class>
-                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInUICCStageGrouping"/>
-                            </owl:Class>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:allValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-||||||| merged common ancestors
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cM"/>
-=======
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_liver(HCC)_8#HCCTNM8_cM"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1163,7 +733,6 @@
                 </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
->>>>>>> 9f24a6f520b4d972132bfcb40508f2273f5ea511:TNMO/TNMO8/liver(HCC).owl
     </owl:Class>
     
 
@@ -1200,30 +769,6 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-<<<<<<< HEAD:TNMO/TNMO8/liver.owl
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cN"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
-                <owl:allValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_StageIA"/>
-                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_StageIB"/>
-                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_StageII"/>
-                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_StageIIIA"/>
-                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_StageIIIB"/>
-                            <owl:Class>
-                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInUICCStageGrouping"/>
-                            </owl:Class>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:allValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-||||||| merged common ancestors
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cN"/>
-=======
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_liver(HCC)_8#HCCTNM8_cN"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1244,7 +789,6 @@
                 </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
->>>>>>> 9f24a6f520b4d972132bfcb40508f2273f5ea511:TNMO/TNMO8/liver(HCC).owl
     </owl:Class>
     
 
@@ -1267,27 +811,6 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-<<<<<<< HEAD:TNMO/TNMO8/liver.owl
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cN"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
-                <owl:allValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_StageIVA"/>
-                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_StageIVB"/>
-                            <owl:Class>
-                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInUICCStageGrouping"/>
-                            </owl:Class>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:allValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-||||||| merged common ancestors
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cN"/>
-=======
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_liver(HCC)_8#HCCTNM8_cN"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1305,7 +828,6 @@
                 </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
->>>>>>> 9f24a6f520b4d972132bfcb40508f2273f5ea511:TNMO/TNMO8/liver(HCC).owl
     </owl:Class>
     
 
@@ -1408,29 +930,6 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-<<<<<<< HEAD:TNMO/TNMO8/liver.owl
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cT"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
-                <owl:allValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_StageIA"/>
-                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_StageIB"/>
-                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_StageIVA"/>
-                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_StageIVB"/>
-                            <owl:Class>
-                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInUICCStageGrouping"/>
-                            </owl:Class>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:allValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-||||||| merged common ancestors
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cT"/>
-=======
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_liver(HCC)_8#HCCTNM8_cT"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1450,7 +949,6 @@
                 </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
->>>>>>> 9f24a6f520b4d972132bfcb40508f2273f5ea511:TNMO/TNMO8/liver(HCC).owl
     </owl:Class>
     
 
@@ -1473,30 +971,6 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-<<<<<<< HEAD:TNMO/TNMO8/liver.owl
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cT1"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
-                <owl:allValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_StageIA"/>
-                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_StageIVA"/>
-                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_StageIVB"/>
-                            <owl:Class>
-                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInUICCStageGrouping"/>
-                            </owl:Class>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:allValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <owl:disjointWith rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cT1b"/>
-||||||| merged common ancestors
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cT1"/>
-        <owl:disjointWith rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cT1b"/>
-=======
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_liver(HCC)_8#HCCTNM8_cT1"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1516,7 +990,6 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.org/tnmo/TNM-O_liver(HCC)_8#HCCTNM8_cT1b"/>
->>>>>>> 9f24a6f520b4d972132bfcb40508f2273f5ea511:TNMO/TNMO8/liver(HCC).owl
     </owl:Class>
     
 
@@ -1539,28 +1012,6 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-<<<<<<< HEAD:TNMO/TNMO8/liver.owl
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cT1"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
-                <owl:allValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_StageIB"/>
-                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_StageIVA"/>
-                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_StageIVB"/>
-                            <owl:Class>
-                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInUICCStageGrouping"/>
-                            </owl:Class>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:allValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-||||||| merged common ancestors
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cT1"/>
-=======
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_liver(HCC)_8#HCCTNM8_cT1"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1579,7 +1030,6 @@
                 </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
->>>>>>> 9f24a6f520b4d972132bfcb40508f2273f5ea511:TNMO/TNMO8/liver(HCC).owl
     </owl:Class>
     
 
@@ -1622,28 +1072,6 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-<<<<<<< HEAD:TNMO/TNMO8/liver.owl
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cT"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
-                <owl:allValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_StageII"/>
-                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_StageIVA"/>
-                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_StageIVB"/>
-                            <owl:Class>
-                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInUICCStageGrouping"/>
-                            </owl:Class>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:allValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-||||||| merged common ancestors
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cT"/>
-=======
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_liver(HCC)_8#HCCTNM8_cT"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1662,7 +1090,6 @@
                 </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
->>>>>>> 9f24a6f520b4d972132bfcb40508f2273f5ea511:TNMO/TNMO8/liver(HCC).owl
     </owl:Class>
     
 
@@ -1685,30 +1112,6 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-<<<<<<< HEAD:TNMO/TNMO8/liver.owl
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cT"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
-                <owl:allValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_StageIIIA"/>
-                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_StageIVA"/>
-                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_StageIVB"/>
-                            <owl:Class>
-                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInUICCStageGrouping"/>
-                            </owl:Class>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:allValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <owl:disjointWith rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cT4"/>
-||||||| merged common ancestors
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cT"/>
-        <owl:disjointWith rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cT4"/>
-=======
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_liver(HCC)_8#HCCTNM8_cT"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1728,7 +1131,6 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.org/tnmo/TNM-O_liver(HCC)_8#HCCTNM8_cT4"/>
->>>>>>> 9f24a6f520b4d972132bfcb40508f2273f5ea511:TNMO/TNMO8/liver(HCC).owl
     </owl:Class>
     
 
@@ -1783,28 +1185,6 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-<<<<<<< HEAD:TNMO/TNMO8/liver.owl
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cT"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
-                <owl:allValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_StageIIIB"/>
-                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_StageIVA"/>
-                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_StageIVB"/>
-                            <owl:Class>
-                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInUICCStageGrouping"/>
-                            </owl:Class>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:allValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-||||||| merged common ancestors
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cT"/>
-=======
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_liver(HCC)_8#HCCTNM8_cT"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1823,7 +1203,6 @@
                 </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
->>>>>>> 9f24a6f520b4d972132bfcb40508f2273f5ea511:TNMO/TNMO8/liver(HCC).owl
     </owl:Class>
     
 
@@ -1877,33 +1256,6 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-<<<<<<< HEAD:TNMO/TNMO8/liver.owl
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pM"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
-                <owl:allValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_StageIA"/>
-                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_StageIB"/>
-                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_StageII"/>
-                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_StageIIIA"/>
-                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_StageIIIB"/>
-                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_StageIVA"/>
-                            <owl:Class>
-                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInUICCStageGrouping"/>
-                            </owl:Class>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:allValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <owl:disjointWith rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pM1"/>
-||||||| merged common ancestors
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pM"/>
-        <owl:disjointWith rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pM1"/>
-=======
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_liver(HCC)_8#HCCTNM8_pM"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1926,7 +1278,6 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.org/tnmo/TNM-O_liver(HCC)_8#HCCTNM8_pM1"/>
->>>>>>> 9f24a6f520b4d972132bfcb40508f2273f5ea511:TNMO/TNMO8/liver(HCC).owl
     </owl:Class>
     
 
@@ -1949,26 +1300,6 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-<<<<<<< HEAD:TNMO/TNMO8/liver.owl
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pM"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
-                <owl:allValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_StageIVB"/>
-                            <owl:Class>
-                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInUICCStageGrouping"/>
-                            </owl:Class>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:allValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-||||||| merged common ancestors
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pM"/>
-=======
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_liver(HCC)_8#HCCTNM8_pM"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1985,7 +1316,6 @@
                 </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
->>>>>>> 9f24a6f520b4d972132bfcb40508f2273f5ea511:TNMO/TNMO8/liver(HCC).owl
     </owl:Class>
     
 
@@ -2016,30 +1346,6 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-<<<<<<< HEAD:TNMO/TNMO8/liver.owl
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pN"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
-                <owl:allValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_StageIA"/>
-                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_StageIB"/>
-                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_StageII"/>
-                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_StageIIIA"/>
-                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_StageIIIB"/>
-                            <owl:Class>
-                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInUICCStageGrouping"/>
-                            </owl:Class>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:allValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-||||||| merged common ancestors
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pN"/>
-=======
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_liver(HCC)_8#HCCTNM8_pN"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -2060,7 +1366,6 @@
                 </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
->>>>>>> 9f24a6f520b4d972132bfcb40508f2273f5ea511:TNMO/TNMO8/liver(HCC).owl
     </owl:Class>
     
 
@@ -2083,27 +1388,6 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-<<<<<<< HEAD:TNMO/TNMO8/liver.owl
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pN"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
-                <owl:allValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_StageIVA"/>
-                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_StageIVB"/>
-                            <owl:Class>
-                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInUICCStageGrouping"/>
-                            </owl:Class>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:allValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-||||||| merged common ancestors
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pN"/>
-=======
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_liver(HCC)_8#HCCTNM8_pN"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -2121,7 +1405,6 @@
                 </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
->>>>>>> 9f24a6f520b4d972132bfcb40508f2273f5ea511:TNMO/TNMO8/liver(HCC).owl
     </owl:Class>
     
 
@@ -2224,29 +1507,6 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-<<<<<<< HEAD:TNMO/TNMO8/liver.owl
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pT"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
-                <owl:allValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_StageIA"/>
-                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_StageIB"/>
-                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_StageIVA"/>
-                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_StageIVB"/>
-                            <owl:Class>
-                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInUICCStageGrouping"/>
-                            </owl:Class>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:allValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-||||||| merged common ancestors
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pT"/>
-=======
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_liver(HCC)_8#HCCTNM8_pT"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -2266,7 +1526,6 @@
                 </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
->>>>>>> 9f24a6f520b4d972132bfcb40508f2273f5ea511:TNMO/TNMO8/liver(HCC).owl
     </owl:Class>
     
 
@@ -2289,30 +1548,6 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-<<<<<<< HEAD:TNMO/TNMO8/liver.owl
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pT1"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
-                <owl:allValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_StageIA"/>
-                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_StageIVA"/>
-                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_StageIVB"/>
-                            <owl:Class>
-                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInUICCStageGrouping"/>
-                            </owl:Class>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:allValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <owl:disjointWith rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pT1b"/>
-||||||| merged common ancestors
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pT1"/>
-        <owl:disjointWith rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pT1b"/>
-=======
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_liver(HCC)_8#HCCTNM8_pT1"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -2332,7 +1567,6 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.org/tnmo/TNM-O_liver(HCC)_8#HCCTNM8_pT1b"/>
->>>>>>> 9f24a6f520b4d972132bfcb40508f2273f5ea511:TNMO/TNMO8/liver(HCC).owl
     </owl:Class>
     
 
@@ -2355,28 +1589,6 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-<<<<<<< HEAD:TNMO/TNMO8/liver.owl
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pT1"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
-                <owl:allValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_StageIB"/>
-                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_StageIVA"/>
-                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_StageIVB"/>
-                            <owl:Class>
-                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInUICCStageGrouping"/>
-                            </owl:Class>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:allValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-||||||| merged common ancestors
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pT1"/>
-=======
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_liver(HCC)_8#HCCTNM8_pT1"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -2395,7 +1607,6 @@
                 </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
->>>>>>> 9f24a6f520b4d972132bfcb40508f2273f5ea511:TNMO/TNMO8/liver(HCC).owl
     </owl:Class>
     
 
@@ -2438,28 +1649,6 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-<<<<<<< HEAD:TNMO/TNMO8/liver.owl
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pT"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
-                <owl:allValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_StageII"/>
-                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_StageIVA"/>
-                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_StageIVB"/>
-                            <owl:Class>
-                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInUICCStageGrouping"/>
-                            </owl:Class>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:allValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-||||||| merged common ancestors
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pT"/>
-=======
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_liver(HCC)_8#HCCTNM8_pT"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -2478,7 +1667,6 @@
                 </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
->>>>>>> 9f24a6f520b4d972132bfcb40508f2273f5ea511:TNMO/TNMO8/liver(HCC).owl
     </owl:Class>
     
 
@@ -2501,28 +1689,6 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-<<<<<<< HEAD:TNMO/TNMO8/liver.owl
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pT"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
-                <owl:allValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_StageIIIA"/>
-                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_StageIVA"/>
-                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_StageIVB"/>
-                            <owl:Class>
-                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInUICCStageGrouping"/>
-                            </owl:Class>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:allValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-||||||| merged common ancestors
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pT"/>
-=======
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_liver(HCC)_8#HCCTNM8_pT"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -2541,7 +1707,6 @@
                 </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
->>>>>>> 9f24a6f520b4d972132bfcb40508f2273f5ea511:TNMO/TNMO8/liver(HCC).owl
     </owl:Class>
     
 
@@ -2596,28 +1761,6 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-<<<<<<< HEAD:TNMO/TNMO8/liver.owl
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pT"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
-                <owl:allValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_StageIIIB"/>
-                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_StageIVA"/>
-                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_StageIVB"/>
-                            <owl:Class>
-                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInUICCStageGrouping"/>
-                            </owl:Class>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:allValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-||||||| merged common ancestors
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_pT"/>
-=======
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_liver(HCC)_8#HCCTNM8_pT"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -2636,7 +1779,6 @@
                 </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
->>>>>>> 9f24a6f520b4d972132bfcb40508f2273f5ea511:TNMO/TNMO8/liver(HCC).owl
     </owl:Class>
     
 
@@ -2666,36 +1808,8 @@
 
     <!-- http://purl.org/tnmo/TNM-O_liver(HCC)_8#HCCTumorAggregate -->
 
-<<<<<<< HEAD:TNMO/TNMO8/liver.owl
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTumorAggregate">
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#TumorAggregateClassifiedByMalignancy"/>
-||||||| merged common ancestors
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTumorAggregate">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#TumorAggregateClassifiedByMalignancy"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isPartOf"/>
-                        <owl:someValuesFrom>
-                            <owl:Class>
-                                <owl:intersectionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#MalignantAnatomicalStructure"/>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#hasPart"/>
-                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Liver#LiverPrimaryTumor"/>
-                                    </owl:Restriction>
-                                </owl:intersectionOf>
-                            </owl:Class>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-=======
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_liver(HCC)_8#HCCTumorAggregate">
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#TumorAggregateClassifiedByMalignancy"/>
->>>>>>> 9f24a6f520b4d972132bfcb40508f2273f5ea511:TNMO/TNMO8/liver(HCC).owl
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
@@ -2808,22 +1922,6 @@
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-<<<<<<< HEAD:TNMO/TNMO8/liver.owl
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTumorAggregateAsRelatedToMetastaticRegionalLymphNodes"/>
-                    <owl:Class>
-                        <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#NotAssessedMalignantAnatomicalStructure"/>
-                    </owl:Class>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#hasPart"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Liver#MetastaticRegionalLymphNodeOfLiverTumor"/>
-                    </owl:Restriction>
-||||||| merged common ancestors
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTumorAggregateAsRelatedToMetastaticRegionalLymphNodes"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#hasPart"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Liver#MetastaticRegionalLymphNodeOfLiverTumor"/>
-                    </owl:Restriction>
-=======
                     <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_liver(HCC)_8#HCCTumorAggregateAsRelatedToMetastaticRegionalLymphNodes"/>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
@@ -2845,7 +1943,6 @@
                     <owl:Class>
                         <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#NotAssessedMalignantAnatomicalStructure"/>
                     </owl:Class>
->>>>>>> 9f24a6f520b4d972132bfcb40508f2273f5ea511:TNMO/TNMO8/liver(HCC).owl
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
@@ -2948,14 +2045,6 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_liver(HCC)_8#HCCTumorAggregateAsRelatedToMetastaticRegionalLymphNodes"/>
                     <owl:Class>
-<<<<<<< HEAD:TNMO/TNMO8/liver.owl
-                        <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#NotAssessedMalignantAnatomicalStructure"/>
-                    </owl:Class>
-                    <owl:Class>
-                        <owl:complementOf>
-||||||| merged common ancestors
-                        <owl:complementOf>
-=======
                         <owl:unionOf rdf:parseType="Collection">
                             <owl:Class>
                                 <owl:complementOf>
@@ -3085,7 +2174,6 @@
                                     </owl:Restriction>
                                 </owl:intersectionOf>
                             </owl:Class>
->>>>>>> 9f24a6f520b4d972132bfcb40508f2273f5ea511:TNMO/TNMO8/liver(HCC).owl
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#hasPart"/>
                                 <owl:someValuesFrom>
@@ -4049,27 +3137,6 @@
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-<<<<<<< HEAD:TNMO/TNMO8/liver.owl
-            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_StageIA"/>
-            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_StageIB"/>
-            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_StageII"/>
-            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_StageIIIA"/>
-            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_StageIIIB"/>
-            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_StageIVA"/>
-            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_StageIVB"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cM"/>
-            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cN"/>
-            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cT"/>
-||||||| merged common ancestors
-            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cM"/>
-            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cN"/>
-            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#LiverTNM8_cT"/>
-=======
             <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_liver(HCC)_8#HCCTNM8_StageIA"/>
             <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_liver(HCC)_8#HCCTNM8_StageIB"/>
             <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_liver(HCC)_8#HCCTNM8_StageII"/>
@@ -4085,7 +3152,6 @@
             <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_liver(HCC)_8#HCCTNM8_cM"/>
             <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_liver(HCC)_8#HCCTNM8_cN"/>
             <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_liver(HCC)_8#HCCTNM8_cT"/>
->>>>>>> 9f24a6f520b4d972132bfcb40508f2273f5ea511:TNMO/TNMO8/liver(HCC).owl
         </owl:members>
     </rdf:Description>
     <rdf:Description>

@@ -35,23 +35,6 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
-    // Annotation properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
-
-    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
     // Object Properties
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -74,23 +57,12 @@
 
     <!-- http://purl.org/biotop/btl2.owl#isIncludedIn -->
 
-<<<<<<< HEAD
-    <owl:ObjectProperty rdf:about="http://purl.org/biotop/btl2.owl#isIncludedIn">
-        <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.org/biotop/btl2.owl#isIncludedIn"/>
-            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#surrounds"/>
-        </owl:propertyChainAxiom>
-    </owl:ObjectProperty>
-||||||| merged common ancestors
-    <owl:ObjectProperty rdf:about="http://purl.org/biotop/btl2.owl#isIncludedIn"/>
-=======
     <owl:ObjectProperty rdf:about="http://purl.org/biotop/btl2.owl#isIncludedIn">
         <owl:propertyChainAxiom rdf:parseType="Collection">
             <rdf:Description rdf:about="http://purl.org/biotop/btl2.owl#isIncludedIn"/>
             <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#surrounds"/>
         </owl:propertyChainAxiom>
     </owl:ObjectProperty>
->>>>>>> 9f24a6f520b4d972132bfcb40508f2273f5ea511
     
 
 
@@ -112,17 +84,6 @@
     
 
 
-<<<<<<< HEAD
-    <!-- http://purl.org/tnmo/TNM-O_Stomach#surrounds -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/tnmo/TNM-O_Stomach#surrounds">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-    </owl:ObjectProperty>
-    
-
-
-||||||| merged common ancestors
-=======
     <!-- http://purl.org/tnmo/TNM-O_stomach_8#surrounds -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#surrounds">
@@ -131,7 +92,6 @@
     
 
 
->>>>>>> 9f24a6f520b4d972132bfcb40508f2273f5ea511
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -253,31 +213,6 @@
 
     <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#MuscleLayerOfStomach -->
 
-<<<<<<< HEAD
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#MuscleLayerOfStomach">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#OrganComponentLayer"/>
-                    <owl:Class>
-                        <owl:complementOf>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#surrounds"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#MuscleLayerOfStomach"/>
-                            </owl:Restriction>
-                        </owl:complementOf>
-                    </owl:Class>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#surrounds"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#SubmucosaOfStomach"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-    </owl:Class>
-||||||| merged common ancestors
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#MuscleLayerOfStomach"/>
-=======
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#MuscleLayerOfStomach">
         <owl:equivalentClass>
             <owl:Class>
@@ -299,43 +234,11 @@
             </owl:Class>
         </owl:equivalentClass>
     </owl:Class>
->>>>>>> 9f24a6f520b4d972132bfcb40508f2273f5ea511
     
 
 
     <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#MuscularisMucosaeOfStomach -->
 
-<<<<<<< HEAD
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#MuscularisMucosaeOfStomach">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#OrganComponentLayer"/>
-                    <owl:Class>
-                        <owl:complementOf>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#surrounds"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#MuscularisMucosaeOfStomach"/>
-                            </owl:Restriction>
-                        </owl:complementOf>
-                    </owl:Class>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#surrounds"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#LaminaPropriaOfStomach"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#OrganComponentLayer -->
-
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#OrganComponentLayer"/>
-||||||| merged common ancestors
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#MuscularisMucosaeOfStomach"/>
-=======
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#MuscularisMucosaeOfStomach">
         <owl:equivalentClass>
             <owl:Class>
@@ -363,43 +266,11 @@
     <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#OrganComponentLayer -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#OrganComponentLayer"/>
->>>>>>> 9f24a6f520b4d972132bfcb40508f2273f5ea511
     
 
 
     <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#Serosa -->
 
-<<<<<<< HEAD
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#Serosa">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#OrganComponentLayer"/>
-                    <owl:Class>
-                        <owl:complementOf>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#surrounds"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#Serosa"/>
-                            </owl:Restriction>
-                        </owl:complementOf>
-                    </owl:Class>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#surrounds"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#SubserosaOfStomach"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#SerosaOfStomach -->
-
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#SerosaOfStomach"/>
-||||||| merged common ancestors
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#Serosa"/>
-=======
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#Serosa">
         <owl:equivalentClass>
             <owl:Class>
@@ -427,37 +298,11 @@
     <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#SerosaOfStomach -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#SerosaOfStomach"/>
->>>>>>> 9f24a6f520b4d972132bfcb40508f2273f5ea511
     
 
 
     <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#SubmucosaOfStomach -->
 
-<<<<<<< HEAD
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#SubmucosaOfStomach">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#OrganComponentLayer"/>
-                    <owl:Class>
-                        <owl:complementOf>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#surrounds"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#SubmucosaOfStomach"/>
-                            </owl:Restriction>
-                        </owl:complementOf>
-                    </owl:Class>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#surrounds"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#MuscularisMucosaeOfStomach"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-    </owl:Class>
-||||||| merged common ancestors
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#SubmucosaOfStomach"/>
-=======
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#SubmucosaOfStomach">
         <owl:equivalentClass>
             <owl:Class>
@@ -479,37 +324,11 @@
             </owl:Class>
         </owl:equivalentClass>
     </owl:Class>
->>>>>>> 9f24a6f520b4d972132bfcb40508f2273f5ea511
     
 
 
     <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#SubserosaOfStomach -->
 
-<<<<<<< HEAD
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#SubserosaOfStomach">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#OrganComponentLayer"/>
-                    <owl:Class>
-                        <owl:complementOf>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#surrounds"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#SubserosaOfStomach"/>
-                            </owl:Restriction>
-                        </owl:complementOf>
-                    </owl:Class>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#surrounds"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#MuscleLayerOfStomach"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-    </owl:Class>
-||||||| merged common ancestors
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#SubserosaOfStomach"/>
-=======
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#SubserosaOfStomach">
         <owl:equivalentClass>
             <owl:Class>
@@ -531,7 +350,6 @@
             </owl:Class>
         </owl:equivalentClass>
     </owl:Class>
->>>>>>> 9f24a6f520b4d972132bfcb40508f2273f5ea511
     
 
 
@@ -705,80 +523,8 @@
 
     <!-- http://purl.org/tnmo/TNM-O_stomach_8#InvasiveStomachTumorOfLaminaPropriaOrMuscularisMucosaeOrSubmucosae -->
 
-<<<<<<< HEAD
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Stomach#InvasiveStomachTumorOfLaminaPropriaOrMuscularisMucosaeOrSubmucosae">
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachPrimaryTumor"/>
-||||||| merged common ancestors
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Stomach#InvasiveStomachTumorOfLaminaPropriaOrMuscularisMucosaeOrSubmucosae">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachPrimaryTumor"/>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isIncludedIn"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#LaminaPropriaOfStomach"/>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isIncludedIn"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#MuscularisMucosaeOfStomach"/>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isIncludedIn"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#SubmucosaOfStomach"/>
-                            </owl:Restriction>
-                        </owl:unionOf>
-                    </owl:Class>
-                    <owl:Class>
-                        <owl:complementOf>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isIncludedIn"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#AnatomicalStructureAdjacentToStomach"/>
-                            </owl:Restriction>
-                        </owl:complementOf>
-                    </owl:Class>
-                    <owl:Class>
-                        <owl:complementOf>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isIncludedIn"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#MuscleLayerOfStomach"/>
-                            </owl:Restriction>
-                        </owl:complementOf>
-                    </owl:Class>
-                    <owl:Class>
-                        <owl:complementOf>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isIncludedIn"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#Serosa"/>
-                            </owl:Restriction>
-                        </owl:complementOf>
-                    </owl:Class>
-                    <owl:Class>
-                        <owl:complementOf>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isIncludedIn"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#SubserosaOfStomach"/>
-                            </owl:Restriction>
-                        </owl:complementOf>
-                    </owl:Class>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isBearerOf"/>
-                        <owl:someValuesFrom>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#projectsOnto"/>
-                                <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O.owl#Invasive"/>
-                            </owl:Restriction>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachPrimaryTumor"/>
-=======
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#InvasiveStomachTumorOfLaminaPropriaOrMuscularisMucosaeOrSubmucosae">
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachPrimaryTumor"/>
->>>>>>> 9f24a6f520b4d972132bfcb40508f2273f5ea511
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
@@ -805,41 +551,11 @@
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-<<<<<<< HEAD
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachPrimaryTumor"/>
-                    <owl:Class>
-                        <owl:complementOf>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isIncludedIn"/>
-||||||| merged common ancestors
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachPrimaryTumor"/>
-                    <owl:Class>
-                        <owl:complementOf>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isIncludedIn"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#AnatomicalStructureAdjacentToStomach"/>
-                            </owl:Restriction>
-                        </owl:complementOf>
-                    </owl:Class>
-                    <owl:Class>
-                        <owl:complementOf>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isIncludedIn"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#Serosa"/>
-                            </owl:Restriction>
-                        </owl:complementOf>
-                    </owl:Class>
-                    <owl:Class>
-                        <owl:complementOf>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isIncludedIn"/>
-=======
                     <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachPrimaryTumor"/>
                     <owl:Class>
                         <owl:complementOf>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isIncludedIn"/>
->>>>>>> 9f24a6f520b4d972132bfcb40508f2273f5ea511
                                 <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#SubserosaOfStomach"/>
                             </owl:Restriction>
                         </owl:complementOf>
@@ -935,44 +651,8 @@
 
     <!-- http://purl.org/tnmo/TNM-O_stomach_8#InvasiveStomachTumorOfSerosaOrAdjacentStructures -->
 
-<<<<<<< HEAD
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Stomach#InvasiveStomachTumorOfSerosaOrAdjacentStructures">
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachPrimaryTumor"/>
-||||||| merged common ancestors
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Stomach#InvasiveStomachTumorOfSerosaOrAdjacentStructures">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachPrimaryTumor"/>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isIncludedIn"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#AnatomicalStructureAdjacentToStomach"/>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isIncludedIn"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#Serosa"/>
-                            </owl:Restriction>
-                        </owl:unionOf>
-                    </owl:Class>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isBearerOf"/>
-                        <owl:someValuesFrom>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#projectsOnto"/>
-                                <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O.owl#Invasive"/>
-                            </owl:Restriction>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachPrimaryTumor"/>
-=======
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#InvasiveStomachTumorOfSerosaOrAdjacentStructures">
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachPrimaryTumor"/>
->>>>>>> 9f24a6f520b4d972132bfcb40508f2273f5ea511
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
@@ -999,33 +679,11 @@
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-<<<<<<< HEAD
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachPrimaryTumor"/>
-                    <owl:Class>
-                        <owl:complementOf>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isIncludedIn"/>
-||||||| merged common ancestors
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachPrimaryTumor"/>
-                    <owl:Class>
-                        <owl:complementOf>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isIncludedIn"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#AnatomicalStructureAdjacentToStomach"/>
-                            </owl:Restriction>
-                        </owl:complementOf>
-                    </owl:Class>
-                    <owl:Class>
-                        <owl:complementOf>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isIncludedIn"/>
-=======
                     <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachPrimaryTumor"/>
                     <owl:Class>
                         <owl:complementOf>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isIncludedIn"/>
->>>>>>> 9f24a6f520b4d972132bfcb40508f2273f5ea511
                                 <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#MuscleLayerOfStomach"/>
                             </owl:Restriction>
                         </owl:complementOf>
@@ -1073,36 +731,12 @@
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-<<<<<<< HEAD
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachPrimaryTumor"/>
-                    <owl:Class>
-                        <owl:complementOf>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isIncludedIn"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#SerosaOfStomach"/>
-||||||| merged common ancestors
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachPrimaryTumor"/>
-                    <owl:Class>
-                        <owl:complementOf>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isIncludedIn"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#AnatomicalStructureAdjacentToStomach"/>
-                            </owl:Restriction>
-                        </owl:complementOf>
-                    </owl:Class>
-                    <owl:Class>
-                        <owl:complementOf>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isIncludedIn"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#Serosa"/>
-=======
                     <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachPrimaryTumor"/>
                     <owl:Class>
                         <owl:complementOf>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isIncludedIn"/>
                                 <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#SerosaOfStomach"/>
->>>>>>> 9f24a6f520b4d972132bfcb40508f2273f5ea511
                             </owl:Restriction>
                         </owl:complementOf>
                     </owl:Class>
@@ -4234,76 +3868,6 @@
             <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachTNM8_pTX"/>
         </owl:members>
     </rdf:Description>
-<<<<<<< HEAD
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Rules
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#x">
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#y">
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Stomach#z">
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
-    </rdf:Description>
-    <rdf:Description>
-        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SurroundingInclusion</rdfs:label>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://purl.org/biotop/btl2.owl#isIncludedIn"/>
-                        <swrl:argument1 rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#x"/>
-                        <swrl:argument2 rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#y"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#surrounds"/>
-                                <swrl:argument1 rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#y"/>
-                                <swrl:argument2 rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#z"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://purl.org/biotop/btl2.owl#isIncludedIn"/>
-                        <swrl:argument1 rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#x"/>
-                        <swrl:argument2 rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#z"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-            </rdf:Description>
-        </swrl:head>
-    </rdf:Description>
-||||||| merged common ancestors
-=======
     
 
 
@@ -4371,7 +3935,6 @@
             </rdf:Description>
         </swrl:head>
     </rdf:Description>
->>>>>>> 9f24a6f520b4d972132bfcb40508f2273f5ea511
 </rdf:RDF>
 
 

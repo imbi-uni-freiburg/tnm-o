@@ -1099,46 +1099,10 @@
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachPrimaryTumor"/>
         <rdf:type>
             <owl:Class>
-<<<<<<< HEAD:TNMO/TNMO8/stomachTest.owl
                 <owl:complementOf>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isIncludedIn"/>
                         <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#SubmucosaOfStomach"/>
-||||||| merged common ancestors
-                <owl:unionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isIncludedIn"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#LaminaPropriaOfStomach"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isIncludedIn"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#MuscularisMucosaeOfStomach"/>
-                    </owl:Restriction>
-                </owl:unionOf>
-            </owl:Class>
-        </rdf:type>
-        <rdf:type>
-            <owl:Class>
-                <owl:complementOf>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isIncludedIn"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#AnatomicalStructureAdjacentToStomach"/>
-                    </owl:Restriction>
-                </owl:complementOf>
-            </owl:Class>
-        </rdf:type>
-        <rdf:type>
-            <owl:Class>
-                <owl:complementOf>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isIncludedIn"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#MuscleLayerOfStomach"/>
-=======
-                <owl:complementOf>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isIncludedIn"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#SubmucosaOfStomach"/>
->>>>>>> 9f24a6f520b4d972132bfcb40508f2273f5ea511:TNMO/TNMO8/stomachTest.owl
                     </owl:Restriction>
                 </owl:complementOf>
             </owl:Class>
@@ -1160,19 +1124,6 @@
                 <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#MuscularisMucosaeOfStomach"/>
             </owl:Restriction>
         </rdf:type>
-<<<<<<< HEAD:TNMO/TNMO8/stomachTest.owl
-        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_T1a_TNM8_Clinical"/>
-        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_T1a_TNM8_Pathological"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/tnmo/TNM-O_Stomach_Test#Test_T1a_tumor_LaminaPropria -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_T1a_tumor_LaminaPropria">
-        <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachPrimaryTumor"/>
-||||||| merged common ancestors
-=======
         <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_stomach_Test#Test_T1a_TNM8_Clinical"/>
         <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_stomach_Test#Test_T1a_TNM8_Pathological"/>
     </owl:NamedIndividual>
@@ -1183,7 +1134,6 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_stomach_Test#Test_T1a_tumor_LaminaPropria">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachPrimaryTumor"/>
->>>>>>> 9f24a6f520b4d972132bfcb40508f2273f5ea511:TNMO/TNMO8/stomachTest.owl
         <rdf:type>
             <owl:Class>
                 <owl:complementOf>
@@ -1205,18 +1155,6 @@
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdf:type>
-<<<<<<< HEAD:TNMO/TNMO8/stomachTest.owl
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isIncludedIn"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#LaminaPropriaOfStomach"/>
-            </owl:Restriction>
-        </rdf:type>
-        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_T1a_TNM8_Clinical"/>
-||||||| merged common ancestors
-        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_T1a_TNM8_Clinical"/>
-        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_T1a_TNM8_Pathological"/>
-=======
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isIncludedIn"/>
@@ -1224,7 +1162,6 @@
             </owl:Restriction>
         </rdf:type>
         <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_stomach_Test#Test_T1a_TNM8_Clinical"/>
->>>>>>> 9f24a6f520b4d972132bfcb40508f2273f5ea511:TNMO/TNMO8/stomachTest.owl
     </owl:NamedIndividual>
     
 
@@ -1369,36 +1306,6 @@
             </owl:Class>
         </rdf:type>
         <rdf:type>
-<<<<<<< HEAD:TNMO/TNMO8/stomachTest.owl
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isBearerOf"/>
-                <owl:someValuesFrom>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#projectsOnto"/>
-                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O.owl#Invasive"/>
-                    </owl:Restriction>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isIncludedIn"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#SubserosaOfStomach"/>
-            </owl:Restriction>
-        </rdf:type>
-        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_T3_TNM8_Clinical"/>
-        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_T3_TNM8_Pathological"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/tnmo/TNM-O_Stomach_Test#Test_T3_tumor_nei -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_T3_tumor_nei">
-        <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachPrimaryTumor"/>
-        <rdf:type>
-||||||| merged common ancestors
-=======
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isBearerOf"/>
                 <owl:someValuesFrom>
@@ -1426,47 +1333,11 @@
     <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_stomach_Test#Test_T3_tumor_nei">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachPrimaryTumor"/>
         <rdf:type>
->>>>>>> 9f24a6f520b4d972132bfcb40508f2273f5ea511:TNMO/TNMO8/stomachTest.owl
-            <owl:Class>
-                <owl:complementOf>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isIncludedIn"/>
-<<<<<<< HEAD:TNMO/TNMO8/stomachTest.owl
-                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#SerosaOfStomach"/>
-                    </owl:Restriction>
-                </owl:complementOf>
-            </owl:Class>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isBearerOf"/>
-                <owl:someValuesFrom>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#projectsOnto"/>
-                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O.owl#Invasive"/>
-                    </owl:Restriction>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdf:type>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/tnmo/TNM-O_Stomach_Test#Test_T3_tumor_tmi -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_T3_tumor_tmi">
-        <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachPrimaryTumor"/>
-        <rdf:type>
             <owl:Class>
                 <owl:complementOf>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isIncludedIn"/>
                         <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#SerosaOfStomach"/>
-||||||| merged common ancestors
-                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#Serosa"/>
-=======
-                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#SerosaOfStomach"/>
->>>>>>> 9f24a6f520b4d972132bfcb40508f2273f5ea511:TNMO/TNMO8/stomachTest.owl
                     </owl:Restriction>
                 </owl:complementOf>
             </owl:Class>
@@ -1509,12 +1380,6 @@
                         <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O.owl#Invasive"/>
                     </owl:Restriction>
                 </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isIncludedIn"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#SubmucosaOfStomach"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
@@ -1746,23 +1611,10 @@
     
 
 
-<<<<<<< HEAD:TNMO/TNMO8/stomachTest.owl
-    <!-- http://purl.org/tnmo/TNM-O_Stomach_Test#Test_Unclassifiable_tumor -->
-||||||| merged common ancestors
-    <!-- http://purl.org/tnmo/TNM-O_Stomach_Test#Test_t_tumor -->
-=======
     <!-- http://purl.org/tnmo/TNM-O_stomach_Test#Test_Unclassifiable_tumor -->
->>>>>>> 9f24a6f520b4d972132bfcb40508f2273f5ea511:TNMO/TNMO8/stomachTest.owl
 
-<<<<<<< HEAD:TNMO/TNMO8/stomachTest.owl
-    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_Unclassifiable_tumor">
-        <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachPrimaryTumor"/>
-||||||| merged common ancestors
-    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_Stomach_Test#Test_t_tumor">
-=======
     <owl:NamedIndividual rdf:about="http://purl.org/tnmo/TNM-O_stomach_Test#Test_Unclassifiable_tumor">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#StomachPrimaryTumor"/>
->>>>>>> 9f24a6f520b4d972132bfcb40508f2273f5ea511:TNMO/TNMO8/stomachTest.owl
         <rdf:type>
             <owl:Class>
                 <owl:complementOf>
