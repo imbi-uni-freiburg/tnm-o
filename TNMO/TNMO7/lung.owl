@@ -247,6 +247,18 @@ Institute of Medical Informatics, Statistics and Documentation, Medical Universi
     
 
 
+    <!-- http://purl.org/tnmo/TNM-O.owl#Size3To5cm -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Size3To5cm"/>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#Size3To7cm -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Size3To7cm"/>
+    
+
+
     <!-- http://purl.org/tnmo/TNM-O.owl#SolidOrgan -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#SolidOrgan">
@@ -262,6 +274,18 @@ Institute of Medical Informatics, Statistics and Documentation, Medical Universi
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#TumorAggregate">
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_lung_7.owl#MalignantBodyPart"/>
     </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#MainBronchus -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#MainBronchus"/>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#VisceralPleura -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#VisceralPleura"/>
     
 
 
@@ -1648,7 +1672,7 @@ Institute of Medical Informatics, Statistics and Documentation, Medical Universi
                                         <owl:someValuesFrom>
                                             <owl:Restriction>
                                                 <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isIncludedIn"/>
-                                                <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_lung_7.owl#MainBronchus"/>
+                                                <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#MainBronchus"/>
                                             </owl:Restriction>
                                         </owl:someValuesFrom>
                                     </owl:Restriction>
@@ -1705,7 +1729,7 @@ Institute of Medical Informatics, Statistics and Documentation, Medical Universi
                                         <owl:someValuesFrom>
                                             <owl:Restriction>
                                                 <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isIncludedIn"/>
-                                                <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_lung_7.owl#VisceralPleura"/>
+                                                <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#VisceralPleura"/>
                                             </owl:Restriction>
                                         </owl:someValuesFrom>
                                     </owl:Restriction>
@@ -1736,23 +1760,10 @@ Institute of Medical Informatics, Statistics and Documentation, Medical Universi
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isBearerOf"/>
                                 <owl:someValuesFrom>
-                                    <owl:Class>
-                                        <owl:intersectionOf rdf:parseType="Collection">
-                                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_lung_7.owl#Size"/>
-                                            <owl:Class>
-                                                <owl:intersectionOf rdf:parseType="Collection">
-                                                    <owl:Restriction>
-                                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#projectsOnto"/>
-                                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_lung_7.owl#Between3And7cm"/>
-                                                    </owl:Restriction>
-                                                    <owl:Restriction>
-                                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#projectsOnto"/>
-                                                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_lung_7.owl#Between3And7cm"/>
-                                                    </owl:Restriction>
-                                                </owl:intersectionOf>
-                                            </owl:Class>
-                                        </owl:intersectionOf>
-                                    </owl:Class>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#projectsOnto"/>
+                                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O.owl#Size3To7cm"/>
+                                    </owl:Restriction>
                                 </owl:someValuesFrom>
                             </owl:Restriction>
                         </owl:unionOf>
@@ -1776,45 +1787,19 @@ Institute of Medical Informatics, Statistics and Documentation, Medical Universi
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isBearerOf"/>
                                 <owl:someValuesFrom>
-                                    <owl:Class>
-                                        <owl:intersectionOf rdf:parseType="Collection">
-                                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_lung_7.owl#Size"/>
-                                            <owl:Class>
-                                                <owl:intersectionOf rdf:parseType="Collection">
-                                                    <owl:Restriction>
-                                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#projectsOnto"/>
-                                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_lung_7.owl#Between3And5cm"/>
-                                                    </owl:Restriction>
-                                                    <owl:Restriction>
-                                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#projectsOnto"/>
-                                                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_lung_7.owl#Between3And5cm"/>
-                                                    </owl:Restriction>
-                                                </owl:intersectionOf>
-                                            </owl:Class>
-                                        </owl:intersectionOf>
-                                    </owl:Class>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#projectsOnto"/>
+                                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O.owl#Size3To5cm"/>
+                                    </owl:Restriction>
                                 </owl:someValuesFrom>
                             </owl:Restriction>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isBearerOf"/>
                                 <owl:someValuesFrom>
-                                    <owl:Class>
-                                        <owl:intersectionOf rdf:parseType="Collection">
-                                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_lung_7.owl#Size"/>
-                                            <owl:Class>
-                                                <owl:intersectionOf rdf:parseType="Collection">
-                                                    <owl:Restriction>
-                                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#projectsOnto"/>
-                                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_lung_7.owl#NoSizeEvidence"/>
-                                                    </owl:Restriction>
-                                                    <owl:Restriction>
-                                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#projectsOnto"/>
-                                                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_lung_7.owl#NoSizeEvidence"/>
-                                                    </owl:Restriction>
-                                                </owl:intersectionOf>
-                                            </owl:Class>
-                                        </owl:intersectionOf>
-                                    </owl:Class>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#projectsOnto"/>
+                                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_lung_7.owl#NoSizeEvidence"/>
+                                    </owl:Restriction>
                                 </owl:someValuesFrom>
                             </owl:Restriction>
                         </owl:unionOf>
@@ -4084,5 +4069,5 @@ Institute of Medical Informatics, Statistics and Documentation, Medical Universi
 
 
 
-<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
 

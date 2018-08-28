@@ -17,12 +17,14 @@ Objective of this project is to represent the complete TNM Classification system
 
 ### Organ-specific modules 
 
-| represented organ | v6 | v7 | v8 |
-| :-----------------|:--:|:--:|:--:|
-| Breast            |    | X  |    |
-| Colon/ Rectum     | X  | X  |    |
-| Lung              | X  | X  |    |
-| Pancreas          |    | X  | X  |
+| represented organ |  v6  |       v7       |         v8         |
+| :---------------- | :--: | :------------: | :----------------: |
+| Breast            |      | under revision | under construction |
+| Colon/ Rectum     |  X   | under revision | under construction |
+| Lung              |  X   | under revision | under construction |
+| Pancreas          |      |       X        |         X          |
+| Liver (HCC)       |      |                |         X          |
+| Stomach           |      |                |         X          |
 
 
 ### Contributors
@@ -32,9 +34,11 @@ Objective of this project is to represent the complete TNM Classification system
  * Oliver Brunner (University of Freiburg)
  * Rita Faria
  * Fabio Franca
+ * Johannes Herrmann
+ * Thomas Maulhardt
  * Stefan Schulz (Medical University of Graz)
  * Susanne Zabka (University of Freiburg)acy
- 
+
  This repository is under construction.
- 
+
  Legacy repository of this project: http://purl.org/tnmo/

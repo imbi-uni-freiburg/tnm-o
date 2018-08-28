@@ -15,9 +15,9 @@
      xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#">
     <owl:Ontology rdf:about="http://purl.org/tnmo/TNM-O.owl">
         <owl:versionIRI rdf:resource="http://purl.org/tnmo/TNM-O.owl/1"/>
-        <owl:imports rdf:resource="http://purl.org/tnmo/TNM-O_Stomach"/>
+        <owl:imports rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8"/>
         <owl:imports rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl/1"/>
-        <owl:imports rdf:resource="http://purl.org/tnmo/TNM-O_Stomach_Test"/>
+        <owl:imports rdf:resource="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl"/>
         <owl:priorVersion>prototype 0.18, date: 2015-02-25</owl:priorVersion>
         <dc:publisher>Institute of Medical Biometry and Medical Informatics, University Medical Center Freiburg, Stefan-Meier-Strasse 26, 79104 Freiburg, Germany
 
@@ -262,6 +262,47 @@ Institute of Medical Informatics, Statistics and Documentation, Medical Universi
     
 
 
+    <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality0 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality0">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#CardinalityValueRegion"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/tnmo/TNM-O.owl#hasCardinality"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</xsd:minInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/tnmo/TNM-O.owl#hasCardinality"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</xsd:maxInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#CardinalityValueRegion"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality1 -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality1">
@@ -298,13 +339,13 @@ Institute of Medical Informatics, Statistics and Documentation, Medical Universi
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1To9"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to3"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to4"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to5"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to6"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to7"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to8"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to9"/>
     </owl:Class>
     
 
@@ -337,9 +378,37 @@ Institute of Medical Informatics, Statistics and Documentation, Medical Universi
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality1to2 -->
+    <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality1OrMore -->
 
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality1to2">
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality1OrMore">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#CardinalityValueRegion"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/tnmo/TNM-O.owl#hasCardinality"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</xsd:minInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#CardinalityValueRegion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality1To2 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality1To2">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -373,13 +442,21 @@ Institute of Medical Informatics, Statistics and Documentation, Medical Universi
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1To9"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to3"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to4"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to5"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to6"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to7"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to8"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to9"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality1To9 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality1To9">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#CardinalityValueRegion"/>
     </owl:Class>
     
 
@@ -387,12 +464,12 @@ Institute of Medical Informatics, Statistics and Documentation, Medical Universi
     <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality1to3 -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality1to3">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1To9"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to4"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to5"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to6"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to7"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to8"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to9"/>
     </owl:Class>
     
 
@@ -400,11 +477,11 @@ Institute of Medical Informatics, Statistics and Documentation, Medical Universi
     <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality1to4 -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality1to4">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1To9"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to5"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to6"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to7"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to8"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to9"/>
     </owl:Class>
     
 
@@ -412,10 +489,10 @@ Institute of Medical Informatics, Statistics and Documentation, Medical Universi
     <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality1to5 -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality1to5">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1To9"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to6"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to7"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to8"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to9"/>
     </owl:Class>
     
 
@@ -423,9 +500,9 @@ Institute of Medical Informatics, Statistics and Documentation, Medical Universi
     <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality1to6 -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality1to6">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1To9"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to7"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to8"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to9"/>
     </owl:Class>
     
 
@@ -433,8 +510,8 @@ Institute of Medical Informatics, Statistics and Documentation, Medical Universi
     <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality1to7 -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality1to7">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1To9"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to8"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to9"/>
     </owl:Class>
     
 
@@ -442,37 +519,7 @@ Institute of Medical Informatics, Statistics and Documentation, Medical Universi
     <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality1to8 -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality1to8">
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to9"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality1to9 -->
-
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality1to9">
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#CardinalityValueRegion"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality2 -->
-
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality2">
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to2"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to3"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to4"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to5"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to6"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to7"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to8"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to9"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to3"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to4"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to5"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to6"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to7"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to8"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1To9"/>
     </owl:Class>
     
 
@@ -480,13 +527,13 @@ Institute of Medical Informatics, Statistics and Documentation, Medical Universi
     <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality2to3 -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality2to3">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1To9"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to3"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to4"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to5"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to6"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to7"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to8"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to9"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to4"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to5"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to6"/>
@@ -500,12 +547,12 @@ Institute of Medical Informatics, Statistics and Documentation, Medical Universi
     <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality2to4 -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality2to4">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1To9"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to4"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to5"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to6"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to7"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to8"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to9"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to5"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to6"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to7"/>
@@ -518,11 +565,11 @@ Institute of Medical Informatics, Statistics and Documentation, Medical Universi
     <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality2to5 -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality2to5">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1To9"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to5"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to6"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to7"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to8"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to9"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to6"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to7"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to8"/>
@@ -534,10 +581,10 @@ Institute of Medical Informatics, Statistics and Documentation, Medical Universi
     <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality2to6 -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality2to6">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1To9"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to6"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to7"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to8"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to9"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to7"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to8"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to9"/>
@@ -548,9 +595,9 @@ Institute of Medical Informatics, Statistics and Documentation, Medical Universi
     <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality2to7 -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality2to7">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1To9"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to7"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to8"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to9"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to8"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to9"/>
     </owl:Class>
@@ -560,8 +607,8 @@ Institute of Medical Informatics, Statistics and Documentation, Medical Universi
     <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality2to8 -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality2to8">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1To9"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to8"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to9"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to9"/>
     </owl:Class>
     
@@ -570,7 +617,7 @@ Institute of Medical Informatics, Statistics and Documentation, Medical Universi
     <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality2to9 -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality2to9">
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1To9"/>
     </owl:Class>
     
 
@@ -578,13 +625,13 @@ Institute of Medical Informatics, Statistics and Documentation, Medical Universi
     <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality3 -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality3">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1To9"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to3"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to4"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to5"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to6"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to7"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to8"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to9"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to3"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to4"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to5"/>
@@ -592,9 +639,9 @@ Institute of Medical Informatics, Statistics and Documentation, Medical Universi
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to7"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to8"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3To6"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to4"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to5"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to6"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to7"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to8"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to9"/>
@@ -602,54 +649,9 @@ Institute of Medical Informatics, Statistics and Documentation, Medical Universi
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality3to4 -->
+    <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality3To6 -->
 
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality3to4">
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to4"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to5"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to6"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to7"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to8"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to9"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to4"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to5"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to6"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to7"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to8"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to9"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to5"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to6"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to7"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to8"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to9"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality3to5 -->
-
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality3to5">
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to5"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to6"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to7"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to8"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to9"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to5"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to6"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to7"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to8"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to9"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to6"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to7"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to8"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to9"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality3to6 -->
-
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality3to6">
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality3To6">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -683,10 +685,10 @@ Institute of Medical Informatics, Statistics and Documentation, Medical Universi
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1To9"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to6"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to7"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to8"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to9"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to6"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to7"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to8"/>
@@ -698,12 +700,57 @@ Institute of Medical Informatics, Statistics and Documentation, Medical Universi
     
 
 
+    <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality3to4 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality3to4">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1To9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to4"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to5"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to6"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to7"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to4"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to5"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to6"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to7"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3To6"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to5"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to7"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to9"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality3to5 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality3to5">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1To9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to5"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to6"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to7"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to5"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to6"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to7"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3To6"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to7"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to9"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality3to7 -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality3to7">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1To9"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to7"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to8"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to9"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to7"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to8"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to9"/>
@@ -716,8 +763,8 @@ Institute of Medical Informatics, Statistics and Documentation, Medical Universi
     <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality3to8 -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality3to8">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1To9"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to8"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to9"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to8"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to9"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to9"/>
@@ -728,7 +775,7 @@ Institute of Medical Informatics, Statistics and Documentation, Medical Universi
     <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality3to9 -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality3to9">
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1To9"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to9"/>
     </owl:Class>
     
@@ -737,21 +784,21 @@ Institute of Medical Informatics, Statistics and Documentation, Medical Universi
     <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality4 -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality4">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1To9"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to4"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to5"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to6"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to7"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to8"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to9"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to4"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to5"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to6"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to7"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to8"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3To6"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to4"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to5"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to6"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to7"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to8"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to9"/>
@@ -795,18 +842,18 @@ Institute of Medical Informatics, Statistics and Documentation, Medical Universi
     <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality4to5 -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality4to5">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1To9"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to5"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to6"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to7"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to8"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to9"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to5"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to6"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to7"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to8"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3To6"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to5"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to6"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to7"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to8"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to9"/>
@@ -821,15 +868,15 @@ Institute of Medical Informatics, Statistics and Documentation, Medical Universi
     <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality4to6 -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality4to6">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1To9"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to6"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to7"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to8"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to9"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to6"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to7"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to8"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to9"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to6"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3To6"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to7"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to8"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to9"/>
@@ -843,9 +890,9 @@ Institute of Medical Informatics, Statistics and Documentation, Medical Universi
     <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality4to7 -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality4to7">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1To9"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to7"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to8"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to9"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to7"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to8"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to9"/>
@@ -861,8 +908,8 @@ Institute of Medical Informatics, Statistics and Documentation, Medical Universi
     <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality4to8 -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality4to8">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1To9"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to8"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to9"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to8"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to9"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to8"/>
@@ -875,7 +922,7 @@ Institute of Medical Informatics, Statistics and Documentation, Medical Universi
     <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality4to9 -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality4to9">
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1To9"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to9"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to9"/>
     </owl:Class>
@@ -885,18 +932,18 @@ Institute of Medical Informatics, Statistics and Documentation, Medical Universi
     <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality5 -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality5">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1To9"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to5"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to6"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to7"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to8"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to9"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to5"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to6"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to7"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to8"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3To6"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to5"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to6"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to7"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to8"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to9"/>
@@ -916,15 +963,15 @@ Institute of Medical Informatics, Statistics and Documentation, Medical Universi
     <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality5to6 -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality5to6">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1To9"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to6"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to7"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to8"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to9"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to6"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to7"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to8"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to9"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to6"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3To6"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to7"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to8"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to9"/>
@@ -942,9 +989,9 @@ Institute of Medical Informatics, Statistics and Documentation, Medical Universi
     <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality5to7 -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality5to7">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1To9"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to7"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to8"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to9"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to7"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to8"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to9"/>
@@ -963,8 +1010,8 @@ Institute of Medical Informatics, Statistics and Documentation, Medical Universi
     <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality5to8 -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality5to8">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1To9"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to8"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to9"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to8"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to9"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to8"/>
@@ -979,7 +1026,7 @@ Institute of Medical Informatics, Statistics and Documentation, Medical Universi
     <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality5to9 -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality5to9">
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1To9"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to9"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to9"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality4to9"/>
@@ -990,15 +1037,15 @@ Institute of Medical Informatics, Statistics and Documentation, Medical Universi
     <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality6 -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality6">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1To9"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to6"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to7"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to8"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to9"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to6"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to7"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to8"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to9"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to6"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3To6"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to7"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to8"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to9"/>
@@ -1020,9 +1067,9 @@ Institute of Medical Informatics, Statistics and Documentation, Medical Universi
     <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality6to7 -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality6to7">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1To9"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to7"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to8"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to9"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to7"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to8"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to9"/>
@@ -1044,8 +1091,8 @@ Institute of Medical Informatics, Statistics and Documentation, Medical Universi
     <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality6to8 -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality6to8">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1To9"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to8"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to9"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to8"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to9"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to8"/>
@@ -1062,7 +1109,7 @@ Institute of Medical Informatics, Statistics and Documentation, Medical Universi
     <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality6to9 -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality6to9">
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1To9"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to9"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to9"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality4to9"/>
@@ -1074,9 +1121,9 @@ Institute of Medical Informatics, Statistics and Documentation, Medical Universi
     <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality7 -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality7">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1To9"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to7"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to8"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to9"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to7"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to8"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to9"/>
@@ -1170,8 +1217,8 @@ Institute of Medical Informatics, Statistics and Documentation, Medical Universi
     <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality7to8 -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality7to8">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1To9"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to8"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to9"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to8"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to9"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to8"/>
@@ -1190,7 +1237,7 @@ Institute of Medical Informatics, Statistics and Documentation, Medical Universi
     <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality7to9 -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality7to9">
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1To9"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to9"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to9"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality4to9"/>
@@ -1236,8 +1283,8 @@ Institute of Medical Informatics, Statistics and Documentation, Medical Universi
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1To9"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to8"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to9"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to8"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to9"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to8"/>
@@ -1258,7 +1305,7 @@ Institute of Medical Informatics, Statistics and Documentation, Medical Universi
     <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality8to9 -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality8to9">
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1To9"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to9"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to9"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality4to9"/>
@@ -1272,7 +1319,7 @@ Institute of Medical Informatics, Statistics and Documentation, Medical Universi
     <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality9 -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality9">
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1To9"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to9"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to9"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality4to9"/>
@@ -1448,9 +1495,9 @@ Institute of Medical Informatics, Statistics and Documentation, Medical Universi
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O.owl#Multiple -->
+    <!-- http://purl.org/tnmo/TNM-O.owl#MultipleTumors -->
 
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Multiple">
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#MultipleTumors">
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#TumorCardinalityValueRegion"/>
     </owl:Class>
     
@@ -1599,9 +1646,9 @@ NotAssessedMalignantAnatomicalStructure subclassOf
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O.owl#Size1to2cm -->
+    <!-- http://purl.org/tnmo/TNM-O.owl#Size1To2cm -->
 
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Size1to2cm">
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Size1To2cm">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -1635,14 +1682,54 @@ NotAssessedMalignantAnatomicalStructure subclassOf
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#SizeMax2cm"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O.owl#Size2to4cm -->
+    <!-- http://purl.org/tnmo/TNM-O.owl#Size2To3cm -->
 
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Size2to4cm">
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Size2To3cm">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#SizeMax2cm"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/tnmo/TNM-O.owl#hasSize"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.0</xsd:minExclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/tnmo/TNM-O.owl#hasSize"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.0</xsd:maxInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#SizeValueRegion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#Size2To4cm -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Size2To4cm">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -1676,7 +1763,129 @@ NotAssessedMalignantAnatomicalStructure subclassOf
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#SizeMoreThan2cm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#Size3To5cm -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Size3To5cm">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#SizeMax2cm"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/tnmo/TNM-O.owl#hasSize"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.0</xsd:minExclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/tnmo/TNM-O.owl#hasSize"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">5.0</xsd:maxInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#SizeValueRegion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#Size3To7cm -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Size3To7cm">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#SizeMax2cm"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/tnmo/TNM-O.owl#hasSize"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.0</xsd:minExclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/tnmo/TNM-O.owl#hasSize"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">7.0</xsd:maxInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#SizeValueRegion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#Size5To7cm -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Size5To7cm">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#SizeMax2cm"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/tnmo/TNM-O.owl#hasSize"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">5.0</xsd:minExclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/tnmo/TNM-O.owl#hasSize"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">7.0</xsd:maxInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#SizeValueRegion"/>
     </owl:Class>
     
 
@@ -1717,7 +1926,6 @@ NotAssessedMalignantAnatomicalStructure subclassOf
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#SizeMax2cm"/>
     </owl:Class>
     
 
@@ -1745,7 +1953,6 @@ NotAssessedMalignantAnatomicalStructure subclassOf
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Liver#SizeMax5cm"/>
     </owl:Class>
     
 
@@ -1773,7 +1980,6 @@ NotAssessedMalignantAnatomicalStructure subclassOf
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#SizeMax2cm"/>
     </owl:Class>
     
 
@@ -1829,7 +2035,6 @@ NotAssessedMalignantAnatomicalStructure subclassOf
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#SizeMoreThan2cm"/>
     </owl:Class>
     
 
@@ -1857,7 +2062,34 @@ NotAssessedMalignantAnatomicalStructure subclassOf
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#SizeMoreThan4cm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#SizeMoreThan7cm -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#SizeMoreThan7cm">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#SizeValueRegion"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/tnmo/TNM-O.owl#hasSize"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">7.0</xsd:minExclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#SizeValueRegion"/>
     </owl:Class>
     
 
@@ -1870,9 +2102,9 @@ NotAssessedMalignantAnatomicalStructure subclassOf
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O.owl#Solitary -->
+    <!-- http://purl.org/tnmo/TNM-O.owl#SolitaryTumor -->
 
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Solitary">
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#SolitaryTumor">
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#TumorCardinalityValueRegion"/>
     </owl:Class>
     
@@ -1998,6 +2230,30 @@ NotAssessedMalignantAnatomicalStructure subclassOf
             </owl:Class>
         </owl:equivalentClass>
     </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachUICCPathologicalStageGroupingInTNM8Classification -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Stomach#RepresentationalUnitInStomachUICCPathologicalStageGroupingInTNM8Classification"/>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pM1 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pM1"/>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pN0 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pN0"/>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pTTis -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Stomach#StomachTNM8_pTTis"/>
     
 
 
