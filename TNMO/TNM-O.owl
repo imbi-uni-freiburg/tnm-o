@@ -15,9 +15,9 @@
      xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#">
     <owl:Ontology rdf:about="http://purl.org/tnmo/TNM-O.owl">
         <owl:versionIRI rdf:resource="http://purl.org/tnmo/TNM-O.owl/1"/>
-        <owl:imports rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8"/>
+        <owl:imports rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl"/>
+        <owl:imports rdf:resource="http://purl.org/biotop/btl2.owl"/>
         <owl:imports rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl/1"/>
-        <owl:imports rdf:resource="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl"/>
         <owl:priorVersion>prototype 0.18, date: 2015-02-25</owl:priorVersion>
         <dc:publisher>Institute of Medical Biometry and Medical Informatics, University Medical Center Freiburg, Stefan-Meier-Strasse 26, 79104 Freiburg, Germany
 
@@ -1624,9 +1624,17 @@ NotAssessedMalignantAnatomicalStructure subclassOf
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInUICCStageGroupinginTNM8Classification -->
+    <!-- http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInUICCStageGroupingInTNM7Classification -->
 
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInUICCStageGroupinginTNM8Classification">
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInUICCStageGroupingInTNM7Classification">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInUICCStageGrouping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInUICCStageGroupingInTNM8Classification -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInUICCStageGroupingInTNM8Classification">
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInUICCStageGrouping"/>
     </owl:Class>
     

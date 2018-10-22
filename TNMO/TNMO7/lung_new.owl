@@ -6,7 +6,7 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl"/>
+    <owl:Ontology rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl"/>
     
 
 
@@ -42,6 +42,12 @@
     <!-- http://purl.org/biotop/btl2.owl#projectsOnto -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/biotop/btl2.owl#projectsOnto"/>
+    
+
+
+    <!-- http://purl.org/biotop/btl2.owl#represents -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/biotop/btl2.owl#represents"/>
     
 
 
@@ -83,6 +89,18 @@
     <!-- http://purl.org/tnmo/TNM-O.owl#PrimaryTumorSiteClassifiedByMalignancy -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#PrimaryTumorSiteClassifiedByMalignancy"/>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInTNM7Classification -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInTNM7Classification"/>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInUICCStageGroupingInTNM7Classification -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInUICCStageGroupingInTNM7Classification"/>
     
 
 
@@ -128,37 +146,37 @@
     
 
 
-    <!-- http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#CarcinomaInSituOfLung -->
+    <!-- http://purl.org/tnmo/TNM-O_lung_7_new.owl#CarcinomaInSituOfLung -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#CarcinomaInSituOfLung">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungPrimaryTumorTNM7"/>
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#CarcinomaInSituOfLung">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungPrimaryTumorTNM7"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#DistantMetastasisOfLungTumor -->
+    <!-- http://purl.org/tnmo/TNM-O_lung_7_new.owl#DistantMetastasisOfLungTumor -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#DistantMetastasisOfLungTumor">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#MetastasisOfLungTumor"/>
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#DistantMetastasisOfLungTumor">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#MetastasisOfLungTumor"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#InvasiveLungTumorOfMainBronchusOrVisceralPleuraOrAssociatedWithAtelectasisOrObstructivePneumonitis -->
+    <!-- http://purl.org/tnmo/TNM-O_lung_7_new.owl#InvasiveLungTumorOfMainBronchusOrVisceralPleuraOrAssociatedWithAtelectasisOrObstructivePneumonitis -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#InvasiveLungTumorOfMainBronchusOrVisceralPleuraOrAssociatedWithAtelectasisOrObstructivePneumonitis">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungPrimaryTumorTNM7"/>
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#InvasiveLungTumorOfMainBronchusOrVisceralPleuraOrAssociatedWithAtelectasisOrObstructivePneumonitis">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungPrimaryTumorTNM7"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#InvasiveLungTumorOfNeighboringBodyParts -->
+    <!-- http://purl.org/tnmo/TNM-O_lung_7_new.owl#InvasiveLungTumorOfNeighboringBodyParts -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#InvasiveLungTumorOfNeighboringBodyParts">
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#InvasiveLungTumorOfNeighboringBodyParts">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungPrimaryTumorTNM7"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungPrimaryTumorTNM7"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#hasPart"/>
                         <owl:someValuesFrom>
@@ -197,205 +215,1460 @@
     
 
 
-    <!-- http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungPrimaryTumorTNM7 -->
+    <!-- http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungPrimaryTumorTNM7 -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungPrimaryTumorTNM7">
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungPrimaryTumorTNM7">
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#PrimaryTumorSiteClassifiedByMalignancy"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumor2To3cmSurroundedByLungOrVisceralPleuraDistalToMainBronchus -->
+    <!-- http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cM -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumor2To3cmSurroundedByLungOrVisceralPleuraDistalToMainBronchus">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumorMax3cmSurroundedByLungOrVisceralPleuraDistalToMainBronchus"/>
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cM">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#RepresentationalUnitInLungTumorTNM7ClinicalClassification"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumor3To5cm -->
+    <!-- http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cM0 -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumor3To5cm">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumor3To7cm"/>
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cM0">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cM"/>
+        <owl:disjointWith rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cM1"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumor3To7cm -->
+    <!-- http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cM1 -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumor3To7cm">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungPrimaryTumorTNM7"/>
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cM1">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cM"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumor5To7cm -->
+    <!-- http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cM1a -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumor5To7cm">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumor3To7cm"/>
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cM1a">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cM1"/>
+        <owl:disjointWith rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cM1b"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumorAggregate -->
+    <!-- http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cM1b -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumorAggregate">
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cM1b">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cM1"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cN -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cN">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#RepresentationalUnitInLungTumorTNM7ClinicalClassification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cN0 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cN0">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cN"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cN1 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cN1">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cN"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cN2 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cN2">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cN"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cN3 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cN3">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cN"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cNX -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cNX">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cN"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cOccultCarcinoma -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cOccultCarcinoma">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#RepresentationalUnitInUICCClinicalStageGroupingInLungTNM7Classification"/>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cM0"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cN0"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cTX"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#RepresentationalUnitInUICCClinicalStageGroupingInLungTNM7Classification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cStage0 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cStage0">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#RepresentationalUnitInUICCClinicalStageGroupingInLungTNM7Classification"/>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cM0"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cN0"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cTTis"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#RepresentationalUnitInUICCClinicalStageGroupingInLungTNM7Classification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cStageI -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cStageI">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#RepresentationalUnitInUICCClinicalStageGroupingInLungTNM7Classification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cStageIA -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cStageIA">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#RepresentationalUnitInUICCClinicalStageGroupingInLungTNM7Classification"/>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cM0"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cN0"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cT1"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cStageI"/>
+        <owl:disjointWith rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cStageIB"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cStageIB -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cStageIB">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#RepresentationalUnitInUICCClinicalStageGroupingInLungTNM7Classification"/>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cM0"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cN0"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cT2a"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cStageI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cStageII -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cStageII">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#RepresentationalUnitInUICCClinicalStageGroupingInLungTNM7Classification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cStageIIA -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cStageIIA">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#RepresentationalUnitInUICCClinicalStageGroupingInLungTNM7Classification"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cM0"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cN0"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cT2b"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cM0"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cN1"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cT1"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cM0"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cN1"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cT2a"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cStageII"/>
+        <owl:disjointWith rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cStageIIB"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cStageIIB -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cStageIIB">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#RepresentationalUnitInUICCClinicalStageGroupingInLungTNM7Classification"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cM0"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cN0"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cT3"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cM0"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cN1"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cT2b"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cStageII"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cStageIII -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cStageIII">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#RepresentationalUnitInUICCClinicalStageGroupingInLungTNM7Classification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cStageIIIA -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cStageIIIA">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#RepresentationalUnitInUICCClinicalStageGroupingInLungTNM7Classification"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cM0"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cN2"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:unionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cT1"/>
+                                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cT2"/>
+                                                </owl:unionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cM0"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cT3"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:unionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cN1"/>
+                                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cN2"/>
+                                                </owl:unionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cM0"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cT4"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:unionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cN0"/>
+                                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cN1"/>
+                                                </owl:unionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cStageIII"/>
+        <owl:disjointWith rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cStageIIIB"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cStageIIIB -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cStageIIIB">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#RepresentationalUnitInUICCClinicalStageGroupingInLungTNM7Classification"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cM0"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cN2"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cT4"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cM0"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cN3"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cT"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cStageIII"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cStageIV -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cStageIV">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#RepresentationalUnitInUICCClinicalStageGroupingInLungTNM7Classification"/>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cM1"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cN"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cT"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#RepresentationalUnitInUICCClinicalStageGroupingInLungTNM7Classification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cT -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cT">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#RepresentationalUnitInLungTumorTNM7ClinicalClassification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cT0 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cT0">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cT1 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cT1">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cT1a -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cT1a">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cT1"/>
+        <owl:disjointWith rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cT1b"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cT1b -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cT1b">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cT1"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cT2 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cT2">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cT2a -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cT2a">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cT2"/>
+        <owl:disjointWith rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cT2b"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cT2b -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cT2b">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cT2"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cT3 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cT3">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cT4 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cT4">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cTTis -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cTTis">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cTX -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cTX">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pM -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pM">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#RepresentationalUnitInLungTumorTNM7PathologicalClassification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pM0 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pM0">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pM"/>
+        <owl:disjointWith rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pM1"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pM1 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pM1">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pM"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pM1a -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pM1a">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pM1"/>
+        <owl:disjointWith rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pM1b"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pM1b -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pM1b">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pM1"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pN -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pN">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#RepresentationalUnitInLungTumorTNM7PathologicalClassification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pN0 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pN0">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pN"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pN1 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pN1">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pN"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pN2 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pN2">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pN"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pN3 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pN3">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pN"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pNX -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pNX">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pN"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pOccultCarcinoma -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pOccultCarcinoma">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#RepresentationalUnitInUICCPathologicalStageGroupingInLungTNM7Classification"/>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pM0"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pN0"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pTX"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#RepresentationalUnitInUICCPathologicalStageGroupingInLungTNM7Classification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pStage0 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pStage0">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#RepresentationalUnitInUICCPathologicalStageGroupingInLungTNM7Classification"/>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pM0"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pN0"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pTTis"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#RepresentationalUnitInUICCPathologicalStageGroupingInLungTNM7Classification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pStageI -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pStageI">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#RepresentationalUnitInUICCPathologicalStageGroupingInLungTNM7Classification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pStageIA -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pStageIA">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#RepresentationalUnitInUICCPathologicalStageGroupingInLungTNM7Classification"/>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pM0"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pN0"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pT1"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pStageI"/>
+        <owl:disjointWith rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pStageIB"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pStageIB -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pStageIB">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#RepresentationalUnitInUICCPathologicalStageGroupingInLungTNM7Classification"/>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pM0"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pN0"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pT2a"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pStageI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pStageII -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pStageII">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#RepresentationalUnitInUICCPathologicalStageGroupingInLungTNM7Classification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pStageIIA -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pStageIIA">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#RepresentationalUnitInUICCPathologicalStageGroupingInLungTNM7Classification"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pM0"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pN0"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pT2b"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pM0"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pN1"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pT1"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pM0"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pN1"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pT2a"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pStageII"/>
+        <owl:disjointWith rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pStageIIB"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pStageIIB -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pStageIIB">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#RepresentationalUnitInUICCPathologicalStageGroupingInLungTNM7Classification"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pM0"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pN0"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pT3"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pM0"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pN1"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pT2b"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pStageII"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pStageIII -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pStageIII">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#RepresentationalUnitInUICCPathologicalStageGroupingInLungTNM7Classification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pStageIIIA -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pStageIIIA">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#RepresentationalUnitInUICCPathologicalStageGroupingInLungTNM7Classification"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pM0"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pN2"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:unionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pT1"/>
+                                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pT2"/>
+                                                </owl:unionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pM0"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pT3"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:unionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pN1"/>
+                                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pN2"/>
+                                                </owl:unionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pM0"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pT4"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:unionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pN0"/>
+                                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pN1"/>
+                                                </owl:unionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pStageIII"/>
+        <owl:disjointWith rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pStageIIIB"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pStageIIIB -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pStageIIIB">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#RepresentationalUnitInUICCPathologicalStageGroupingInLungTNM7Classification"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pM0"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pN2"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pT4"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pM0"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pN3"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pT"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pStageIII"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pStageIV -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pStageIV">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#RepresentationalUnitInUICCPathologicalStageGroupingInLungTNM7Classification"/>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pM1"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pN"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pT"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#RepresentationalUnitInUICCPathologicalStageGroupingInLungTNM7Classification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pT -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pT">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#RepresentationalUnitInLungTumorTNM7PathologicalClassification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pT0 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pT0">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pT1 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pT1">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pT1a -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pT1a">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pT1"/>
+        <owl:disjointWith rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pT1b"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pT1b -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pT1b">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pT1"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pT2 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pT2">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pT2a -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pT2a">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pT2"/>
+        <owl:disjointWith rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pT2b"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pT2b -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pT2b">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pT2"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pT3 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pT3">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pT4 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pT4">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pTTis -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pTTis">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pTX -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pTX">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTumor2To3cmSurroundedByLungOrVisceralPleuraDistalToMainBronchus -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTumor2To3cmSurroundedByLungOrVisceralPleuraDistalToMainBronchus">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTumorMax3cmSurroundedByLungOrVisceralPleuraDistalToMainBronchus"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTumor3To5cm -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTumor3To5cm">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTumor3To7cm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTumor3To7cm -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTumor3To7cm">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungPrimaryTumorTNM7"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTumor5To7cm -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTumor5To7cm">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTumor3To7cm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTumorAggregate -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTumorAggregate">
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#TumorAggregateClassifiedByMalignancy"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumorAggregateAsRelatedToAssociatedOrganPathologies -->
+    <!-- http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTumorAggregateAsRelatedToAssociatedOrganPathologies -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumorAggregateAsRelatedToAssociatedOrganPathologies">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumorAggregate"/>
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTumorAggregateAsRelatedToAssociatedOrganPathologies">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTumorAggregate"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumorAggregateAsRelatedToDistantMetastasis -->
+    <!-- http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTumorAggregateAsRelatedToDistantMetastasis -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumorAggregateAsRelatedToDistantMetastasis">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumorAggregate"/>
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTumorAggregateAsRelatedToDistantMetastasis">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTumorAggregate"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumorAggregateAsRelatedToMetastaticRegionalLymphNodes -->
+    <!-- http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTumorAggregateAsRelatedToMetastaticRegionalLymphNodes -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumorAggregateAsRelatedToMetastaticRegionalLymphNodes">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumorAggregate"/>
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTumorAggregateAsRelatedToMetastaticRegionalLymphNodes">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTumorAggregate"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumorAggregateWithDistantMetastasis -->
+    <!-- http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTumorAggregateWithDistantMetastasis -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumorAggregateWithDistantMetastasis">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumorAggregateAsRelatedToDistantMetastasis"/>
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTumorAggregateWithDistantMetastasis">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTumorAggregateAsRelatedToDistantMetastasis"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumorAggregateWithDistantMetastasisNotConfinedToTheContralateralLobeOrPleuralNodulesOrMalignantPleuralOrPericardialEffusion -->
+    <!-- http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTumorAggregateWithDistantMetastasisNotConfinedToTheContralateralLobeOrPleuralNodulesOrMalignantPleuralOrPericardialEffusion -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumorAggregateWithDistantMetastasisNotConfinedToTheContralateralLobeOrPleuralNodulesOrMalignantPleuralOrPericardialEffusion">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumorAggregateWithDistantMetastasis"/>
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTumorAggregateWithDistantMetastasisNotConfinedToTheContralateralLobeOrPleuralNodulesOrMalignantPleuralOrPericardialEffusion">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTumorAggregateWithDistantMetastasis"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumorAggregateWithMetastasisConfinedToTheContralateralLobeOrPleuralNodulesOrPleuralOrPericardialEffusion -->
+    <!-- http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTumorAggregateWithMetastasisConfinedToTheContralateralLobeOrPleuralNodulesOrPleuralOrPericardialEffusion -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumorAggregateWithMetastasisConfinedToTheContralateralLobeOrPleuralNodulesOrPleuralOrPericardialEffusion">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumorAggregateWithDistantMetastasis"/>
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTumorAggregateWithMetastasisConfinedToTheContralateralLobeOrPleuralNodulesOrPleuralOrPericardialEffusion">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTumorAggregateWithDistantMetastasis"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumorAggregateWithMetastaticRegionalLymphNodesInContralateralMediastinalOrContralateralHilarOrIpsilateralScaleneOrContralateralScaleneOrSupraclavicularLymphNodes -->
+    <!-- http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTumorAggregateWithMetastaticRegionalLymphNodesInContralateralMediastinalOrContralateralHilarOrIpsilateralScaleneOrContralateralScaleneOrSupraclavicularLymphNodes -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumorAggregateWithMetastaticRegionalLymphNodesInContralateralMediastinalOrContralateralHilarOrIpsilateralScaleneOrContralateralScaleneOrSupraclavicularLymphNodes">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumorAggregateAsRelatedToMetastaticRegionalLymphNodes"/>
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTumorAggregateWithMetastaticRegionalLymphNodesInContralateralMediastinalOrContralateralHilarOrIpsilateralScaleneOrContralateralScaleneOrSupraclavicularLymphNodes">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTumorAggregateAsRelatedToMetastaticRegionalLymphNodes"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumorAggregateWithMetastaticRegionalLymphNodesInIpsilateralMediastinalOrSubcarinalLymphNodes -->
+    <!-- http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTumorAggregateWithMetastaticRegionalLymphNodesInIpsilateralMediastinalOrSubcarinalLymphNodes -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumorAggregateWithMetastaticRegionalLymphNodesInIpsilateralMediastinalOrSubcarinalLymphNodes">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumorAggregateAsRelatedToMetastaticRegionalLymphNodes"/>
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTumorAggregateWithMetastaticRegionalLymphNodesInIpsilateralMediastinalOrSubcarinalLymphNodes">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTumorAggregateAsRelatedToMetastaticRegionalLymphNodes"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumorAggregateWithMetastaticRegionalLymphNodesInIpsilateralPeribronchialOrIpsilateralHilarOrIpsilateralIntrapulmonaryLymphNodes -->
+    <!-- http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTumorAggregateWithMetastaticRegionalLymphNodesInIpsilateralPeribronchialOrIpsilateralHilarOrIpsilateralIntrapulmonaryLymphNodes -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumorAggregateWithMetastaticRegionalLymphNodesInIpsilateralPeribronchialOrIpsilateralHilarOrIpsilateralIntrapulmonaryLymphNodes">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumorAggregateAsRelatedToMetastaticRegionalLymphNodes"/>
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTumorAggregateWithMetastaticRegionalLymphNodesInIpsilateralPeribronchialOrIpsilateralHilarOrIpsilateralIntrapulmonaryLymphNodes">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTumorAggregateAsRelatedToMetastaticRegionalLymphNodes"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumorAggregateWithNoAssessmentOfRegionalLymphNodes -->
+    <!-- http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTumorAggregateWithNoAssessmentOfRegionalLymphNodes -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumorAggregateWithNoAssessmentOfRegionalLymphNodes">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumorAggregateAsRelatedToMetastaticRegionalLymphNodes"/>
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTumorAggregateWithNoAssessmentOfRegionalLymphNodes">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#NotAssessedMalignantAnatomicalStructure"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTumorAggregateAsRelatedToMetastaticRegionalLymphNodes"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumorAggregateWithoutMetastaticRegionalLymphNodes -->
+    <!-- http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTumorAggregateWithoutMetastaticRegionalLymphNodes -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumorAggregateWithoutMetastaticRegionalLymphNodes">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumorAggregateAsRelatedToMetastaticRegionalLymphNodes"/>
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTumorAggregateWithoutMetastaticRegionalLymphNodes">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTumorAggregateAsRelatedToMetastaticRegionalLymphNodes"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumorMax2cmSurroundedByLungOrVisceralPleuraDistalToMainBronchus -->
+    <!-- http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTumorMax2cmSurroundedByLungOrVisceralPleuraDistalToMainBronchus -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumorMax2cmSurroundedByLungOrVisceralPleuraDistalToMainBronchus">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumorMax3cmSurroundedByLungOrVisceralPleuraDistalToMainBronchus"/>
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTumorMax2cmSurroundedByLungOrVisceralPleuraDistalToMainBronchus">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTumorMax3cmSurroundedByLungOrVisceralPleuraDistalToMainBronchus"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumorMax3cmSurroundedByLungOrVisceralPleuraDistalToMainBronchus -->
+    <!-- http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTumorMax3cmSurroundedByLungOrVisceralPleuraDistalToMainBronchus -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumorMax3cmSurroundedByLungOrVisceralPleuraDistalToMainBronchus">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungPrimaryTumorTNM7"/>
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTumorMax3cmSurroundedByLungOrVisceralPleuraDistalToMainBronchus">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungPrimaryTumorTNM7"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumorWithoutDistantMetastasis -->
+    <!-- http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTumorWithoutDistantMetastasis -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumorWithoutDistantMetastasis">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungTumorAggregateAsRelatedToDistantMetastasis"/>
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTumorWithoutDistantMetastasis">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTumorAggregateAsRelatedToDistantMetastasis"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#MetastasisOfLungTumor -->
+    <!-- http://purl.org/tnmo/TNM-O_lung_7_new.owl#MetastasisOfLungTumor -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#MetastasisOfLungTumor">
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#MetastasisOfLungTumor">
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Metastasis"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#MetastaticRegionalLymphNodeOfLungTumor -->
+    <!-- http://purl.org/tnmo/TNM-O_lung_7_new.owl#MetastaticRegionalLymphNodeOfLungTumor -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#MetastaticRegionalLymphNodeOfLungTumor">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#MetastasisOfLungTumor"/>
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#MetastaticRegionalLymphNodeOfLungTumor">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#MetastasisOfLungTumor"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#NoAssessmentOfPrimaryLungTumor -->
+    <!-- http://purl.org/tnmo/TNM-O_lung_7_new.owl#NoAssessmentOfPrimaryLungTumor -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#NoAssessmentOfPrimaryLungTumor">
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#NoAssessmentOfPrimaryLungTumor">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#NotAssessedMalignantAnatomicalStructure"/>
-                    <rdf:Description rdf:about="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungPrimaryTumorTNM7"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungPrimaryTumorTNM7"/>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungPrimaryTumorTNM7"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungPrimaryTumorTNM7"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#NoEvidenceOfPrimaryLungTumor -->
+    <!-- http://purl.org/tnmo/TNM-O_lung_7_new.owl#NoEvidenceOfPrimaryLungTumor -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#NoEvidenceOfPrimaryLungTumor">
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#NoEvidenceOfPrimaryLungTumor">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungPrimaryTumorTNM7"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungPrimaryTumorTNM7"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isBearerOf"/>
                         <owl:someValuesFrom>
@@ -408,8 +1681,139 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thoma/ontologies/2018/7/TNM-O_lung_7_new.owl#LungPrimaryTumorTNM7"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungPrimaryTumorTNM7"/>
     </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_lung_7_new.owl#RepresentationalUnitInLungTumorTNM7Classification -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#RepresentationalUnitInLungTumorTNM7Classification">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInTNM7Classification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_lung_7_new.owl#RepresentationalUnitInLungTumorTNM7ClinicalClassification -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#RepresentationalUnitInLungTumorTNM7ClinicalClassification">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#RepresentationalUnitInLungTumorTNM7Classification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_lung_7_new.owl#RepresentationalUnitInLungTumorTNM7PathologicalClassification -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#RepresentationalUnitInLungTumorTNM7PathologicalClassification">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_lung_7_new.owl#RepresentationalUnitInLungTumorTNM7Classification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_lung_7_new.owl#RepresentationalUnitInUICCClinicalStageGroupingInLungTNM7Classification -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#RepresentationalUnitInUICCClinicalStageGroupingInLungTNM7Classification">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInUICCStageGroupingInTNM7Classification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_lung_7_new.owl#RepresentationalUnitInUICCPathologicalStageGroupingInLungTNM7Classification -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#RepresentationalUnitInUICCPathologicalStageGroupingInLungTNM7Classification">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInUICCStageGroupingInTNM7Classification"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cM"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cN"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cT"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cN0"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cN1"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cN2"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cN3"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cNX"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cStage0"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cStageI"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cStageII"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cStageIII"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cStageIV"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cT0"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cT1"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cT2"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cT3"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cT4"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cTTis"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_cTX"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pM"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pN"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pT"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pN0"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pN1"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pN2"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pN3"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pNX"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pStage0"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pStageI"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pStageII"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pStageIII"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pStageIV"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pT0"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pT1"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pT2"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pT3"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pT4"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pTTis"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_lung_7_new.owl#LungTNM7_pTX"/>
+        </owl:members>
+    </rdf:Description>
 </rdf:RDF>
 
 
