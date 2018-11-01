@@ -1415,6 +1415,14 @@ Institute of Medical Informatics, Statistics and Documentation, Medical Universi
     
 
 
+    <!-- http://purl.org/tnmo/TNM-O.owl#DistantMetastasis -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#DistantMetastasis">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Metastasis"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/tnmo/TNM-O.owl#GradeOfDifferentiationCannotBeAssessed -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#GradeOfDifferentiationCannotBeAssessed">
@@ -1499,6 +1507,14 @@ Institute of Medical Informatics, Statistics and Documentation, Medical Universi
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Metastasis">
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#MalignantAnatomicalStructure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#MetastaticRegionalLymphNode -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#MetastaticRegionalLymphNode">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Metastasis"/>
     </owl:Class>
     
 
@@ -1676,7 +1692,7 @@ NotAssessedMalignantAnatomicalStructure subclassOf
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#SizeMax2cm"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#SizeValueRegion"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/tnmo/TNM-O.owl#hasSize"/>
                         <owl:someValuesFrom>
@@ -1716,7 +1732,7 @@ NotAssessedMalignantAnatomicalStructure subclassOf
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#SizeMax2cm"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#SizeValueRegion"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/tnmo/TNM-O.owl#hasSize"/>
                         <owl:someValuesFrom>
@@ -1757,7 +1773,7 @@ NotAssessedMalignantAnatomicalStructure subclassOf
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#SizeMoreThan2cm"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#SizeValueRegion"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/tnmo/TNM-O.owl#hasSize"/>
                         <owl:someValuesFrom>
@@ -1791,13 +1807,54 @@ NotAssessedMalignantAnatomicalStructure subclassOf
     
 
 
+    <!-- http://purl.org/tnmo/TNM-O.owl#Size3To4cm -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Size3To4cm">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#SizeValueRegion"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/tnmo/TNM-O.owl#hasSize"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.0</xsd:minExclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/tnmo/TNM-O.owl#hasSize"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.0</xsd:maxInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#SizeValueRegion"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/tnmo/TNM-O.owl#Size3To5cm -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Size3To5cm">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#SizeMax2cm"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#SizeValueRegion"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/tnmo/TNM-O.owl#hasSize"/>
                         <owl:someValuesFrom>
@@ -1838,7 +1895,7 @@ NotAssessedMalignantAnatomicalStructure subclassOf
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#SizeMax2cm"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#SizeValueRegion"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/tnmo/TNM-O.owl#hasSize"/>
                         <owl:someValuesFrom>
@@ -1873,13 +1930,54 @@ NotAssessedMalignantAnatomicalStructure subclassOf
     
 
 
+    <!-- http://purl.org/tnmo/TNM-O.owl#Size4To5cm -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Size4To5cm">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#SizeValueRegion"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/tnmo/TNM-O.owl#hasSize"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.0</xsd:minExclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/tnmo/TNM-O.owl#hasSize"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">5.0</xsd:maxInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#SizeValueRegion"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/tnmo/TNM-O.owl#Size5To7cm -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Size5To7cm">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#SizeMax2cm"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#SizeValueRegion"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/tnmo/TNM-O.owl#hasSize"/>
                         <owl:someValuesFrom>
@@ -1920,7 +2018,7 @@ NotAssessedMalignantAnatomicalStructure subclassOf
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#SizeMax2cm"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#SizeValueRegion"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/tnmo/TNM-O.owl#hasSize"/>
                         <owl:someValuesFrom>
@@ -1954,13 +2052,41 @@ NotAssessedMalignantAnatomicalStructure subclassOf
     
 
 
+    <!-- http://purl.org/tnmo/TNM-O.owl#SizeMax1cm -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#SizeMax1cm">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#SizeValueRegion"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/tnmo/TNM-O.owl#hasSize"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</xsd:maxInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#SizeValueRegion"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/tnmo/TNM-O.owl#SizeMax2cm -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#SizeMax2cm">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Liver#SizeMax5cm"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#SizeValueRegion"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/tnmo/TNM-O.owl#hasSize"/>
                         <owl:someValuesFrom>
@@ -2009,13 +2135,41 @@ NotAssessedMalignantAnatomicalStructure subclassOf
     
 
 
+    <!-- http://purl.org/tnmo/TNM-O.owl#SizeMax4cm -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#SizeMax4cm">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#SizeValueRegion"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/tnmo/TNM-O.owl#hasSize"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.0</xsd:maxInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#SizeValueRegion"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/tnmo/TNM-O.owl#SizeMax5mm -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#SizeMax5mm">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#SizeMax2cm"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#SizeValueRegion"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/tnmo/TNM-O.owl#hasSize"/>
                         <owl:someValuesFrom>
@@ -2070,7 +2224,7 @@ NotAssessedMalignantAnatomicalStructure subclassOf
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#SizeMoreThan2cm"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#SizeValueRegion"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/tnmo/TNM-O.owl#hasSize"/>
                         <owl:someValuesFrom>
@@ -2097,7 +2251,7 @@ NotAssessedMalignantAnatomicalStructure subclassOf
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#SizeMoreThan4cm"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#SizeValueRegion"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/tnmo/TNM-O.owl#hasSize"/>
                         <owl:someValuesFrom>
@@ -2190,6 +2344,122 @@ NotAssessedMalignantAnatomicalStructure subclassOf
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#TumorAggregateClassifiedByMalignancy">
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#AnatomicalStructureClassifiedByMalignancy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#TumorAggregateWithDistantMetastasis -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#TumorAggregateWithDistantMetastasis">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#TumorAggregateClassifiedByMalignancy"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#hasPart"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O.owl#DistantMetastasis"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#TumorAggregateClassifiedByMalignancy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#TumorAggregateWithMetastaticRegionalLymphNodes -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#TumorAggregateWithMetastaticRegionalLymphNodes">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#TumorAggregateClassifiedByMalignancy"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#hasPart"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O.owl#MetastaticRegionalLymphNode"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isBearerOf"/>
+                                <owl:someValuesFrom>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#projectsOnto"/>
+                                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1OrMore"/>
+                                    </owl:Restriction>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#NotAssessedMalignantAnatomicalStructure"/>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#TumorAggregateClassifiedByMalignancy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#TumorAggregateWithoutDistantMetastasis -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#TumorAggregateWithoutDistantMetastasis">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#TumorAggregateClassifiedByMalignancy"/>
+                    <owl:Class>
+                        <owl:complementOf>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#hasPart"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O.owl#DistantMetastasis"/>
+                            </owl:Restriction>
+                        </owl:complementOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#TumorAggregateClassifiedByMalignancy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#TumorAggregateWithoutMetastaticRegionalLymphNodes -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#TumorAggregateWithoutMetastaticRegionalLymphNodes">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#TumorAggregateClassifiedByMalignancy"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Class>
+                                <owl:complementOf>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#hasPart"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O.owl#MetastaticRegionalLymphNode"/>
+                                    </owl:Restriction>
+                                </owl:complementOf>
+                            </owl:Class>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isBearerOf"/>
+                                <owl:someValuesFrom>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#projectsOnto"/>
+                                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality0"/>
+                                    </owl:Restriction>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#NotAssessedMalignantAnatomicalStructure"/>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#TumorAggregateClassifiedByMalignancy"/>
     </owl:Class>
     
 

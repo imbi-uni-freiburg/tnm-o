@@ -89,7 +89,7 @@
     <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#AnatomicalEntity -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#AnatomicalEntity">
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#PostnatalAnatomicalStructure"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#AnatomicalStructure"/>
         <rdfs:comment>FMAID: 62955</rdfs:comment>
     </owl:Class>
     
@@ -98,7 +98,7 @@
     <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#AnatomicalStructureAdjacentToPancreas -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#AnatomicalStructureAdjacentToPancreas">
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#AnatomicalEntity"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#AnatomicalStructure"/>
         <rdfs:comment>No corresponding FMA-expression</rdfs:comment>
     </owl:Class>
     
@@ -107,7 +107,7 @@
     <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#AnatomicalStructureAdjacentToStomach -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#AnatomicalStructureAdjacentToStomach">
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#PostnatalAnatomicalStructure"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#AnatomicalStructure"/>
     </owl:Class>
     
 
@@ -134,6 +134,14 @@
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#OrganAdjecentToLiver"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#SegmentOfColon"/>
         <rdfs:comment>FMAID: 14545</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#AtelectasisOfLung -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#AtelectasisOfLung">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#Disease"/>
     </owl:Class>
     
 
@@ -349,6 +357,22 @@
     
 
 
+    <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#Disease -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#Disease">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#Disposition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#Disposition -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#Disposition">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#ListOfAnatomicalTermsOfTNMLungNotYetRealizedInTNM-Anatomy"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#DistalPartOfSigmoidColon -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#DistalPartOfSigmoidColon">
@@ -386,8 +410,7 @@
     <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#EpitheliumOfStomach -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#EpitheliumOfStomach">
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#MicrovillousColumnarEpithelium"/>
-        <rdfs:comment>FMAID: 17091</rdfs:comment>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#OrganComponentLayer"/>
     </owl:Class>
     
 
@@ -450,6 +473,14 @@
     
 
 
+    <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#GreatVessels -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#GreatVessels">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#ListOfAnatomicalTermsOfTNMLungNotYetRealizedInTNM-Anatomy"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#Heart -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#Heart">
@@ -500,6 +531,14 @@
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#HighestMediastinalLymphNode">
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#SuperiorMediastinalLymphNode"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#Hilus -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#Hilus">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#ListOfAnatomicalTermsOfTNMLungNotYetRealizedInTNM-Anatomy"/>
     </owl:Class>
     
 
@@ -732,6 +771,12 @@
     
 
 
+    <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#ListOfAnatomicalTermsOfTNMLungNotYetRealizedInTNM-Anatomy -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#ListOfAnatomicalTermsOfTNMLungNotYetRealizedInTNM-Anatomy"/>
+    
+
+
     <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#Liver -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#Liver">
@@ -746,6 +791,14 @@
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#LiverRegionalLymphNode">
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#LymphNode"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#LobarBronchus -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#LobarBronchus">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#ListOfAnatomicalTermsOfTNMLungNotYetRealizedInTNM-Anatomy"/>
     </owl:Class>
     
 
@@ -924,15 +977,6 @@
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#MicrovillousColumnarEpithelium -->
-
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#MicrovillousColumnarEpithelium">
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#SimpleColumnarEpithelium"/>
-        <rdfs:comment>FMAID: 64799</rdfs:comment>
-    </owl:Class>
-    
-
-
     <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#MiddleColicLymphNode -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#MiddleColicLymphNode">
@@ -1045,6 +1089,14 @@
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#NodeOfLigamentumArteriosum">
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#MediastinalLymphNode"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#ObstructivePneumonitis -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#ObstructivePneumonitis">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#Disease"/>
     </owl:Class>
     
 
@@ -1167,6 +1219,14 @@
     
 
 
+    <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#ParietalPleura -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#ParietalPleura">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#ParietalSerousMembrane"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#ParietalSerousMembrane -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#ParietalSerousMembrane">
@@ -1179,6 +1239,14 @@
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#ParietalSerousPericardium">
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#ParietalSerousMembrane"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#PericardialEffusion -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#PericardialEffusion">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#Disease"/>
     </owl:Class>
     
 
@@ -1224,29 +1292,19 @@
     
 
 
+    <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#PleuralEffusion -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#PleuralEffusion">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#Disease"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#PortalVein -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#PortalVein">
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#SegmentOfHollowTreeOrgan"/>
         <rdfs:comment>FMAID: 66645</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#PortionOfEpithelium -->
-
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#PortionOfEpithelium">
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#PortionOfTissue"/>
-        <rdfs:comment>FMAID: 9639</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#PortionOfTissue -->
-
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#PortionOfTissue">
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#PostnatalAnatomicalStructure"/>
-        <rdfs:comment>FMAID: 9637</rdfs:comment>
     </owl:Class>
     
 
@@ -1263,15 +1321,6 @@
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#PosteriorMediastinalLymphNode">
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#MediastinalLymphNode"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#PostnatalAnatomicalStructure -->
-
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#PostnatalAnatomicalStructure">
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#AnatomicalStructure"/>
-        <rdfs:comment>FMAID: 67135</rdfs:comment>
     </owl:Class>
     
 
@@ -1549,15 +1598,6 @@
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#SerosaOfStomach -->
-
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#SerosaOfStomach">
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#OrganComponentLayer"/>
-        <rdfs:comment>FMAID: 14914</rdfs:comment>
-    </owl:Class>
-    
-
-
     <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#SerratusAnterior -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#SerratusAnterior">
@@ -1602,15 +1642,6 @@
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#SigmoidLymphNode">
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#ColicLymphNode"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#SimpleColumnarEpithelium -->
-
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#SimpleColumnarEpithelium">
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#UnilaminarEpithelium"/>
-        <rdfs:comment>FMAID: 45567</rdfs:comment>
     </owl:Class>
     
 
@@ -1707,11 +1738,11 @@
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#SubmucosaOfStomach -->
+    <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#SubmucosaOfZoneOfStomach -->
 
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#SubmucosaOfStomach">
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#SubmucosaOfZoneOfStomach">
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#OrganComponentLayer"/>
-        <rdfs:comment>FMAID: 14908</rdfs:comment>
+        <rdfs:comment>FMAID: 17057</rdfs:comment>
     </owl:Class>
     
 
@@ -1822,15 +1853,6 @@
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#OrganAdjecentToLiver"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#SegmentOfColon"/>
         <rdfs:comment>FMAID: 14546</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#UnilaminarEpithelium -->
-
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#UnilaminarEpithelium">
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#PortionOfEpithelium"/>
-        <rdfs:comment>FMAID: 45561</rdfs:comment>
     </owl:Class>
     
 
@@ -1971,7 +1993,7 @@
             <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#Serosa"/>
             <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#SerosaOfLargeIntestine"/>
             <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#SubmucosaOfLargeIntestine"/>
-            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#SubmucosaOfStomach"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#SubmucosaOfZoneOfStomach"/>
             <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#SubserosaOfLargeIntestine"/>
             <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#SubserosaOfStomach"/>
         </owl:members>
