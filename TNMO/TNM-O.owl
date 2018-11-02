@@ -22,6 +22,7 @@
         <dc:publisher>Institute of Medical Biometry and Medical Informatics, University Medical Center Freiburg, Stefan-Meier-Strasse 26, 79104 Freiburg, Germany
 
 Institute of Medical Informatics, Statistics and Documentation, Medical University of Graz, Auenbruggerplatz 2/V , 8036 Graz (Austria)</dc:publisher>
+        <dc:creator>Thomas Maulhardt, Albert-Ludwigs-University Freiburg, Freiburg, Germany</dc:creator>
         <owl:versionInfo>prototype 0.2</owl:versionInfo>
         <dc:creator>Stefan Schulz, Medical University of Graz, Graz, Austria</dc:creator>
         <rdfs:comment>A representation of the TNM classification of malignant tumors - hub file. Include organ or organ system specific TNM-O files as necesssary</rdfs:comment>
@@ -1423,6 +1424,34 @@ Institute of Medical Informatics, Statistics and Documentation, Medical Universi
     
 
 
+    <!-- http://purl.org/tnmo/TNM-O.owl#ExtrathoracicalMetastasis -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#ExtrathoracicalMetastasis">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#DistantMetastasis"/>
+                    <owl:Class>
+                        <owl:complementOf>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#hasPart"/>
+                                <owl:allValuesFrom>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isIncludedIn"/>
+                                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#Thorax"/>
+                                    </owl:Restriction>
+                                </owl:allValuesFrom>
+                            </owl:Restriction>
+                        </owl:complementOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#DistantMetastasis"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/tnmo/TNM-O.owl#GradeOfDifferentiationCannotBeAssessed -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#GradeOfDifferentiationCannotBeAssessed">
@@ -2476,6 +2505,14 @@ NotAssessedMalignantAnatomicalStructure subclassOf
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#TumorCardinalityValueRegion">
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#TumorQualityValueRegion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#TumorNoduleSeparateFromPrimary -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#TumorNoduleSeparateFromPrimary">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Metastasis"/>
     </owl:Class>
     
 
