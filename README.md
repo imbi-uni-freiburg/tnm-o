@@ -37,7 +37,7 @@ Objective of this project is to represent the complete TNM Classification system
  * Johannes Herrmann
  * Thomas Maulhardt
  * Stefan Schulz (Medical University of Graz)
- * Susanne Zabka (University of Freiburg)acy
+ * Susanne Zabka (University of Freiburg)
 
  This repository is under construction.
 
