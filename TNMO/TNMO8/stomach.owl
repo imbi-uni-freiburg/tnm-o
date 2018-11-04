@@ -60,7 +60,7 @@
     <owl:ObjectProperty rdf:about="http://purl.org/biotop/btl2.owl#isIncludedIn">
         <owl:propertyChainAxiom rdf:parseType="Collection">
             <rdf:Description rdf:about="http://purl.org/biotop/btl2.owl#isIncludedIn"/>
-            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#surrounds"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#hasSurroundingPart"/>
         </owl:propertyChainAxiom>
     </owl:ObjectProperty>
     
@@ -84,9 +84,9 @@
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_stomach_8#surrounds -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_8#hasSurroundingPart -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#surrounds">
+    <owl:ObjectProperty rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#hasSurroundingPart">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
     </owl:ObjectProperty>
     
@@ -181,9 +181,9 @@
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInUICCStageGroupinginTNM8Classification -->
+    <!-- http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInUICCStageGroupingInTNM8Classification -->
 
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInUICCStageGroupinginTNM8Classification"/>
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInUICCStageGroupingInTNM8Classification"/>
     
 
 
@@ -221,13 +221,13 @@
                     <owl:Class>
                         <owl:complementOf>
                             <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#surrounds"/>
+                                <owl:onProperty rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#hasSurroundingPart"/>
                                 <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#MuscleLayerOfStomach"/>
                             </owl:Restriction>
                         </owl:complementOf>
                     </owl:Class>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#surrounds"/>
+                        <owl:onProperty rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#hasSurroundingPart"/>
                         <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#SubmucosaOfStomach"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -247,13 +247,13 @@
                     <owl:Class>
                         <owl:complementOf>
                             <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#surrounds"/>
+                                <owl:onProperty rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#hasSurroundingPart"/>
                                 <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#MuscularisMucosaeOfStomach"/>
                             </owl:Restriction>
                         </owl:complementOf>
                     </owl:Class>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#surrounds"/>
+                        <owl:onProperty rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#hasSurroundingPart"/>
                         <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#LaminaPropriaOfStomach"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -279,13 +279,13 @@
                     <owl:Class>
                         <owl:complementOf>
                             <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#surrounds"/>
+                                <owl:onProperty rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#hasSurroundingPart"/>
                                 <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#Serosa"/>
                             </owl:Restriction>
                         </owl:complementOf>
                     </owl:Class>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#surrounds"/>
+                        <owl:onProperty rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#hasSurroundingPart"/>
                         <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#SubserosaOfStomach"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -311,13 +311,13 @@
                     <owl:Class>
                         <owl:complementOf>
                             <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#surrounds"/>
+                                <owl:onProperty rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#hasSurroundingPart"/>
                                 <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#SubmucosaOfStomach"/>
                             </owl:Restriction>
                         </owl:complementOf>
                     </owl:Class>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#surrounds"/>
+                        <owl:onProperty rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#hasSurroundingPart"/>
                         <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#MuscularisMucosaeOfStomach"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -337,13 +337,13 @@
                     <owl:Class>
                         <owl:complementOf>
                             <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#surrounds"/>
+                                <owl:onProperty rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#hasSurroundingPart"/>
                                 <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#SubserosaOfStomach"/>
                             </owl:Restriction>
                         </owl:complementOf>
                     </owl:Class>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#surrounds"/>
+                        <owl:onProperty rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#hasSurroundingPart"/>
                         <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#MuscleLayerOfStomach"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -909,7 +909,7 @@
     <!-- http://purl.org/tnmo/TNM-O_stomach_8#RepresentationalUnitInStomachUICCStageGroupingInTNM8Classification -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#RepresentationalUnitInStomachUICCStageGroupingInTNM8Classification">
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInUICCStageGroupinginTNM8Classification"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInUICCStageGroupingInTNM8Classification"/>
     </owl:Class>
     
 
@@ -3910,7 +3910,7 @@
                         <rdf:first>
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#surrounds"/>
+                                <swrl:propertyPredicate rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#hasSurroundingPart"/>
                                 <swrl:argument1 rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#y"/>
                                 <swrl:argument2 rdf:resource="http://purl.org/tnmo/TNM-O_Stomach#z"/>
                             </rdf:Description>
