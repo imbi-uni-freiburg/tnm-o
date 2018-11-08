@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://purl.org/tnmo/TNM-O.owl/1" uri="file:/C:/Users/thoma/Desktop/gitteset/tnm-o/TNMO/TNM-O.owl"/>
     <uri id="Imports Wizard Entry" name="http://purl.org/tnmo/TNM-O_stomach_Test" uri="stomachTest.owl"/>
     <uri id="Imports Wizard Entry" name="http://purl.org/tnmo/TNM-O.owl/1" uri="file:/C:/Users/thoma/Desktop/TNM-O-Ontologie/Thomas/tnm-o_4/tnm-o/TNMO/TNM-O.owl"/>
     <uri id="Imports Wizard Entry" name="http://purl.org/tnmo/TNM-O.owl/1" uri="file:/C:/Users/thoma/Desktop/TNM-O-Ontologie/Thomas/tnm-o_2/TNMO/TNM-O.owl"/>

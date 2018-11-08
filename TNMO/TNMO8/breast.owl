@@ -1,0 +1,2693 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.org/tnmo/TNM-O_breast_8.owl#"
+     xml:base="http://purl.org/tnmo/TNM-O_breast_8.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:btl2="http://purl.org/biotop/btl2.owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#">
+    <owl:Ontology rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl">
+        <owl:versionIRI rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl/1.0"/>
+        <owl:imports rdf:resource="http://purl.org/tnmo/TNM-O.owl/1"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#Metastasis -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Metastasis"/>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#NotAssessedMalignantAnatomicalStructure -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#NotAssessedMalignantAnatomicalStructure"/>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#PrimaryTumorSiteClassifiedByMalignancy -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#PrimaryTumorSiteClassifiedByMalignancy"/>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInTNM8Classification -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInTNM8Classification"/>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInUICCStageGroupingInTNM8Classification -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInUICCStageGroupingInTNM8Classification"/>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#TumorAggregateClassifiedByMalignancy -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#TumorAggregateClassifiedByMalignancy"/>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastPrimaryTumor -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastPrimaryTumor">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#PrimaryTumorSiteClassifiedByMalignancy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cM -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cM">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#RepresentationalUnitInBreastTumorTNM8ClinicalClassification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cM0 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cM0">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cM"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cStage0"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cStageI"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cStageII"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cStageIII"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#RepresentationalUnitInUICCClinicalStageGroupingInBreastTNM8Classification"/>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cM1"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cM1 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cM1">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cM"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cStageIV"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#RepresentationalUnitInUICCClinicalStageGroupingInBreastTNM8Classification"/>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cN -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cN">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#RepresentationalUnitInBreastTumorTNM8ClinicalClassification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cN0 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cN0">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cN"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cStage0"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cStageI"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cStageII"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cStageIIIB"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cStageIV"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#RepresentationalUnitInUICCClinicalStageGroupingInBreastTNM8Classification"/>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cN1 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cN1">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cN"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cStageII"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cStageIIIA"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cStageIIIB"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cStageIV"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#RepresentationalUnitInUICCClinicalStageGroupingInBreastTNM8Classification"/>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cN2 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cN2">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cN"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cStageIIIA"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cStageIIIB"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cStageIV"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#RepresentationalUnitInUICCClinicalStageGroupingInBreastTNM8Classification"/>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cN2a -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cN2a">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cN2"/>
+        <owl:disjointWith rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cN2b"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cN2b -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cN2b">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cN2"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cN3 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cN3">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cN"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cStageIIIC"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cStageIV"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#RepresentationalUnitInUICCClinicalStageGroupingInBreastTNM8Classification"/>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cN3a -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cN3a">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cN3"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cN3b -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cN3b">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cN3"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cN3c -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cN3c">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cN3"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cNX -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cNX">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cN"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cStageIV"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#RepresentationalUnitInUICCClinicalStageGroupingInBreastTNM8Classification"/>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cStage0 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cStage0">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#RepresentationalUnitInUICCClinicalStageGroupingInBreastTNM8Classification"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cM0"/>
+                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cN0"/>
+                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cTTis"/>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#RepresentationalUnitInUICCClinicalStageGroupingInBreastTNM8Classification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cStageI -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cStageI">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#RepresentationalUnitInUICCClinicalStageGroupingInBreastTNM8Classification"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cM0"/>
+                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cN0"/>
+                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cT1"/>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#RepresentationalUnitInUICCClinicalStageGroupingInBreastTNM8Classification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cStageIA -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cStageIA">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cStageI"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cM0"/>
+                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cN0"/>
+                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cT1"/>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cStageI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cStageII -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cStageII">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#RepresentationalUnitInUICCClinicalStageGroupingInBreastTNM8Classification"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cM0"/>
+                                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cN0"/>
+                                            <owl:Class>
+                                                <owl:unionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cT2"/>
+                                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cT3"/>
+                                                </owl:unionOf>
+                                            </owl:Class>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cM0"/>
+                                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cN1"/>
+                                            <owl:Class>
+                                                <owl:unionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cT0"/>
+                                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cT1"/>
+                                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cT2"/>
+                                                </owl:unionOf>
+                                            </owl:Class>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#RepresentationalUnitInUICCClinicalStageGroupingInBreastTNM8Classification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cStageIIA -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cStageIIA">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cStageII"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cM0"/>
+                                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cN0"/>
+                                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cT2"/>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cM0"/>
+                                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cN1"/>
+                                            <owl:Class>
+                                                <owl:unionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cT0"/>
+                                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cT1"/>
+                                                </owl:unionOf>
+                                            </owl:Class>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cStageII"/>
+        <owl:disjointWith rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cStageIIB"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cStageIIB -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cStageIIB">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cStageII"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cM0"/>
+                                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cN0"/>
+                                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cT3"/>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cM0"/>
+                                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cN1"/>
+                                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cT2"/>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cStageII"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cStageIII -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cStageIII">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#RepresentationalUnitInUICCClinicalStageGroupingInBreastTNM8Classification"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cM0"/>
+                                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cN2"/>
+                                            <owl:Class>
+                                                <owl:unionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cT0"/>
+                                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cT1"/>
+                                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cT2"/>
+                                                </owl:unionOf>
+                                            </owl:Class>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cM0"/>
+                                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cN3"/>
+                                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cT"/>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cM0"/>
+                                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cT3"/>
+                                            <owl:Class>
+                                                <owl:unionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cN1"/>
+                                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cN2"/>
+                                                </owl:unionOf>
+                                            </owl:Class>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cM0"/>
+                                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cT4"/>
+                                            <owl:Class>
+                                                <owl:unionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cN0"/>
+                                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cN1"/>
+                                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cN2"/>
+                                                </owl:unionOf>
+                                            </owl:Class>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#RepresentationalUnitInUICCClinicalStageGroupingInBreastTNM8Classification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cStageIIIA -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cStageIIIA">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cStageIII"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cM0"/>
+                                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cN2"/>
+                                            <owl:Class>
+                                                <owl:unionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cT0"/>
+                                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cT1"/>
+                                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cT2"/>
+                                                </owl:unionOf>
+                                            </owl:Class>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cM0"/>
+                                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cT3"/>
+                                            <owl:Class>
+                                                <owl:unionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cN1"/>
+                                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cN2"/>
+                                                </owl:unionOf>
+                                            </owl:Class>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cStageIII"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cStageIIIB -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cStageIIIB">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cStageIII"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cM0"/>
+                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cT4"/>
+                                    <owl:Class>
+                                        <owl:unionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cN0"/>
+                                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cN1"/>
+                                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cN2"/>
+                                        </owl:unionOf>
+                                    </owl:Class>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cStageIII"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cStageIIIC -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cStageIIIC">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cStageIII"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cM0"/>
+                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cN3"/>
+                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cT"/>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cStageIII"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cStageIV -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cStageIV">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#RepresentationalUnitInUICCClinicalStageGroupingInBreastTNM8Classification"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cM1"/>
+                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cN"/>
+                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cT"/>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#RepresentationalUnitInUICCClinicalStageGroupingInBreastTNM8Classification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cT -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cT">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#RepresentationalUnitInBreastTumorTNM8ClinicalClassification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cT0 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cT0">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cT"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cStageI"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cStageIIA"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cStageIIIA"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cStageIIIC"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cStageIV"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#RepresentationalUnitInUICCClinicalStageGroupingInBreastTNM8Classification"/>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cT1 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cT1">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cT"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cStageI"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cStageIIA"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cStageIIIA"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cStageIIIC"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cStageIV"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#RepresentationalUnitInUICCClinicalStageGroupingInBreastTNM8Classification"/>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cT1a -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cT1a">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cT1"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cT1b -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cT1b">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cT1"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cT1c -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cT1c">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cT1"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cT1mi -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cT1mi">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cT1"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cT2 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cT2">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cT"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cStageII"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cStageIIIA"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cStageIIIC"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cStageIV"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#RepresentationalUnitInUICCClinicalStageGroupingInBreastTNM8Classification"/>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cT3 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cT3">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cT"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cStageIIB"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cStageIIIA"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cStageIIIC"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cStageIV"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#RepresentationalUnitInUICCClinicalStageGroupingInBreastTNM8Classification"/>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cT4 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cT4">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cT"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cStageIIIB"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cStageIIIC"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cStageIV"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#RepresentationalUnitInUICCClinicalStageGroupingInBreastTNM8Classification"/>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cT4a -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cT4a">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cT4"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cT4b -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cT4b">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cT4"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cT4c -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cT4c">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cT4"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cT4d -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cT4d">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cT4"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cTTis -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cTTis">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cT"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cStage0"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cStageIIIC"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cStageIV"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#RepresentationalUnitInUICCClinicalStageGroupingInBreastTNM8Classification"/>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cTTis_DCIS -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cTTis_DCIS">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cTTis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cTTis_LCIS -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cTTis_LCIS">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cTTis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cTTis_Paget -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cTTis_Paget">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cTTis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cTX -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cTX">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cT"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cStageIIIC"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cStageIV"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#RepresentationalUnitInUICCClinicalStageGroupingInBreastTNM8Classification"/>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pM -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pM">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#RepresentationalUnitInBreastTumorTNM8PathologicalClassification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pM0 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pM0">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pM"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pStage0"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pStageI"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pStageII"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pStageIII"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#RepresentationalUnitInUICCPathologicalStageGroupingInBreastTNM8Classification"/>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pM1"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pM1 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pM1">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pM"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pStageIV"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#RepresentationalUnitInUICCPathologicalStageGroupingInBreastTNM8Classification"/>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pN -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pN">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#RepresentationalUnitInBreastTumorTNM8PathologicalClassification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pN0 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pN0">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pN"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pStage0"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pStageI"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pStageII"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pStageIIIB"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pStageIV"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#RepresentationalUnitInUICCPathologicalStageGroupingInBreastTNM8Classification"/>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pN1 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pN1">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pN"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pStageII"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pStageIIIA"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pStageIIIB"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pStageIV"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#RepresentationalUnitInUICCPathologicalStageGroupingInBreastTNM8Classification"/>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pN1a -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pN1a">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pN1"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pN1b -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pN1b">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pN1"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pN1c -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pN1c">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pN1"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pN1mi -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pN1mi">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pN1"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pN2 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pN2">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pN"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pStageIIIA"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pStageIIIB"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pStageIV"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#RepresentationalUnitInUICCPathologicalStageGroupingInBreastTNM8Classification"/>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pN2a -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pN2a">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pN2"/>
+        <owl:disjointWith rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pN2b"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pN2b -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pN2b">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pN2"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pN3 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pN3">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pN"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pStageIIIC"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pStageIV"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#RepresentationalUnitInUICCPathologicalStageGroupingInBreastTNM8Classification"/>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pN3a -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pN3a">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pN3"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pN3b -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pN3b">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pN3"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pN3c -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pN3c">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pN3"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pNX -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pNX">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pN"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pStageIV"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#RepresentationalUnitInUICCPathologicalStageGroupingInBreastTNM8Classification"/>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pStage0 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pStage0">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#RepresentationalUnitInUICCPathologicalStageGroupingInBreastTNM8Classification"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pM0"/>
+                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pN0"/>
+                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pTTis"/>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#RepresentationalUnitInUICCPathologicalStageGroupingInBreastTNM8Classification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pStageI -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pStageI">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#RepresentationalUnitInUICCPathologicalStageGroupingInBreastTNM8Classification"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pM0"/>
+                                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pN0"/>
+                                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pT1"/>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pM0"/>
+                                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pN1mi"/>
+                                            <owl:Class>
+                                                <owl:unionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pT0"/>
+                                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pT1"/>
+                                                </owl:unionOf>
+                                            </owl:Class>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#RepresentationalUnitInUICCPathologicalStageGroupingInBreastTNM8Classification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pStageIA -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pStageIA">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pStageI"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pM0"/>
+                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pN0"/>
+                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pT1"/>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pStageI"/>
+        <owl:disjointWith rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pStageIB"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pStageIB -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pStageIB">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pStageI"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pM0"/>
+                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pN1mi"/>
+                                    <owl:Class>
+                                        <owl:unionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pT0"/>
+                                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pT1"/>
+                                        </owl:unionOf>
+                                    </owl:Class>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pStageI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pStageII -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pStageII">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#RepresentationalUnitInUICCPathologicalStageGroupingInBreastTNM8Classification"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pM0"/>
+                                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pN0"/>
+                                            <owl:Class>
+                                                <owl:unionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pT2"/>
+                                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pT3"/>
+                                                </owl:unionOf>
+                                            </owl:Class>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pM0"/>
+                                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pN1"/>
+                                            <owl:Class>
+                                                <owl:unionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pT0"/>
+                                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pT1"/>
+                                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pT2"/>
+                                                </owl:unionOf>
+                                            </owl:Class>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#RepresentationalUnitInUICCPathologicalStageGroupingInBreastTNM8Classification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pStageIIA -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pStageIIA">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pStageII"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pM0"/>
+                                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pN0"/>
+                                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pT2"/>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pM0"/>
+                                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pN1"/>
+                                            <owl:Class>
+                                                <owl:unionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pT0"/>
+                                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pT1"/>
+                                                </owl:unionOf>
+                                            </owl:Class>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pStageII"/>
+        <owl:disjointWith rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pStageIIB"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pStageIIB -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pStageIIB">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pStageII"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pM0"/>
+                                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pN0"/>
+                                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pT3"/>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pM0"/>
+                                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pN1"/>
+                                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pT2"/>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pStageII"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pStageIII -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pStageIII">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#RepresentationalUnitInUICCPathologicalStageGroupingInBreastTNM8Classification"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pM0"/>
+                                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pN2"/>
+                                            <owl:Class>
+                                                <owl:unionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pT0"/>
+                                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pT1"/>
+                                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pT2"/>
+                                                </owl:unionOf>
+                                            </owl:Class>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pM0"/>
+                                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pN3"/>
+                                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pT"/>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pM0"/>
+                                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pT3"/>
+                                            <owl:Class>
+                                                <owl:unionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pN1"/>
+                                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pN2"/>
+                                                </owl:unionOf>
+                                            </owl:Class>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pM0"/>
+                                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pT4"/>
+                                            <owl:Class>
+                                                <owl:unionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pN0"/>
+                                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pN1"/>
+                                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pN2"/>
+                                                </owl:unionOf>
+                                            </owl:Class>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#RepresentationalUnitInUICCPathologicalStageGroupingInBreastTNM8Classification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pStageIIIA -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pStageIIIA">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pStageIII"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pM0"/>
+                                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pN2"/>
+                                            <owl:Class>
+                                                <owl:unionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pT0"/>
+                                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pT1"/>
+                                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pT2"/>
+                                                </owl:unionOf>
+                                            </owl:Class>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pM0"/>
+                                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pT3"/>
+                                            <owl:Class>
+                                                <owl:unionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pN1"/>
+                                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pN2"/>
+                                                </owl:unionOf>
+                                            </owl:Class>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pStageIII"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pStageIIIB -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pStageIIIB">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pStageIII"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pM0"/>
+                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pT4"/>
+                                    <owl:Class>
+                                        <owl:unionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pN0"/>
+                                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pN1"/>
+                                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pN2"/>
+                                        </owl:unionOf>
+                                    </owl:Class>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pStageIII"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pStageIIIC -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pStageIIIC">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pStageIII"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pM0"/>
+                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pN3"/>
+                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pT"/>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pStageIII"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pStageIV -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pStageIV">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#RepresentationalUnitInUICCPathologicalStageGroupingInBreastTNM8Classification"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pM1"/>
+                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pN"/>
+                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pT"/>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#RepresentationalUnitInUICCPathologicalStageGroupingInBreastTNM8Classification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pT -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pT">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#RepresentationalUnitInBreastTumorTNM8PathologicalClassification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pT0 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pT0">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pT"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pStageI"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pStageIIA"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pStageIIIA"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pStageIIIC"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pStageIV"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#RepresentationalUnitInUICCPathologicalStageGroupingInBreastTNM8Classification"/>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pT1 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pT1">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pT"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pStageI"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pStageIIA"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pStageIIIA"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pStageIIIC"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pStageIV"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#RepresentationalUnitInUICCPathologicalStageGroupingInBreastTNM8Classification"/>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pT1a -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pT1a">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pT1"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pT1b -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pT1b">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pT1"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pT1c -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pT1c">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pT1"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pT1mi -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pT1mi">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pT1"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pT2 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pT2">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pT"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pStageII"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pStageIIIA"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pStageIIIC"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pStageIV"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#RepresentationalUnitInUICCPathologicalStageGroupingInBreastTNM8Classification"/>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pT3 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pT3">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pT"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pStageIIB"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pStageIIIA"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pStageIIIC"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pStageIV"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#RepresentationalUnitInUICCPathologicalStageGroupingInBreastTNM8Classification"/>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pT4 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pT4">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pT"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pStageIIIB"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pStageIIIC"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pStageIV"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#RepresentationalUnitInUICCPathologicalStageGroupingInBreastTNM8Classification"/>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pT4a -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pT4a">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pT4"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pT4b -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pT4b">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pT4"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pT4c -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pT4c">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pT4"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pT4d -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pT4d">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pT4"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pTTis -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pTTis">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pT"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pStage0"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pStageIIIC"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pStageIV"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#RepresentationalUnitInUICCPathologicalStageGroupingInBreastTNM8Classification"/>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pTTis_DCIS -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pTTis_DCIS">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pTTis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pTTis_LCIS -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pTTis_LCIS">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pTTis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pTTis_Paget -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pTTis_Paget">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pTTis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pTX -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pTX">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pT"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pStageIIIC"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pStageIV"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#RepresentationalUnitInUICCPathologicalStageGroupingInBreastTNM8Classification"/>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumor0.1To0.5cm -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumor0.1To0.5cm">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorMax2cm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumor0.5To1cm -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumor0.5To1cm">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorMax2cm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumor1To2cm -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumor1To2cm">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorMax2cm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumor2To5cm -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumor2To5cm">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastPrimaryTumor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregate -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregate">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#TumorAggregateClassifiedByMalignancy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregateAsRelatedToDistantMetastasis -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregateAsRelatedToDistantMetastasis">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregate"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregateAsRelatedToMetastaticRegionalLymphNodes -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregateAsRelatedToMetastaticRegionalLymphNodes">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregate"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregateWithMetastaticRegionalLymphNodesFixedToOneAnotherOrToOtherStructuresInAxillaryLymphNodes -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregateWithMetastaticRegionalLymphNodesFixedToOneAnotherOrToOtherStructuresInAxillaryLymphNodes">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregateWithMetastaticRegionalLymphNodesInFixedOrMattedIpsilateralLevelIOrIIAxillaryLymphNodesOrInIpsilateralInteralMammaryLymphNodesAndNotAxillaryLymphNodes"/>
+        <owl:disjointWith rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregateWithMetastaticRegionalLymphNodesInInternalMammaryLymphNodesAndNotAxillaryLymphNodes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregateWithMetastaticRegionalLymphNodesIn10OrMoreAxillaryLymphNodesOrInInfraclavicularLymphNodes -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregateWithMetastaticRegionalLymphNodesIn10OrMoreAxillaryLymphNodesOrInInfraclavicularLymphNodes">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregateWithMetastaticRegionalLymphNodesIn10OrMoreAxillaryLymphNodesOrInInfraclavicularLymphNodesOrInInClinicallyDetectedInternalMammaryLymphNodesAndAxillaryLymphNodesOrInMoreThan3AxillaryLymphNodesAndInInternalMammaryLymphNodesNotClinicallyDetectedOrInIpsilateralSupraclavicularLymphNodes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregateWithMetastaticRegionalLymphNodesIn10OrMoreAxillaryLymphNodesOrInInfraclavicularLymphNodesOrInInClinicallyDetectedInternalMammaryLymphNodesAndAxillaryLymphNodesOrInMoreThan3AxillaryLymphNodesAndInInternalMammaryLymphNodesNotClinicallyDetectedOrInIpsilateralSupraclavicularLymphNodes -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregateWithMetastaticRegionalLymphNodesIn10OrMoreAxillaryLymphNodesOrInInfraclavicularLymphNodesOrInInClinicallyDetectedInternalMammaryLymphNodesAndAxillaryLymphNodesOrInMoreThan3AxillaryLymphNodesAndInInternalMammaryLymphNodesNotClinicallyDetectedOrInIpsilateralSupraclavicularLymphNodes">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregateAsRelatedToMetastaticRegionalLymphNodes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregateWithMetastaticRegionalLymphNodesIn1To3AxillaryLymphNodes -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregateWithMetastaticRegionalLymphNodesIn1To3AxillaryLymphNodes">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregateWithMicrometastasisInRegionalLymphNodesOrWithMetastaticRegionalLymphNodesIn1To3AxillaryIpsilateralLymphNodesOrInInternalMammaryNodesWithoutClinicalDetection"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregateWithMetastaticRegionalLymphNodesIn4To9AxillaryLymphNodes -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregateWithMetastaticRegionalLymphNodesIn4To9AxillaryLymphNodes">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregateWithMetastaticRegionalLymphNodesIn4To9IpsilateralAxillaryLymphNodesOrInInternalMammaryLymphNodesAndNotAxillaryLymphNodesWithClinicalDetection"/>
+        <owl:disjointWith rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregateWithMetastaticRegionalLymphNodesInInternalMammaryLymphNodesAndNotAxillaryLymphNodesWithClinicalDetection"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregateWithMetastaticRegionalLymphNodesIn4To9IpsilateralAxillaryLymphNodesOrInInternalMammaryLymphNodesAndNotAxillaryLymphNodesWithClinicalDetection -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregateWithMetastaticRegionalLymphNodesIn4To9IpsilateralAxillaryLymphNodesOrInInternalMammaryLymphNodesAndNotAxillaryLymphNodesWithClinicalDetection">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregateAsRelatedToMetastaticRegionalLymphNodes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregateWithMetastaticRegionalLymphNodesInClinicallyDetectedInternalMammaryLymphNodesAndAxillaryLymphNodesOrInMoreThan3AxillaryLymphNodesAndInInternalMammaryLymphNodesNotClinicallyDetected -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregateWithMetastaticRegionalLymphNodesInClinicallyDetectedInternalMammaryLymphNodesAndAxillaryLymphNodesOrInMoreThan3AxillaryLymphNodesAndInInternalMammaryLymphNodesNotClinicallyDetected">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregateWithMetastaticRegionalLymphNodesIn10OrMoreAxillaryLymphNodesOrInInfraclavicularLymphNodesOrInInClinicallyDetectedInternalMammaryLymphNodesAndAxillaryLymphNodesOrInMoreThan3AxillaryLymphNodesAndInInternalMammaryLymphNodesNotClinicallyDetectedOrInIpsilateralSupraclavicularLymphNodes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregateWithMetastaticRegionalLymphNodesInFixedOrMattedIpsilateralLevelIOrIIAxillaryLymphNodesOrInIpsilateralInteralMammaryLymphNodesAndNotAxillaryLymphNodes -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregateWithMetastaticRegionalLymphNodesInFixedOrMattedIpsilateralLevelIOrIIAxillaryLymphNodesOrInIpsilateralInteralMammaryLymphNodesAndNotAxillaryLymphNodes">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregateAsRelatedToMetastaticRegionalLymphNodes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregateWithMetastaticRegionalLymphNodesInInternalMammaryAndAxillaryLymphNodes -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregateWithMetastaticRegionalLymphNodesInInternalMammaryAndAxillaryLymphNodes">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregateWithMetastaticRegionalLymphNodesInIpsilateralLevelIIIAxillaryLymphNodesOrInIpsilateralInternalMammaryLymphNodesAndLevelIOrIIAxillaryLymphNodesOrInIpsilateralSupraclavicularLymphNodes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregateWithMetastaticRegionalLymphNodesInInternalMammaryLymphNodesAnd1To3AxillaryLymphNodesWithoutClinicalDetection -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregateWithMetastaticRegionalLymphNodesInInternalMammaryLymphNodesAnd1To3AxillaryLymphNodesWithoutClinicalDetection">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregateWithMicrometastasisInRegionalLymphNodesOrWithMetastaticRegionalLymphNodesIn1To3AxillaryIpsilateralLymphNodesOrInInternalMammaryNodesWithoutClinicalDetection"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregateWithMetastaticRegionalLymphNodesInInternalMammaryLymphNodesAndNotAxillaryLymphNodes -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregateWithMetastaticRegionalLymphNodesInInternalMammaryLymphNodesAndNotAxillaryLymphNodes">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregateWithMetastaticRegionalLymphNodesInFixedOrMattedIpsilateralLevelIOrIIAxillaryLymphNodesOrInIpsilateralInteralMammaryLymphNodesAndNotAxillaryLymphNodes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregateWithMetastaticRegionalLymphNodesInInternalMammaryLymphNodesAndNotAxillaryLymphNodesWithClinicalDetection -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregateWithMetastaticRegionalLymphNodesInInternalMammaryLymphNodesAndNotAxillaryLymphNodesWithClinicalDetection">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregateWithMetastaticRegionalLymphNodesIn4To9IpsilateralAxillaryLymphNodesOrInInternalMammaryLymphNodesAndNotAxillaryLymphNodesWithClinicalDetection"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregateWithMetastaticRegionalLymphNodesInInternalMammaryLymphNodesWithoutClinicalDetection -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregateWithMetastaticRegionalLymphNodesInInternalMammaryLymphNodesWithoutClinicalDetection">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregateWithMicrometastasisInRegionalLymphNodesOrWithMetastaticRegionalLymphNodesIn1To3AxillaryIpsilateralLymphNodesOrInInternalMammaryNodesWithoutClinicalDetection"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregateWithMetastaticRegionalLymphNodesInIpsilateralLevelIIIAxillaryLymphNodesOrInIpsilateralInternalMammaryLymphNodesAndLevelIOrIIAxillaryLymphNodesOrInIpsilateralSupraclavicularLymphNodes -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregateWithMetastaticRegionalLymphNodesInIpsilateralLevelIIIAxillaryLymphNodesOrInIpsilateralInternalMammaryLymphNodesAndLevelIOrIIAxillaryLymphNodesOrInIpsilateralSupraclavicularLymphNodes">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregateAsRelatedToMetastaticRegionalLymphNodes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregateWithMetastaticRegionalLymphNodesInIpsilateralSupraclavicularLymphNodes -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregateWithMetastaticRegionalLymphNodesInIpsilateralSupraclavicularLymphNodes">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregateWithMetastaticRegionalLymphNodesIn10OrMoreAxillaryLymphNodesOrInInfraclavicularLymphNodesOrInInClinicallyDetectedInternalMammaryLymphNodesAndAxillaryLymphNodesOrInMoreThan3AxillaryLymphNodesAndInInternalMammaryLymphNodesNotClinicallyDetectedOrInIpsilateralSupraclavicularLymphNodes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregateWithMetastaticRegionalLymphNodesInLevelIIIAxillaryLymphNodes -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregateWithMetastaticRegionalLymphNodesInLevelIIIAxillaryLymphNodes">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregateWithMetastaticRegionalLymphNodesInIpsilateralLevelIIIAxillaryLymphNodesOrInIpsilateralInternalMammaryLymphNodesAndLevelIOrIIAxillaryLymphNodesOrInIpsilateralSupraclavicularLymphNodes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregateWithMetastaticRegionalLymphNodesInMovableIpsilateralLevelIOrIIAxillaryLymphNodes -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregateWithMetastaticRegionalLymphNodesInMovableIpsilateralLevelIOrIIAxillaryLymphNodes">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregateAsRelatedToMetastaticRegionalLymphNodes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregateWithMetastaticRegionalLymphNodesInSupraclavicularLymphNodes -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregateWithMetastaticRegionalLymphNodesInSupraclavicularLymphNodes">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregateWithMetastaticRegionalLymphNodesInIpsilateralLevelIIIAxillaryLymphNodesOrInIpsilateralInternalMammaryLymphNodesAndLevelIOrIIAxillaryLymphNodesOrInIpsilateralSupraclavicularLymphNodes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregateWithMicrometastasisInRegionalLymphNodes -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregateWithMicrometastasisInRegionalLymphNodes">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregateWithMicrometastasisInRegionalLymphNodesOrWithMetastaticRegionalLymphNodesIn1To3AxillaryIpsilateralLymphNodesOrInInternalMammaryNodesWithoutClinicalDetection"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregateWithMicrometastasisInRegionalLymphNodesOrWithMetastaticRegionalLymphNodesIn1To3AxillaryIpsilateralLymphNodesOrInInternalMammaryNodesWithoutClinicalDetection -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregateWithMicrometastasisInRegionalLymphNodesOrWithMetastaticRegionalLymphNodesIn1To3AxillaryIpsilateralLymphNodesOrInInternalMammaryNodesWithoutClinicalDetection">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregateAsRelatedToMetastaticRegionalLymphNodes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregateWithNoAssessmentOfRegionalLymphNodes -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregateWithNoAssessmentOfRegionalLymphNodes">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#NotAssessedMalignantAnatomicalStructure"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregateAsRelatedToMetastaticRegionalLymphNodes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregateWithoutDistantMetastasis -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregateWithoutDistantMetastasis">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregateAsRelatedToDistantMetastasis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregateWithoutMetastaticRegionalLymphNodes -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregateWithoutMetastaticRegionalLymphNodes">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregateAsRelatedToMetastaticRegionalLymphNodes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorMax0.1cm -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorMax0.1cm">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorMax2cm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorMax2cm -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorMax2cm">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastPrimaryTumor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorMoreThan5cm -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorMoreThan5cm">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastPrimaryTumor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorWithSkinUlcerationOrIpsilateralSatelliteSkinNodulesOrSkinOedema -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorWithSkinUlcerationOrIpsilateralSatelliteSkinNodulesOrSkinOedema">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#InvasiveBreastTumorOfChestWallOrSkin"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#InflammatoryCarcinomaOfBreast -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#InflammatoryCarcinomaOfBreast">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#InvasiveBreastTumorOfChestWallOrSkin"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#InvasiveBreastTumorOfChestWall -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#InvasiveBreastTumorOfChestWall">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#InvasiveBreastTumorOfChestWallOrSkin"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#InvasiveBreastTumorOfChestWallOrSkin -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#InvasiveBreastTumorOfChestWallOrSkin">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastPrimaryTumor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#InvasiveBreastTumorOfSkinAndChestWall -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#InvasiveBreastTumorOfSkinAndChestWall">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#InvasiveBreastTumorOfChestWallOrSkin"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#LungTumorAggregateWithDistantMetastasis -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#LungTumorAggregateWithDistantMetastasis">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregateAsRelatedToDistantMetastasis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#MetastasisOfBreastTumor -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#MetastasisOfBreastTumor">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Metastasis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#NoAssessmentOfPrimaryBreastTumor -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#NoAssessmentOfPrimaryBreastTumor">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#NotAssessedMalignantAnatomicalStructure"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastPrimaryTumor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#RepresentationalUnitInBreastTumorTNM8Classification -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#RepresentationalUnitInBreastTumorTNM8Classification">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInTNM8Classification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#RepresentationalUnitInBreastTumorTNM8ClinicalClassification -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#RepresentationalUnitInBreastTumorTNM8ClinicalClassification">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#RepresentationalUnitInBreastTumorTNM8Classification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#RepresentationalUnitInBreastTumorTNM8PathologicalClassification -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#RepresentationalUnitInBreastTumorTNM8PathologicalClassification">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#RepresentationalUnitInBreastTumorTNM8Classification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#RepresentationalUnitInUICCClinicalStageGroupingInBreastTNM8Classification -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#RepresentationalUnitInUICCClinicalStageGroupingInBreastTNM8Classification">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#RepresentationalUnitInUICCStageGroupingInBreastTNM8Classification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#RepresentationalUnitInUICCPathologicalStageGroupingInBreastTNM8Classification -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#RepresentationalUnitInUICCPathologicalStageGroupingInBreastTNM8Classification">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#RepresentationalUnitInUICCStageGroupingInBreastTNM8Classification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#RepresentationalUnitInUICCStageGroupingInBreastTNM8Classification -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#RepresentationalUnitInUICCStageGroupingInBreastTNM8Classification">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInUICCStageGroupingInTNM8Classification"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cM"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cN"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cT"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cN0"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cN1"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cN2"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cN3"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cNX"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cN3a"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cN3b"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cN3c"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cStage0"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cStageI"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cStageII"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cStageIII"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cStageIV"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cStageIIIA"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cStageIIIB"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cStageIIIC"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cT0"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cT1"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cT2"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cT3"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cT4"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cTTis"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cTX"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cT1a"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cT1b"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cT1c"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cT1mi"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cT4a"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cT4b"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cT4c"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cT4d"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cTTis_DCIS"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cTTis_LCIS"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cTTis_Paget"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pM"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pN"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pT"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pN0"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pN1"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pN2"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pN3"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pNX"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pN1a"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pN1b"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pN1c"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pN3a"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pN3b"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pN3c"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pStage0"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pStageI"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pStageII"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pStageIII"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pStageIV"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pStageIIIA"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pStageIIIB"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pStageIIIC"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pT0"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pT1"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pT2"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pT3"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pT4"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pTTis"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pTX"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pT1a"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pT1b"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pT1c"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pT1mi"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pT4a"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pT4b"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pT4c"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pT4d"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pTTis_DCIS"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pTTis_LCIS"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pTTis_Paget"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumor0.1To0.5cm"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumor0.5To1cm"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumor1To2cm"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorMax0.1cm"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregateWithMetastaticRegionalLymphNodesIn10OrMoreAxillaryLymphNodesOrInInfraclavicularLymphNodes"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregateWithMetastaticRegionalLymphNodesInClinicallyDetectedInternalMammaryLymphNodesAndAxillaryLymphNodesOrInMoreThan3AxillaryLymphNodesAndInInternalMammaryLymphNodesNotClinicallyDetected"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregateWithMetastaticRegionalLymphNodesInIpsilateralSupraclavicularLymphNodes"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregateWithMetastaticRegionalLymphNodesIn10OrMoreAxillaryLymphNodesOrInInfraclavicularLymphNodesOrInInClinicallyDetectedInternalMammaryLymphNodesAndAxillaryLymphNodesOrInMoreThan3AxillaryLymphNodesAndInInternalMammaryLymphNodesNotClinicallyDetectedOrInIpsilateralSupraclavicularLymphNodes"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregateWithMetastaticRegionalLymphNodesIn4To9IpsilateralAxillaryLymphNodesOrInInternalMammaryLymphNodesAndNotAxillaryLymphNodesWithClinicalDetection"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregateWithMetastaticRegionalLymphNodesInFixedOrMattedIpsilateralLevelIOrIIAxillaryLymphNodesOrInIpsilateralInteralMammaryLymphNodesAndNotAxillaryLymphNodes"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregateWithMetastaticRegionalLymphNodesInIpsilateralLevelIIIAxillaryLymphNodesOrInIpsilateralInternalMammaryLymphNodesAndLevelIOrIIAxillaryLymphNodesOrInIpsilateralSupraclavicularLymphNodes"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregateWithMetastaticRegionalLymphNodesInMovableIpsilateralLevelIOrIIAxillaryLymphNodes"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregateWithMicrometastasisInRegionalLymphNodesOrWithMetastaticRegionalLymphNodesIn1To3AxillaryIpsilateralLymphNodesOrInInternalMammaryNodesWithoutClinicalDetection"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregateWithNoAssessmentOfRegionalLymphNodes"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregateWithoutMetastaticRegionalLymphNodes"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregateWithMetastaticRegionalLymphNodesIn1To3AxillaryLymphNodes"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregateWithMetastaticRegionalLymphNodesInInternalMammaryLymphNodesAnd1To3AxillaryLymphNodesWithoutClinicalDetection"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregateWithMetastaticRegionalLymphNodesInInternalMammaryLymphNodesWithoutClinicalDetection"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregateWithMicrometastasisInRegionalLymphNodes"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregateWithMetastaticRegionalLymphNodesInInternalMammaryAndAxillaryLymphNodes"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregateWithMetastaticRegionalLymphNodesInLevelIIIAxillaryLymphNodes"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregateWithMetastaticRegionalLymphNodesInSupraclavicularLymphNodes"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
