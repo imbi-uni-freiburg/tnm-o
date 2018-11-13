@@ -26,6 +26,7 @@ import tnmClassifier.utils.FileSystemConnector;
  * @author Oliver Brunner, Juni-August 2017
  * Update: SZ 2017-07-27 tnmoIRI: .owl dazu
  * Update: SZ 2017-07-29 neue Methode addOntologyAsBaseOntology  
+ *  Update: Susanne Zabka, 13-06-2018: adaptation to new ontology structure (TNM-O_Anatomy)
  * *
  */
 public class ClassifierEnvironment {
@@ -35,7 +36,7 @@ public class ClassifierEnvironment {
   //  private IRI tnmoIri = IRI.create("http://purl.org/tnmo/TNM-O");
     private IRI tnmoIri = IRI.create("http://purl.org/tnmo/TNM-O.owl"); //SZ. .owl dazu, 27.7.2017
 
-    private IRI bodyPartIri = IRI.create("http://purl.org/tnmo/TNM-O_BodyParts.owl");
+    private IRI bodyPartIri = IRI.create("http://purl.org/tnmo/TNM-O_Anatomy.owl");
 	private List<ITearDownFunction> temporaryChangeTearDownFunctions;
 	private List<ITearDownFunction> permanentChangeTearDownFunctions;
 	

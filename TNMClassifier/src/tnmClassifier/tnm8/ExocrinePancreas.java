@@ -23,6 +23,7 @@ import tnmClassifier.ClassifierEnvironment.ChangeMode;
 /**
 * @author Susanne Zabka Jun-Jul 2017, updates: Oliver Brunner
 * Use pancreas TNM8e ontology to classify data 
+* Update Susanne Zabka, 13-Jun-2018, adaptation to new ontology structure (ExocrinePancreasStructureClassifiedByMalignancy)
 * 
 */
 public class ExocrinePancreas extends BaseClassifier {
@@ -38,7 +39,7 @@ public class ExocrinePancreas extends BaseClassifier {
 
 		OWLDataFactory factory = this.env.getDataFactory();
 		Set<OWLClassExpression> res = new HashSet<>();
-		OWLClass tumor = factory.getOWLClass(IRI.create(this.env.getOntologyIri(this.baseId) + "ExocrinePancreasTumor"));
+		OWLClass tumor = factory.getOWLClass(IRI.create(this.env.getOntologyIri(this.baseId) + "ExocrinePancreasStructureClassifiedByMalignancy"));
 
 		res.add(tumor);
 

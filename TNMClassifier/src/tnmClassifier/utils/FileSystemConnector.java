@@ -5,13 +5,14 @@ import java.io.File;
 /**
 *
 * @author Oliver Brunner
-*  Wrapper for all file system operations  
+*  Wrapper for all file system operations
+*  Update: Susanne Zabka, 13-06-2018: adaptation to new ontology structure  (TNMO_Update,  TNM-O_Anatomy.owl)
 */
 public class FileSystemConnector {
 	private String ontologyDirPath;
 	
 	public FileSystemConnector(){
-		this.ontologyDirPath = "./../TNMO";
+		this.ontologyDirPath = "./../TNMO_Update";
 	}
 	
 	public String getTNMOPath() {
@@ -19,7 +20,7 @@ public class FileSystemConnector {
 	}
 	
 	public String getBodyPartsPath() {
-		return this.ontologyDirPath + "/TNM-O_BodyParts.owl";
+		return this.ontologyDirPath + "/TNM-O_Anatomy.owl";
 	}
 	
 	/**

@@ -136,7 +136,7 @@ public class PancreasSWRL7to8 extends BaseClassifier {
 					System.out.println("Info eingelesen (" + torNorM + "): Organ: " + organ + " Size: " + size
 							+ " in SoftTissue: " + softTissue + " Infilt.ComHepArt: " + comHepArt);
 				if (torNorM.equals("N") || torNorM.equals("M"))
-					System.out.println("Info eingelesen (" + torNorM + "): Prim�rTumor-Organ: " + organ + " Number LK: "
+					System.out.println("Info eingelesen (" + torNorM + "): Primaertumor-Organ: " + organ + " Number LK: "
 							+ metaLK + " Dist.Meta in: " + distMetaOrg);
 
 				
@@ -345,6 +345,7 @@ public class PancreasSWRL7to8 extends BaseClassifier {
 	 * SZ, 2017-08-02 creates Individuals with structure
 	 * "MetastaticLymphNode/DistMetastasis isPartOf MalignantAnatomicalStructure
 	 * hasPart PancreasTumor isIncludedIn PrimaryTumorOrgan"
+	 * Update: SZ Jun-2018: adaption to new expressions (PancreasStructureClassifiedByMalignancy)
 	 * 
 	 * @param: String,
 	 *             OWLNamedIndividual, OWLDataFactory, int
@@ -353,7 +354,8 @@ public class PancreasSWRL7to8 extends BaseClassifier {
 		OWLDataFactory factory = this.env.getDataFactory();
 		OWLNamedIndividual malignantStructure = addIndividual("MalignantAnatomicalStructure",
 				"MalignantAnatomicalStructure_", i, "TNMO");
-		OWLNamedIndividual pancreas = addIndividual("PancreasTumor", "PancreasTumor_", i, "Pancreas7");
+	//	OWLNamedIndividual pancreas = addIndividual("PancreasTumor", "PancreasTumor_", i, "Pancreas7");
+		OWLNamedIndividual pancreas = addIndividual("PancreasStructureClassifiedByMalignancy", "PancreasTumor_", i, "Pancreas7");
 		addTumorIsIncludedInOrgan(primarytumorOrgan, pancreas, i);
 		OWLObjectProperty isPartOf = factory
 				.getOWLObjectProperty(IRI.create(this.env.getBioTopLight2Iri() + "isPartOf"));

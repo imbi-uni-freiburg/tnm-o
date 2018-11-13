@@ -119,8 +119,8 @@ import org.semanticweb.owlapi.model.OWLClassExpression;
 					System.out.println(
 							"----- Nr. " + i + " ----------------------------------------------------------------");
 					System.out.println("TNM8e (Vorgabe): " + stringTNM8eclass);
-		//			System.out.println("Info eingelesen: (" + torNorM + " Confin: " + size
-			//				+ " in SoftTissue: " + softTissue + " Infilt.ComHepArt: " + comHepArt);
+					System.out.println("Info eingelesen: Confin: " + confined
+							+ " in SoftTissue: " + softTissue + " Infilt.ComHepArt: " + comHepArt);
 
 					if (confined.equals("Confined"))
 						addTumorConfined("Confined", tumor, i);

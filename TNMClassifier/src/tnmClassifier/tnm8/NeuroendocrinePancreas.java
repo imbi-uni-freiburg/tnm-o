@@ -22,6 +22,8 @@ import tnmClassifier.ClassifierEnvironment.ChangeMode;
 /**
 * @author Susanne Zabka Jun-Jul 2017, updates: Oliver Brunner
 * Use pancreas TNM8n ontology to classify data 
+* Update Susanne Zabka, 13-Jun-2018, adaptation to new ontology structure (NeuroendocrinePancreasStructureClassifiedByMalignancy, 
+* NeuroendocrinePancreasTumorAggregateClassifiedByMalignancy, AnatomicalStructureAdjacentToPancreas)
 * 
 */
 public class NeuroendocrinePancreas extends BaseClassifier {
@@ -38,7 +40,7 @@ public class NeuroendocrinePancreas extends BaseClassifier {
 		OWLDataFactory factory = this.env.getDataFactory();
 		Set<OWLClassExpression> res = new HashSet<>();
 		OWLClass tumor = factory
-				.getOWLClass(IRI.create(this.env.getOntologyIri(this.baseId) + "NeuroendocrinePancreasTumor"));
+				.getOWLClass(IRI.create(this.env.getOntologyIri(this.baseId) + "NeuroendocrinePancreasStructureClassifiedByMalignancy"));
 
 		res.add(tumor);
 
@@ -82,7 +84,7 @@ public class NeuroendocrinePancreas extends BaseClassifier {
 					possibleOrgans.add("Serosa");
 
 					List<String> organlistExcludingOrgans = new ArrayList<String>();
-					organlistExcludingOrgans.add("BodyPartAdjacentToPancreas");
+					organlistExcludingOrgans.add("AnatomicalStructureAdjacentToPancreas");
 
 					List<String> andNotorganlist = new ArrayList<String>();
 					andNotorganlist.add("BileDuct");
@@ -160,8 +162,8 @@ public class NeuroendocrinePancreas extends BaseClassifier {
 	@Override
 	protected Set<OWLClass> getTumorClasses() {
 		String iri = this.env.getOntologyIri(this.baseId);
-		Set<OWLClass> res = this.getSubClasses("NeuroendocrinePancreasTumor", iri);
-		res.addAll(this.getSubClasses("NeuroendocrinePancreasTumorAggregate", iri));
+		Set<OWLClass> res = this.getSubClasses("NeuroendocrinePancreasStructureClassifiedByMalignancy", iri);
+		res.addAll(this.getSubClasses("NeuroendocrinePancreasTumorAggregateClassifiedByMalignancy", iri));
 		return res;
 	}
 
@@ -202,7 +204,7 @@ public class NeuroendocrinePancreas extends BaseClassifier {
 
 				result[i].put("Pancreas8neuroendo", new ArrayList<String>());
 
-				// TODO Abfrage-Fehler-Behandlung noch dazumachen!!!
+				// -- Abfrage-Fehler-Behandlung noch dazumachen!!!
 				this.createIndividualPrimaryTumor(Integer.toString(i), noAssessmentPrimaryTumor, noEvidencePrimaryTumor,
 						size, confinement, invasiveInBileDuctOrDuodenum, invasiveInSerosa, invasiveInOtherOrgan);
 				result[i].get("Pancreas8neuroendo").add(this.classify(Integer.toString(i)));
