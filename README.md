@@ -43,7 +43,7 @@ Objective of this project is to represent the complete TNM Classification system
 
  Legacy repository of this project: http://purl.org/tnmo/
 
-##How to use the ontologies for one organ and one version of TNM
+## How to use the ontologies for one organ and one version of TNM
 
 Start Protégé with the ontology TNM-O (folder TNMO) and import the ontology TNM-O-Anatomy (folder TNMO) and the organ-specific module of the desired TNM-version (folder TNM/TNM7 or TNM/TNM8). 
 Test instances are named [organ]test.owl
@@ -54,10 +54,10 @@ Example: to use the TNM-ontology of the organ “liver” in TNM-version 8, use the 
  * If you want to add test data, also import liver(HCC)Test.owl      (from folder TNM/TNMO8)
 Note: Ensure that only the necessary ontologies are imported. You may need to remove direct and/or indirect imports.
 
-##How to use the ontologies for the re-classification of pancreas cancer in TNM7 and TNM8: 
+## How to use the ontologies for the re-classification of pancreas cancer in TNM7 and TNM8: 
 (see also: http://ceur-ws.org/Vol-2050/ODLS_paper_3.pdf ) 
 
-#a) Re-classification using the semantic web rules language: 
+# a) Re-classification using the semantic web rules language: 
 Start Protégé with the ontology TNM-O (folder TNMO) and import all necessary ontologies:
  * TNM-O.owl                            	      (from folder TNM)
  * Import: TNM-O_Anatomy.owl                          (from folder TNM)
@@ -70,7 +70,7 @@ Start Protégé with the ontology TNM-O (folder TNMO) and import all necessary ont
     * pancreas_swrl8nto7.owl                          (from folder TNM/TNMOBridge_7_8) 
 If you want to add test data, also import either of pancreas7to8TEST.owl  
 
-#b) Re-classification using bridging classes:
+# b) Re-classification using bridging classes:
 Start Protégé with the ontology TNM-O (folder TNMO) and import all necessary ontologies:
  * TNM-O.owl                            	      (from folder TNM)
  * Import: TNM-O_Anatomy.owl                          (from folder TNM)
@@ -80,7 +80,7 @@ Start Protégé with the ontology TNM-O (folder TNMO) and import all necessary ont
  * Import: pancreasbridge.owl                         (from folder TNM/TNMOBridge_7_8)
 This version can only be tested using the Classifier software.
 
-##How to use the classifier software (requires a Java runtime environment)
+## How to use the classifier software (requires a Java runtime environment)
 Note: the classifier software currently only works with the pancreas ontologies including the re-classification from TNM7 to TNM8.
 To download the classifier software you can use the TNMClassifier.jar from the folder TNMO/bin
 CSV-Files with test data are stored  in folder TNM…..TESTDATA
