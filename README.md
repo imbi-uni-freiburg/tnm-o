@@ -82,8 +82,7 @@ This version can only be tested using the Classifier software.
 
 ## How to use the classifier software (requires a Java runtime environment)
 Note: the classifier software currently only works with the pancreas ontologies including the re-classification from TNM7 to TNM8.
-To download the classifier software you can use the TNMClassifier.jar from the folder TNMO/bin
-CSV-Files with test data are stored  in folder TNM…..TESTDATA
+CSV-Files with test data are stored  in folder testdata_pancreas_csv.
 You can run the software on the command line or in eclipse with the parameters listed below:
 java -jar TNMClassifier.jar  -v 7 -o pancreas -i ./../PancreasTNM7_TestdataClassifier.csv
 
