@@ -1,0 +1,8 @@
+Tumortype,TNM7,NoAssessment,NoEvidence,Confinement,Size,Invasive in CeliacTrunk Or SuperiorMesentericArtery,Number MetaLymphNodes,Distant Metastasis
+check,expected_TXN0M0undefined,NoAssessment,,,,,0,no
+check,expected_T2NXM1,,,confined,>2cm,,,yes
+check,expected_TisNXM1,,,in-situ,,,,yes
+check,expected_T0N1M1,,NoEvidence,,,,3,yes
+check,expected_T1N1M1,,,confined,<=2cm,,1,yes
+check,expected_T4N0M0undefined,,,invasive,,yes,0,no
+check,expected_T3N1M0undefined,,,invasive,,no,5,no

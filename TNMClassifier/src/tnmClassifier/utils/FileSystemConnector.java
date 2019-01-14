@@ -7,12 +7,13 @@ import java.io.File;
 * @author Oliver Brunner
 *  Wrapper for all file system operations
 *  Update: Susanne Zabka, 13-06-2018: adaptation to new ontology structure  (TNMO_Update,  TNM-O_Anatomy.owl)
+*  Update: Susanne Zabka, 08-01-2019: correction (TNMO_Update corrected to TNMO)
 */
 public class FileSystemConnector {
 	private String ontologyDirPath;
 	
 	public FileSystemConnector(){
-		this.ontologyDirPath = "./../TNMO_Update";
+		this.ontologyDirPath = "./../TNMO";
 	}
 	
 	public String getTNMOPath() {
