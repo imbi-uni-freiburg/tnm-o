@@ -84,17 +84,17 @@ This version can only be tested using the Classifier software.
 Note: the classifier software currently only works with the pancreas ontologies including the re-classification from TNM7 to TNM8.
 CSV-Files with test data are stored  in folder testdata_pancreas_csv.
 You can run the software on the command line or in eclipse with the parameters listed below:
-java -jar TNMClassifier.jar  -v 7 -o pancreas -i ./../PancreasTNM7_TestdataClassifier.csv
+ * java -jar TNMClassifier.jar  -v 7 -o pancreas -i ./../PancreasTNM7_TestdataClassifier.csv
 
 Parameters for individual pancreas ontologies:
--v 7 -o pancreas -i ./../testdata_pancreas_csv/PancreasTNM7_TestdataClassifier.csv 
--v 8 -o pancreas_exocrine -i ./../testdata_pancreas_csv/PancreasTNM8exo_TestdataClassifier.csv 
--v 8 -o pancreas_neuroendocrine -i ./../testdata_pancreas_csv/PancreasTNM8neuro_TestdataClassifier.csv
+ * -v 7 -o pancreas -i ./../testdata_pancreas_csv/PancreasTNM7_TestdataClassifier.csv 
+ * -v 8 -o pancreas_exocrine -i ./../testdata_pancreas_csv/PancreasTNM8exo_TestdataClassifier.csv 
+ * -v 8 -o pancreas_neuroendocrine -i ./../testdata_pancreas_csv/PancreasTNM8neuro_TestdataClassifier.csv
 
 Parameters for the re-classification using SWRL: 
--v bridge_7_8 -o pancreas_swrl7to8 -i ./../testdata_pancreas_csv/PancreasTNM_TestdataClassifierSWRL7to8.csv 
--v bridge_7_8 -o pancreas_swrl8eto7 -i ./../testdata_pancreas_csv/PancreasTNM_TestdataClassifierSWRL8e_7.csv 
--v bridge_7_8 -o pancreas_swrl8nto7 -i ./../testdata_pancreas_csv/PancreasTNM_TestdataClassifierSWRL8n_7.csv
+ * -v bridge_7_8 -o pancreas_swrl7to8 -i ./../testdata_pancreas_csv/PancreasTNM_TestdataClassifierSWRL7to8.csv 
+ * -v bridge_7_8 -o pancreas_swrl8eto7 -i ./../testdata_pancreas_csv/PancreasTNM_TestdataClassifierSWRL8e_7.csv 
+ * -v bridge_7_8 -o pancreas_swrl8nto7 -i ./../testdata_pancreas_csv/PancreasTNM_TestdataClassifierSWRL8n_7.csv
 
 Parameters for the re-classification using bridging classes: 
--v bridge_7_8 -o pancreasbridge -i ./../testdata_pancreas_csv/PancreasTNM_TestdataClassifierBridge.csv
+ * -v bridge_7_8 -o pancreasbridge -i ./../testdata_pancreas_csv/PancreasTNM_TestdataClassifierBridge.csv
