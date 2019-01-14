@@ -57,7 +57,7 @@ Note: Ensure that only the necessary ontologies are imported. You may need to re
 ## How to use the ontologies for the re-classification of pancreas cancer in TNM7 and TNM8: 
 (see also: http://ceur-ws.org/Vol-2050/ODLS_paper_3.pdf ) 
 
-# a) Re-classification using the semantic web rules language: 
+### a) Re-classification using the semantic web rules language: 
 Start Protégé with the ontology TNM-O (folder TNMO) and import all necessary ontologies:
  * TNM-O.owl                            	      (from folder TNM)
  * Import: TNM-O_Anatomy.owl                          (from folder TNM)
@@ -70,7 +70,7 @@ Start Protégé with the ontology TNM-O (folder TNMO) and import all necessary ont
     * pancreas_swrl8nto7.owl                          (from folder TNM/TNMOBridge_7_8) 
 If you want to add test data, also import either of pancreas7to8TEST.owl  
 
-# b) Re-classification using bridging classes:
+### b) Re-classification using bridging classes:
 Start Protégé with the ontology TNM-O (folder TNMO) and import all necessary ontologies:
  * TNM-O.owl                            	      (from folder TNM)
  * Import: TNM-O_Anatomy.owl                          (from folder TNM)
