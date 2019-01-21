@@ -39,7 +39,7 @@
         </jar>
     </target>
 
-    <target name="demo" depends="jar">
+    <target name="demo-TNM8-pancreas" depends="jar">
       <java jar="${dir.workspace}/bin/TNMClassifier.jar" fork="true">
         <arg value="-v 8"/>
         <arg value="-o pancreas_neuroendocrine"/>
@@ -49,7 +49,7 @@
 
     <target name="clean">
       <delete verbose="true" quiet="true">
-        <fileset dir="${bin-dir}" includes="**/.class"/>
+        <fileset dir="${bin-dir}/tnmClassifier" includes="**/*.class"/>
         <fileset dir="${dir.workspace}/bin" includes="TNMClassifier.jar"/>
       </delete>
     </target>
