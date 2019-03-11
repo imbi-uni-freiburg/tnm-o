@@ -16,10 +16,7 @@
     <owl:Ontology rdf:about="http://purl.org/tnmo/TNM-O.owl">
         <owl:versionIRI rdf:resource="http://purl.org/tnmo/TNM-O.owl/1"/>
         <owl:imports rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl/1"/>
-        <owl:imports rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl/1"/>
         <owl:imports rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl/1"/>
-        <owl:imports rdf:resource="http://purl.org/tnmo/Bridge2_Pancreas7to8.owl/1"/>
-        <owl:imports rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl/1"/>
         <owl:priorVersion>prototype 0.18, date: 2015-02-25</owl:priorVersion>
         <dc:publisher>Institute of Medical Biometry and Medical Informatics, University Medical Center Freiburg, Stefan-Meier-Strasse 26, 79104 Freiburg, Germany
 
