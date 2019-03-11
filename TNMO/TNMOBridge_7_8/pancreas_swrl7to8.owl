@@ -136,9 +136,9 @@
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O.owl#Size2to4cm -->
+    <!-- http://purl.org/tnmo/TNM-O.owl#Size2To4cm -->
 
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Size2to4cm"/>
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Size2To4cm"/>
     
 
 
@@ -379,12 +379,6 @@
     <!-- http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#LiverMetastasisOfNeuroendocrinePancreasTumor -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#LiverMetastasisOfNeuroendocrinePancreasTumor"/>
-    
-
-
-    <!-- http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinPancreasStructureWithoutEvidenceOfPrimaryTumor -->
-
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinPancreasStructureWithoutEvidenceOfPrimaryTumor"/>
     
 
 
@@ -2148,8 +2142,8 @@
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O.owl#Size2to4cm"/>
-                        <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#sizevalue"/>
+                        <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#InvasivePancreasTumorNotBeyondCeliacTrunkOrSuperiorMesentericArtery"/>
+                        <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#x"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -2157,9 +2151,10 @@
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                         <rdf:first>
                             <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#InvasivePancreasTumorNotBeyondCeliacTrunkOrSuperiorMesentericArtery"/>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://purl.org/biotop/btl2.owl#hasPart"/>
                                 <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#x"/>
+                                <swrl:argument2 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#tumorpart"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -2167,10 +2162,9 @@
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                                 <rdf:first>
                                     <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                        <swrl:propertyPredicate rdf:resource="http://purl.org/biotop/btl2.owl#hasPart"/>
-                                        <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#x"/>
-                                        <swrl:argument2 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#tumorpart"/>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O.owl#Size2To4cm"/>
+                                        <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#sizevalue"/>
                                     </rdf:Description>
                                 </rdf:first>
                                 <rdf:rest>
@@ -2293,8 +2287,8 @@
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O.owl#Size2to4cm"/>
-                        <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#sizevalue"/>
+                        <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#InvasivePancreasTumorNotBeyondCeliacTrunkOrSuperiorMesentericArtery"/>
+                        <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#x"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -2303,8 +2297,8 @@
                         <rdf:first>
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#InvasivePancreasTumorNotBeyondCeliacTrunkOrSuperiorMesentericArtery"/>
-                                <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#x"/>
+                                <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#SetOfPancreaticIslets"/>
+                                <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#NEpancreas"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -2312,9 +2306,10 @@
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                                 <rdf:first>
                                     <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                        <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#SetOfPancreaticIslets"/>
-                                        <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#NEpancreas"/>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://purl.org/biotop/btl2.owl#hasPart"/>
+                                        <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#x"/>
+                                        <swrl:argument2 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#tumorpart"/>
                                     </rdf:Description>
                                 </rdf:first>
                                 <rdf:rest>
@@ -2322,10 +2317,9 @@
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                                         <rdf:first>
                                             <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                <swrl:propertyPredicate rdf:resource="http://purl.org/biotop/btl2.owl#hasPart"/>
-                                                <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#x"/>
-                                                <swrl:argument2 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#tumorpart"/>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O.owl#Size2To4cm"/>
+                                                <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#sizevalue"/>
                                             </rdf:Description>
                                         </rdf:first>
                                         <rdf:rest>
@@ -3281,7 +3275,7 @@
                         <rdf:first>
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O.owl#Size2to4cm"/>
+                                <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O.owl#Size2To4cm"/>
                                 <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#size"/>
                             </rdf:Description>
                         </rdf:first>
@@ -4011,8 +4005,8 @@
                         <rdf:first>
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#SetOfPancreaticIslets"/>
-                                <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#y"/>
+                                <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O.owl#Size2To4cm"/>
+                                <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#size"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -4021,8 +4015,8 @@
                                 <rdf:first>
                                     <rdf:Description>
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                        <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O.owl#Size2to4cm"/>
-                                        <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#size"/>
+                                        <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#SetOfPancreaticIslets"/>
+                                        <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#y"/>
                                     </rdf:Description>
                                 </rdf:first>
                                 <rdf:rest>
