@@ -1,0 +1,11 @@
+Tumortype,expected,NoAssessment,NoEvidence,Confinement,Size,Invasive in CeliacTrunk Or SuperiorMesentericArtery,Number MetaLymphNodes,Distant Metastasis
+check,expected_T2NXM1,,,confined,2-4cm,,,yes
+check,expected_TisN2M1,,,in-situ,,,4,yes
+check,expected_T0N1M1,,NoEvidence,,,,3,yes
+check,expected_T1bN1M1,,,confined,0.5-1cm,,1,yes
+check,expected_T4N0M0,,,invasive,,yes,0,no
+check,expected_T1cN1M1,,,confined,1-2cm,,1,yes
+check,expected_T1N1M1,,,confined,<=2cm,,1,yes
+check,expected_T3N2M0,,,confined,>4cm,no,5,no
+check,expected_T1aN0M1,,,confined,<=0.5cm,,0,yes
+check,expected_TXNXM0,NoAssessment,,in-situ,,,0,no

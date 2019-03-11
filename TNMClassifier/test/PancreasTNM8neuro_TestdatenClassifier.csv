@@ -1,0 +1,9 @@
+Assessment,Evidence,Confinement,Size,Invasive in Organs,Number MetaLymphNodes,Distant metastasis
+yes,no,,,,,
+yes,yes,invasive,,BileDuct,0,Liver*NotLiver
+yes,yes,confined,3,,0,notLiver
+yes,yes,confined,5,,5,
+no,yes,in-situ,,,0,notLiver
+yes,yes,confined,1,,1,Liver
+yes,yes,invasive,,Serosa,0,Liver*NotLiver
+yes,yes,invasive,,OtherOrgan,0,Liver

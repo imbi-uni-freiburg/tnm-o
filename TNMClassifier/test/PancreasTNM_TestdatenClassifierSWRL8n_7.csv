@@ -1,0 +1,23 @@
+Tumortype,Code TNM 8,Confinement,InvasiveInPeripancreaticSoftTissue,InvasiveInCeliacTrunk,InvasiveInSuperiorMesentericArtery,InvasiveInDuodenum,InvasiveInBileDuct,InvasiveInSerosa,InvasiveInBodyPartAdjacentToPancreas,Tumor T7 bei Bedingung,Code TNM 7
+NeuroendocrinePancreasStructureNotAssessedForTumor,TX,,,,,,,,,PancreasStructureNotAssessedForTumor,TX
+NeuroendocrinePancreasStructureWithoutEvidenceOfPrimaryTumor,T0,,,,,,,,,PancreasStructureWithoutEvidenceOfPrimaryTumor,T0
+OptionallyInvasiveNeuroendocrinePancreasTumorMax2cm,T1,Confined,,,,,,,,InvasivePancreasTumorMax2cm,T1
+OptionallyInvasiveNeuroendocrinePancreasTumorMax2cm,T1,,yes,,,,,,,InvasivePancreasTumorNotBeyondCeliacTrunkOrSuperiorMesentericArtery,T3
+OptionallyInvasiveNeuroendocrinePancreasTumor2to4cm,T2,Confined,,,,,,,,InvasivePancreasTumorMoreThan2cm,T2
+OptionallyInvasiveNeuroendocrinePancreasTumor2to4cm,T2,,yes,,,,,,,InvasivePancreasTumorNotBeyondCeliacTrunkOrSuperiorMesentericArtery,T3
+OptionallyInvasiveNeuroendocrinePancreasTumorMoreThan4cmOrInvasiveInDuodenumOrBileDuct,T3,Confined,,,,,,,,InvasivePancreasTumorMoreThan2cm,T2
+OptionallyInvasiveNeuroendocrinePancreasTumorMoreThan4cmOrInvasiveInDuodenumOrBileDuct,T3,,yes,,,,,,,InvasivePancreasTumorNotBeyondCeliacTrunkOrSuperiorMesentericArtery,T3
+OptionallyInvasiveNeuroendocrinePancreasTumorMoreThan4cmOrInvasiveInDuodenumOrBileDuct,T3,,,,,yes,,,,InvasivePancreasTumorNotBeyondCeliacTrunkOrSuperiorMesentericArtery,T3
+OptionallyInvasiveNeuroendocrinePancreasTumorMoreThan4cmOrInvasiveInDuodenumOrBileDuct,T3,,,,,,yes,,,InvasivePancreasTumorNotBeyondCeliacTrunkOrSuperiorMesentericArtery,T3
+InvasiveNeuroendocrinePancreasTumorIntoSerosaOrOtherOrgan,T4,,,,,,,yes,,InvasivePancreasTumorNotBeyondCeliacTrunkOrSuperiorMesentericArtery,T3
+InvasiveNeuroendocrinePancreasTumorIntoSerosaOrOtherOrgan,T4,,,yes,,,,,,InvasivePancreasTumorInfiltratingCeliacTrunkOrSuperiorMesentericArtery,T4
+InvasiveNeuroendocrinePancreasTumorIntoSerosaOrOtherOrgan,T4,,,,yes,,,,,InvasivePancreasTumorInfiltratingCeliacTrunkOrSuperiorMesentericArtery,T4
+InvasiveNeuroendocrinePancreasTumorIntoSerosaOrOtherOrgan,T4,,,,,,,,yes,InvasivePancreasTumorNotBeyondCeliacTrunkOrSuperiorMesentericArtery,T3
+NeuroendocrinePancreasTumorWithNoAssessmentOfRegionalLymphNodes,NX,,,,,,,,,TumorOfPancreasWithNoAssessmentOfRegionalLymphNodes,NX
+NeuroendocrinePancreasTumorWithoutMetastaticRegionalLymphNodes,N0,,,,,,,,,TumorOfPancreasWithNoMetastaticRegionalLymphNodes,N0
+NeuroendocrinePancreasTumorWithMetastaticRegionalLymphNodes,N1,,,,,,,,,TumorOfPancreasWithMetastaticRegionalLymphNodes,N1
+NeuroendocrinePancreasTumorWithoutDistantMetastasis,M0,,,,,,,,,TumorOfPancreasWithNoDistantMetastasis,M0
+NeuroendocrinePancreasTumorWithDistantMetastasis,M1,,,,,,,,,TumorOfPancreasWithDistantMetastasis,M1
+NeuroendocrinePancreasTumorWithDistantMetastasisInLiverOnly,M1a,,,,,,,,,TumorOfPancreasWithDistantMetastasis,M1
+NeuroendocrinePancreasTumorWithDistantMetastasisInOtherOrganThanLiver,M1b,,,,,,,,,TumorOfPancreasWithDistantMetastasis,M1
+NeuroendocrinePancreasTumorWithDistantMetastasisInLiverAndInOtherOrgan,M1c,,,,,,,,,TumorOfPancreasWithDistantMetastasis,M1
