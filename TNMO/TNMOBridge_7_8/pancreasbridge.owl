@@ -122,7 +122,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#OptionallyInvasiveExocrinePancreasTumor1to2cm"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#ExocrinePancreasTumor1to2cm"/>
     </owl:Class>
     
 
@@ -140,7 +140,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#PancreasTumorMoreThan2cm"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#OptionallyInvasiveExocrinePancreasTumor2to4cm"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#ExocrinePancreasTumor2to4cm"/>
     </owl:Class>
     
 
@@ -158,7 +158,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#ConfinedPancreasTumorMax2cm"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#OptionallyInvasiveExocrinePancreasTumor5mmTo1cm"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#ExocrinePancreasTumor5mmTo1cm"/>
     </owl:Class>
     
 
@@ -176,7 +176,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#ConfinedPancreasTumorMax2cm"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#OptionallyInvasiveExocrinePancreasTumorMax2cm"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#ExocrinePancreasTumorMax2cm"/>
     </owl:Class>
     
 
@@ -194,7 +194,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#ConfinedPancreasTumorMax2cm"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#OptionallyInvasiveExocrinePancreasTumorMax5mm"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#ExocrinePancreasTumorMax5mm"/>
     </owl:Class>
     
 
@@ -245,7 +245,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#PancreasTumorMoreThan2cm"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#OptionallyInvasiveExocrinePancreasTumorMoreThan4cm"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#ExocrinePancreasTumorMoreThan4cm"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
@@ -1321,7 +1321,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#InvasivePancreasTumorMax2cmInvadingSoftTissue"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#OptionallyInvasiveExocrinePancreasTumor1to2cm"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#ExocrinePancreasTumor1to2cm"/>
     </owl:Class>
     
 
@@ -1338,7 +1338,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#OptionallyInvasiveExocrinePancreasTumor2to4cm"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#ExocrinePancreasTumor2to4cm"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
@@ -1372,7 +1372,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#InvasivePancreasTumorMax2cmInvadingSoftTissue"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#OptionallyInvasiveExocrinePancreasTumor5mmTo1cm"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#ExocrinePancreasTumor5mmTo1cm"/>
     </owl:Class>
     
 
@@ -1463,7 +1463,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#InvasivePancreasTumorMax2cmInvadingSoftTissue"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#OptionallyInvasiveExocrinePancreasTumorMax2cm"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#ExocrinePancreasTumorMax2cm"/>
     </owl:Class>
     
 
@@ -1481,7 +1481,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#InvasivePancreasTumorMax2cmInvadingSoftTissue"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#OptionallyInvasiveExocrinePancreasTumorMax5mm"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#ExocrinePancreasTumorMax5mm"/>
     </owl:Class>
     
 
@@ -1499,7 +1499,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#PancreasTumorMoreThan2cm"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#OptionallyInvasiveExocrinePancreasTumorMoreThan4cm"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#ExocrinePancreasTumorMoreThan4cm"/>
     </owl:Class>
     
 
@@ -2290,22 +2290,6 @@
     <!-- http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#PancreasTumor2to4cm -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#PancreasTumor2to4cm">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#PancreasTumorMoreThan2cm"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isBearerOf"/>
-                        <owl:someValuesFrom>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#projectsOnto"/>
-                                <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O.owl#Size2to4cm"/>
-                            </owl:Restriction>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#PancreasTumorMoreThan2cm"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -2644,12 +2628,6 @@
     <!-- http://purl.org/tnmo/TNM-O.owl#Size1to2cm -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Size1to2cm"/>
-    
-
-
-    <!-- http://purl.org/tnmo/TNM-O.owl#Size2to4cm -->
-
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Size2to4cm"/>
     
 
 
@@ -3501,6 +3479,24 @@
     
 
 
+    <!-- http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#ExocrinePancreasTumor1to2cm -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#ExocrinePancreasTumor1to2cm"/>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#ExocrinePancreasTumor2to4cm -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#ExocrinePancreasTumor2to4cm"/>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#ExocrinePancreasTumor5mmTo1cm -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#ExocrinePancreasTumor5mmTo1cm"/>
+    
+
+
     <!-- http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#ExocrinePancreasTumorAggregateAsRelatedToDistantMetastasis -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#ExocrinePancreasTumorAggregateAsRelatedToDistantMetastasis">
@@ -3522,6 +3518,24 @@
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#ExocrinePancreasTumorAggregateClassifiedByMalignancy">
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumorAggregateClassifiedByMalignancy"/>
     </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#ExocrinePancreasTumorMax2cm -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#ExocrinePancreasTumorMax2cm"/>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#ExocrinePancreasTumorMax5mm -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#ExocrinePancreasTumorMax5mm"/>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#ExocrinePancreasTumorMoreThan4cm -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#ExocrinePancreasTumorMoreThan4cm"/>
     
 
 
@@ -3585,42 +3599,6 @@
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#MetastasisOfExocrinePancreasTumor">
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#MetastasisOfPancreasTumor"/>
     </owl:Class>
-    
-
-
-    <!-- http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#OptionallyInvasiveExocrinePancreasTumor1to2cm -->
-
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#OptionallyInvasiveExocrinePancreasTumor1to2cm"/>
-    
-
-
-    <!-- http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#OptionallyInvasiveExocrinePancreasTumor2to4cm -->
-
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#OptionallyInvasiveExocrinePancreasTumor2to4cm"/>
-    
-
-
-    <!-- http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#OptionallyInvasiveExocrinePancreasTumor5mmTo1cm -->
-
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#OptionallyInvasiveExocrinePancreasTumor5mmTo1cm"/>
-    
-
-
-    <!-- http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#OptionallyInvasiveExocrinePancreasTumorMax2cm -->
-
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#OptionallyInvasiveExocrinePancreasTumorMax2cm"/>
-    
-
-
-    <!-- http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#OptionallyInvasiveExocrinePancreasTumorMax5mm -->
-
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#OptionallyInvasiveExocrinePancreasTumorMax5mm"/>
-    
-
-
-    <!-- http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#OptionallyInvasiveExocrinePancreasTumorMoreThan4cm -->
-
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#OptionallyInvasiveExocrinePancreasTumorMoreThan4cm"/>
     
 
 

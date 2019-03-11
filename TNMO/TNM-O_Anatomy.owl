@@ -194,7 +194,7 @@
     <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#BileDuct -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#BileDuct">
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#AnatomicalStructureAdjacentToPancreas"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#NonVesselStructuresAdjacentToPancreas"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#OrganSegment"/>
         <rdfs:comment>FMAID: 9706</rdfs:comment>
     </owl:Class>
@@ -295,8 +295,8 @@
     <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#CeliacTrunk -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#CeliacTrunk">
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#AnatomicalStructureAdjacentToPancreas"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#OrganSegment"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#AnatomicalConduitSpace"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#VesselsAdjacentToPancreas"/>
         <rdfs:comment>FMAID: 14812</rdfs:comment>
     </owl:Class>
     
@@ -346,8 +346,8 @@
     <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#CommonHepaticArtery -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#CommonHepaticArtery">
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#AnatomicalStructureAdjacentToPancreas"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#OrganSegment"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#VesselsAdjacentToPancreas"/>
         <rdfs:comment>FMAID: 14771</rdfs:comment>
     </owl:Class>
     
@@ -416,7 +416,7 @@
     <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#Duodenum -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#Duodenum">
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#AnatomicalStructureAdjacentToPancreas"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#NonVesselStructuresAdjacentToPancreas"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#OrganSegment"/>
         <rdfs:comment>FMAID: 7206</rdfs:comment>
     </owl:Class>
@@ -1151,6 +1151,15 @@
     
 
 
+    <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#NonVesselStructuresAdjacentToPancreas -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#NonVesselStructuresAdjacentToPancreas">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#AnatomicalStructureAdjacentToPancreas"/>
+        <owl:disjointWith rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#VesselsAdjacentToPancreas"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#ObstructivePneumonitis -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#ObstructivePneumonitis">
@@ -1330,7 +1339,7 @@
     <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#PeripancreaticSoftTissue -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#PeripancreaticSoftTissue">
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#AnatomicalStructureAdjacentToPancreas"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#NonVesselStructuresAdjacentToPancreas"/>
         <rdfs:comment>No corresponding FMA-expression</rdfs:comment>
     </owl:Class>
     
@@ -1662,7 +1671,7 @@
     <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#Serosa -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#Serosa">
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#AnatomicalStructureAdjacentToPancreas"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#NonVesselStructuresAdjacentToPancreas"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#OrganComponentLayer"/>
         <rdfs:comment>FMAID: 45637</rdfs:comment>
     </owl:Class>
@@ -1949,7 +1958,7 @@
     <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#SuperiorMesentericArtery -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#SuperiorMesentericArtery">
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#AnatomicalStructureAdjacentToPancreas"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#VesselsAdjacentToPancreas"/>
     </owl:Class>
     
 
@@ -1993,7 +2002,6 @@
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#Thorax">
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#SubdivisionOfFrontOfTrunk"/>
-        <rdfs:comment>FMAID: 9576</rdfs:comment>
     </owl:Class>
     
 
@@ -2065,6 +2073,14 @@
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#UpperParatrachealLymphNode">
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#SuperiorMediastinalLymphNode"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#VesselsAdjacentToPancreas -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#VesselsAdjacentToPancreas">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#AnatomicalStructureAdjacentToPancreas"/>
     </owl:Class>
     
 
@@ -2185,6 +2201,23 @@
             <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#SubmucosaOfZoneOfStomach"/>
             <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#SubserosaOfLargeIntestine"/>
             <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#SubserosaOfStomach"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#BileDuct"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#Duodenum"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#PeripancreaticSoftTissue"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#Serosa"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#CeliacTrunk"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#CommonHepaticArtery"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#SuperiorMesentericArtery"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
