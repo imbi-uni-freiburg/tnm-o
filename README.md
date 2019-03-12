@@ -2,6 +2,8 @@
 
 ## The TNM Ontology
 
+This repository is under construction.
+
 *tnm-o* is the abbreviation for the **TNM Ontology**. The TNM Ontology represents the TNM Classification of Malignant Tumours (TNM) in description logic (OWL). For a detailed report on *tnm-o* see: https://jbiomedsem.biomedcentral.com/articles/10.1186/s13326-016-0106-9. 
 
 Objective of this project is to represent the complete TNM Classification system in description logic and provide formal transformation rules between versions. Based on this representation, data on clinical and pathological findings can be classified automatically by documentation systems and (partially) transformed between TNM versions.
@@ -39,7 +41,6 @@ Objective of this project is to represent the complete TNM Classification system
  * Stefan Schulz (Medical University of Graz)
  * Susanne Zabka (University of Freiburg)
 
- This repository is under construction.
 
  Legacy repository of this project: http://purl.org/tnmo/
 
@@ -68,7 +69,7 @@ Start Protégé with the ontology TNM-O (folder TNMO) and import all necessary ont
     * pancreas_swrl7to8.owl                           (from folder TNM/TNMOBridge_7_8)
     * pancreas_swrl8eto7.owl                          (from folder TNM/TNMOBridge_7_8)
     * pancreas_swrl8nto7.owl                          (from folder TNM/TNMOBridge_7_8) 
-If you want to add test data, also import either of pancreas7to8TEST.owl  
+ * If you want to add test data, also import either of pancreas7to8TEST.owl  
 
 ### b) Re-classification using bridging classes:
 Start Protégé with the ontology TNM-O (folder TNMO) and import all necessary ontologies:
@@ -78,7 +79,7 @@ Start Protégé with the ontology TNM-O (folder TNMO) and import all necessary ont
  * Import: pancreas_exocrine.owl                      (from folder TNM/TNMO8)
  * Import: pancreas_neuroendocrine.owl                (from folder TNM/TNMO8)
  * Import: pancreasbridge.owl                         (from folder TNM/TNMOBridge_7_8)
-This version can only be tested using the Classifier software.
+ * This version can only be tested using the Classifier software.
 
 ## How to use the classifier software (requires a Java runtime environment)
 Note: the classifier software currently only works with the pancreas ontologies including the re-classification from TNM7 to TNM8.
