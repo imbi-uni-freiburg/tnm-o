@@ -1,56 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<project default="all" name="TNMClassifier" basedir=".">
+<project default="jar" name="TNMClassifier" basedir=".">
     <!--ANT 1.7 is required                                        -->
     <!--define folder properties-->
     <property name="dir.buildfile" value="."/>
     <property name="dir.workspace" value="${dir.buildfile}/.."/>
     <property name="dir.jarfile" value="${dir.workspace}"/>
-    <property name="lib-dir" value="./lib"/>
-    <property name="bin-dir" value="./bin"/>
-    <property name="src-dir" value="./src"/>
-    <property name="test-dir" value="./test"/>
-
-    <path id="class.path">
-      <fileset dir="${lib-dir}">
-        <include name="**/*.jar" />
-      </fileset>
-    </path>
-
-    <target name="compile" description="Compile the classifier">
-      <mkdir dir="${bin-dir}" />
-      <javac srcdir="${src-dir}" destdir="${bin-dir}" verbose="false"
-        includeantruntime="false" debug="off">
-        <classpath refid="class.path" />
-      </javac>
-    </target>
-
-    <target name="jar" description="Create Runnable Jar for Project TNMClassifier"
-      depends="compile">
-        <jar destfile="${dir.workspace}/bin/TNMClassifier.jar" filesetmanifest="mergewithoutmain">
+    <target name="jar" description="Create Runnable Jar for Project TNMClassifier">
+        <jar destfile="${dir.workspace}/TNMClassifier/bin/TNMClassifier.jar" filesetmanifest="mergewithoutmain">
             <manifest>
                 <attribute name="Main-Class" value="tnmClassifier.Main"/>
                 <attribute name="Class-Path" value="."/>
             </manifest>
             <fileset dir="${dir.buildfile}/bin"/>
-            <zipfileset excludes="META-INF/*.SF" src="${lib-dir}/commons-cli-1.4.jar"/>
-            <zipfileset excludes="META-INF/*.SF" src="${lib-dir}/owlapi-osgidistribution-4.0.1.jar"/>
-            <zipfileset excludes="META-INF/*.SF" src="${lib-dir}/HermiT.jar"/>
-            <zipfileset excludes="META-INF/*.SF" src="${lib-dir}/slf4j-simple-1.7.7.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${dir.buildfile}/lib/commons-cli-1.4.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${dir.buildfile}/lib/owlapi-osgidistribution-4.0.1.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${dir.buildfile}/lib/HermiT.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${dir.buildfile}/lib/slf4j-simple-1.7.7.jar"/>
         </jar>
-    </target>
-
-    <target name="demo-TNM8-pancreas" depends="jar">
-      <java jar="${dir.workspace}/bin/TNMClassifier.jar" fork="true">
-        <arg value="-v 8"/>
-        <arg value="-o pancreas_neuroendocrine"/>
-        <arg value="-i ${test-dir}/PancreasTNM8neuro_TestdatenClassifier.csv"/>
-      </java>
-    </target>
-
-    <target name="clean">
-      <delete verbose="true" quiet="true">
-        <fileset dir="${bin-dir}/tnmClassifier" includes="**/*.class"/>
-        <fileset dir="${dir.workspace}/bin" includes="TNMClassifier.jar"/>
-      </delete>
     </target>
 </project>

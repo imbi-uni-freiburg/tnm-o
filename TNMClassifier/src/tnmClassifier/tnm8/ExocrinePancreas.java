@@ -58,7 +58,7 @@ public class ExocrinePancreas extends BaseClassifier {
 			if (confinement.equals("confined")) {
 				List<String> optinallyInvasiveOrganList = new ArrayList<String>();
 				optinallyInvasiveOrganList.add("ExocrinePancreas");
-				optinallyInvasiveOrganList.add("PeripancreaticSoftTissue");
+				optinallyInvasiveOrganList.add("NonVesselStructuresAdjacentToPancreas");
 				res.add(this.hasPartIsIncludedIn(optinallyInvasiveOrganList));
 				if (size.equals("<=2cm")) {
 					res.add(this.addQuality("SizeMax2cm"));
@@ -71,10 +71,10 @@ public class ExocrinePancreas extends BaseClassifier {
 				}
 				if (size.equals("1-2cm")) {
 					
-					res.add(this.addQuality("Size1to2cm"));
+					res.add(this.addQuality("Size1To2cm"));
 				}
 				if (size.equals("2-4cm")) {
-					res.add(this.addQuality("Size2to4cm"));
+					res.add(this.addQuality("Size2To4cm"));
 				}
 				if (size.equals(">4cm")) {
 	

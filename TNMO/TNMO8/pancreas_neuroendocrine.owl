@@ -3,7 +3,6 @@
      xml:base="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:Pn8="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#">
@@ -1870,9 +1869,44 @@
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasTNM8_cM"/>
-            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasTNM8_cN"/>
-            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasTNM8_cT"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasTumorWithDistantMetastasisInLiverAndInOtherOrgan"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasTumorWithDistantMetastasisInLiverOnly"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasTumorWithDistantMetastasisInOtherOrganThanLiver"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasTNM8_pN0"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasTNM8_pN1"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasTNM8_pNX"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasTNM8_pM1a"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasTNM8_pM1b"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasTNM8_pM1c"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasTNM8_pT0"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasTNM8_pT1"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasTNM8_pT2"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasTNM8_pT3"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasTNM8_pT4"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasTNM8_pTX"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasTNM8_cN0"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasTNM8_cN1"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasTNM8_cNX"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
@@ -1886,9 +1920,9 @@
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasTNM8_cN0"/>
-            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasTNM8_cN1"/>
-            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasTNM8_cNX"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasTNM8_cM"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasTNM8_cN"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasTNM8_cT"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
@@ -1910,44 +1944,9 @@
             <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasTNM8_pT"/>
         </owl:members>
     </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasTNM8_pM1a"/>
-            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasTNM8_pM1b"/>
-            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasTNM8_pM1c"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasTNM8_pN0"/>
-            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasTNM8_pN1"/>
-            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasTNM8_pNX"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasTNM8_pT0"/>
-            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasTNM8_pT1"/>
-            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasTNM8_pT2"/>
-            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasTNM8_pT3"/>
-            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasTNM8_pT4"/>
-            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasTNM8_pTX"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasTumorWithDistantMetastasisInLiverAndInOtherOrgan"/>
-            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasTumorWithDistantMetastasisInLiverOnly"/>
-            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasTumorWithDistantMetastasisInOtherOrganThanLiver"/>
-        </owl:members>
-    </rdf:Description>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 1.3.8.1099) http://owlapi.sourceforge.net -->
 

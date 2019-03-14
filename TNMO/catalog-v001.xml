@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://purl.org/tnmo/TNM-O_Testcases_Pancreas8e.owl/1" uri="file:/E:/TNM_o_git_neu/tnm-o/Test-Ontologien%20für%20die%20drei%20Pankreas-Ontologien/TNM-O_Testcases_Pancreas8e.owl"/>
     <uri id="Imports Wizard Entry" name="http://purl.org/tnmo/Bridge2_Pancreas7to8.owl/1" uri="TNMOBridge_7_8/pancreasbridge.owl"/>
     <uri id="Imports Wizard Entry" name="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl/1" uri="TNMO8/pancreas_neuroendocrine.owl"/>
     <uri id="Imports Wizard Entry" name="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl/1" uri="TNMO8/pancreas_exocrine.owl"/>

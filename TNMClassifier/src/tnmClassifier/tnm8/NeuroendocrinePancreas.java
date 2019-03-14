@@ -61,7 +61,7 @@ public class NeuroendocrinePancreas extends BaseClassifier {
 					res.add(this.addQuality("SizeMax2cm"));
 				}
 				if (size.equals("2-4cm")) {
-					res.add(this.addQuality("Size2to4cm"));
+					res.add(this.addQuality("Size2To4cm"));
 				}
 				if (size.equals(">4cm")) {
 					res.add(this.addQuality("SizeMoreThan4cm"));
