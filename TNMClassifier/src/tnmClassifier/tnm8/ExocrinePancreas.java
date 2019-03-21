@@ -23,7 +23,8 @@ import tnmClassifier.ClassifierEnvironment.ChangeMode;
 /**
 * @author Susanne Zabka Jun-Jul 2017, updates: Oliver Brunner
 * Use pancreas TNM8e ontology to classify data 
-* Update Susanne Zabka, 13-Jun-2018, adaptation to new ontology structure (ExocrinePancreasStructureClassifiedByMalignancy)
+* Update Susanne Zabka, 13-Jun-2018, adaptation to new ontology structure (ExocrinePancreasStructureClassifiedByMalignancy
+* Update SZ, 12-03-2019: new expressions NonVesselStructuresAdjacentToPancreas, ExocrinePancreasStructureAssessedForMalignancy, InSitu)
 * 
 */
 public class ExocrinePancreas extends BaseClassifier {
@@ -39,7 +40,7 @@ public class ExocrinePancreas extends BaseClassifier {
 
 		OWLDataFactory factory = this.env.getDataFactory();
 		Set<OWLClassExpression> res = new HashSet<>();
-		OWLClass tumor = factory.getOWLClass(IRI.create(this.env.getOntologyIri(this.baseId) + "ExocrinePancreasStructureClassifiedByMalignancy"));
+		OWLClass tumor = factory.getOWLClass(IRI.create(this.env.getOntologyIri(this.baseId) + "ExocrinePancreasStructureAssessedForMalignancy"));
 
 		res.add(tumor);
 
@@ -52,7 +53,7 @@ public class ExocrinePancreas extends BaseClassifier {
 				createIndividual(indname, factory, res);
 			}
 			if (confinement.equals("in-situ")) {
-				res.add(this.addQuality("CarcinomaInSitu"));
+				res.add(this.addQuality("InSitu"));
 				createIndividual(indname, factory, res);
 			}
 			if (confinement.equals("confined")) {

@@ -39,7 +39,8 @@ import tnmClassifier.utils.IDataReader;
 Autor: Oliver Brunner
 Update SZ:  15.7.2017: performClassification (wenn mehrere Ontology-Klassen gefunden)
   2017-07-30: Methode createAndReturnIndividual(String indname, OWLDataFactory factory, Set<OWLClassExpression> res, String ontologyId) 
-   2017-07-31: Methode   isIncludedIn(String organ) 
+   2017-07-31: Methode   isIncludedIn(String organ
+   Update SZ, 2019-03-21: neue Bezeichnung AnatomicalStructureNotAssessedForMalignancy) 
  
 */
 public class BaseClassifier {
@@ -264,7 +265,7 @@ public class BaseClassifier {
 	protected OWLClassExpression notAssessed() {
 		OWLDataFactory factory = this.env.getDataFactory();
 		OWLClassExpression notAssessedExpression = factory
-				.getOWLClass(IRI.create(this.env.getTNMOIri() + "NotAssessedMalignantAnatomicalStructure"));
+				.getOWLClass(IRI.create(this.env.getTNMOIri() + "AnatomicalStructureNotAssessedForMalignancy"));
 		return notAssessedExpression;
 	}
 

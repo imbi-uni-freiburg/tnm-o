@@ -149,9 +149,9 @@
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasStructureNotAssessedForTumor -->
+    <!-- http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasStructureNotAssessedForMalignancy -->
 
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasStructureNotAssessedForTumor"/>
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasStructureNotAssessedForMalignancy"/>
     
 
 
@@ -197,9 +197,9 @@
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#ExocrinePancreasStructureNotAssessedForTumor -->
+    <!-- http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#ExocrinePancreasStructureNotAssessedForMalignancy -->
 
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#ExocrinePancreasStructureNotAssessedForTumor"/>
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#ExocrinePancreasStructureNotAssessedForMalignancy"/>
     
 
 
@@ -934,7 +934,7 @@
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#ExocrinePancreasStructureNotAssessedForTumor"/>
+                        <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#ExocrinePancreasStructureNotAssessedForMalignancy"/>
                         <swrl:argument1 rdf:resource="http://purl.org/tnmo/pancreas_swrl_8eTo7.owl#x"/>
                     </rdf:Description>
                 </rdf:first>
@@ -947,7 +947,7 @@
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasStructureNotAssessedForTumor"/>
+                        <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasStructureNotAssessedForMalignancy"/>
                         <swrl:argument1 rdf:resource="http://purl.org/tnmo/pancreas_swrl_8eTo7.owl#x"/>
                     </rdf:Description>
                 </rdf:first>

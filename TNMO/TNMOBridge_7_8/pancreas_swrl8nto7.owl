@@ -162,9 +162,9 @@
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasStructureNotAssessedForTumor -->
+    <!-- http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasStructureNotAssessedForMalignancy -->
 
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasStructureNotAssessedForTumor"/>
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasStructureNotAssessedForMalignancy"/>
     
 
 
@@ -210,9 +210,9 @@
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasStructureNotAssessedForTumor -->
+    <!-- http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasStructureNotAssessedForMalignancy -->
 
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasStructureNotAssessedForTumor"/>
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasStructureNotAssessedForMalignancy"/>
     
 
 
@@ -711,7 +711,7 @@
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasStructureNotAssessedForTumor"/>
+                        <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasStructureNotAssessedForMalignancy"/>
                         <swrl:argument1 rdf:resource="http://purl.org/tnmo/pancreas_swrl_8nTo7.owl#x"/>
                     </rdf:Description>
                 </rdf:first>
@@ -724,7 +724,7 @@
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasStructureNotAssessedForTumor"/>
+                        <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasStructureNotAssessedForMalignancy"/>
                         <swrl:argument1 rdf:resource="http://purl.org/tnmo/pancreas_swrl_8nTo7.owl#x"/>
                     </rdf:Description>
                 </rdf:first>

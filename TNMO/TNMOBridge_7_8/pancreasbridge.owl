@@ -85,11 +85,11 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#ConfinedPancreasTumor"/>
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#ExocrinePancreasStructureClassifiedByMalignancy"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#ExocrinePancreasStructureAssessedForMalignancy"/>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#ExocrinePancreasStructureClassifiedByMalignancy"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#ExocrinePancreasStructureAssessedForMalignancy"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
@@ -118,7 +118,7 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#ConfinedPancreasTumor"/>
                     <rdf:Description rdf:about="http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#PancreasTumor1to2cm"/>
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#ExocrinePancreasStructureClassifiedByMalignancy"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#ExocrinePancreasStructureAssessedForMalignancy"/>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
@@ -135,7 +135,7 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#ConfinedPancreasTumor"/>
                     <rdf:Description rdf:about="http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#PancreasTumor2to4cm"/>
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#ExocrinePancreasStructureClassifiedByMalignancy"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#ExocrinePancreasStructureAssessedForMalignancy"/>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
@@ -153,7 +153,7 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#ConfinedPancreasTumor"/>
                     <rdf:Description rdf:about="http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#PancreasTumor5mmto1cm"/>
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#ExocrinePancreasStructureClassifiedByMalignancy"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#ExocrinePancreasStructureAssessedForMalignancy"/>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
@@ -171,7 +171,7 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#ConfinedPancreasTumor"/>
                     <rdf:Description rdf:about="http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#PancreasTumorMax2cm"/>
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#ExocrinePancreasStructureClassifiedByMalignancy"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#ExocrinePancreasStructureAssessedForMalignancy"/>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
@@ -189,7 +189,7 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#ConfinedPancreasTumor"/>
                     <rdf:Description rdf:about="http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#PancreasTumorMax5mm"/>
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#ExocrinePancreasStructureClassifiedByMalignancy"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#ExocrinePancreasStructureAssessedForMalignancy"/>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
@@ -207,7 +207,7 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#ConfinedPancreasTumor"/>
                     <rdf:Description rdf:about="http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#PancreasTumorMoreThan2cm"/>
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#ExocrinePancreasStructureClassifiedByMalignancy"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#ExocrinePancreasStructureAssessedForMalignancy"/>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
@@ -240,7 +240,7 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#ConfinedPancreasTumor"/>
                     <rdf:Description rdf:about="http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#PancreasTumorMoreThan4cm"/>
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#ExocrinePancreasStructureClassifiedByMalignancy"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#ExocrinePancreasStructureAssessedForMalignancy"/>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
@@ -273,11 +273,11 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#ConfinedPancreasTumor"/>
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasStructureClassifiedByMalignancy"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasStructureAssessedForMalignancy"/>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasStructureClassifiedByMalignancy"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasStructureAssessedForMalignancy"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
@@ -306,7 +306,7 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#ConfinedPancreasTumor"/>
                     <rdf:Description rdf:about="http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#PancreasTumor2to4cm"/>
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasStructureClassifiedByMalignancy"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasStructureAssessedForMalignancy"/>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
@@ -324,7 +324,7 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#ConfinedPancreasTumor"/>
                     <rdf:Description rdf:about="http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#PancreasTumorMax2cm"/>
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasStructureClassifiedByMalignancy"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasStructureAssessedForMalignancy"/>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
@@ -342,7 +342,7 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#ConfinedPancreasTumor"/>
                     <rdf:Description rdf:about="http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#PancreasTumorMoreThan2cm"/>
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasStructureClassifiedByMalignancy"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasStructureAssessedForMalignancy"/>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
@@ -375,7 +375,7 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#ConfinedPancreasTumor"/>
                     <rdf:Description rdf:about="http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#PancreasTumorMoreThan4cm"/>
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasStructureClassifiedByMalignancy"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasStructureAssessedForMalignancy"/>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
@@ -407,7 +407,7 @@
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasStructureClassifiedByMalignancy"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasStructureAssessedForMalignancy"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isBearerOf"/>
                         <owl:someValuesFrom>
@@ -420,7 +420,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasStructureClassifiedByMalignancy"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasStructureAssessedForMalignancy"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
@@ -826,7 +826,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasStructureClassifiedByMalignancy"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasStructureAssessedForMalignancy"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -1149,7 +1149,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasStructureClassifiedByMalignancy"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasStructureAssessedForMalignancy"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -1171,7 +1171,7 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#PancreasTumor2to4cm"/>
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#ExocrinePancreasStructureClassifiedByMalignancy"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#ExocrinePancreasStructureAssessedForMalignancy"/>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
@@ -1203,11 +1203,11 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#PancreasTumorMax2cm"/>
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#ExocrinePancreasStructureClassifiedByMalignancy"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#ExocrinePancreasStructureAssessedForMalignancy"/>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#ExocrinePancreasStructureClassifiedByMalignancy"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#ExocrinePancreasStructureAssessedForMalignancy"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
@@ -1235,7 +1235,7 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#PancreasTumorMoreThan2cm"/>
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#ExocrinePancreasStructureClassifiedByMalignancy"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#ExocrinePancreasStructureAssessedForMalignancy"/>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
@@ -1267,7 +1267,7 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#PancreasTumorMoreThan4cm"/>
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#ExocrinePancreasStructureClassifiedByMalignancy"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#ExocrinePancreasStructureAssessedForMalignancy"/>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
@@ -1299,11 +1299,11 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#InvasivePancreasTumor"/>
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#ExocrinePancreasStructureClassifiedByMalignancy"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#ExocrinePancreasStructureAssessedForMalignancy"/>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#ExocrinePancreasStructureClassifiedByMalignancy"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#ExocrinePancreasStructureAssessedForMalignancy"/>
     </owl:Class>
     
 
@@ -1316,7 +1316,7 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#InvasivePancreasTumorInvadingPeripancreaticSoftTissue"/>
                     <rdf:Description rdf:about="http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#PancreasTumor1to2cm"/>
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#ExocrinePancreasStructureClassifiedByMalignancy"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#ExocrinePancreasStructureAssessedForMalignancy"/>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
@@ -1334,7 +1334,7 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#InvasivePancreasTumorInvadingPeripancreaticSoftTissue"/>
                     <rdf:Description rdf:about="http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#PancreasTumor2to4cm"/>
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#ExocrinePancreasStructureClassifiedByMalignancy"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#ExocrinePancreasStructureAssessedForMalignancy"/>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
@@ -1367,7 +1367,7 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#InvasivePancreasTumorInvadingPeripancreaticSoftTissue"/>
                     <rdf:Description rdf:about="http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#PancreasTumor5mmto1cm"/>
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#ExocrinePancreasStructureClassifiedByMalignancy"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#ExocrinePancreasStructureAssessedForMalignancy"/>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
@@ -1383,7 +1383,7 @@
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#ExocrinePancreasStructureClassifiedByMalignancy"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#ExocrinePancreasStructureAssessedForMalignancy"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#hasPart"/>
                         <owl:someValuesFrom>
@@ -1415,7 +1415,7 @@
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#ExocrinePancreasStructureClassifiedByMalignancy"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#ExocrinePancreasStructureAssessedForMalignancy"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#hasPart"/>
                         <owl:someValuesFrom>
@@ -1441,7 +1441,7 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#InvasivePancreasTumorInvadingPeripancreaticSoftTissue"/>
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#ExocrinePancreasStructureClassifiedByMalignancy"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#ExocrinePancreasStructureAssessedForMalignancy"/>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
@@ -1458,7 +1458,7 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#InvasivePancreasTumorInvadingPeripancreaticSoftTissue"/>
                     <rdf:Description rdf:about="http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#PancreasTumorMax2cm"/>
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#ExocrinePancreasStructureClassifiedByMalignancy"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#ExocrinePancreasStructureAssessedForMalignancy"/>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
@@ -1476,7 +1476,7 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#InvasivePancreasTumorInvadingPeripancreaticSoftTissue"/>
                     <rdf:Description rdf:about="http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#PancreasTumorMax5mm"/>
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#ExocrinePancreasStructureClassifiedByMalignancy"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#ExocrinePancreasStructureAssessedForMalignancy"/>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
@@ -1494,7 +1494,7 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#InvasivePancreasTumorInvadingPeripancreaticSoftTissue"/>
                     <rdf:Description rdf:about="http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#PancreasTumorMoreThan4cm"/>
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#ExocrinePancreasStructureClassifiedByMalignancy"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#ExocrinePancreasStructureAssessedForMalignancy"/>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
@@ -1511,11 +1511,11 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#InvasivePancreasTumor"/>
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasStructureClassifiedByMalignancy"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasStructureAssessedForMalignancy"/>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasStructureClassifiedByMalignancy"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasStructureAssessedForMalignancy"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
@@ -1544,7 +1544,7 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#InvasivePancreasTumorInvadingPeripancreaticSoftTissue"/>
                     <rdf:Description rdf:about="http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#PancreasTumor2to4cm"/>
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasStructureClassifiedByMalignancy"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasStructureAssessedForMalignancy"/>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
@@ -1575,7 +1575,7 @@
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasStructureClassifiedByMalignancy"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasStructureAssessedForMalignancy"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#hasPart"/>
                         <owl:someValuesFrom>
@@ -1609,7 +1609,7 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#InvasivePancreasTumorInfiltratingCeliacTrunkOrSuperiorMesentericArtery"/>
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasStructureClassifiedByMalignancy"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasStructureAssessedForMalignancy"/>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
@@ -1625,7 +1625,7 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#InvasivePancreasTumorInvadingPeripancreaticSoftTissue"/>
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasStructureClassifiedByMalignancy"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasStructureAssessedForMalignancy"/>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
@@ -1642,7 +1642,7 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#InvasivePancreasTumorInvadingPeripancreaticSoftTissue"/>
                     <rdf:Description rdf:about="http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#PancreasTumorMax2cm"/>
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasStructureClassifiedByMalignancy"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasStructureAssessedForMalignancy"/>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
@@ -1660,7 +1660,7 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#InvasivePancreasTumorInvadingPeripancreaticSoftTissue"/>
                     <rdf:Description rdf:about="http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#PancreasTumorMoreThan4cm"/>
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasStructureClassifiedByMalignancy"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasStructureAssessedForMalignancy"/>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
@@ -1676,7 +1676,7 @@
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasStructureClassifiedByMalignancy"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasStructureAssessedForMalignancy"/>
                     <owl:Class>
                         <owl:complementOf rdf:resource="http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#ConfinedPancreasTumor"/>
                     </owl:Class>
@@ -1692,7 +1692,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasStructureClassifiedByMalignancy"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasStructureAssessedForMalignancy"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
@@ -2045,7 +2045,7 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#PancreasTumor2to4cm"/>
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasStructureClassifiedByMalignancy"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasStructureAssessedForMalignancy"/>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
@@ -2077,11 +2077,11 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#PancreasTumorMax2cm"/>
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasStructureClassifiedByMalignancy"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasStructureAssessedForMalignancy"/>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasStructureClassifiedByMalignancy"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasStructureAssessedForMalignancy"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
@@ -2109,7 +2109,7 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#PancreasTumorMoreThan2cm"/>
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasStructureClassifiedByMalignancy"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasStructureAssessedForMalignancy"/>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
@@ -2141,7 +2141,7 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#PancreasTumorMoreThan4cm"/>
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasStructureClassifiedByMalignancy"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasStructureAssessedForMalignancy"/>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
@@ -2357,7 +2357,7 @@
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasStructureClassifiedByMalignancy"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasStructureAssessedForMalignancy"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isBearerOf"/>
                         <owl:someValuesFrom>
@@ -2370,7 +2370,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasStructureClassifiedByMalignancy"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasStructureAssessedForMalignancy"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
@@ -2454,7 +2454,7 @@
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasStructureClassifiedByMalignancy"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasStructureAssessedForMalignancy"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isBearerOf"/>
                         <owl:someValuesFrom>
@@ -2467,7 +2467,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasStructureClassifiedByMalignancy"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasStructureAssessedForMalignancy"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
@@ -2554,8 +2554,8 @@
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasStructureClassifiedByMalignancy"/>
-                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumorAggregateClassifiedByMalignancy"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasStructureAssessedForMalignancy"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumorAggregateAssessedForMalignancy"/>
                         </owl:unionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
@@ -2576,8 +2576,8 @@
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasStructureClassifiedByMalignancy"/>
-                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumorAggregateClassifiedByMalignancy"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasStructureAssessedForMalignancy"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumorAggregateAssessedForMalignancy"/>
                         </owl:unionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
@@ -2811,9 +2811,9 @@
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasStructureClassifiedByMalignancy -->
+    <!-- http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasStructureAssessedForMalignancy -->
 
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasStructureClassifiedByMalignancy">
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasStructureAssessedForMalignancy">
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
@@ -2834,9 +2834,9 @@
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasStructureNotAssessedForTumor -->
+    <!-- http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasStructureNotAssessedForMalignancy -->
 
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasStructureNotAssessedForTumor">
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasStructureNotAssessedForMalignancy">
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
@@ -3007,9 +3007,9 @@
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumorAggregateClassifiedByMalignancy -->
+    <!-- http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumorAggregateAssessedForMalignancy -->
 
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumorAggregateClassifiedByMalignancy">
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumorAggregateAssessedForMalignancy">
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
@@ -3158,11 +3158,11 @@
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#ExocrinePancreasStructureClassifiedByMalignancy -->
+    <!-- http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#ExocrinePancreasStructureAssessedForMalignancy -->
 
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#ExocrinePancreasStructureClassifiedByMalignancy">
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasStructureClassifiedByMalignancy"/>
-        <owl:disjointWith rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasStructureClassifiedByMalignancy"/>
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#ExocrinePancreasStructureAssessedForMalignancy">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasStructureAssessedForMalignancy"/>
+        <owl:disjointWith rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasStructureAssessedForMalignancy"/>
     </owl:Class>
     
 
@@ -3513,10 +3513,10 @@
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#ExocrinePancreasTumorAggregateClassifiedByMalignancy -->
+    <!-- http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#ExocrinePancreasTumorAggregateAssessedForMalignancy -->
 
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#ExocrinePancreasTumorAggregateClassifiedByMalignancy">
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumorAggregateClassifiedByMalignancy"/>
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#ExocrinePancreasTumorAggregateAssessedForMalignancy">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumorAggregateAssessedForMalignancy"/>
     </owl:Class>
     
 
@@ -3656,10 +3656,10 @@
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasStructureClassifiedByMalignancy -->
+    <!-- http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasStructureAssessedForMalignancy -->
 
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasStructureClassifiedByMalignancy">
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasStructureClassifiedByMalignancy"/>
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasStructureAssessedForMalignancy">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasStructureAssessedForMalignancy"/>
     </owl:Class>
     
 
@@ -3958,10 +3958,10 @@
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasTumorAggregateClassifiedByMalignancy -->
+    <!-- http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasTumorAggregateAssessedForMalignancy -->
 
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasTumorAggregateClassifiedByMalignancy">
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumorAggregateClassifiedByMalignancy"/>
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasTumorAggregateAssessedForMalignancy">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumorAggregateAssessedForMalignancy"/>
     </owl:Class>
     
 

@@ -190,9 +190,9 @@ Institute of Medical Informatics, Statistics and Documentation, Medical Universi
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O.owl#AnatomicalStructureClassifiedByMalignancy -->
+    <!-- http://purl.org/tnmo/TNM-O.owl#AnatomicalStructureAssessedForMalignancy -->
 
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#AnatomicalStructureClassifiedByMalignancy">
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#AnatomicalStructureAssessedForMalignancy">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -215,6 +215,38 @@ Institute of Medical Informatics, Statistics and Documentation, Medical Universi
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#AnatomicalStructure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#AnatomicalStructureNotAssessedForMalignancy -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#AnatomicalStructureNotAssessedForMalignancy">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#AnatomicalStructure"/>
+                    <owl:Class>
+                        <owl:complementOf>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isParticipantIn"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O.owl#ClassifyingForMalignancy"/>
+                            </owl:Restriction>
+                        </owl:complementOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#AnatomicalStructure"/>
+        <rdfs:comment>epistemic, non-rigid property. 
+For convenience.
+A 100% correct definition would be much more difficult.
+
+
+in the line of...
+
+NotAssessedMalignantAnatomicalStructure subclassOf
+   isParticipantOf some (TNMassessmentProcedure and hasOutcome some UnclearAssessmentResult)</rdfs:comment>
     </owl:Class>
     
 
@@ -1480,6 +1512,14 @@ Institute of Medical Informatics, Statistics and Documentation, Medical Universi
     
 
 
+    <!-- http://purl.org/tnmo/TNM-O.owl#InSitu -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#InSitu">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#ConfinementValueRegion"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/tnmo/TNM-O.owl#Invasive -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Invasive">
@@ -1560,23 +1600,6 @@ Institute of Medical Informatics, Statistics and Documentation, Medical Universi
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O.owl#NotAssessedMalignantAnatomicalStructure -->
-
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#NotAssessedMalignantAnatomicalStructure">
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#AnatomicalStructure"/>
-        <rdfs:comment>epistemic, non-rigid property. 
-For convenience.
-A 100% correct definition would be much more difficult.
-
-
-in the line of...
-
-NotAssessedMalignantAnatomicalStructure subclassOf
-   isParticipantOf some (TNMassessmentProcedure and hasOutcome some UnclearAssessmentResult)</rdfs:comment>
-    </owl:Class>
-    
-
-
     <!-- http://purl.org/tnmo/TNM-O.owl#PoorlyDifferentiated -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#PoorlyDifferentiated">
@@ -1585,10 +1608,10 @@ NotAssessedMalignantAnatomicalStructure subclassOf
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O.owl#PrimaryTumorSiteClassifiedByMalignancy -->
+    <!-- http://purl.org/tnmo/TNM-O.owl#PrimaryTumorSiteAssessedForMalignancy -->
 
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#PrimaryTumorSiteClassifiedByMalignancy">
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#AnatomicalStructureClassifiedByMalignancy"/>
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#PrimaryTumorSiteAssessedForMalignancy">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#AnatomicalStructureAssessedForMalignancy"/>
     </owl:Class>
     
 
@@ -1723,6 +1746,7 @@ NotAssessedMalignantAnatomicalStructure subclassOf
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#SizeValueRegion"/>
     </owl:Class>
     
 
@@ -2049,6 +2073,7 @@ NotAssessedMalignantAnatomicalStructure subclassOf
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#SizeValueRegion"/>
     </owl:Class>
     
 
@@ -2187,6 +2212,7 @@ NotAssessedMalignantAnatomicalStructure subclassOf
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#SizeValueRegion"/>
     </owl:Class>
     
 
@@ -2341,10 +2367,10 @@ NotAssessedMalignantAnatomicalStructure subclassOf
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O.owl#TumorAggregateClassifiedByMalignancy -->
+    <!-- http://purl.org/tnmo/TNM-O.owl#TumorAggregateAssessedForMalignancy -->
 
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#TumorAggregateClassifiedByMalignancy">
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#AnatomicalStructureClassifiedByMalignancy"/>
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#TumorAggregateAssessedForMalignancy">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#AnatomicalStructureAssessedForMalignancy"/>
     </owl:Class>
     
 
@@ -2355,7 +2381,7 @@ NotAssessedMalignantAnatomicalStructure subclassOf
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#TumorAggregateClassifiedByMalignancy"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#TumorAggregateAssessedForMalignancy"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#hasPart"/>
                         <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O.owl#DistantMetastasis"/>
@@ -2363,7 +2389,7 @@ NotAssessedMalignantAnatomicalStructure subclassOf
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#TumorAggregateClassifiedByMalignancy"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#TumorAggregateAssessedForMalignancy"/>
     </owl:Class>
     
 
@@ -2374,7 +2400,7 @@ NotAssessedMalignantAnatomicalStructure subclassOf
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#TumorAggregateClassifiedByMalignancy"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#TumorAggregateAssessedForMalignancy"/>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
                             <owl:Restriction>
@@ -2393,12 +2419,12 @@ NotAssessedMalignantAnatomicalStructure subclassOf
                         </owl:unionOf>
                     </owl:Class>
                     <owl:Class>
-                        <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#NotAssessedMalignantAnatomicalStructure"/>
+                        <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#AnatomicalStructureNotAssessedForMalignancy"/>
                     </owl:Class>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#TumorAggregateClassifiedByMalignancy"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#TumorAggregateAssessedForMalignancy"/>
     </owl:Class>
     
 
@@ -2409,7 +2435,7 @@ NotAssessedMalignantAnatomicalStructure subclassOf
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#TumorAggregateClassifiedByMalignancy"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#TumorAggregateAssessedForMalignancy"/>
                     <owl:Class>
                         <owl:complementOf>
                             <owl:Restriction>
@@ -2421,7 +2447,7 @@ NotAssessedMalignantAnatomicalStructure subclassOf
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#TumorAggregateClassifiedByMalignancy"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#TumorAggregateAssessedForMalignancy"/>
     </owl:Class>
     
 
@@ -2432,7 +2458,7 @@ NotAssessedMalignantAnatomicalStructure subclassOf
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#TumorAggregateClassifiedByMalignancy"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#TumorAggregateAssessedForMalignancy"/>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
                             <owl:Class>
@@ -2455,12 +2481,12 @@ NotAssessedMalignantAnatomicalStructure subclassOf
                         </owl:unionOf>
                     </owl:Class>
                     <owl:Class>
-                        <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#NotAssessedMalignantAnatomicalStructure"/>
+                        <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#AnatomicalStructureNotAssessedForMalignancy"/>
                     </owl:Class>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#TumorAggregateClassifiedByMalignancy"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#TumorAggregateAssessedForMalignancy"/>
     </owl:Class>
     
 
@@ -2595,21 +2621,21 @@ NotAssessedMalignantAnatomicalStructure subclassOf
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#HistopathologicalGrading_G1"/>
-            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#HistopathologicalGrading_G2"/>
-            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#HistopathologicalGrading_G3"/>
-            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#HistopathologicalGrading_G4"/>
-            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#HistopathologicalGrading_GX"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
             <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#GradeOfDifferentiationCannotBeAssessed"/>
             <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#ModeratelyDifferentiated"/>
             <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#PoorlyDifferentiated"/>
             <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#Undifferentiated"/>
             <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#WellDifferentiated"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#HistopathologicalGrading_G1"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#HistopathologicalGrading_G2"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#HistopathologicalGrading_G3"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#HistopathologicalGrading_G4"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#HistopathologicalGrading_GX"/>
         </owl:members>
     </rdf:Description>
 </rdf:RDF>

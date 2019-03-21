@@ -23,7 +23,8 @@ import tnmClassifier.ClassifierEnvironment.ChangeMode;
 * @author Susanne Zabka Jun-Jul 2017, updates: Oliver Brunner
 * Use pancreas TNM8n ontology to classify data 
 * Update Susanne Zabka, 13-Jun-2018, adaptation to new ontology structure (NeuroendocrinePancreasStructureClassifiedByMalignancy, 
-* NeuroendocrinePancreasTumorAggregateClassifiedByMalignancy, AnatomicalStructureAdjacentToPancreas)
+* NeuroendocrinePancreasTumorAggregateClassifiedByMalignancy, AnatomicalStructureAdjacentToPancreas
+* Update SZ, 21-Mar-2019: new expressions NeuroendocrinePancreasStructureAssessedForMalignancy)
 * 
 */
 public class NeuroendocrinePancreas extends BaseClassifier {
@@ -40,7 +41,7 @@ public class NeuroendocrinePancreas extends BaseClassifier {
 		OWLDataFactory factory = this.env.getDataFactory();
 		Set<OWLClassExpression> res = new HashSet<>();
 		OWLClass tumor = factory
-				.getOWLClass(IRI.create(this.env.getOntologyIri(this.baseId) + "NeuroendocrinePancreasStructureClassifiedByMalignancy"));
+				.getOWLClass(IRI.create(this.env.getOntologyIri(this.baseId) + "NeuroendocrinePancreasStructureAssessedForMalignancy"));
 
 		res.add(tumor);
 
@@ -162,8 +163,8 @@ public class NeuroendocrinePancreas extends BaseClassifier {
 	@Override
 	protected Set<OWLClass> getTumorClasses() {
 		String iri = this.env.getOntologyIri(this.baseId);
-		Set<OWLClass> res = this.getSubClasses("NeuroendocrinePancreasStructureClassifiedByMalignancy", iri);
-		res.addAll(this.getSubClasses("NeuroendocrinePancreasTumorAggregateClassifiedByMalignancy", iri));
+		Set<OWLClass> res = this.getSubClasses("NeuroendocrinePancreasStructureAssessedForMalignancy", iri);
+		res.addAll(this.getSubClasses("NeuroendocrinePancreasTumorAggregateAssessedForMalignancy", iri));
 		return res;
 	}
 

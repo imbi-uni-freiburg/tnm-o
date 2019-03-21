@@ -37,7 +37,7 @@ public class Pancreas extends BaseClassifier {
 
 		OWLDataFactory factory = this.env.getDataFactory();
 		Set<OWLClassExpression> res = new HashSet<>();
-		OWLClass tumor = factory.getOWLClass(IRI.create(this.env.getOntologyIri(this.baseId) + "PancreasStructureClassifiedByMalignancy"));
+		OWLClass tumor = factory.getOWLClass(IRI.create(this.env.getOntologyIri(this.baseId) + "PancreasStructureAssessedForMalignancy"));
 
 		res.add(tumor);
 
@@ -50,7 +50,7 @@ public class Pancreas extends BaseClassifier {
 				createIndividual(indname, factory, res);
 			}
 			if (confinement.equals("in-situ")) {
-				res.add(this.addQuality("CarcinomaInSitu"));
+				res.add(this.addQuality("InSitu"));
 				createIndividual(indname, factory, res);
 			}
 			if (confinement.equals("confined")) {
