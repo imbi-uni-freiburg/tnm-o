@@ -44,7 +44,7 @@ import org.semanticweb.owlapi.reasoner.OWLReasoner;
  * from CSV-table with column headers as listed below
  * Update Susanne Zabka, 14-Jun-2018, adaptation to new ontology structure (...PancreasStructureClassifiedByMalignancy, 
 *  AnatomicalStructureAdjacentToPancreas, new variable and method for tumorOrganExpression, renaming of tumorOfOrgan to organClassified )
- * 
+ * Update SZ 23-Mar-2019: neuer Ausdruck ...PancreasStructureAssessedForMalignancy"
  */
 public class Pancreas extends BaseClassifier {
 	private String tumorTypeColumnHeader;
@@ -144,6 +144,14 @@ public class Pancreas extends BaseClassifier {
 				this.env.save("TNMO");
 
 				OWLReasoner reasoner = reasonerFactory.createReasoner(this.env.getOntology("TNMO"));
+//AAAAAAAAAAAAAAAAA___________****************************______________________--------
+				System.out.println("");
+				System.out.print("res:        " + res);
+				System.out.println("");
+
+
+				//__________**************************************_________________________-
+
 
 				System.out.println("run reasoner: ");
 
@@ -284,7 +292,7 @@ public class Pancreas extends BaseClassifier {
 		if (metaLK.equals("Notassessed")) {
 			res.add(this.notAssessed());
 		} else {
-			if (organClassified.equals("PancreasStructureClassifiedByMalignancy") || organClassified.equals("NeuroendocrinePancreasStructureClassifiedByMalignancy"))
+			if (organClassified.equals("PancreasStructureAssessedForMalignancy") || organClassified.equals("NeuroendocrinePancreasStructureAssessedForMalignancy"))
 				res.add(this.notNotAssessed());
 			if (metaLK.equals("0")) {
 				res.add(this.notHasPart("MetastaticRegionalLymphNodeOf" + tumorOrganExpression, ontologyID));
@@ -384,22 +392,22 @@ public class Pancreas extends BaseClassifier {
 
 	public String getOrgan(String organClassified) {
 		String organ = "Pancreas";
-		if (organClassified.equals("PancreasStructureClassifiedByMalignancy"))
+		if (organClassified.equals("PancreasStructureAssessedForMalignancy") || organClassified.equals("PancreasStructureNotAssessedForMalignancy"))
 			organ = "Pancreas";
-		else if (organClassified.equals("ExocrinePancreasStructureClassifiedByMalignancy"))
+		else if (organClassified.equals("ExocrinePancreasStructureAssessedForMalignancy") || organClassified.equals("ExocrinePancreasStructureNotAssessedForMalignancy"))
 			organ = "ExocrinePancreas";
-		else if (organClassified.equals("NeuroendocrinePancreasStructureClassifiedByMalignancy"))
+		else if (organClassified.equals("NeuroendocrinePancreasStructureAssessedForMalignancy")|| organClassified.equals("NeuroendocrinePancreasStructureNotAssessedForMalignancy"))
 			organ = "SetOfPancreaticIslets";
 		return organ;
 	}
 	
 	public String getTumorOrganExpression(String organClassified) {
 		String tumorOrganExpression  = " ";
-		if (organClassified.equals("PancreasStructureClassifiedByMalignancy"))
+		if (organClassified.equals("PancreasStructureAssessedForMalignancy") || organClassified.equals("PancreasStructureNotAssessedForMalignancy"))
 			tumorOrganExpression = "PancreasTumor";
-		else if (organClassified.equals("ExocrinePancreasStructureClassifiedByMalignancy"))
+		else if (organClassified.equals("ExocrinePancreasStructureAssessedForMalignancy") || organClassified.equals("ExocrinePancreasStructureNotAssessedForMalignancy"))
 			tumorOrganExpression = "ExocrinePancreasTumor";
-		else if (organClassified.equals("NeuroendocrinePancreasStructureClassifiedByMalignancy"))
+		else if (organClassified.equals("NeuroendocrinePancreasStructureAssessedForMalignancy")|| organClassified.equals("NeuroendocrinePancreasStructureNotAssessedForMalignancy"))
 			tumorOrganExpression = "NeuroendocrinePancreasTumor";
 		return tumorOrganExpression;
 	}
@@ -413,11 +421,11 @@ public class Pancreas extends BaseClassifier {
 		// ontologyID = "Pancreas8e";
 		// else if (organClassified.equals("NeuroendocrinePancreasTumor"))
 		// ontologyID = "Pancreas8n";
-		if (organClassified.equals("PancreasStructureClassifiedByMalignancy"))
+		if (organClassified.equals("PancreasStructureAssessedForMalignancy") || organClassified.equals("PancreasStructureNotAssessedForMalignancy"))
 			ontologyID = "pancreas7";
-		else if (organClassified.equals("ExocrinePancreasStructureClassifiedByMalignancy"))
+		else if (organClassified.equals("ExocrinePancreasStructureAssessedForMalignancy") || organClassified.equals("ExocrinePancreasStructureNotAssessedForMalignancy"))
 			ontologyID = "pancreas_exocrine_8";
-		else if (organClassified.equals("NeuroendocrinePancreasStructureClassifiedByMalignancy"))
+		else if (organClassified.equals("NeuroendocrinePancreasStructureAssessedForMalignancy")|| organClassified.equals("NeuroendocrinePancreasStructureNotAssessedForMalignancy"))
 			ontologyID = "pancreas_neuroendocrine_8";
 		return ontologyID;
 	}
@@ -471,13 +479,13 @@ public class Pancreas extends BaseClassifier {
 
 	public OWLClassExpression getOrganPart(OWLDataFactory datafactory, String organClassified) {
 		OWLClassExpression organpart = null;
-		if (organClassified.equals("PancreasStructureClassifiedByMalignancy"))
+		if (organClassified.equals("PancreasStructureAssessedForMalignancy") || organClassified.equals("PancreasStructureNotAssessedForMalignancy"))
 			organpart = datafactory.getOWLClass(IRI.create(getPancreas7Iri() + organClassified));
 
-		else if (organClassified.equals("ExocrinePancreasStructureClassifiedByMalignancy"))
+		else if (organClassified.equals("ExocrinePancreasStructureAssessedForMalignancy") || organClassified.equals("ExocrinePancreasStructureNotAssessedForMalignancy"))
 			organpart = datafactory.getOWLClass(IRI.create(getPancreas8exoIri() + organClassified));
 
-		else if (organClassified.equals("NeuroendocrinePancreasStructureClassifiedByMalignancy"))
+		else if (organClassified.equals("NeuroendocrinePancreasStructureAssessedForMalignancy")|| organClassified.equals("NeuroendocrinePancreasStructureNotAssessedForMalignancy"))
 			organpart = datafactory.getOWLClass(IRI.create(getPancreas8neIri() + organClassified));
 
 		return organpart;
@@ -485,14 +493,17 @@ public class Pancreas extends BaseClassifier {
 
 	public OWLClassExpression getTumorAggregatLKOrganPart(OWLDataFactory datafactory, String organClassified) {
 		OWLClassExpression tumorAggLK = null;
-		if (organClassified.equals("PancreasStructureClassifiedByMalignancy")) {
-			tumorAggLK = datafactory.getOWLClass(
+		if (organClassified.equals("PancreasStructureAssessedForMalignancy") || organClassified.equals("PancreasStructureNotAssessedForMalignancy"))
+	{
+	tumorAggLK = datafactory.getOWLClass(
 					IRI.create(getPancreas7Iri() + "PancreasTumorAggregateAsRelatedToMetastaticRegionalLymphNodes"));
-		} else if (organClassified.equals("ExocrinePancreasStructureClassifiedByMalignancy")) {
-			tumorAggLK = datafactory.getOWLClass(IRI.create(
+		} 
+			else if (organClassified.equals("ExocrinePancreasStructureAssessedForMalignancy") || organClassified.equals("ExocrinePancreasStructureNotAssessedForMalignancy"))
+{			tumorAggLK = datafactory.getOWLClass(IRI.create(
 					getPancreas8exoIri() + "ExocrinePancreasTumorAggregateAsRelatedToMetastaticRegionalLymphNodes"));
 
-		} else if (organClassified.equals("NeuroendocrinePancreasStructureClassifiedByMalignancy")) {
+		} 		else if (organClassified.equals("NeuroendocrinePancreasStructureAssessedForMalignancy")|| organClassified.equals("NeuroendocrinePancreasStructureNotAssessedForMalignancy"))
+ {
 			tumorAggLK = datafactory.getOWLClass(IRI.create(getPancreas8neIri()
 					+ "NeuroendocrinePancreasTumorAggregateAsRelatedToMetastaticRegionalLymphNodes"));
 		}
@@ -501,14 +512,16 @@ public class Pancreas extends BaseClassifier {
 
 	public OWLClassExpression getTumorAggregatMetaOrganPart(OWLDataFactory datafactory, String organClassified) {
 		OWLClassExpression tumorAggMeta = null;
-		if (organClassified.equals("PancreasStructureClassifiedByMalignancy")) {
+		if (organClassified.equals("PancreasStructureAssessedForMalignancy") || organClassified.equals("PancreasStructureNotAssessedForMalignancy"))
+ {
 			tumorAggMeta = datafactory
 					.getOWLClass(IRI.create(getPancreas7Iri() + "PancreasTumorAggregateAsRelatedToDistantMetastasis"));
-		} else if (organClassified.equals("ExocrinePancreasStructureClassifiedByMalignancy")) {
+		} 		else if (organClassified.equals("ExocrinePancreasStructureAssessedForMalignancy") || organClassified.equals("ExocrinePancreasStructureNotAssessedForMalignancy"))
+ {
 			tumorAggMeta = datafactory.getOWLClass(
 					IRI.create(getPancreas8exoIri() + "ExocrinePancreasTumorAggregateAsRelatedToDistantMetastasis"));
 
-		} else if (organClassified.equals("NeuroendocrinePancreasStructureClassifiedByMalignancy")) {
+		} else if (organClassified.equals("NeuroendocrinePancreasStructureAssessedForMalignancy")) {
 			tumorAggMeta = datafactory.getOWLClass(IRI
 					.create(getPancreas8neIri() + "NeuroendocrinePancreasTumorAggregateAsRelatedToDistantMetastasis"));
 		}

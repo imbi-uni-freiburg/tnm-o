@@ -182,6 +182,12 @@ Institute of Medical Informatics, Statistics and Documentation, Medical Universi
     
 
 
+    <!-- http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#RepresentationalUnitInUndefinedPancreasLocationClinicalTNM8Classification -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#RepresentationalUnitInUndefinedPancreasLocationClinicalTNM8Classification"/>
+    
+
+
     <!-- http://purl.org/tnmo/TNM-O.owl#AnatomicalStructure -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#AnatomicalStructure">
@@ -2563,6 +2569,12 @@ NotAssessedMalignantAnatomicalStructure subclassOf
     
 
 
+    <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#Pancreas -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#Pancreas"/>
+    
+
+
     <!-- http://purl.org/tnmo/TNM-O_Liver#SizeMax5cm -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Liver#SizeMax5cm">
@@ -2587,6 +2599,12 @@ NotAssessedMalignantAnatomicalStructure subclassOf
             </owl:Class>
         </owl:equivalentClass>
     </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Pancreas_7.owl#RepresentationalUnitInPancreasTNM7ClinicalClassification -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#RepresentationalUnitInPancreasTNM7ClinicalClassification"/>
     
 
 
@@ -2621,21 +2639,21 @@ NotAssessedMalignantAnatomicalStructure subclassOf
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#GradeOfDifferentiationCannotBeAssessed"/>
-            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#ModeratelyDifferentiated"/>
-            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#PoorlyDifferentiated"/>
-            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#Undifferentiated"/>
-            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#WellDifferentiated"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
             <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#HistopathologicalGrading_G1"/>
             <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#HistopathologicalGrading_G2"/>
             <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#HistopathologicalGrading_G3"/>
             <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#HistopathologicalGrading_G4"/>
             <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#HistopathologicalGrading_GX"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#GradeOfDifferentiationCannotBeAssessed"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#ModeratelyDifferentiated"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#PoorlyDifferentiated"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#Undifferentiated"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#WellDifferentiated"/>
         </owl:members>
     </rdf:Description>
 </rdf:RDF>

@@ -1534,6 +1534,23 @@
     
 
 
+    <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#RegionalLymphNodeOfExocrinePancreas -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#RegionalLymphNodeOfExocrinePancreas">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#PancreaticLymphNode"/>
+        <owl:disjointWith rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#RegionalLymphNodeOfNeuroendocrinePancreas"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#RegionalLymphNodeOfNeuroendocrinePancreas -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#RegionalLymphNodeOfNeuroendocrinePancreas">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#PancreaticLymphNode"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#RetroCavalLymphNode -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#RetroCavalLymphNode">

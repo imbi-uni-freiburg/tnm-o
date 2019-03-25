@@ -1,5 +1,5 @@
 Tumortype,Code TNM 8,T or N or M,Confinement,InvasiveInPeripancreaticSoftTissue,InvasiveInCeliacTrunk,InvasiveInCommonHepaticArtery,InvasiveInSuperiorMesentericArtery,Tumor T7 bei Bedingung,Code TNM 7,Meta LymphNodes,Dist Meta Org
-ExocrinePancreasStructureNotAssessedForTumor,T0,,,,,,,PancreasStructureNotAssessedForTumor,T0,,
+ExocrinePancreasStructureNotAssessedForMalignancy,T0,,,,,,,PancreasStructureNotAssessedForTumor,T0,,
 ExocrinePancreasStructureWithoutEvidenceOfPrimaryTumor,TX,,,,,,,PancreasStructureWithoutEvidenceOfPrimaryPancreasTumor,TX,,
 CarcinomaInSituOfExocrinePancreas,Tis,,,,,,,CarcinomaInSituOfPancreas,Tis,,
 ExocrinePancreasTumorMax2cm,T1,,Confined,,,,,ConfinedPancreasTumorMax2cm,T1,,

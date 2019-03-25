@@ -212,7 +212,9 @@ public class BaseClassifier {
 		OWLDataFactory factory = this.env.getDataFactory();
 		OWLObjectProperty isIncludedIn = factory
 				.getOWLObjectProperty(IRI.create(this.env.getBioTopLight2Iri() + "isIncludedIn"));
-		OWLClassExpression organOwlClass = factory.getOWLClass(IRI.create(this.env.getOntologyIri(ontologyId) + organ));
+	//war SO!!!	OWLClassExpression organOwlClass = factory.getOWLClass(IRI.create(this.env.getOntologyIri(ontologyId) + organ));
+		/// neu_:----//
+		OWLClassExpression organOwlClass = factory.getOWLClass(IRI.create(this.env.getBodyPartIri() + organ));
 		OWLClassExpression isIncludedInSomeOrgan = factory.getOWLObjectSomeValuesFrom(isIncludedIn, organOwlClass);
 
 		return isIncludedInSomeOrgan;
@@ -261,14 +263,22 @@ public class BaseClassifier {
 		OWLClassExpression andhasParts = factory.getOWLObjectSomeValuesFrom(hasPart, partwithquality);
 		return andhasParts;
 	}
-	
+	//evtl. ändern, funktioniert nicht immer. Bes. für LK--NX
+	protected OWLClassExpression notAssessed() {
+		OWLDataFactory factory = this.env.getDataFactory();
+		OWLClassExpression notAssessedExpression = factory
+				.getOWLClass(IRI.create(this.env.getTNMOIri() + "AnatomicalStructureNotAssessedForMalignancy"));
+		  // addSomePlace("PancreaticLymphNode");
+		return notAssessedExpression;
+	}
+	/*	****ORIGINALVERSION***********************************  -----------------------          	
 	protected OWLClassExpression notAssessed() {
 		OWLDataFactory factory = this.env.getDataFactory();
 		OWLClassExpression notAssessedExpression = factory
 				.getOWLClass(IRI.create(this.env.getTNMOIri() + "AnatomicalStructureNotAssessedForMalignancy"));
 		return notAssessedExpression;
 	}
-
+-------------------------------------------*/
 	protected OWLClassExpression notNotAssessed() {
 		return this.notAssessed().getObjectComplementOf();
 	}

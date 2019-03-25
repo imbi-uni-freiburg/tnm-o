@@ -1,5 +1,5 @@
 Tumortype,Code TNM 8,Confinement,InvasiveInPeripancreaticSoftTissue,InvasiveInCeliacTrunk,InvasiveInSuperiorMesentericArtery,InvasiveInDuodenum,InvasiveInBileDuct,InvasiveInSerosa,InvasiveInBodyPartAdjacentToPancreas,Tumor T7 bei Bedingung,Code TNM 7
-NeuroendocrinePancreasStructureNotAssessedForTumor,TX,,,,,,,,,PancreasStructureNotAssessedForTumor,TX
+NeuroendocrinePancreasStructureNotAssessedForMalignancy,TX,,,,,,,,,PancreasStructureNotAssessedForTumor,TX
 NeuroendocrinePancreasStructureWithoutEvidenceOfPrimaryTumor,T0,,,,,,,,,PancreasStructureWithoutEvidenceOfPrimaryTumor,T0
 OptionallyInvasiveNeuroendocrinePancreasTumorMax2cm,T1,Confined,,,,,,,,InvasivePancreasTumorMax2cm,T1
 OptionallyInvasiveNeuroendocrinePancreasTumorMax2cm,T1,,yes,,,,,,,InvasivePancreasTumorNotBeyondCeliacTrunkOrSuperiorMesentericArtery,T3

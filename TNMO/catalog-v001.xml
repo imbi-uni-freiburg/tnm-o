@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://purl.org/tnmo/TNM-O_InferredPancreas.owl" uri="file:/C:/Users/Susi/ontologies/TNM-O_InferredPancreas/TNM-O_InferredPancreas.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.org/tnmo/Bridge2_Pancreas7to8.owl/1" uri="TNMOBridge_7_8/pancreasbridge.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.org/tnmo/Bridge2_Pancreas7to8.owl/1" uri="TNMOBridge_7_8/pancreasbridge%20-%20Kopie.owl"/>
     <uri id="Imports Wizard Entry" name="http://purl.org/tnmo/pancreas_swrl_8nTo7.owl/1" uri="TNMOBridge_7_8/pancreas_swrl8nto7.owl"/>
     <uri id="Imports Wizard Entry" name="http://purl.org/tnmo/pancreas_swrl_8eTo7.owl/1" uri="TNMOBridge_7_8/pancreas_swrl8eto7.owl"/>
     <uri id="Imports Wizard Entry" name="http://purl.org/tnmo/PancreasSWRL_7to8.owl/1" uri="TNMOBridge_7_8/pancreas_swrl7to8.owl"/>

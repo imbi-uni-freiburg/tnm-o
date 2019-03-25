@@ -3,7 +3,7 @@ check,expectedT0N1M0undefined,,NoEvidence,,,,,,3,no,
 check,expectedT3N0M1c,,,invasive,,yes,no,no,0,yes,LiverAndNotLiver
 check,expectedT2NXM1b,,,confined,2-4cm,no,no,no,,yes,notLiver
 check,expectedT3N1M0undefined,,,confined,>4cm,no,no,no,5,no,
-check,expectedTXNXM1,NoAssessment,,in-situ,,,,,0,yes,
+check,expectedTXNXM1,NoAssessment,,,,,,,0,yes,
 check,expectedT1N1M1a,,,confined,<=2cm,,,,1,yes,Liver
 check,expectedT4N0M1c,,,invasive,,no,yes,no,0,yes,LiverAndNotLiver
 check,expectedT4N0M1a,,,invasive,,no,no,yes,0,yes,Liver

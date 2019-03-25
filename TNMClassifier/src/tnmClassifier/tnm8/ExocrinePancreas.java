@@ -24,8 +24,8 @@ import tnmClassifier.ClassifierEnvironment.ChangeMode;
 * @author Susanne Zabka Jun-Jul 2017, updates: Oliver Brunner
 * Use pancreas TNM8e ontology to classify data 
 * Update Susanne Zabka, 13-Jun-2018, adaptation to new ontology structure (ExocrinePancreasStructureClassifiedByMalignancy
-* Update SZ, 12-03-2019: new expressions NonVesselStructuresAdjacentToPancreas, ExocrinePancreasStructureAssessedForMalignancy, InSitu)
-* 
+* Update SZ, Mar-2019: new expressions NonVesselStructuresAdjacentToPancreas, ExocrinePancreasStructureAssessedForMalignancy, InSitu)
+*                        and new ontology structure
 */
 public class ExocrinePancreas extends BaseClassifier {
 	public ExocrinePancreas(String inputDataPath) throws FileNotFoundException, IOException {
@@ -114,6 +114,9 @@ public class ExocrinePancreas extends BaseClassifier {
 		res.add(tumor);
 		if (!assessment) { // NotAssessedMalignantAnatomicalStructure
 			res.add(this.notAssessed());
+			String lymphNode = "RegionalLymphNodeOfExocrinePancreas";
+			res.add(this.isIncludedIn(lymphNode));
+
 			createIndividual(indname, factory, res);
 		} else {
 			if (nrlymph == 0) {

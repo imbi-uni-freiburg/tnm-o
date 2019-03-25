@@ -8,4 +8,4 @@ check,expected_T1cN1M1,,,confined,1-2cm,,1,yes
 check,expected_T1N1M1,,,confined,<=2cm,,1,yes
 check,expected_T3N2M0undefined,,,confined,>4cm,no,5,no
 check,expected_T1aN0M1,,,confined,<=0.5cm,,0,yes
-check,expected_TXNXM0undefined,NoAssessment,,in-situ,,,0,no
+check,expected_TXNXM0undefined,NoAssessment,,,,,,no

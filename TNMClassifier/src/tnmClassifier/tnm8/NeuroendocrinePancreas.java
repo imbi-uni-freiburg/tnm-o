@@ -24,7 +24,7 @@ import tnmClassifier.ClassifierEnvironment.ChangeMode;
 * Use pancreas TNM8n ontology to classify data 
 * Update Susanne Zabka, 13-Jun-2018, adaptation to new ontology structure (NeuroendocrinePancreasStructureClassifiedByMalignancy, 
 * NeuroendocrinePancreasTumorAggregateClassifiedByMalignancy, AnatomicalStructureAdjacentToPancreas
-* Update SZ, 21-Mar-2019: new expressions NeuroendocrinePancreasStructureAssessedForMalignancy)
+* Update SZ, 21-Mar-2019: new expressions NeuroendocrinePancreasStructureAssessedForMalignancy and new ontology structure
 * 
 */
 public class NeuroendocrinePancreas extends BaseClassifier {
@@ -110,6 +110,9 @@ public class NeuroendocrinePancreas extends BaseClassifier {
 		res.add(tumor);
 		if (!assessment) { // NotAssessedMalignantAnatomicalStructure
 			res.add(this.notAssessed());
+			String lymphNode = "RegionalLymphNodeOfNeuroendocrinePancreas";
+			res.add(this.isIncludedIn(lymphNode));
+
 			createIndividual(indname, factory, res);
 		} else {
 			if (assessment && nrlymph > 0) {

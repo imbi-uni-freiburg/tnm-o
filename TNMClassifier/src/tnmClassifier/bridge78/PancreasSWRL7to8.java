@@ -42,6 +42,7 @@ import org.semanticweb.owlapi.reasoner.OWLReasoner;
  *         CSV-table, create individuals for each tumour property,
  *         classify, output on console
  *         Transformation from TNM7 to TNM8e and TNM8n
+ *         Update SZ: Mar-2019: Adaptation to new ontology structure
  * 
  */
 
@@ -50,7 +51,7 @@ public class PancreasSWRL7to8 extends BaseClassifier {
 	private String tumorOrganColumnHeader;
 	private String tumorTorNorMColumnHeader;
 	private String tumorSizeColumnHeader;
-	private String tumorInvasiveInSoftTissueColumnHeader;
+	private String tumorInvasiveInNonVesselStructuresAdjacentToPancreasColumnHeader;
 	private String tumorInvasiveInComHepArtColumnHeader;
 	private String tumorMetaLKColumnHeader;
 	private String tumorDistMetaOrganColumnHeader;
@@ -64,7 +65,7 @@ public class PancreasSWRL7to8 extends BaseClassifier {
 		this.tumorOrganColumnHeader = "isIncludedIn";
 		this.tumorTorNorMColumnHeader = "T or N or M";// ?
 		this.tumorSizeColumnHeader = "Size";// ja
-		this.tumorInvasiveInSoftTissueColumnHeader = "InvasiveInPeripancreaticSoftTissue"; // Ja
+		this.tumorInvasiveInNonVesselStructuresAdjacentToPancreasColumnHeader = "InvasiveInNonVesselStructuresAdjacentToPancreas"; // Ja
 		this.tumorInvasiveInComHepArtColumnHeader = "InvasiveInCommonHepaticArtery";
 		this.tumorMetaLKColumnHeader = "Meta LymphNodes";
 		this.tumorDistMetaOrganColumnHeader = "Dist Meta Org";
@@ -110,7 +111,7 @@ public class PancreasSWRL7to8 extends BaseClassifier {
 				String torNorM = nextLine[dataReader.getIndex(tumorTorNorMColumnHeader)];
 				String organ = nextLine[dataReader.getIndex(tumorOrganColumnHeader)];
 				String size = nextLine[dataReader.getIndex(tumorSizeColumnHeader)];
-				String softTissue = nextLine[dataReader.getIndex(tumorInvasiveInSoftTissueColumnHeader)];
+				String softTissue = nextLine[dataReader.getIndex(tumorInvasiveInNonVesselStructuresAdjacentToPancreasColumnHeader)];
 				String comHepArt = nextLine[dataReader.getIndex(tumorInvasiveInComHepArtColumnHeader)];
 
 				String metaLK = nextLine[dataReader.getIndex(tumorMetaLKColumnHeader)];
@@ -144,7 +145,7 @@ public class PancreasSWRL7to8 extends BaseClassifier {
 					addTumorHasSize(size, tumor, i);
 
 				if (softTissue.equals("yes"))
-					addTumorHasPartIsIncludedInOrgan("PeripancreaticSoftTissue", tumor, i);
+					addTumorHasPartIsIncludedInOrgan("NonVesselStructuresAdjacentToPancreas", tumor, i);
 
 				if (comHepArt.equals("yes"))
 					addTumorHasPartIsIncludedInOrgan("CommonHepaticArtery", tumor, i);
@@ -352,10 +353,10 @@ public class PancreasSWRL7to8 extends BaseClassifier {
 	 */
 	public void addTumorIsMetastaticStructureOfOrgan(String primarytumorOrgan, OWLNamedIndividual tumor, int i) {
 		OWLDataFactory factory = this.env.getDataFactory();
-		OWLNamedIndividual malignantStructure = addIndividual("MalignantAnatomicalStructure",
+		OWLNamedIndividual malignantStructure = addIndividual("AnatomicalStructureAssessedForMalignancy",
 				"MalignantAnatomicalStructure_", i, "TNMO");
 	//	OWLNamedIndividual pancreas = addIndividual("PancreasTumor", "PancreasTumor_", i, "Pancreas7");
-		OWLNamedIndividual pancreas = addIndividual("PancreasStructureClassifiedByMalignancy", "PancreasTumor_", i, "Pancreas7");
+		OWLNamedIndividual pancreas = addIndividual("PancreasStructureAssessedForMalignancy", "PancreasTumor_", i, "Pancreas7");
 		addTumorIsIncludedInOrgan(primarytumorOrgan, pancreas, i);
 		OWLObjectProperty isPartOf = factory
 				.getOWLObjectProperty(IRI.create(this.env.getBioTopLight2Iri() + "isPartOf"));

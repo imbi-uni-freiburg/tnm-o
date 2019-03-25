@@ -22,6 +22,7 @@ import tnmClassifier.ClassifierEnvironment.ChangeMode;
 * @author Susanne Zabka Jun-Jul 2017, updates: Oliver Brunner
 * Use pancreas TNM7 ontology to classify data 
 * Update: SZ Jun-2018: adaption to new expressions (PancreasStructureClassifiedByMalignancy)
+* Update SZ Ma-2019: adaption to new expressions (PancreasStructureAssessedForMalignancy) and new ontology structure
 * 
 */
 public class Pancreas extends BaseClassifier {
@@ -40,10 +41,11 @@ public class Pancreas extends BaseClassifier {
 		OWLClass tumor = factory.getOWLClass(IRI.create(this.env.getOntologyIri(this.baseId) + "PancreasStructureAssessedForMalignancy"));
 
 		res.add(tumor);
-
+		
 		if (noAssessment.equals("NoAssessment")) {
 			res.add(this.notAssessed());
 			createIndividual(indname, factory, res);
+
 		} else {
 			if (noEvidence.equals("NoEvidence")) {
 				res.add(this.addQuality("NoEvidence"));
@@ -95,7 +97,9 @@ public class Pancreas extends BaseClassifier {
 		if (!assessment) { // NotAssessedMalignantAnatomicalStructure
 			res.add(tumor);
 			res.add(this.notAssessed());
-
+			String lymphNode = "PancreaticLymphNode";
+			res.add(this.isIncludedIn(lymphNode));
+			
 			createIndividual(indname, factory, res);
 
 		} else {
@@ -137,8 +141,8 @@ public class Pancreas extends BaseClassifier {
 	@Override
 	protected Set<OWLClass> getTumorClasses() {
 		String iri = this.env.getOntologyIri(this.baseId);
-		Set<OWLClass> res = this.getSubClasses("PancreasTumor", iri);
-		res.addAll(this.getSubClasses("PancreasTumorAggregate", iri));
+		Set<OWLClass> res = this.getSubClasses("PancreasStructureAssessedForMalignancy", iri);
+		res.addAll(this.getSubClasses("PancreasTumorAggregateAssessedForMalignancy", iri));
 		//System.out.println("res ..." + res);
 		return res;
 	}
