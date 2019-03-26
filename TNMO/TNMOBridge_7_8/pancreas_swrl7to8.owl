@@ -8,6 +8,7 @@
      xmlns:swrl="http://www.w3.org/2003/11/swrl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#">
     <owl:Ontology rdf:about="http://purl.org/tnmo/PancreasSWRL_7to8.owl">
         <owl:versionIRI rdf:resource="http://purl.org/tnmo/PancreasSWRL_7to8.owl/1"/>
@@ -97,6 +98,12 @@
     <owl:Class rdf:about="http://purl.org/tnmo/PancreasSWRL_7to8.owl#NoOtherThanLiverMetastasisOfNeuroendocrinePancreasTumor">
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#DistantMetastasisOfNeuroendocrinePancreasTumor"/>
     </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#AnatomicalStructure -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#AnatomicalStructure"/>
     
 
 
@@ -492,40 +499,43 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    <rdf:Description rdf:about="urn:swrl#x">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#noMet">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#y">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#z">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#met">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#endo">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#noMeta">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#card">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#cardvalue">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#exo">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#met2">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#met1">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/tnmo/Pancreas_7to8#x">
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.org/tnmo/Pancreas_7to8#noMet">
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.org/tnmo/Pancreas_7to8#y">
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.org/tnmo/Pancreas_7to8#z">
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.org/tnmo/Pancreas_7to8#met">
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.org/tnmo/Pancreas_7to8#endo">
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.org/tnmo/Pancreas_7to8#noMeta">
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.org/tnmo/Pancreas_7to8#card">
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.org/tnmo/Pancreas_7to8#cardvalue">
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.org/tnmo/Pancreas_7to8#exo">
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.org/tnmo/Pancreas_7to8#met2">
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.org/tnmo/Pancreas_7to8#met1">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/tnmo/Pancreas_7to8#tumorpart">
@@ -546,10 +556,13 @@
     <rdf:Description rdf:about="http://purl.org/tnmo/Pancreas_7to8#NEpancreas">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
-    <rdf:Description rdf:about="urn:swrl#loc">
+    <rdf:Description rdf:about="http://purl.org/tnmo/Pancreas_7to8#z">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
-    <rdf:Description rdf:about="urn:swrl#x">
+    <rdf:Description rdf:about="http://purl.org/tnmo/Pancreas_7to8#y">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#loc">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
     <rdf:Description rdf:about="urn:swrl#tumorpart">
@@ -567,12 +580,6 @@
     <rdf:Description rdf:about="http://purl.org/tnmo/Pancreas_7to8#part2">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
-    <rdf:Description rdf:about="urn:swrl#y">
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="urn:swrl#exo">
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
-    </rdf:Description>
     <rdf:Description>
         <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
@@ -585,8 +592,8 @@
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                         <swrl:propertyPredicate rdf:resource="http://purl.org/biotop/btl2.owl#hasPart"/>
-                        <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#x"/>
-                        <swrl:argument2 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#noMet"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#noMet"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -596,8 +603,8 @@
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                                 <swrl:propertyPredicate rdf:resource="http://purl.org/biotop/btl2.owl#isPartOf"/>
-                                <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#x"/>
-                                <swrl:argument2 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#y"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                                <swrl:argument2 rdf:resource="urn:swrl#y"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -607,7 +614,7 @@
                                     <rdf:Description>
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
                                         <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumorWithDistantMetastasis"/>
-                                        <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#x"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
                                     </rdf:Description>
                                 </rdf:first>
                                 <rdf:rest>
@@ -617,7 +624,7 @@
                                             <rdf:Description>
                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
                                                 <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasStructureAssessedForMalignancy"/>
-                                                <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#z"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl#z"/>
                                             </rdf:Description>
                                         </rdf:first>
                                         <rdf:rest>
@@ -627,8 +634,8 @@
                                                     <rdf:Description>
                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                                                         <swrl:propertyPredicate rdf:resource="http://purl.org/biotop/btl2.owl#hasPart"/>
-                                                        <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#x"/>
-                                                        <swrl:argument2 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#met"/>
+                                                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                                                        <swrl:argument2 rdf:resource="urn:swrl#met"/>
                                                     </rdf:Description>
                                                 </rdf:first>
                                                 <rdf:rest>
@@ -638,7 +645,7 @@
                                                             <rdf:Description>
                                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
                                                                 <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#OtherThanLiverMetastasisOfNeuroendocrinePancreasTumor"/>
-                                                                <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#met"/>
+                                                                <swrl:argument1 rdf:resource="urn:swrl#met"/>
                                                             </rdf:Description>
                                                         </rdf:first>
                                                         <rdf:rest>
@@ -648,7 +655,7 @@
                                                                     <rdf:Description>
                                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
                                                                         <swrl:classPredicate rdf:resource="http://purl.org/tnmo/PancreasSWRL_7to8.owl#NoLiverMetastasisOfNeuroendocrinePancreasTumor"/>
-                                                                        <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#noMet"/>
+                                                                        <swrl:argument1 rdf:resource="urn:swrl#noMet"/>
                                                                     </rdf:Description>
                                                                 </rdf:first>
                                                                 <rdf:rest>
@@ -658,8 +665,8 @@
                                                                             <rdf:Description>
                                                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                                                                                 <swrl:propertyPredicate rdf:resource="http://purl.org/biotop/btl2.owl#isIncludedIn"/>
-                                                                                <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#z"/>
-                                                                                <swrl:argument2 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#endo"/>
+                                                                                <swrl:argument1 rdf:resource="urn:swrl#z"/>
+                                                                                <swrl:argument2 rdf:resource="urn:swrl#endo"/>
                                                                             </rdf:Description>
                                                                         </rdf:first>
                                                                         <rdf:rest>
@@ -668,8 +675,8 @@
                                                                                 <rdf:first>
                                                                                     <rdf:Description>
                                                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                                                                        <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O.owl#AnatomicalStructureAssessedForMalignancy"/>
-                                                                                        <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#y"/>
+                                                                                        <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O.owl#AnatomicalStructure"/>
+                                                                                        <swrl:argument1 rdf:resource="urn:swrl#y"/>
                                                                                     </rdf:Description>
                                                                                 </rdf:first>
                                                                                 <rdf:rest>
@@ -679,8 +686,8 @@
                                                                                             <rdf:Description>
                                                                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                                                                                                 <swrl:propertyPredicate rdf:resource="http://purl.org/biotop/btl2.owl#hasPart"/>
-                                                                                                <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#y"/>
-                                                                                                <swrl:argument2 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#z"/>
+                                                                                                <swrl:argument1 rdf:resource="urn:swrl#y"/>
+                                                                                                <swrl:argument2 rdf:resource="urn:swrl#z"/>
                                                                                             </rdf:Description>
                                                                                         </rdf:first>
                                                                                         <rdf:rest>
@@ -690,7 +697,7 @@
                                                                                                     <rdf:Description>
                                                                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
                                                                                                         <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#SetOfPancreaticIslets"/>
-                                                                                                        <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#endo"/>
+                                                                                                        <swrl:argument1 rdf:resource="urn:swrl#endo"/>
                                                                                                     </rdf:Description>
                                                                                                 </rdf:first>
                                                                                                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -723,7 +730,7 @@
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
                         <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasTumorWithDistantMetastasisInOtherOrganThanLiver"/>
-                        <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#x"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -742,8 +749,8 @@
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                         <swrl:propertyPredicate rdf:resource="http://purl.org/biotop/btl2.owl#isPartOf"/>
-                        <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#x"/>
-                        <swrl:argument2 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#y"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#y"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -753,7 +760,7 @@
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
                                 <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumorWithDistantMetastasis"/>
-                                <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#x"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#x"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -763,7 +770,7 @@
                                     <rdf:Description>
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
                                         <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O.owl#PrimaryTumorSiteAssessedForMalignancy"/>
-                                        <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#z"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#z"/>
                                     </rdf:Description>
                                 </rdf:first>
                                 <rdf:rest>
@@ -772,8 +779,8 @@
                                         <rdf:first>
                                             <rdf:Description>
                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                                <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O.owl#AnatomicalStructureAssessedForMalignancy"/>
-                                                <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#y"/>
+                                                <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O.owl#AnatomicalStructure"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl#y"/>
                                             </rdf:Description>
                                         </rdf:first>
                                         <rdf:rest>
@@ -783,8 +790,8 @@
                                                     <rdf:Description>
                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                                                         <swrl:propertyPredicate rdf:resource="http://purl.org/biotop/btl2.owl#hasPart"/>
-                                                        <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#y"/>
-                                                        <swrl:argument2 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#z"/>
+                                                        <swrl:argument1 rdf:resource="urn:swrl#y"/>
+                                                        <swrl:argument2 rdf:resource="urn:swrl#z"/>
                                                     </rdf:Description>
                                                 </rdf:first>
                                                 <rdf:rest>
@@ -794,7 +801,7 @@
                                                             <rdf:Description>
                                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
                                                                 <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#ExocrinePancreas"/>
-                                                                <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#exo"/>
+                                                                <swrl:argument1 rdf:resource="urn:swrl#exo"/>
                                                             </rdf:Description>
                                                         </rdf:first>
                                                         <rdf:rest>
@@ -804,8 +811,8 @@
                                                                     <rdf:Description>
                                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                                                                         <swrl:propertyPredicate rdf:resource="http://purl.org/biotop/btl2.owl#isIncludedIn"/>
-                                                                        <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#z"/>
-                                                                        <swrl:argument2 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#exo"/>
+                                                                        <swrl:argument1 rdf:resource="urn:swrl#z"/>
+                                                                        <swrl:argument2 rdf:resource="urn:swrl#exo"/>
                                                                     </rdf:Description>
                                                                 </rdf:first>
                                                                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -830,7 +837,114 @@
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
                         <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#ExocrinePancreasTumorWithDistantMetastasis"/>
-                        <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#x"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cNX_TNM7_to_8exo</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumorWithNoAssessmentOfRegionalLymphNodes"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://purl.org/biotop/btl2.owl#isPartOf"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                                <swrl:argument2 rdf:resource="urn:swrl#y"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasStructureAssessedForMalignancy"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#z"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O.owl#AnatomicalStructure"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl#y"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://purl.org/biotop/btl2.owl#hasPart"/>
+                                                        <swrl:argument1 rdf:resource="urn:swrl#y"/>
+                                                        <swrl:argument2 rdf:resource="urn:swrl#z"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                                <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#ExocrinePancreas"/>
+                                                                <swrl:argument1 rdf:resource="urn:swrl#exo"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                <rdf:first>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                        <swrl:propertyPredicate rdf:resource="http://purl.org/biotop/btl2.owl#isIncludedIn"/>
+                                                                        <swrl:argument1 rdf:resource="urn:swrl#z"/>
+                                                                        <swrl:argument2 rdf:resource="urn:swrl#exo"/>
+                                                                    </rdf:Description>
+                                                                </rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#ExocrinePancreasTumorWithNoAssessmentOfRegionalLymphNodes"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -849,8 +963,8 @@
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                         <swrl:propertyPredicate rdf:resource="http://purl.org/biotop/btl2.owl#isPartOf"/>
-                        <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#x"/>
-                        <swrl:argument2 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#y"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#y"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -860,7 +974,7 @@
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
                                 <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasStructureAssessedForMalignancy"/>
-                                <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#z"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#z"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -869,8 +983,8 @@
                                 <rdf:first>
                                     <rdf:Description>
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                        <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O.owl#AnatomicalStructureAssessedForMalignancy"/>
-                                        <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#y"/>
+                                        <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O.owl#AnatomicalStructure"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#y"/>
                                     </rdf:Description>
                                 </rdf:first>
                                 <rdf:rest>
@@ -880,7 +994,7 @@
                                             <rdf:Description>
                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
                                                 <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumorWithoutDistantMetastasis"/>
-                                                <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#x"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl#x"/>
                                             </rdf:Description>
                                         </rdf:first>
                                         <rdf:rest>
@@ -890,8 +1004,8 @@
                                                     <rdf:Description>
                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                                                         <swrl:propertyPredicate rdf:resource="http://purl.org/biotop/btl2.owl#hasPart"/>
-                                                        <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#y"/>
-                                                        <swrl:argument2 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#z"/>
+                                                        <swrl:argument1 rdf:resource="urn:swrl#y"/>
+                                                        <swrl:argument2 rdf:resource="urn:swrl#z"/>
                                                     </rdf:Description>
                                                 </rdf:first>
                                                 <rdf:rest>
@@ -901,7 +1015,7 @@
                                                             <rdf:Description>
                                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
                                                                 <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#ExocrinePancreas"/>
-                                                                <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#exo"/>
+                                                                <swrl:argument1 rdf:resource="urn:swrl#exo"/>
                                                             </rdf:Description>
                                                         </rdf:first>
                                                         <rdf:rest>
@@ -911,8 +1025,8 @@
                                                                     <rdf:Description>
                                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                                                                         <swrl:propertyPredicate rdf:resource="http://purl.org/biotop/btl2.owl#isIncludedIn"/>
-                                                                        <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#z"/>
-                                                                        <swrl:argument2 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#exo"/>
+                                                                        <swrl:argument1 rdf:resource="urn:swrl#z"/>
+                                                                        <swrl:argument2 rdf:resource="urn:swrl#exo"/>
                                                                     </rdf:Description>
                                                                 </rdf:first>
                                                                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -937,7 +1051,7 @@
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
                         <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#ExocrinePancreasTumorWithoutDistantMetastasis"/>
-                        <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#x"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -956,7 +1070,7 @@
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
                         <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumorWithoutMetastaticRegionalLymphNodes"/>
-                        <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#x"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -966,8 +1080,8 @@
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                                 <swrl:propertyPredicate rdf:resource="http://purl.org/biotop/btl2.owl#isPartOf"/>
-                                <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#x"/>
-                                <swrl:argument2 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#y"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                                <swrl:argument2 rdf:resource="urn:swrl#y"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -977,7 +1091,7 @@
                                     <rdf:Description>
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
                                         <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasStructureAssessedForMalignancy"/>
-                                        <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#z"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#z"/>
                                     </rdf:Description>
                                 </rdf:first>
                                 <rdf:rest>
@@ -986,8 +1100,8 @@
                                         <rdf:first>
                                             <rdf:Description>
                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                                <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O.owl#AnatomicalStructureAssessedForMalignancy"/>
-                                                <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#y"/>
+                                                <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O.owl#AnatomicalStructure"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl#y"/>
                                             </rdf:Description>
                                         </rdf:first>
                                         <rdf:rest>
@@ -997,8 +1111,8 @@
                                                     <rdf:Description>
                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                                                         <swrl:propertyPredicate rdf:resource="http://purl.org/biotop/btl2.owl#hasPart"/>
-                                                        <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#y"/>
-                                                        <swrl:argument2 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#z"/>
+                                                        <swrl:argument1 rdf:resource="urn:swrl#y"/>
+                                                        <swrl:argument2 rdf:resource="urn:swrl#z"/>
                                                     </rdf:Description>
                                                 </rdf:first>
                                                 <rdf:rest>
@@ -1008,7 +1122,7 @@
                                                             <rdf:Description>
                                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
                                                                 <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#ExocrinePancreas"/>
-                                                                <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#exo"/>
+                                                                <swrl:argument1 rdf:resource="urn:swrl#exo"/>
                                                             </rdf:Description>
                                                         </rdf:first>
                                                         <rdf:rest>
@@ -1018,8 +1132,8 @@
                                                                     <rdf:Description>
                                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                                                                         <swrl:propertyPredicate rdf:resource="http://purl.org/biotop/btl2.owl#isIncludedIn"/>
-                                                                        <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#z"/>
-                                                                        <swrl:argument2 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#exo"/>
+                                                                        <swrl:argument1 rdf:resource="urn:swrl#z"/>
+                                                                        <swrl:argument2 rdf:resource="urn:swrl#exo"/>
                                                                     </rdf:Description>
                                                                 </rdf:first>
                                                                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -1044,7 +1158,7 @@
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
                         <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#ExocrinePancreasTumorWithoutMetastaticRegionalLymphNodes"/>
-                        <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#x"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -1063,8 +1177,8 @@
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                         <swrl:propertyPredicate rdf:resource="http://purl.org/biotop/btl2.owl#isPartOf"/>
-                        <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#x"/>
-                        <swrl:argument2 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#y"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#y"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -1074,7 +1188,7 @@
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
                                 <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumorWithDistantMetastasis"/>
-                                <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#x"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#x"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -1084,7 +1198,7 @@
                                     <rdf:Description>
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
                                         <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasStructureAssessedForMalignancy"/>
-                                        <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#z"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#z"/>
                                     </rdf:Description>
                                 </rdf:first>
                                 <rdf:rest>
@@ -1094,8 +1208,8 @@
                                             <rdf:Description>
                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                                                 <swrl:propertyPredicate rdf:resource="http://purl.org/biotop/btl2.owl#isIncludedIn"/>
-                                                <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#z"/>
-                                                <swrl:argument2 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#endo"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl#z"/>
+                                                <swrl:argument2 rdf:resource="urn:swrl#endo"/>
                                             </rdf:Description>
                                         </rdf:first>
                                         <rdf:rest>
@@ -1105,7 +1219,7 @@
                                                     <rdf:Description>
                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
                                                         <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#OtherThanLiverMetastasisOfNeuroendocrinePancreasTumor"/>
-                                                        <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#met2"/>
+                                                        <swrl:argument1 rdf:resource="urn:swrl#met2"/>
                                                     </rdf:Description>
                                                 </rdf:first>
                                                 <rdf:rest>
@@ -1114,8 +1228,8 @@
                                                         <rdf:first>
                                                             <rdf:Description>
                                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                                                <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O.owl#AnatomicalStructureAssessedForMalignancy"/>
-                                                                <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#y"/>
+                                                                <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O.owl#AnatomicalStructure"/>
+                                                                <swrl:argument1 rdf:resource="urn:swrl#y"/>
                                                             </rdf:Description>
                                                         </rdf:first>
                                                         <rdf:rest>
@@ -1125,8 +1239,8 @@
                                                                     <rdf:Description>
                                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                                                                         <swrl:propertyPredicate rdf:resource="http://purl.org/biotop/btl2.owl#hasPart"/>
-                                                                        <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#y"/>
-                                                                        <swrl:argument2 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#z"/>
+                                                                        <swrl:argument1 rdf:resource="urn:swrl#y"/>
+                                                                        <swrl:argument2 rdf:resource="urn:swrl#z"/>
                                                                     </rdf:Description>
                                                                 </rdf:first>
                                                                 <rdf:rest>
@@ -1136,8 +1250,8 @@
                                                                             <rdf:Description>
                                                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                                                                                 <swrl:propertyPredicate rdf:resource="http://purl.org/biotop/btl2.owl#hasPart"/>
-                                                                                <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#x"/>
-                                                                                <swrl:argument2 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#met1"/>
+                                                                                <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                                                                                <swrl:argument2 rdf:resource="urn:swrl#met1"/>
                                                                             </rdf:Description>
                                                                         </rdf:first>
                                                                         <rdf:rest>
@@ -1147,7 +1261,7 @@
                                                                                     <rdf:Description>
                                                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
                                                                                         <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#SetOfPancreaticIslets"/>
-                                                                                        <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#endo"/>
+                                                                                        <swrl:argument1 rdf:resource="urn:swrl#endo"/>
                                                                                     </rdf:Description>
                                                                                 </rdf:first>
                                                                                 <rdf:rest>
@@ -1157,7 +1271,7 @@
                                                                                             <rdf:Description>
                                                                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
                                                                                                 <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#LiverMetastasisOfNeuroendocrinePancreasTumor"/>
-                                                                                                <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#met1"/>
+                                                                                                <swrl:argument1 rdf:resource="urn:swrl#met1"/>
                                                                                             </rdf:Description>
                                                                                         </rdf:first>
                                                                                         <rdf:rest>
@@ -1167,8 +1281,8 @@
                                                                                                     <rdf:Description>
                                                                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                                                                                                         <swrl:propertyPredicate rdf:resource="http://purl.org/biotop/btl2.owl#hasPart"/>
-                                                                                                        <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#x"/>
-                                                                                                        <swrl:argument2 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#met2"/>
+                                                                                                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                                                                                                        <swrl:argument2 rdf:resource="urn:swrl#met2"/>
                                                                                                     </rdf:Description>
                                                                                                 </rdf:first>
                                                                                                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -1201,7 +1315,7 @@
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
                         <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasTumorWithDistantMetastasisInLiverAndInOtherOrgan"/>
-                        <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#x"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -1220,8 +1334,8 @@
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                         <swrl:propertyPredicate rdf:resource="http://purl.org/biotop/btl2.owl#isPartOf"/>
-                        <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#x"/>
-                        <swrl:argument2 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#y"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#y"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -1231,7 +1345,7 @@
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
                                 <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumorWithDistantMetastasis"/>
-                                <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#x"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#x"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -1241,7 +1355,7 @@
                                     <rdf:Description>
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
                                         <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasStructureAssessedForMalignancy"/>
-                                        <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#z"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#z"/>
                                     </rdf:Description>
                                 </rdf:first>
                                 <rdf:rest>
@@ -1251,8 +1365,8 @@
                                             <rdf:Description>
                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                                                 <swrl:propertyPredicate rdf:resource="http://purl.org/biotop/btl2.owl#isIncludedIn"/>
-                                                <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#z"/>
-                                                <swrl:argument2 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#endo"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl#z"/>
+                                                <swrl:argument2 rdf:resource="urn:swrl#endo"/>
                                             </rdf:Description>
                                         </rdf:first>
                                         <rdf:rest>
@@ -1261,8 +1375,8 @@
                                                 <rdf:first>
                                                     <rdf:Description>
                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                                        <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O.owl#AnatomicalStructureAssessedForMalignancy"/>
-                                                        <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#y"/>
+                                                        <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O.owl#AnatomicalStructure"/>
+                                                        <swrl:argument1 rdf:resource="urn:swrl#y"/>
                                                     </rdf:Description>
                                                 </rdf:first>
                                                 <rdf:rest>
@@ -1272,8 +1386,8 @@
                                                             <rdf:Description>
                                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                                                                 <swrl:propertyPredicate rdf:resource="http://purl.org/biotop/btl2.owl#hasPart"/>
-                                                                <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#y"/>
-                                                                <swrl:argument2 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#z"/>
+                                                                <swrl:argument1 rdf:resource="urn:swrl#y"/>
+                                                                <swrl:argument2 rdf:resource="urn:swrl#z"/>
                                                             </rdf:Description>
                                                         </rdf:first>
                                                         <rdf:rest>
@@ -1283,7 +1397,7 @@
                                                                     <rdf:Description>
                                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
                                                                         <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#SetOfPancreaticIslets"/>
-                                                                        <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#endo"/>
+                                                                        <swrl:argument1 rdf:resource="urn:swrl#endo"/>
                                                                     </rdf:Description>
                                                                 </rdf:first>
                                                                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -1308,7 +1422,7 @@
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
                         <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasTumorWithDistantMetastasis"/>
-                        <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#x"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -1327,8 +1441,8 @@
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                         <swrl:propertyPredicate rdf:resource="http://purl.org/biotop/btl2.owl#isPartOf"/>
-                        <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#x"/>
-                        <swrl:argument2 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#y"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#y"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -1338,7 +1452,7 @@
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
                                 <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasStructureAssessedForMalignancy"/>
-                                <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#z"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#z"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -1348,8 +1462,8 @@
                                     <rdf:Description>
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                                         <swrl:propertyPredicate rdf:resource="http://purl.org/biotop/btl2.owl#isIncludedIn"/>
-                                        <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#z"/>
-                                        <swrl:argument2 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#endo"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#z"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl#endo"/>
                                     </rdf:Description>
                                 </rdf:first>
                                 <rdf:rest>
@@ -1358,8 +1472,8 @@
                                         <rdf:first>
                                             <rdf:Description>
                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                                <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O.owl#AnatomicalStructureAssessedForMalignancy"/>
-                                                <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#y"/>
+                                                <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O.owl#AnatomicalStructure"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl#y"/>
                                             </rdf:Description>
                                         </rdf:first>
                                         <rdf:rest>
@@ -1369,7 +1483,7 @@
                                                     <rdf:Description>
                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
                                                         <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumorWithMetastaticRegionalLymphNodes"/>
-                                                        <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#x"/>
+                                                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
                                                     </rdf:Description>
                                                 </rdf:first>
                                                 <rdf:rest>
@@ -1379,8 +1493,8 @@
                                                             <rdf:Description>
                                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                                                                 <swrl:propertyPredicate rdf:resource="http://purl.org/biotop/btl2.owl#hasPart"/>
-                                                                <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#y"/>
-                                                                <swrl:argument2 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#z"/>
+                                                                <swrl:argument1 rdf:resource="urn:swrl#y"/>
+                                                                <swrl:argument2 rdf:resource="urn:swrl#z"/>
                                                             </rdf:Description>
                                                         </rdf:first>
                                                         <rdf:rest>
@@ -1390,7 +1504,7 @@
                                                                     <rdf:Description>
                                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
                                                                         <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#SetOfPancreaticIslets"/>
-                                                                        <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#endo"/>
+                                                                        <swrl:argument1 rdf:resource="urn:swrl#endo"/>
                                                                     </rdf:Description>
                                                                 </rdf:first>
                                                                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -1415,221 +1529,7 @@
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
                         <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasTumorWithMetastaticRegionalLymphNodes"/>
-                        <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#x"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-            </rdf:Description>
-        </swrl:head>
-    </rdf:Description>
-    <rdf:Description>
-        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cM0_TNM7_to_8endo</rdfs:label>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://purl.org/biotop/btl2.owl#isPartOf"/>
-                        <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#x"/>
-                        <swrl:argument2 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#y"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasStructureAssessedForMalignancy"/>
-                                <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#z"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                <rdf:first>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                        <swrl:propertyPredicate rdf:resource="http://purl.org/biotop/btl2.owl#isIncludedIn"/>
-                                        <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#z"/>
-                                        <swrl:argument2 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#endo"/>
-                                    </rdf:Description>
-                                </rdf:first>
-                                <rdf:rest>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                        <rdf:first>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                                <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O.owl#AnatomicalStructureAssessedForMalignancy"/>
-                                                <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#y"/>
-                                            </rdf:Description>
-                                        </rdf:first>
-                                        <rdf:rest>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                                <rdf:first>
-                                                    <rdf:Description>
-                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                                        <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumorWithoutDistantMetastasis"/>
-                                                        <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#x"/>
-                                                    </rdf:Description>
-                                                </rdf:first>
-                                                <rdf:rest>
-                                                    <rdf:Description>
-                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                                        <rdf:first>
-                                                            <rdf:Description>
-                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                                <swrl:propertyPredicate rdf:resource="http://purl.org/biotop/btl2.owl#hasPart"/>
-                                                                <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#y"/>
-                                                                <swrl:argument2 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#z"/>
-                                                            </rdf:Description>
-                                                        </rdf:first>
-                                                        <rdf:rest>
-                                                            <rdf:Description>
-                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                                                <rdf:first>
-                                                                    <rdf:Description>
-                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                                                        <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#SetOfPancreaticIslets"/>
-                                                                        <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#endo"/>
-                                                                    </rdf:Description>
-                                                                </rdf:first>
-                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                                            </rdf:Description>
-                                                        </rdf:rest>
-                                                    </rdf:Description>
-                                                </rdf:rest>
-                                            </rdf:Description>
-                                        </rdf:rest>
-                                    </rdf:Description>
-                                </rdf:rest>
-                            </rdf:Description>
-                        </rdf:rest>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasTumorWithoutDistantMetastasis"/>
-                        <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#x"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-            </rdf:Description>
-        </swrl:head>
-    </rdf:Description>
-    <rdf:Description>
-        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cN0_TNM7_to_8endo</rdfs:label>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumorWithoutMetastaticRegionalLymphNodes"/>
-                        <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#x"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="http://purl.org/biotop/btl2.owl#isPartOf"/>
-                                <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#x"/>
-                                <swrl:argument2 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#y"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                <rdf:first>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                        <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasStructureAssessedForMalignancy"/>
-                                        <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#z"/>
-                                    </rdf:Description>
-                                </rdf:first>
-                                <rdf:rest>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                        <rdf:first>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                <swrl:propertyPredicate rdf:resource="http://purl.org/biotop/btl2.owl#isIncludedIn"/>
-                                                <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#z"/>
-                                                <swrl:argument2 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#endo"/>
-                                            </rdf:Description>
-                                        </rdf:first>
-                                        <rdf:rest>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                                <rdf:first>
-                                                    <rdf:Description>
-                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                                        <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O.owl#AnatomicalStructureAssessedForMalignancy"/>
-                                                        <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#y"/>
-                                                    </rdf:Description>
-                                                </rdf:first>
-                                                <rdf:rest>
-                                                    <rdf:Description>
-                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                                        <rdf:first>
-                                                            <rdf:Description>
-                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                                <swrl:propertyPredicate rdf:resource="http://purl.org/biotop/btl2.owl#hasPart"/>
-                                                                <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#y"/>
-                                                                <swrl:argument2 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#z"/>
-                                                            </rdf:Description>
-                                                        </rdf:first>
-                                                        <rdf:rest>
-                                                            <rdf:Description>
-                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                                                <rdf:first>
-                                                                    <rdf:Description>
-                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                                                        <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#SetOfPancreaticIslets"/>
-                                                                        <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#endo"/>
-                                                                    </rdf:Description>
-                                                                </rdf:first>
-                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                                            </rdf:Description>
-                                                        </rdf:rest>
-                                                    </rdf:Description>
-                                                </rdf:rest>
-                                            </rdf:Description>
-                                        </rdf:rest>
-                                    </rdf:Description>
-                                </rdf:rest>
-                            </rdf:Description>
-                        </rdf:rest>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasTumorWithoutMetastaticRegionalLymphNodes"/>
-                        <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#x"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -1648,8 +1548,8 @@
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                         <swrl:propertyPredicate rdf:resource="http://purl.org/biotop/btl2.owl#isPartOf"/>
-                        <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#x"/>
-                        <swrl:argument2 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#y"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#y"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -1659,7 +1559,7 @@
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
                                 <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasStructureAssessedForMalignancy"/>
-                                <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#z"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#z"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -1669,8 +1569,8 @@
                                     <rdf:Description>
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                                         <swrl:propertyPredicate rdf:resource="http://purl.org/biotop/btl2.owl#isIncludedIn"/>
-                                        <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#z"/>
-                                        <swrl:argument2 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#endo"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#z"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl#endo"/>
                                     </rdf:Description>
                                 </rdf:first>
                                 <rdf:rest>
@@ -1679,8 +1579,8 @@
                                         <rdf:first>
                                             <rdf:Description>
                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                                <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O.owl#MalignantAnatomicalStructure"/>
-                                                <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#y"/>
+                                                <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O.owl#AnatomicalStructure"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl#y"/>
                                             </rdf:Description>
                                         </rdf:first>
                                         <rdf:rest>
@@ -1690,8 +1590,8 @@
                                                     <rdf:Description>
                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                                                         <swrl:propertyPredicate rdf:resource="http://purl.org/biotop/btl2.owl#hasPart"/>
-                                                        <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#y"/>
-                                                        <swrl:argument2 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#z"/>
+                                                        <swrl:argument1 rdf:resource="urn:swrl#y"/>
+                                                        <swrl:argument2 rdf:resource="urn:swrl#z"/>
                                                     </rdf:Description>
                                                 </rdf:first>
                                                 <rdf:rest>
@@ -1701,7 +1601,7 @@
                                                             <rdf:Description>
                                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
                                                                 <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumorWithNoAssessmentOfRegionalLymphNodes"/>
-                                                                <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#x"/>
+                                                                <swrl:argument1 rdf:resource="urn:swrl#x"/>
                                                             </rdf:Description>
                                                         </rdf:first>
                                                         <rdf:rest>
@@ -1711,7 +1611,7 @@
                                                                     <rdf:Description>
                                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
                                                                         <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#SetOfPancreaticIslets"/>
-                                                                        <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#endo"/>
+                                                                        <swrl:argument1 rdf:resource="urn:swrl#endo"/>
                                                                     </rdf:Description>
                                                                 </rdf:first>
                                                                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -1736,7 +1636,114 @@
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
                         <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasTumorWithNoAssessmentOfRegionalLymphNodes"/>
-                        <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#x"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cM0_TNM7_to_8endo</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://purl.org/biotop/btl2.owl#isPartOf"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#y"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasStructureAssessedForMalignancy"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#z"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://purl.org/biotop/btl2.owl#isIncludedIn"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#z"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl#endo"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O.owl#AnatomicalStructure"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl#y"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                        <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumorWithoutDistantMetastasis"/>
+                                                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                <swrl:propertyPredicate rdf:resource="http://purl.org/biotop/btl2.owl#hasPart"/>
+                                                                <swrl:argument1 rdf:resource="urn:swrl#y"/>
+                                                                <swrl:argument2 rdf:resource="urn:swrl#z"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                <rdf:first>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                                        <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#SetOfPancreaticIslets"/>
+                                                                        <swrl:argument1 rdf:resource="urn:swrl#endo"/>
+                                                                    </rdf:Description>
+                                                                </rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasTumorWithoutDistantMetastasis"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -1755,8 +1762,8 @@
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                         <swrl:propertyPredicate rdf:resource="http://purl.org/biotop/btl2.owl#isPartOf"/>
-                        <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#x"/>
-                        <swrl:argument2 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#y"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#y"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -1766,7 +1773,7 @@
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
                                 <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumorWithDistantMetastasis"/>
-                                <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#x"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#x"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -1776,7 +1783,7 @@
                                     <rdf:Description>
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
                                         <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasStructureAssessedForMalignancy"/>
-                                        <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#z"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#z"/>
                                     </rdf:Description>
                                 </rdf:first>
                                 <rdf:rest>
@@ -1786,8 +1793,8 @@
                                             <rdf:Description>
                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                                                 <swrl:propertyPredicate rdf:resource="http://purl.org/biotop/btl2.owl#hasPart"/>
-                                                <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#x"/>
-                                                <swrl:argument2 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#met"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                                                <swrl:argument2 rdf:resource="urn:swrl#met"/>
                                             </rdf:Description>
                                         </rdf:first>
                                         <rdf:rest>
@@ -1797,8 +1804,8 @@
                                                     <rdf:Description>
                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                                                         <swrl:propertyPredicate rdf:resource="http://purl.org/biotop/btl2.owl#isIncludedIn"/>
-                                                        <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#z"/>
-                                                        <swrl:argument2 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#endo"/>
+                                                        <swrl:argument1 rdf:resource="urn:swrl#z"/>
+                                                        <swrl:argument2 rdf:resource="urn:swrl#endo"/>
                                                     </rdf:Description>
                                                 </rdf:first>
                                                 <rdf:rest>
@@ -1808,7 +1815,7 @@
                                                             <rdf:Description>
                                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
                                                                 <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#LiverMetastasisOfNeuroendocrinePancreasTumor"/>
-                                                                <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#met"/>
+                                                                <swrl:argument1 rdf:resource="urn:swrl#met"/>
                                                             </rdf:Description>
                                                         </rdf:first>
                                                         <rdf:rest>
@@ -1817,8 +1824,8 @@
                                                                 <rdf:first>
                                                                     <rdf:Description>
                                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                                                        <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O.owl#AnatomicalStructureAssessedForMalignancy"/>
-                                                                        <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#y"/>
+                                                                        <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O.owl#AnatomicalStructure"/>
+                                                                        <swrl:argument1 rdf:resource="urn:swrl#y"/>
                                                                     </rdf:Description>
                                                                 </rdf:first>
                                                                 <rdf:rest>
@@ -1828,8 +1835,8 @@
                                                                             <rdf:Description>
                                                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                                                                                 <swrl:propertyPredicate rdf:resource="http://purl.org/biotop/btl2.owl#hasPart"/>
-                                                                                <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#x"/>
-                                                                                <swrl:argument2 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#noMeta"/>
+                                                                                <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                                                                                <swrl:argument2 rdf:resource="urn:swrl#noMeta"/>
                                                                             </rdf:Description>
                                                                         </rdf:first>
                                                                         <rdf:rest>
@@ -1839,8 +1846,8 @@
                                                                                     <rdf:Description>
                                                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                                                                                         <swrl:propertyPredicate rdf:resource="http://purl.org/biotop/btl2.owl#hasPart"/>
-                                                                                        <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#y"/>
-                                                                                        <swrl:argument2 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#z"/>
+                                                                                        <swrl:argument1 rdf:resource="urn:swrl#y"/>
+                                                                                        <swrl:argument2 rdf:resource="urn:swrl#z"/>
                                                                                     </rdf:Description>
                                                                                 </rdf:first>
                                                                                 <rdf:rest>
@@ -1850,7 +1857,7 @@
                                                                                             <rdf:Description>
                                                                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
                                                                                                 <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#SetOfPancreaticIslets"/>
-                                                                                                <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#endo"/>
+                                                                                                <swrl:argument1 rdf:resource="urn:swrl#endo"/>
                                                                                             </rdf:Description>
                                                                                         </rdf:first>
                                                                                         <rdf:rest>
@@ -1860,7 +1867,7 @@
                                                                                                     <rdf:Description>
                                                                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
                                                                                                         <swrl:classPredicate rdf:resource="http://purl.org/tnmo/PancreasSWRL_7to8.owl#NoOtherThanLiverMetastasisOfNeuroendocrinePancreasTumor"/>
-                                                                                                        <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#noMeta"/>
+                                                                                                        <swrl:argument1 rdf:resource="urn:swrl#noMeta"/>
                                                                                                     </rdf:Description>
                                                                                                 </rdf:first>
                                                                                                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -1893,7 +1900,114 @@
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
                         <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasTumorWithDistantMetastasisInLiverOnly"/>
-                        <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#x"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cN0_TNM7_to_8endo</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumorWithoutMetastaticRegionalLymphNodes"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://purl.org/biotop/btl2.owl#isPartOf"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                                <swrl:argument2 rdf:resource="urn:swrl#y"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasStructureAssessedForMalignancy"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#z"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://purl.org/biotop/btl2.owl#isIncludedIn"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl#z"/>
+                                                <swrl:argument2 rdf:resource="urn:swrl#endo"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                        <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O.owl#AnatomicalStructure"/>
+                                                        <swrl:argument1 rdf:resource="urn:swrl#y"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                <swrl:propertyPredicate rdf:resource="http://purl.org/biotop/btl2.owl#hasPart"/>
+                                                                <swrl:argument1 rdf:resource="urn:swrl#y"/>
+                                                                <swrl:argument2 rdf:resource="urn:swrl#z"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                <rdf:first>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                                        <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#SetOfPancreaticIslets"/>
+                                                                        <swrl:argument1 rdf:resource="urn:swrl#endo"/>
+                                                                    </rdf:Description>
+                                                                </rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_8neuroendocrine.owl#NeuroendocrinePancreasTumorWithoutMetastaticRegionalLymphNodes"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -3384,6 +3498,163 @@
     <rdf:Description>
         <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cN1_and3LK_TNM7_to_8exo</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://purl.org/biotop/btl2.owl#isBearerOf"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#card"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://purl.org/biotop/btl2.owl#isPartOf"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                                <swrl:argument2 rdf:resource="urn:swrl#y"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasStructureAssessedForMalignancy"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#z"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to3"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl#cardvalue"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                        <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O.owl#AnatomicalStructure"/>
+                                                        <swrl:argument1 rdf:resource="urn:swrl#y"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                                <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality"/>
+                                                                <swrl:argument1 rdf:resource="urn:swrl#card"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                <rdf:first>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                                        <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumorWithMetastaticRegionalLymphNodes"/>
+                                                                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                                                                    </rdf:Description>
+                                                                </rdf:first>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                        <rdf:first>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                <swrl:propertyPredicate rdf:resource="http://purl.org/biotop/btl2.owl#hasPart"/>
+                                                                                <swrl:argument1 rdf:resource="urn:swrl#y"/>
+                                                                                <swrl:argument2 rdf:resource="urn:swrl#z"/>
+                                                                            </rdf:Description>
+                                                                        </rdf:first>
+                                                                        <rdf:rest>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                <rdf:first>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                        <swrl:propertyPredicate rdf:resource="http://purl.org/biotop/btl2.owl#projectsOnto"/>
+                                                                                        <swrl:argument1 rdf:resource="urn:swrl#card"/>
+                                                                                        <swrl:argument2 rdf:resource="urn:swrl#cardvalue"/>
+                                                                                    </rdf:Description>
+                                                                                </rdf:first>
+                                                                                <rdf:rest>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                        <rdf:first>
+                                                                                            <rdf:Description>
+                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                                                                <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#ExocrinePancreas"/>
+                                                                                                <swrl:argument1 rdf:resource="urn:swrl#exo"/>
+                                                                                            </rdf:Description>
+                                                                                        </rdf:first>
+                                                                                        <rdf:rest>
+                                                                                            <rdf:Description>
+                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                <rdf:first>
+                                                                                                    <rdf:Description>
+                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                                        <swrl:propertyPredicate rdf:resource="http://purl.org/biotop/btl2.owl#isIncludedIn"/>
+                                                                                                        <swrl:argument1 rdf:resource="urn:swrl#z"/>
+                                                                                                        <swrl:argument2 rdf:resource="urn:swrl#exo"/>
+                                                                                                    </rdf:Description>
+                                                                                                </rdf:first>
+                                                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                                            </rdf:Description>
+                                                                                        </rdf:rest>
+                                                                                    </rdf:Description>
+                                                                                </rdf:rest>
+                                                                            </rdf:Description>
+                                                                        </rdf:rest>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#ExocrinePancreasTumorWith1to3MetastaticRegionalLymphNodes"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cT1_andSize05_TNM7_to_8exo</rdfs:label>
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
         <swrl:body>
@@ -3481,163 +3752,6 @@
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
                         <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#ExocrinePancreasTumorMax5mm"/>
-                        <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#x"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-            </rdf:Description>
-        </swrl:head>
-    </rdf:Description>
-    <rdf:Description>
-        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cN1_and3LK_TNM7_to_8exo</rdfs:label>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://purl.org/biotop/btl2.owl#isBearerOf"/>
-                        <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#x"/>
-                        <swrl:argument2 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#card"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="http://purl.org/biotop/btl2.owl#isPartOf"/>
-                                <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#x"/>
-                                <swrl:argument2 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#y"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                <rdf:first>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                        <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasStructureAssessedForMalignancy"/>
-                                        <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#z"/>
-                                    </rdf:Description>
-                                </rdf:first>
-                                <rdf:rest>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                        <rdf:first>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                                <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to3"/>
-                                                <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#cardvalue"/>
-                                            </rdf:Description>
-                                        </rdf:first>
-                                        <rdf:rest>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                                <rdf:first>
-                                                    <rdf:Description>
-                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                                        <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O.owl#AnatomicalStructureAssessedForMalignancy"/>
-                                                        <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#y"/>
-                                                    </rdf:Description>
-                                                </rdf:first>
-                                                <rdf:rest>
-                                                    <rdf:Description>
-                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                                        <rdf:first>
-                                                            <rdf:Description>
-                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                                                <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality"/>
-                                                                <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#card"/>
-                                                            </rdf:Description>
-                                                        </rdf:first>
-                                                        <rdf:rest>
-                                                            <rdf:Description>
-                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                                                <rdf:first>
-                                                                    <rdf:Description>
-                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                                                        <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumorWithMetastaticRegionalLymphNodes"/>
-                                                                        <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#x"/>
-                                                                    </rdf:Description>
-                                                                </rdf:first>
-                                                                <rdf:rest>
-                                                                    <rdf:Description>
-                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                                                        <rdf:first>
-                                                                            <rdf:Description>
-                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                                                <swrl:propertyPredicate rdf:resource="http://purl.org/biotop/btl2.owl#hasPart"/>
-                                                                                <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#y"/>
-                                                                                <swrl:argument2 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#z"/>
-                                                                            </rdf:Description>
-                                                                        </rdf:first>
-                                                                        <rdf:rest>
-                                                                            <rdf:Description>
-                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                                                                <rdf:first>
-                                                                                    <rdf:Description>
-                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                                                        <swrl:propertyPredicate rdf:resource="http://purl.org/biotop/btl2.owl#projectsOnto"/>
-                                                                                        <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#card"/>
-                                                                                        <swrl:argument2 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#cardvalue"/>
-                                                                                    </rdf:Description>
-                                                                                </rdf:first>
-                                                                                <rdf:rest>
-                                                                                    <rdf:Description>
-                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                                                                        <rdf:first>
-                                                                                            <rdf:Description>
-                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                                                                                <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#ExocrinePancreas"/>
-                                                                                                <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#exo"/>
-                                                                                            </rdf:Description>
-                                                                                        </rdf:first>
-                                                                                        <rdf:rest>
-                                                                                            <rdf:Description>
-                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                                                                                <rdf:first>
-                                                                                                    <rdf:Description>
-                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                                                                        <swrl:propertyPredicate rdf:resource="http://purl.org/biotop/btl2.owl#isIncludedIn"/>
-                                                                                                        <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#z"/>
-                                                                                                        <swrl:argument2 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#exo"/>
-                                                                                                    </rdf:Description>
-                                                                                                </rdf:first>
-                                                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                                                                            </rdf:Description>
-                                                                                        </rdf:rest>
-                                                                                    </rdf:Description>
-                                                                                </rdf:rest>
-                                                                            </rdf:Description>
-                                                                        </rdf:rest>
-                                                                    </rdf:Description>
-                                                                </rdf:rest>
-                                                            </rdf:Description>
-                                                        </rdf:rest>
-                                                    </rdf:Description>
-                                                </rdf:rest>
-                                            </rdf:Description>
-                                        </rdf:rest>
-                                    </rdf:Description>
-                                </rdf:rest>
-                            </rdf:Description>
-                        </rdf:rest>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#ExocrinePancreasTumorWith1to3MetastaticRegionalLymphNodes"/>
                         <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#x"/>
                     </rdf:Description>
                 </rdf:first>
@@ -4413,63 +4527,6 @@
     <rdf:Description>
         <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cNX_TNM7_to_8exo</rdfs:label>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumorWithNoAssessmentOfRegionalLymphNodes"/>
-                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#RegionalLymphNodeOfExocrinePancreas"/>
-                                <swrl:argument1 rdf:resource="urn:swrl#exo"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                <rdf:first>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                        <swrl:propertyPredicate rdf:resource="http://purl.org/biotop/btl2.owl#isIncludedIn"/>
-                                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
-                                        <swrl:argument2 rdf:resource="urn:swrl#exo"/>
-                                    </rdf:Description>
-                                </rdf:first>
-                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                            </rdf:Description>
-                        </rdf:rest>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#ExocrinePancreasTumorWithNoAssessmentOfRegionalLymphNodes"/>
-                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-            </rdf:Description>
-        </swrl:head>
-    </rdf:Description>
-    <rdf:Description>
-        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cT1_TNM7_to_8endo</rdfs:label>
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
         <swrl:body>
@@ -4739,8 +4796,8 @@
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                         <swrl:propertyPredicate rdf:resource="http://purl.org/biotop/btl2.owl#isBearerOf"/>
-                        <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#x"/>
-                        <swrl:argument2 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#card"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#card"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -4750,8 +4807,8 @@
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                                 <swrl:propertyPredicate rdf:resource="http://purl.org/biotop/btl2.owl#isPartOf"/>
-                                <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#x"/>
-                                <swrl:argument2 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#y"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                                <swrl:argument2 rdf:resource="urn:swrl#y"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -4761,7 +4818,7 @@
                                     <rdf:Description>
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
                                         <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasStructureAssessedForMalignancy"/>
-                                        <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#z"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#z"/>
                                     </rdf:Description>
                                 </rdf:first>
                                 <rdf:rest>
@@ -4770,8 +4827,8 @@
                                         <rdf:first>
                                             <rdf:Description>
                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                                <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O.owl#AnatomicalStructureAssessedForMalignancy"/>
-                                                <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#y"/>
+                                                <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O.owl#AnatomicalStructure"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl#y"/>
                                             </rdf:Description>
                                         </rdf:first>
                                         <rdf:rest>
@@ -4781,7 +4838,7 @@
                                                     <rdf:Description>
                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
                                                         <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality"/>
-                                                        <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#card"/>
+                                                        <swrl:argument1 rdf:resource="urn:swrl#card"/>
                                                     </rdf:Description>
                                                 </rdf:first>
                                                 <rdf:rest>
@@ -4791,7 +4848,7 @@
                                                             <rdf:Description>
                                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
                                                                 <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumorWithMetastaticRegionalLymphNodes"/>
-                                                                <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#x"/>
+                                                                <swrl:argument1 rdf:resource="urn:swrl#x"/>
                                                             </rdf:Description>
                                                         </rdf:first>
                                                         <rdf:rest>
@@ -4801,8 +4858,8 @@
                                                                     <rdf:Description>
                                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                                                                         <swrl:propertyPredicate rdf:resource="http://purl.org/biotop/btl2.owl#hasPart"/>
-                                                                        <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#y"/>
-                                                                        <swrl:argument2 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#z"/>
+                                                                        <swrl:argument1 rdf:resource="urn:swrl#y"/>
+                                                                        <swrl:argument2 rdf:resource="urn:swrl#z"/>
                                                                     </rdf:Description>
                                                                 </rdf:first>
                                                                 <rdf:rest>
@@ -4812,8 +4869,8 @@
                                                                             <rdf:Description>
                                                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                                                                                 <swrl:propertyPredicate rdf:resource="http://purl.org/biotop/btl2.owl#projectsOnto"/>
-                                                                                <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#card"/>
-                                                                                <swrl:argument2 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#cardvalue"/>
+                                                                                <swrl:argument1 rdf:resource="urn:swrl#card"/>
+                                                                                <swrl:argument2 rdf:resource="urn:swrl#cardvalue"/>
                                                                             </rdf:Description>
                                                                         </rdf:first>
                                                                         <rdf:rest>
@@ -4823,7 +4880,7 @@
                                                                                     <rdf:Description>
                                                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
                                                                                         <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality4orMore"/>
-                                                                                        <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#cardvalue"/>
+                                                                                        <swrl:argument1 rdf:resource="urn:swrl#cardvalue"/>
                                                                                     </rdf:Description>
                                                                                 </rdf:first>
                                                                                 <rdf:rest>
@@ -4833,7 +4890,7 @@
                                                                                             <rdf:Description>
                                                                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
                                                                                                 <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#ExocrinePancreas"/>
-                                                                                                <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#exo"/>
+                                                                                                <swrl:argument1 rdf:resource="urn:swrl#exo"/>
                                                                                             </rdf:Description>
                                                                                         </rdf:first>
                                                                                         <rdf:rest>
@@ -4843,8 +4900,8 @@
                                                                                                     <rdf:Description>
                                                                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                                                                                                         <swrl:propertyPredicate rdf:resource="http://purl.org/biotop/btl2.owl#isIncludedIn"/>
-                                                                                                        <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#z"/>
-                                                                                                        <swrl:argument2 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#exo"/>
+                                                                                                        <swrl:argument1 rdf:resource="urn:swrl#z"/>
+                                                                                                        <swrl:argument2 rdf:resource="urn:swrl#exo"/>
                                                                                                     </rdf:Description>
                                                                                                 </rdf:first>
                                                                                                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -4877,7 +4934,7 @@
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
                         <swrl:classPredicate rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#ExocrinePancreasTumorWith4orMoreMetastaticRegionalLymphNodes"/>
-                        <swrl:argument1 rdf:resource="http://purl.org/tnmo/Pancreas_7to8#x"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>

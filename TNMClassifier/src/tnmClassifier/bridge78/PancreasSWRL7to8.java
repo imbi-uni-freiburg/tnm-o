@@ -353,7 +353,7 @@ public class PancreasSWRL7to8 extends BaseClassifier {
 	 */
 	public void addTumorIsMetastaticStructureOfOrgan(String primarytumorOrgan, OWLNamedIndividual tumor, int i) {
 		OWLDataFactory factory = this.env.getDataFactory();
-		OWLNamedIndividual malignantStructure = addIndividual("AnatomicalStructureAssessedForMalignancy",
+		OWLNamedIndividual malignantStructure = addIndividual("AnatomicalStructure",
 				"MalignantAnatomicalStructure_", i, "TNMO");
 	//	OWLNamedIndividual pancreas = addIndividual("PancreasTumor", "PancreasTumor_", i, "Pancreas7");
 		OWLNamedIndividual pancreas = addIndividual("PancreasStructureAssessedForMalignancy", "PancreasTumor_", i, "Pancreas7");

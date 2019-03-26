@@ -2,7 +2,7 @@
 
 ## The TNM Ontology
 
-This repository is under construction.
+This repository is *under construction*.
 
 *tnm-o* is the abbreviation for the **TNM Ontology**. The TNM Ontology represents the TNM Classification of Malignant Tumours (TNM) in description logic (OWL). For a detailed report on *tnm-o* see: https://jbiomedsem.biomedcentral.com/articles/10.1186/s13326-016-0106-9. 
 
@@ -85,11 +85,10 @@ Start Protégé with the ontology TNM-O (folder TNMO) and import all necessary ont
 Note: the classifier software currently only works with the pancreas ontologies including the re-classification from TNM7 to TNM8.
 CSV-Files with test data are stored  in folder testdata_pancreas_csv.
 
-In order to download and run a demo of the program, execute the following commands:
+In order to download the program, execute the following commands:
 ```
 $ git clone https://github.com/imbi-uni-freiburg/tnm-o.git
-$ cd tnm-o/TNMClassifier
-$ ant demo-TNM8-pancreas
+
 ```
 
 You can run the software on the command line or in eclipse with the parameters listed below:
