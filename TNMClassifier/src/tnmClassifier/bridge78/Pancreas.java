@@ -84,7 +84,7 @@ public class Pancreas extends BaseClassifier {
 		this.tumorEvidencePrimaryTumorColumnHeader = "NoEvidence _PrimT";
 		this.tumorConfinementColumnHeader = "Confinement";
 		this.tumorSizeColumnHeader = "Size";
-		this.tumorInvasiveInSoftTissueColumnHeader = "InvasiveInPeripancreaticSoftTissue";
+		this.tumorInvasiveInSoftTissueColumnHeader = "InvasiveInNonVesselStructuresAdjacentToPancreas";
 		this.tumorInvasiveInTrunkOrMesArtSupColumnHeader = "InvasiveInCeliacTrunkOrSuperiorMesentericArtery";
 		this.tumorInvasiveInComHepArtColumnHeader = "InvasiveInCommonHepaticArtery";
 		this.tumorInvasiveInAnyVesselColumnHeader = "InvasiveInCeliacTrunkOrSuperiorMesentericArteryOrCommonHepaticArtery";
@@ -332,12 +332,12 @@ public class Pancreas extends BaseClassifier {
 		// invasive in Organs
 		List<String> invasiveInOrganList = new ArrayList<String>();
 		if (softTissue.equals("yes")) {
-			invasiveInOrganList.add("PeripancreaticSoftTissue");
+			invasiveInOrganList.add("NonVesselStructuresAdjacentToPancreas");
 			res.add(this.hasPartIsIncludedIn(invasiveInOrganList));
 		} else {
 			if (softTissue.equals("unknown")) {
 				invasiveInOrganList.add(organ);
-				invasiveInOrganList.add("PeripancreaticSoftTissue");
+				invasiveInOrganList.add("NonVesselStructuresAdjacentToPancreas");
 				res.add(this.hasPartIsIncludedIn(invasiveInOrganList));
 			}
 		}
@@ -376,7 +376,7 @@ public class Pancreas extends BaseClassifier {
 			List<String> andNotorganlist = new ArrayList<String>();
 			andNotorganlist.add("BileDuct");
 			andNotorganlist.add("Duodenum");
-			andNotorganlist.add("PeripancreaticSoftTissue");
+			andNotorganlist.add("NonVesselStructuresAdjacentToPancreas");
 
 			res.add(this.hasPartIncludedInSpecialOrganListWithExceptions(possibleOrgans, organlistExcludingOrgans,
 					andNotorganlist));
