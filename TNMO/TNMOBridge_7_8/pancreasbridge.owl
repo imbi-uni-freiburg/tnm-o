@@ -2271,6 +2271,22 @@
     <!-- http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#PancreasTumor2to4cm -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#PancreasTumor2to4cm">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#PancreasTumorMoreThan2cm"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isBearerOf"/>
+                        <owl:someValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#projectsOnto"/>
+                                <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O.owl#Size2To4cm"/>
+                            </owl:Restriction>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#PancreasTumorMoreThan2cm"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -2583,6 +2599,12 @@
     <!-- http://purl.org/tnmo/TNM-O.owl#Size1To2cm -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Size1To2cm"/>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#Size2To4cm -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Size2To4cm"/>
     
 
 

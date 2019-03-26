@@ -144,15 +144,6 @@ public class Pancreas extends BaseClassifier {
 				this.env.save("TNMO");
 
 				OWLReasoner reasoner = reasonerFactory.createReasoner(this.env.getOntology("TNMO"));
-//AAAAAAAAAAAAAAAAA___________****************************______________________--------
-				System.out.println("");
-				System.out.print("res:        " + res);
-				System.out.println("");
-
-
-				//__________**************************************_________________________-
-
-
 				System.out.println("run reasoner: ");
 
 				NodeSet<OWLClass> typesSetindividual = reasoner.getTypes(this.individuals.get("individual"), true);
@@ -334,8 +325,10 @@ public class Pancreas extends BaseClassifier {
 			res.add(this.addQuality(noEvidence));
 		if (!confinement.equals(""))
 			res.add(this.addQuality(confinement));
-		if (!size.equals(""))
+		if (!size.equals(""))	
 			res.add(this.addQuality(size));
+		
+		 
 		// invasive in Organs
 		List<String> invasiveInOrganList = new ArrayList<String>();
 		if (softTissue.equals("yes")) {
