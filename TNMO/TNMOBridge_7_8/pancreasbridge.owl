@@ -1145,9 +1145,9 @@
     
 
 
-    <!-- http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#ExocrinePancreasTumor2to4cm -->
+    <!-- http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#ExocrinePancreasTumor2to4cmNoConfinementRestriction -->
 
-    <owl:Class rdf:about="http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#ExocrinePancreasTumor2to4cm">
+    <owl:Class rdf:about="http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#ExocrinePancreasTumor2to4cmNoConfinementRestriction">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -1156,7 +1156,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#ExocrinePancreasTumorMoreThan2cm"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#ExocrinePancreasTumorMoreThan2cmNoConfinementRestriction"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
@@ -1177,9 +1177,9 @@
     
 
 
-    <!-- http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#ExocrinePancreasTumorMax2cm -->
+    <!-- http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#ExocrinePancreasTumorMax2cmNoConfinementRestriction -->
 
-    <owl:Class rdf:about="http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#ExocrinePancreasTumorMax2cm">
+    <owl:Class rdf:about="http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#ExocrinePancreasTumorMax2cmNoConfinementRestriction">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -1209,9 +1209,9 @@
     
 
 
-    <!-- http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#ExocrinePancreasTumorMoreThan2cm -->
+    <!-- http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#ExocrinePancreasTumorMoreThan2cmNoConfinementRestriction -->
 
-    <owl:Class rdf:about="http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#ExocrinePancreasTumorMoreThan2cm">
+    <owl:Class rdf:about="http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#ExocrinePancreasTumorMoreThan2cmNoConfinementRestriction">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -1241,9 +1241,9 @@
     
 
 
-    <!-- http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#ExocrinePancreasTumorMoreThan4cm -->
+    <!-- http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#ExocrinePancreasTumorMoreThan4cmNoConfinementRestriction -->
 
-    <owl:Class rdf:about="http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#ExocrinePancreasTumorMoreThan4cm">
+    <owl:Class rdf:about="http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#ExocrinePancreasTumorMoreThan4cmNoConfinementRestriction">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -1252,7 +1252,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#ExocrinePancreasTumorMoreThan2cm"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#ExocrinePancreasTumorMoreThan2cmNoConfinementRestriction"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
@@ -2604,7 +2604,9 @@
 
     <!-- http://purl.org/tnmo/TNM-O.owl#Size2To4cm -->
 
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Size2To4cm"/>
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Size2To4cm">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#SizeMoreThan2cm"/>
+    </owl:Class>
     
 
 
@@ -2634,7 +2636,9 @@
 
     <!-- http://purl.org/tnmo/TNM-O.owl#SizeMoreThan4cm -->
 
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#SizeMoreThan4cm"/>
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#SizeMoreThan4cm">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#SizeMoreThan2cm"/>
+    </owl:Class>
     
 
 
@@ -2665,6 +2669,12 @@
     <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#Duodenum -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#Duodenum"/>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#NonVesselStructuresAdjacentToPancreas -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#NonVesselStructuresAdjacentToPancreas"/>
     
 
 
@@ -4101,22 +4111,6 @@
     
 
 
-    <!-- http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#TNM7 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#TNM7">
-        <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#RepresentationalUnitInPancreasTNM7ClinicalClassification"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#TNM8 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#TNM8">
-        <rdf:type rdf:resource="http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#RepresentationalUnitInUndefinedPancreasLocationClinicalTNM8Classification"/>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#TNM8endo -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#TNM8endo">
@@ -4129,17 +4123,6 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#TNM8exo">
         <rdf:type rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_8exocrine.owl#RepresentationalUnitInExocrinePancreasTNM8ClinicalClassification"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#Tumor -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#Tumor">
-        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#TNM7"/>
-        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#TNM8"/>
-        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#TNM8endo"/>
-        <btl2:isRepresentedBy rdf:resource="http://purl.org/tnmo/Bridge2_Pancreas7to8.owl#TNM8exo"/>
     </owl:NamedIndividual>
     
 

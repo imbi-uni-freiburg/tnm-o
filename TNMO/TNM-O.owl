@@ -2189,6 +2189,34 @@ NotAssessedMalignantAnatomicalStructure subclassOf
     
 
 
+    <!-- http://purl.org/tnmo/TNM-O.owl#SizeMax5cm -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#SizeMax5cm">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#SizeValueRegion"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/tnmo/TNM-O.owl#hasSize"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">5.0</xsd:maxInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#SizeValueRegion"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/tnmo/TNM-O.owl#SizeMax5mm -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#SizeMax5mm">
@@ -2566,33 +2594,6 @@ NotAssessedMalignantAnatomicalStructure subclassOf
     <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#Pancreas -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#Pancreas"/>
-    
-
-
-    <!-- http://purl.org/tnmo/TNM-O_Liver#SizeMax5cm -->
-
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Liver#SizeMax5cm">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#SizeValueRegion"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.org/tnmo/TNM-O.owl#hasSize"/>
-                        <owl:someValuesFrom>
-                            <rdfs:Datatype>
-                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
-                                <owl:withRestrictions rdf:parseType="Collection">
-                                    <rdf:Description>
-                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">5.0</xsd:maxInclusive>
-                                    </rdf:Description>
-                                </owl:withRestrictions>
-                            </rdfs:Datatype>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-    </owl:Class>
     
 
 

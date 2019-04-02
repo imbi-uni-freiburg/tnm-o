@@ -43,6 +43,7 @@ import org.semanticweb.owlapi.model.OWLClassExpression;
 	 *         CSV-table, create individuals for each tumour property,
 	 *         classify, output on console
 	 *         Transformation from TNM8e to TNM7
+	 *         Update SZ, Mar-2019: output in English
 	 * 
 	 */
 	public class PancreasSWRL8Eto7  extends BaseClassifier {
@@ -117,9 +118,9 @@ import org.semanticweb.owlapi.model.OWLClassExpression;
 
 					System.out.println("");
 					System.out.println(
-							"----- Nr. " + i + " ----------------------------------------------------------------");
-					System.out.println("TNM8e (Vorgabe): " + stringTNM8eclass);
-					System.out.println("Info eingelesen: Confin: " + confined
+							"----- No. " + i + " ----------------------------------------------------------------");
+					System.out.println("TNM8e (origin): " + stringTNM8eclass);
+					System.out.println("Info provided: Confin: " + confined
 							+ " in SoftTissue: " + softTissue + " Infilt.ComHepArt: " + comHepArt);
 
 					if (confined.equals("Confined"))
@@ -153,7 +154,7 @@ import org.semanticweb.owlapi.model.OWLClassExpression;
 					Set<OWLClass> restypesSetindividual = typesSetindividual.getFlattened(); // Zwischenliste
 					for (OWLClass k : typesSetindividual.getFlattened()) {
 						if (!k.getIRI().getFragment().equals(stringTNM8eclass))
-							System.out.println("Individual (ermittelt): " + k.getIRI().getFragment());
+							System.out.println("Individual (calculated): " + k.getIRI().getFragment());
 					}
 
 					NodeSet<OWLClass> typesSet7 = reasoner.getTypes(tnm7, true); 
@@ -162,7 +163,7 @@ import org.semanticweb.owlapi.model.OWLClassExpression;
 						if (k == representationUnitTNM7) {
 							resultSet7.remove(i);
 						} else {
-							System.out.println("TNM7 (ermittelt):                " + k.getIRI().getFragment());
+							System.out.println("TNM7 (calculated):                " + k.getIRI().getFragment());
 
 						}
 					}

@@ -42,6 +42,7 @@ import org.semanticweb.owlapi.reasoner.OWLReasoner;
 *         CSV-table, create individuals for each tumour property,
 *         classify, output on console
 *         Transformation from TNM8n to TNM7
+*         Update SZ, Mar-2019: output in English
 * 
 */
 public class PancreasSWRL8Nto7 extends BaseClassifier {
@@ -127,9 +128,9 @@ public class PancreasSWRL8Nto7 extends BaseClassifier {
 
 				System.out.println("");
 				System.out.println(
-						"----- Nr. " + i + " ----------------------------------------------------------------");
-				System.out.println("TNM8n (Vorgabe): " + stringTNM8nclass);
-				System.out.println("Info eingelesen:  Confin: " + confined
+						"----- No. " + i + " ----------------------------------------------------------------");
+				System.out.println("TNM8n (origin): " + stringTNM8nclass);
+				System.out.println("Info provided:  Confin: " + confined
 						+ " in SoftTissue: " + softTissue + " Bileduct " +
 				 bileDuct + " Duodenum " +duodenum + "Serosa "+serosa + "Other " +bodyPartAdjacentToPancreas);
 
@@ -172,7 +173,7 @@ public class PancreasSWRL8Nto7 extends BaseClassifier {
 				Set<OWLClass> restypesSetindividual = typesSetindividual.getFlattened(); // Zwischenliste
 				for (OWLClass k : typesSetindividual.getFlattened()) {
 					if (!k.getIRI().getFragment().equals(stringTNM8nclass))
-						System.out.println("Individual (ermittelt): " + k.getIRI().getFragment());
+						System.out.println("Individual (calculated): " + k.getIRI().getFragment());
 				}
 
 				NodeSet<OWLClass> typesSet7 = reasoner.getTypes(tnm7, true);
@@ -181,7 +182,7 @@ public class PancreasSWRL8Nto7 extends BaseClassifier {
 					if (k == representationUnitTNM7) {
 						resultSet7.remove(i);
 					} else {
-						System.out.println("TNM7 (ermittelt):                " + k.getIRI().getFragment());
+						System.out.println("TNM7 (calculated):                " + k.getIRI().getFragment());
 
 					}
 				}

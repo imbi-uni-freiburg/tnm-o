@@ -131,13 +131,13 @@ public class PancreasSWRL7to8 extends BaseClassifier {
 
 				System.out.println("");
 				System.out.println(
-						"----- Nr. " + i + " ----------------------------------------------------------------");
-				System.out.println("TNM7 (Vorgabe): " + stringTNM7class);
+						"----- No. " + i + " ----------------------------------------------------------------");
+				System.out.println("TNM7 (origin): " + stringTNM7class);
 				if (torNorM.equals("T"))
-					System.out.println("Info eingelesen (" + torNorM + "): Organ: " + organ + " Size: " + size
+					System.out.println("Info provided (" + torNorM + "): Organ: " + organ + " Size: " + size
 							+ " in SoftTissue: " + softTissue + " Infilt.ComHepArt: " + comHepArt);
 				if (torNorM.equals("N") || torNorM.equals("M"))
-					System.out.println("Info eingelesen (" + torNorM + "): Primaertumor-Organ: " + organ + " Number LK: "
+					System.out.println("Info provided (" + torNorM + "): Primary Tumor in: " + organ + " Number LK: "
 							+ metaLK + " Dist.Meta in: " + distMetaOrg);
 
 				
@@ -193,7 +193,7 @@ public class PancreasSWRL7to8 extends BaseClassifier {
 				Set<OWLClass> restypesSetindividual = typesSetindividual.getFlattened(); // Zwischenliste
 				for (OWLClass k : typesSetindividual.getFlattened()) {
 					if (!k.getIRI().getFragment().equals(stringTNM7class))
-						System.out.println("Individual (ermittelt): " + k.getIRI().getFragment());
+						System.out.println("Individual (calculated): " + k.getIRI().getFragment());
 				}
 
 				NodeSet<OWLClass> typesSet8e = reasoner.getTypes(tnm8e, true); 
@@ -202,7 +202,7 @@ public class PancreasSWRL7to8 extends BaseClassifier {
 					if (k == representationUnitTNM8e) {
 						resultSet8e.remove(i);
 					} else {
-						System.out.println("TNM8e (ermittelt):                " + k.getIRI().getFragment());
+						System.out.println("TNM8e (calculated):                " + k.getIRI().getFragment());
 
 					}
 				}
@@ -240,7 +240,7 @@ public class PancreasSWRL7to8 extends BaseClassifier {
 					if (k == representationUnitTNM8n) {
 						resultSet8n.remove(k);
 					} else {
-						System.out.println("TNM8n (ermittelt):                " + k.getIRI().getFragment());
+						System.out.println("TNM8n (calculated):                " + k.getIRI().getFragment());
 					}
 				}
 				reasoner.dispose(); // Disposes of this reasoner. This frees up
