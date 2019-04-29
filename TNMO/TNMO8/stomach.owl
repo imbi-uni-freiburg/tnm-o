@@ -66,6 +66,12 @@
     
 
 
+    <!-- http://purl.org/biotop/btl2.owl#isPartOf -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/biotop/btl2.owl#isPartOf"/>
+    
+
+
     <!-- http://purl.org/biotop/btl2.owl#isRepresentedBy -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
@@ -100,6 +106,12 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#AnatomicalStructureNotAssessedForMalignancy -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#AnatomicalStructureNotAssessedForMalignancy"/>
     
 
 
@@ -151,9 +163,21 @@
     
 
 
+    <!-- http://purl.org/tnmo/TNM-O.owl#MalignantAnatomicalStructure -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#MalignantAnatomicalStructure"/>
+    
+
+
     <!-- http://purl.org/tnmo/TNM-O.owl#Metastasis -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Metastasis"/>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#ModeratelyDifferentiated -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#ModeratelyDifferentiated"/>
     
 
 
@@ -163,15 +187,9 @@
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O.owl#NotAssessedMalignantAnatomicalStructure -->
+    <!-- http://purl.org/tnmo/TNM-O.owl#PrimaryTumorSiteAssessedForMalignancy -->
 
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#NotAssessedMalignantAnatomicalStructure"/>
-    
-
-
-    <!-- http://purl.org/tnmo/TNM-O.owl#PrimaryTumorSiteClassifiedByMalignancy -->
-
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#PrimaryTumorSiteClassifiedByMalignancy"/>
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#PrimaryTumorSiteAssessedForMalignancy"/>
     
 
 
@@ -187,9 +205,15 @@
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O.owl#TumorAggregateClassifiedByMalignancy -->
+    <!-- http://purl.org/tnmo/TNM-O.owl#TumorAggregateAssessedForMalignancy -->
 
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#TumorAggregateClassifiedByMalignancy"/>
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#TumorAggregateAssessedForMalignancy"/>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#WellDifferentiated -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#WellDifferentiated"/>
     
 
 
@@ -289,6 +313,18 @@
     
 
 
+    <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#Stomach -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#Stomach"/>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#StomachLymphNode -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#StomachLymphNode"/>
+    
+
+
     <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#SubmucosaOfStomach -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#SubmucosaOfStomach">
@@ -349,19 +385,13 @@
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_lung_7.owl#NoEvidence -->
-
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_lung_7.owl#NoEvidence"/>
-    
-
-
     <!-- http://purl.org/tnmo/TNM-O_stomach_8#CarcinomaInSituOfStomach -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#CarcinomaInSituOfStomach">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachPrimaryTumor"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachStructureAssessedForMalignancy"/>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
                             <owl:Restriction>
@@ -382,7 +412,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachPrimaryTumor"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachStructureAssessedForMalignancy"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
@@ -417,7 +447,7 @@
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachPrimaryTumor"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachStructureAssessedForMalignancy"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#hasPart"/>
                         <owl:someValuesFrom>
@@ -467,7 +497,7 @@
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachPrimaryTumor"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachStructureAssessedForMalignancy"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#hasPart"/>
                         <owl:someValuesFrom>
@@ -534,7 +564,7 @@
     <!-- http://purl.org/tnmo/TNM-O_stomach_8#InvasiveStomachTumorOfLaminaPropriaOrMuscularisMucosaeOrSubmucosae -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#InvasiveStomachTumorOfLaminaPropriaOrMuscularisMucosaeOrSubmucosae">
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachPrimaryTumor"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachStructureAssessedForMalignancy"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
@@ -561,7 +591,7 @@
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachPrimaryTumor"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachStructureAssessedForMalignancy"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#hasPart"/>
                         <owl:someValuesFrom>
@@ -595,7 +625,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachPrimaryTumor"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachStructureAssessedForMalignancy"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
@@ -622,7 +652,7 @@
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachPrimaryTumor"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachStructureAssessedForMalignancy"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#hasPart"/>
                         <owl:someValuesFrom>
@@ -680,7 +710,7 @@
     <!-- http://purl.org/tnmo/TNM-O_stomach_8#InvasiveStomachTumorOfSerosaOrAdjacentStructures -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#InvasiveStomachTumorOfSerosaOrAdjacentStructures">
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachPrimaryTumor"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachStructureAssessedForMalignancy"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
@@ -707,7 +737,7 @@
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachPrimaryTumor"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachStructureAssessedForMalignancy"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#hasPart"/>
                         <owl:someValuesFrom>
@@ -768,7 +798,7 @@
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachPrimaryTumor"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachStructureAssessedForMalignancy"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#hasPart"/>
                         <owl:someValuesFrom>
@@ -802,7 +832,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachPrimaryTumor"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachStructureAssessedForMalignancy"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
@@ -839,78 +869,6 @@
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_stomach_8#NoAssessmentOfPrimaryStomachTumor -->
-
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#NoAssessmentOfPrimaryStomachTumor">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#NotAssessedMalignantAnatomicalStructure"/>
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachPrimaryTumor"/>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#NotAssessedMalignantAnatomicalStructure"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
-                <owl:allValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachTNM8_cTX"/>
-                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachTNM8_pTX"/>
-                            <owl:Class>
-                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInTNM8Classification"/>
-                            </owl:Class>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:allValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/tnmo/TNM-O_stomach_8#NoEvidenceOfStomachPrimaryTumor -->
-
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#NoEvidenceOfStomachPrimaryTumor">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachPrimaryTumor"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isBearerOf"/>
-                        <owl:someValuesFrom>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#projectsOnto"/>
-                                <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O.owl#NoEvidence"/>
-                            </owl:Restriction>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachPrimaryTumor"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
-                <owl:allValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachTNM8_cT0"/>
-                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachTNM8_pT0"/>
-                            <owl:Class>
-                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInTNM8Classification"/>
-                            </owl:Class>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:allValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
     <!-- http://purl.org/tnmo/TNM-O_stomach_8#RepresentationalUnitInStomachTNM8Classification -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#RepresentationalUnitInStomachTNM8Classification">
@@ -923,6 +881,20 @@
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#RepresentationalUnitInStomachTNM8ClinicalClassification">
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#RepresentationalUnitInStomachTNM8Classification"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachStructureAssessedForMalignancy"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachStructureNotAssessedForMalignancy"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorAggregateAssessedForMalignancy"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -931,6 +903,20 @@
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#RepresentationalUnitInStomachTNM8PathologicalClassification">
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#RepresentationalUnitInStomachTNM8Classification"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachStructureAssessedForMalignancy"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachStructureNotAssessedForMalignancy"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorAggregateAssessedForMalignancy"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -960,10 +946,127 @@
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_stomach_8#StomachPrimaryTumor -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_8#StomachStructureAssessedForMalignancy -->
 
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachPrimaryTumor">
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#PrimaryTumorSiteClassifiedByMalignancy"/>
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachStructureAssessedForMalignancy">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#PrimaryTumorSiteAssessedForMalignancy"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isBearerOf"/>
+                        <owl:someValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#projectsOnto"/>
+                                <owl:allValuesFrom>
+                                    <owl:Class>
+                                        <owl:unionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#ModeratelyDifferentiated"/>
+                                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#WellDifferentiated"/>
+                                        </owl:unionOf>
+                                    </owl:Class>
+                                </owl:allValuesFrom>
+                            </owl:Restriction>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isIncludedIn"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#Stomach"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#PrimaryTumorSiteAssessedForMalignancy"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachTNM8_cT"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachTNM8_pT"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInTNM8Classification"/>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_stomach_8#StomachStructureNotAssessedForMalignancy -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachStructureNotAssessedForMalignancy">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#AnatomicalStructureNotAssessedForMalignancy"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isIncludedIn"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#Stomach"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachTNM8_cTX"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachTNM8_pTX"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInTNM8Classification"/>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_stomach_8#StomachStructureWithNoEvidenceOfPrimaryTumor -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachStructureWithNoEvidenceOfPrimaryTumor">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachStructureAssessedForMalignancy"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isBearerOf"/>
+                        <owl:someValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#projectsOnto"/>
+                                <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O.owl#NoEvidence"/>
+                            </owl:Restriction>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachStructureAssessedForMalignancy"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachTNM8_cT0"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachTNM8_pT0"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInTNM8Classification"/>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -972,6 +1075,12 @@
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachTNM8_cM">
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#RepresentationalUnitInStomachTNM8ClinicalClassification"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorAggregateAsRelatedToDistantMetastasis"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -985,11 +1094,11 @@
                     <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachTNM8_cM"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorAggregateWithoutDistantMetastasis"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorWithoutDistantMetastasis"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
-                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorAggregateWithoutDistantMetastasis"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorWithoutDistantMetastasis"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1029,11 +1138,11 @@
                     <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachTNM8_cM"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorAggregateWithDistantMetastasis"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorWithDistantMetastasis"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
-                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorAggregateWithDistantMetastasis"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorWithDistantMetastasis"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1062,6 +1171,19 @@
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachTNM8_cN">
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#RepresentationalUnitInStomachTNM8ClinicalClassification"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachStructureNotAssessedForMalignancy"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorAggregateAsRelatedToMetastaticRegionalLymphNodes"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -1075,11 +1197,11 @@
                     <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachTNM8_cN"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorAggregateWithoutMetastaticRegionalLymphNodes"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorWithoutMetastaticRegionalLymphNodes"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
-                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorAggregateWithoutMetastaticRegionalLymphNodes"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorWithoutMetastaticRegionalLymphNodes"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1116,11 +1238,11 @@
                     <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachTNM8_cN"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorAggregateWith1Or2MetastaticRegionalLymphNodes"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorWith1Or2MetastaticRegionalLymphNodes"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
-                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorAggregateWith1Or2MetastaticRegionalLymphNodes"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorWith1Or2MetastaticRegionalLymphNodes"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1156,11 +1278,11 @@
                     <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachTNM8_cN"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorAggregateWith3To6MetastaticRegionalLymphNodes"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorWith3To6MetastaticRegionalLymphNodes"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
-                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorAggregateWith3To6MetastaticRegionalLymphNodes"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorWith3To6MetastaticRegionalLymphNodes"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1196,11 +1318,11 @@
                     <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachTNM8_cN"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorAggregateWith7OrMoreMetastaticRegionalLymphNodes"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorWith7OrMoreMetastaticRegionalLymphNodes"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
-                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorAggregateWith7OrMoreMetastaticRegionalLymphNodes"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorWith7OrMoreMetastaticRegionalLymphNodes"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1236,11 +1358,11 @@
                     <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachTNM8_cN"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorAggregateWith7To15MetastaticRegionalLymphNodes"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorWith7To15MetastaticRegionalLymphNodes"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
-                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorAggregateWith7To15MetastaticRegionalLymphNodes"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorWith7To15MetastaticRegionalLymphNodes"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1277,11 +1399,11 @@
                     <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachTNM8_cN"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorAggregateWith16OrMoreMetastaticRegionalLymphNodes"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorWith16OrMoreMetastaticRegionalLymphNodes"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
-                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorAggregateWith16OrMoreMetastaticRegionalLymphNodes"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorWith16OrMoreMetastaticRegionalLymphNodes"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1317,11 +1439,11 @@
                     <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachTNM8_cN"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorAggregateWithNoAssessmentOfRegionalLymphNodes"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorWithNoAssessmentOfRegionalLymphNodes"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
-                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorAggregateWithNoAssessmentOfRegionalLymphNodes"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorWithNoAssessmentOfRegionalLymphNodes"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1580,6 +1702,19 @@
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachTNM8_cT">
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#RepresentationalUnitInStomachTNM8ClinicalClassification"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachStructureAssessedForMalignancy"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachStructureNotAssessedForMalignancy"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -1593,11 +1728,11 @@
                     <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachTNM8_cT"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#NoEvidenceOfStomachPrimaryTumor"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachStructureWithNoEvidenceOfPrimaryTumor"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
-                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#NoEvidenceOfStomachPrimaryTumor"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachStructureWithNoEvidenceOfPrimaryTumor"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -2015,11 +2150,11 @@
                     <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachTNM8_cT"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#NoAssessmentOfPrimaryStomachTumor"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachStructureNotAssessedForMalignancy"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
-                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#NoAssessmentOfPrimaryStomachTumor"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachStructureNotAssessedForMalignancy"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -2033,6 +2168,12 @@
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachTNM8_pM">
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#RepresentationalUnitInStomachTNM8PathologicalClassification"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorAggregateAsRelatedToDistantMetastasis"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -2046,11 +2187,11 @@
                     <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachTNM8_pM"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorAggregateWithoutDistantMetastasis"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorWithoutDistantMetastasis"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
-                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorAggregateWithoutDistantMetastasis"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorWithoutDistantMetastasis"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -2093,11 +2234,11 @@
                     <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachTNM8_pM"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorAggregateWithDistantMetastasis"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorWithDistantMetastasis"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
-                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorAggregateWithDistantMetastasis"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorWithDistantMetastasis"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -2126,6 +2267,19 @@
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachTNM8_pN">
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#RepresentationalUnitInStomachTNM8PathologicalClassification"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachStructureNotAssessedForMalignancy"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorAggregateAsRelatedToMetastaticRegionalLymphNodes"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -2139,11 +2293,11 @@
                     <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachTNM8_pN"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorAggregateWithoutMetastaticRegionalLymphNodes"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorWithoutMetastaticRegionalLymphNodes"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
-                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorAggregateWithoutMetastaticRegionalLymphNodes"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorWithoutMetastaticRegionalLymphNodes"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -2183,11 +2337,11 @@
                     <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachTNM8_pN"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorAggregateWith1Or2MetastaticRegionalLymphNodes"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorWith1Or2MetastaticRegionalLymphNodes"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
-                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorAggregateWith1Or2MetastaticRegionalLymphNodes"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorWith1Or2MetastaticRegionalLymphNodes"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -2226,11 +2380,11 @@
                     <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachTNM8_pN"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorAggregateWith3To6MetastaticRegionalLymphNodes"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorWith3To6MetastaticRegionalLymphNodes"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
-                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorAggregateWith3To6MetastaticRegionalLymphNodes"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorWith3To6MetastaticRegionalLymphNodes"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -2268,11 +2422,11 @@
                     <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachTNM8_pN"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorAggregateWith7OrMoreMetastaticRegionalLymphNodes"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorWith7OrMoreMetastaticRegionalLymphNodes"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
-                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorAggregateWith7OrMoreMetastaticRegionalLymphNodes"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorWith7OrMoreMetastaticRegionalLymphNodes"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -2310,11 +2464,11 @@
                     <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachTNM8_pN"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorAggregateWith7To15MetastaticRegionalLymphNodes"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorWith7To15MetastaticRegionalLymphNodes"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
-                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorAggregateWith7To15MetastaticRegionalLymphNodes"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorWith7To15MetastaticRegionalLymphNodes"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -2353,11 +2507,11 @@
                     <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachTNM8_pN"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorAggregateWith16OrMoreMetastaticRegionalLymphNodes"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorWith16OrMoreMetastaticRegionalLymphNodes"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
-                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorAggregateWith16OrMoreMetastaticRegionalLymphNodes"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorWith16OrMoreMetastaticRegionalLymphNodes"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -2393,11 +2547,11 @@
                     <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachTNM8_pN"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorAggregateWithNoAssessmentOfRegionalLymphNodes"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorWithNoAssessmentOfRegionalLymphNodes"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
-                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorAggregateWithNoAssessmentOfRegionalLymphNodes"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorWithNoAssessmentOfRegionalLymphNodes"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -2951,6 +3105,19 @@
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachTNM8_pT">
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#RepresentationalUnitInStomachTNM8PathologicalClassification"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachStructureAssessedForMalignancy"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachStructureNotAssessedForMalignancy"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -2964,11 +3131,11 @@
                     <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachTNM8_pT"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#NoEvidenceOfStomachPrimaryTumor"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachStructureWithNoEvidenceOfPrimaryTumor"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
-                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#NoEvidenceOfStomachPrimaryTumor"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachStructureWithNoEvidenceOfPrimaryTumor"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -3415,11 +3582,11 @@
                     <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachTNM8_pT"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#NoAssessmentOfPrimaryStomachTumor"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachStructureNotAssessedForMalignancy"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
-                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#NoAssessmentOfPrimaryStomachTumor"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachStructureNotAssessedForMalignancy"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -3444,18 +3611,10 @@
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorAggregate -->
-
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorAggregate">
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#TumorAggregateClassifiedByMalignancy"/>
-    </owl:Class>
-    
-
-
     <!-- http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorAggregateAsRelatedToDistantMetastasis -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorAggregateAsRelatedToDistantMetastasis">
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorAggregate"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorAggregateAssessedForMalignancy"/>
     </owl:Class>
     
 
@@ -3463,18 +3622,65 @@
     <!-- http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorAggregateAsRelatedToMetastaticRegionalLymphNodes -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorAggregateAsRelatedToMetastaticRegionalLymphNodes">
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorAggregate"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorAggregateAssessedForMalignancy"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorAggregateWith16OrMoreMetastaticRegionalLymphNodes -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorAggregateAssessedForMalignancy -->
 
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorAggregateWith16OrMoreMetastaticRegionalLymphNodes">
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorAggregateAssessedForMalignancy">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorAggregateWith7OrMoreMetastaticRegionalLymphNodes"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#TumorAggregateAssessedForMalignancy"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isPartOf"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#MalignantAnatomicalStructure"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#hasPart"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachStructureAssessedForMalignancy"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#TumorAggregateAssessedForMalignancy"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachTNM8_cM"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachTNM8_cN"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachTNM8_pM"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachTNM8_pN"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInTNM8Classification"/>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorWith16OrMoreMetastaticRegionalLymphNodes -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorWith16OrMoreMetastaticRegionalLymphNodes">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorWith7OrMoreMetastaticRegionalLymphNodes"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isBearerOf"/>
                         <owl:someValuesFrom>
@@ -3487,7 +3693,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorAggregateWith7OrMoreMetastaticRegionalLymphNodes"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorWith7OrMoreMetastaticRegionalLymphNodes"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
@@ -3508,9 +3714,9 @@
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorAggregateWith1Or2MetastaticRegionalLymphNodes -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorWith1Or2MetastaticRegionalLymphNodes -->
 
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorAggregateWith1Or2MetastaticRegionalLymphNodes">
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorWith1Or2MetastaticRegionalLymphNodes">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -3548,9 +3754,9 @@
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorAggregateWith3To6MetastaticRegionalLymphNodes -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorWith3To6MetastaticRegionalLymphNodes -->
 
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorAggregateWith3To6MetastaticRegionalLymphNodes">
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorWith3To6MetastaticRegionalLymphNodes">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -3588,9 +3794,9 @@
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorAggregateWith7OrMoreMetastaticRegionalLymphNodes -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorWith7OrMoreMetastaticRegionalLymphNodes -->
 
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorAggregateWith7OrMoreMetastaticRegionalLymphNodes">
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorWith7OrMoreMetastaticRegionalLymphNodes">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -3628,13 +3834,13 @@
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorAggregateWith7To15MetastaticRegionalLymphNodes -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorWith7To15MetastaticRegionalLymphNodes -->
 
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorAggregateWith7To15MetastaticRegionalLymphNodes">
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorWith7To15MetastaticRegionalLymphNodes">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorAggregateWith7OrMoreMetastaticRegionalLymphNodes"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorWith7OrMoreMetastaticRegionalLymphNodes"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isBearerOf"/>
                         <owl:someValuesFrom>
@@ -3647,7 +3853,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorAggregateWith7OrMoreMetastaticRegionalLymphNodes"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorWith7OrMoreMetastaticRegionalLymphNodes"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
@@ -3668,9 +3874,9 @@
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorAggregateWithDistantMetastasis -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorWithDistantMetastasis -->
 
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorAggregateWithDistantMetastasis">
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorWithDistantMetastasis">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -3699,23 +3905,25 @@
                 </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <owl:disjointWith rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorAggregateWithoutDistantMetastasis"/>
+        <owl:disjointWith rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorWithoutDistantMetastasis"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorAggregateWithNoAssessmentOfRegionalLymphNodes -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorWithNoAssessmentOfRegionalLymphNodes -->
 
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorAggregateWithNoAssessmentOfRegionalLymphNodes">
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorWithNoAssessmentOfRegionalLymphNodes">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#NotAssessedMalignantAnatomicalStructure"/>
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorAggregateAsRelatedToMetastaticRegionalLymphNodes"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#AnatomicalStructureNotAssessedForMalignancy"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isIncludedIn"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#StomachLymphNode"/>
+                    </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#NotAssessedMalignantAnatomicalStructure"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
@@ -3736,9 +3944,9 @@
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorAggregateWithoutDistantMetastasis -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorWithoutDistantMetastasis -->
 
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorAggregateWithoutDistantMetastasis">
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorWithoutDistantMetastasis">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -3775,38 +3983,9 @@
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorAggregateWithoutMetastaticRegionalLymphNodes -->
+    <!-- http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorWithoutMetastaticRegionalLymphNodes -->
 
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorAggregateWithoutMetastaticRegionalLymphNodes">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorAggregateAsRelatedToMetastaticRegionalLymphNodes"/>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isBearerOf"/>
-                                <owl:someValuesFrom>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#projectsOnto"/>
-                                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality0"/>
-                                    </owl:Restriction>
-                                </owl:someValuesFrom>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isBearerOf"/>
-                                <owl:someValuesFrom>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#projectsOnto"/>
-                                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_lung_7.owl#NoEvidence"/>
-                                    </owl:Restriction>
-                                </owl:someValuesFrom>
-                            </owl:Restriction>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorWithoutMetastaticRegionalLymphNodes">
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_stomach_8#StomachTumorAggregateAsRelatedToMetastaticRegionalLymphNodes"/>
         <rdfs:subClassOf>
             <owl:Restriction>

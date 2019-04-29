@@ -20,6 +20,29 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/biotop/btl2.owl#isRepresentedBy -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+    
+
+
+    <!-- http://purl.org/biotop/btl2.owl#represents -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/biotop/btl2.owl#represents"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Classes
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -40,12 +63,6 @@
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O.owl#PrimaryTumorSiteClassifiedByMalignancy -->
-
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#PrimaryTumorSiteClassifiedByMalignancy"/>
-    
-
-
     <!-- http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInTNM8Classification -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInTNM8Classification"/>
@@ -58,16 +75,53 @@
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O.owl#TumorAggregateClassifiedByMalignancy -->
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastStructureAssessedForMalignancy -->
 
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#TumorAggregateClassifiedByMalignancy"/>
-    
-
-
-    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastPrimaryTumor -->
-
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastPrimaryTumor">
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#PrimaryTumorSiteClassifiedByMalignancy"/>
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastStructureAssessedForMalignancy">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#PrimaryTumorSiteAssessedForMalignancy"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isBearerOf"/>
+                        <owl:someValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#projectsOnto"/>
+                                <owl:allValuesFrom>
+                                    <owl:Class>
+                                        <owl:unionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#ModeratelyDifferentiated"/>
+                                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#WellDifferentiated"/>
+                                        </owl:unionOf>
+                                    </owl:Class>
+                                </owl:allValuesFrom>
+                            </owl:Restriction>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isIncludedIn"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#Breast"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#PrimaryTumorSiteAssessedForMalignancy"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cT"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pT"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInTNM8Classification"/>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -2105,15 +2159,7 @@
     <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumor2To5cm -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumor2To5cm">
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastPrimaryTumor"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregate -->
-
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregate">
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#TumorAggregateClassifiedByMalignancy"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastStructureAssessedForMalignancy"/>
     </owl:Class>
     
 
@@ -2121,7 +2167,23 @@
     <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregateAsRelatedToDistantMetastasis -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregateAsRelatedToDistantMetastasis">
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregate"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregateAssessedForMalignancy"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cM"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pM"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInTNM8Classification"/>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -2129,7 +2191,70 @@
     <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregateAsRelatedToMetastaticRegionalLymphNodes -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregateAsRelatedToMetastaticRegionalLymphNodes">
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregate"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregateAssessedForMalignancy"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cN"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pN"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInTNM8Classification"/>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregateAssessedForMalignancy -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorAggregateAssessedForMalignancy">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#TumorAggregateAssessedForMalignancy"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isPartOf"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#MalignantAnatomicalStructure"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#hasPart"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastStructureAssessedForMalignancy"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#TumorAggregateAssessedForMalignancy"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cM"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_cN"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pM"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTNM8_pN"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInTNM8Classification"/>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -2332,7 +2457,7 @@
     <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorMax2cm -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorMax2cm">
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastPrimaryTumor"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastStructureAssessedForMalignancy"/>
     </owl:Class>
     
 
@@ -2340,7 +2465,7 @@
     <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorMoreThan5cm -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastTumorMoreThan5cm">
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastPrimaryTumor"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastStructureAssessedForMalignancy"/>
     </owl:Class>
     
 
@@ -2372,7 +2497,7 @@
     <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#InvasiveBreastTumorOfChestWallOrSkin -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#InvasiveBreastTumorOfChestWallOrSkin">
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastPrimaryTumor"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastStructureAssessedForMalignancy"/>
     </owl:Class>
     
 
@@ -2404,8 +2529,7 @@
     <!-- http://purl.org/tnmo/TNM-O_breast_8.owl#NoAssessmentOfPrimaryBreastTumor -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_breast_8.owl#NoAssessmentOfPrimaryBreastTumor">
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#NotAssessedMalignantAnatomicalStructure"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastPrimaryTumor"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_breast_8.owl#BreastStructureAssessedForMalignancy"/>
     </owl:Class>
     
 

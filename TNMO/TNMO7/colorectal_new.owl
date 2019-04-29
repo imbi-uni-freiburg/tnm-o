@@ -105,6 +105,18 @@ introduced: TNMRepresentatinalUnit and (represents some MalignantAnatomicalEniti
     
 
 
+    <!-- http://purl.org/tnmo/TNM-O.owl#AnatomicalStructureAssessedForMalignancy -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#AnatomicalStructureAssessedForMalignancy"/>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#AnatomicalStructureNotAssessedForMalignancy -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#AnatomicalStructureNotAssessedForMalignancy"/>
+    
+
+
     <!-- http://purl.org/tnmo/TNM-O.owl#Assessment -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Assessment"/>
@@ -243,6 +255,12 @@ introduced: TNMRepresentatinalUnit and (represents some MalignantAnatomicalEniti
     
 
 
+    <!-- http://purl.org/tnmo/TNM-O.owl#PrimaryTumorSiteAssessedForMalignancy -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#PrimaryTumorSiteAssessedForMalignancy"/>
+    
+
+
     <!-- http://purl.org/tnmo/TNM-O.owl#PrimaryTumorSiteClassifiedByMalignancy -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#PrimaryTumorSiteClassifiedByMalignancy"/>
@@ -269,9 +287,9 @@ introduced: TNMRepresentatinalUnit and (represents some MalignantAnatomicalEniti
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O.owl#TumorAggregateClassifiedByMalignancy -->
+    <!-- http://purl.org/tnmo/TNM-O.owl#TumorAggregateAssessedForMalignancy -->
 
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#TumorAggregateClassifiedByMalignancy"/>
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#TumorAggregateAssessedForMalignancy"/>
     
 
 
@@ -286,6 +304,18 @@ introduced: TNMRepresentatinalUnit and (represents some MalignantAnatomicalEniti
     <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#AdventitiaOfLargeIntestine -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#AdventitiaOfLargeIntestine"/>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#Colon -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#Colon"/>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#ColonAndRectumRegionalLymphNode -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#ColonAndRectumRegionalLymphNode"/>
     
 
 
@@ -304,6 +334,12 @@ introduced: TNMRepresentatinalUnit and (represents some MalignantAnatomicalEniti
     <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#Organ -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#Organ"/>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#Rectum -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#Rectum"/>
     
 
 
@@ -357,7 +393,7 @@ introduced: TNMRepresentatinalUnit and (represents some MalignantAnatomicalEniti
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonAndRectumPrimaryTumor"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonAndRectumStructureAssessedForMalignancy"/>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
                             <owl:Class>
@@ -441,7 +477,7 @@ introduced: TNMRepresentatinalUnit and (represents some MalignantAnatomicalEniti
                 <owl:allValuesFrom>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_Tis"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cTis"/>
                             <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_pTis"/>
                             <owl:Class>
                                 <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInTNM7Classification"/>
@@ -479,14 +515,6 @@ introduced: TNMRepresentatinalUnit and (represents some MalignantAnatomicalEniti
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonAndRectumPrimaryTumor -->
-
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonAndRectumPrimaryTumor">
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#PrimaryTumorSiteClassifiedByMalignancy"/>
-    </owl:Class>
-    
-
-
     <!-- http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonAndRectumRegionalLymphNode -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonAndRectumRegionalLymphNode">
@@ -495,10 +523,110 @@ introduced: TNMRepresentatinalUnit and (represents some MalignantAnatomicalEniti
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonAndRectumTumorAggregate -->
+    <!-- http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonAndRectumStructureAssessedForMalignancy -->
 
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonAndRectumTumorAggregate">
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#TumorAggregateClassifiedByMalignancy"/>
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonAndRectumStructureAssessedForMalignancy">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#PrimaryTumorSiteAssessedForMalignancy"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isIncludedIn"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#Colon"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isIncludedIn"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#Rectum"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#PrimaryTumorSiteAssessedForMalignancy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonAndRectumStructureNotAssessedForMalignancy -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonAndRectumStructureNotAssessedForMalignancy">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#AnatomicalStructureNotAssessedForMalignancy"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isIncludedIn"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#Colon"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isIncludedIn"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#Rectum"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cTX"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_pTX"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInTNM7Classification"/>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonAndRectumStructureWithoutEvidenceOfPrimaryTumor -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonAndRectumStructureWithoutEvidenceOfPrimaryTumor">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonAndRectumStructureAssessedForMalignancy"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isBearerOf"/>
+                        <owl:someValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#projectsOnto"/>
+                                <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O.owl#NoEvidence"/>
+                            </owl:Restriction>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cT0"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_pT0"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInTNM7Classification"/>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -506,7 +634,7 @@ introduced: TNMRepresentatinalUnit and (represents some MalignantAnatomicalEniti
     <!-- http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonAndRectumTumorAggregateAsRelatedToDistantMetastasis -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonAndRectumTumorAggregateAsRelatedToDistantMetastasis">
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonAndRectumTumorAggregate"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonAndRectumTumorAggregateAssessedForMalignancy"/>
     </owl:Class>
     
 
@@ -514,7 +642,53 @@ introduced: TNMRepresentatinalUnit and (represents some MalignantAnatomicalEniti
     <!-- http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonAndRectumTumorAggregateAsRelatedToMetastaticRegionalLymphNodes -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonAndRectumTumorAggregateAsRelatedToMetastaticRegionalLymphNodes">
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonAndRectumTumorAggregate"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonAndRectumTumorAggregateAssessedForMalignancy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonAndRectumTumorAggregateAssessedForMalignancy -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonAndRectumTumorAggregateAssessedForMalignancy">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#TumorAggregateAssessedForMalignancy"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isPartOf"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#AnatomicalStructureAssessedForMalignancy"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#hasPart"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonAndRectumStructureAssessedForMalignancy"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#TumorAggregateAssessedForMalignancy"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cM"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cN"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_pN"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInTNM7Classification"/>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -544,7 +718,7 @@ introduced: TNMRepresentatinalUnit and (represents some MalignantAnatomicalEniti
                 <owl:allValuesFrom>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_N1a"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cN1a"/>
                             <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_pN1a"/>
                             <owl:Class>
                                 <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInTNM7Classification"/>
@@ -607,7 +781,7 @@ introduced: TNMRepresentatinalUnit and (represents some MalignantAnatomicalEniti
                 <owl:allValuesFrom>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_N1b"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cN1b"/>
                             <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_pN1b"/>
                             <owl:Class>
                                 <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInTNM7Classification"/>
@@ -670,7 +844,7 @@ introduced: TNMRepresentatinalUnit and (represents some MalignantAnatomicalEniti
                 <owl:allValuesFrom>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_N2a"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cN2a"/>
                             <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_pN2a"/>
                             <owl:Class>
                                 <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInTNM7Classification"/>
@@ -709,7 +883,7 @@ introduced: TNMRepresentatinalUnit and (represents some MalignantAnatomicalEniti
                 <owl:allValuesFrom>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_N2b"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cN2b"/>
                             <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_pN2b"/>
                             <owl:Class>
                                 <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInTNM7Classification"/>
@@ -751,7 +925,7 @@ introduced: TNMRepresentatinalUnit and (represents some MalignantAnatomicalEniti
                 <owl:allValuesFrom>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_M1a"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cM1a"/>
                             <owl:Class>
                                 <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInTNM7Classification"/>
                             </owl:Class>
@@ -774,7 +948,7 @@ introduced: TNMRepresentatinalUnit and (represents some MalignantAnatomicalEniti
                 <owl:allValuesFrom>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_M1b"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cM1b"/>
                             <owl:Class>
                                 <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInTNM7Classification"/>
                             </owl:Class>
@@ -807,7 +981,7 @@ introduced: TNMRepresentatinalUnit and (represents some MalignantAnatomicalEniti
                 <owl:allValuesFrom>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_M1b"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cM1b"/>
                             <owl:Class>
                                 <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInTNM7Classification"/>
                             </owl:Class>
@@ -838,37 +1012,6 @@ introduced: TNMRepresentatinalUnit and (represents some MalignantAnatomicalEniti
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonAndRectumTumorAggregateWithNoAssessmentOfRegionalLymphNodes -->
-
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonAndRectumTumorAggregateWithNoAssessmentOfRegionalLymphNodes">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#NotAssessedMalignantAnatomicalStructure"/>
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonAndRectumTumorAggregateAsRelatedToMetastaticRegionalLymphNodes"/>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
-                <owl:allValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_NX"/>
-                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_pNX"/>
-                            <owl:Class>
-                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInTNM7Classification"/>
-                            </owl:Class>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:allValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
     <!-- http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonAndRectumTumorAggregateWithNoDistantMetastasis -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonAndRectumTumorAggregateWithNoDistantMetastasis">
@@ -893,7 +1036,7 @@ introduced: TNMRepresentatinalUnit and (represents some MalignantAnatomicalEniti
                 <owl:allValuesFrom>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_M0"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cM0"/>
                             <owl:Class>
                                 <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInTNM7Classification"/>
                             </owl:Class>
@@ -931,8 +1074,42 @@ introduced: TNMRepresentatinalUnit and (represents some MalignantAnatomicalEniti
                 <owl:allValuesFrom>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_N0"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cN0"/>
                             <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_pN0"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInTNM7Classification"/>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonAndRectumTumorWithNoAssessmentOfRegionalLymphNodes -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonAndRectumTumorWithNoAssessmentOfRegionalLymphNodes">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#AnatomicalStructureNotAssessedForMalignancy"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isIncludedIn"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#ColonAndRectumRegionalLymphNode"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cNX"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_pNX"/>
                             <owl:Class>
                                 <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInTNM7Classification"/>
                             </owl:Class>
@@ -948,14 +1125,14 @@ introduced: TNMRepresentatinalUnit and (represents some MalignantAnatomicalEniti
     <!-- http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonAndRectumTumorWithTumorDeposits -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonAndRectumTumorWithTumorDeposits">
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonAndRectumTumorAggregate"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonAndRectumTumorAggregateAssessedForMalignancy"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
                 <owl:allValuesFrom>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_N1c"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cN1c"/>
                             <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_pN1c"/>
                             <owl:Class>
                                 <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInTNM7Classification"/>
@@ -969,21 +1146,21 @@ introduced: TNMRepresentatinalUnit and (represents some MalignantAnatomicalEniti
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_M -->
+    <!-- http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cM -->
 
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_M">
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cM">
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_colorectal_7.owl#RepresentationalUnitInColonAndRectumTNM7ClinicalClassification"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_M0 -->
+    <!-- http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cM0 -->
 
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_M0">
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cM0">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_M"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cM"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
                         <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonAndRectumTumorAggregateWithNoDistantMetastasis"/>
@@ -995,18 +1172,18 @@ introduced: TNMRepresentatinalUnit and (represents some MalignantAnatomicalEniti
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <owl:disjointWith rdf:resource="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_M1"/>
+        <owl:disjointWith rdf:resource="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cM1"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_M1 -->
+    <!-- http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cM1 -->
 
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_M1">
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cM1">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_M"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cM"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
                         <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonAndRectumTumorAggregateWithDistantMetastasis"/>
@@ -1022,13 +1199,13 @@ introduced: TNMRepresentatinalUnit and (represents some MalignantAnatomicalEniti
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_M1a -->
+    <!-- http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cM1a -->
 
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_M1a">
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cM1a">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_M1"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cM1"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
                         <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonAndRectumTumorAggregateWithDistantMetastasisConfinedTo1Organ"/>
@@ -1040,18 +1217,18 @@ introduced: TNMRepresentatinalUnit and (represents some MalignantAnatomicalEniti
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <owl:disjointWith rdf:resource="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_M1b"/>
+        <owl:disjointWith rdf:resource="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cM1b"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_M1b -->
+    <!-- http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cM1b -->
 
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_M1b">
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cM1b">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_M1"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cM1"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
                         <owl:someValuesFrom>
@@ -1081,21 +1258,21 @@ introduced: TNMRepresentatinalUnit and (represents some MalignantAnatomicalEniti
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_N -->
+    <!-- http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cN -->
 
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_N">
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cN">
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_colorectal_7.owl#RepresentationalUnitInColonAndRectumTNM7ClinicalClassification"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_N0 -->
+    <!-- http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cN0 -->
 
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_N0">
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cN0">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_N"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cN"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
                         <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonAndRectumTumorAggregateWithoutMetastaticRegionalLymphNodes"/>
@@ -1111,13 +1288,13 @@ introduced: TNMRepresentatinalUnit and (represents some MalignantAnatomicalEniti
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_N1 -->
+    <!-- http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cN1 -->
 
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_N1">
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cN1">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_N"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cN"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
                         <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonAndRectumTumorAggregateWith1to3MetastaticRegionalLymphNodes"/>
@@ -1133,13 +1310,13 @@ introduced: TNMRepresentatinalUnit and (represents some MalignantAnatomicalEniti
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_N1a -->
+    <!-- http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cN1a -->
 
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_N1a">
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cN1a">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_N1"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cN1"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
                         <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonAndRectumTumorAggregateWith1MetastaticRegionalLymphNode"/>
@@ -1155,13 +1332,13 @@ introduced: TNMRepresentatinalUnit and (represents some MalignantAnatomicalEniti
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_N1b -->
+    <!-- http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cN1b -->
 
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_N1b">
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cN1b">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_N1"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cN1"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
                         <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonAndRectumTumorAggregateWith2to3MetastaticRegionalLymphNodes"/>
@@ -1177,13 +1354,13 @@ introduced: TNMRepresentatinalUnit and (represents some MalignantAnatomicalEniti
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_N1c -->
+    <!-- http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cN1c -->
 
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_N1c">
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cN1c">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_N1"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cN1"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
                         <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonAndRectumTumorWithTumorDeposits"/>
@@ -1199,13 +1376,13 @@ introduced: TNMRepresentatinalUnit and (represents some MalignantAnatomicalEniti
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_N2 -->
+    <!-- http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cN2 -->
 
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_N2">
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cN2">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_N"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cN"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
                         <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonAndRectumTumorAggregateWith4orMoreMetastaticRegionalLymphNodes"/>
@@ -1221,13 +1398,13 @@ introduced: TNMRepresentatinalUnit and (represents some MalignantAnatomicalEniti
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_N2a -->
+    <!-- http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cN2a -->
 
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_N2a">
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cN2a">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_N2"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cN2"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
                         <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonAndRectumTumorAggregateWith4to6MetastaticRegionalLymphNodes"/>
@@ -1239,18 +1416,18 @@ introduced: TNMRepresentatinalUnit and (represents some MalignantAnatomicalEniti
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <owl:disjointWith rdf:resource="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_N2b"/>
+        <owl:disjointWith rdf:resource="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cN2b"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_N2b -->
+    <!-- http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cN2b -->
 
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_N2b">
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cN2b">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_N2"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cN2"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
                         <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonAndRectumTumorAggregateWith7orMoreMetastaticRegionalLymphNodes"/>
@@ -1266,20 +1443,20 @@ introduced: TNMRepresentatinalUnit and (represents some MalignantAnatomicalEniti
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_NX -->
+    <!-- http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cNX -->
 
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_NX">
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cNX">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_N"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cN"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonAndRectumTumorAggregateWithNoAssessmentOfRegionalLymphNodes"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonAndRectumTumorWithNoAssessmentOfRegionalLymphNodes"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
-                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonAndRectumTumorAggregateWithNoAssessmentOfRegionalLymphNodes"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonAndRectumTumorWithNoAssessmentOfRegionalLymphNodes"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1288,28 +1465,28 @@ introduced: TNMRepresentatinalUnit and (represents some MalignantAnatomicalEniti
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_T -->
+    <!-- http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cT -->
 
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_T">
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cT">
         <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_colorectal_7.owl#RepresentationalUnitInColonAndRectumTNM7ClinicalClassification"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_T0 -->
+    <!-- http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cT0 -->
 
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_T0">
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cT0">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_T"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cT"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_colorectal_7.owl#NoEvidenceOfPrimaryColonAndRectumTumor"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonAndRectumStructureWithoutEvidenceOfPrimaryTumor"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
-                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_colorectal_7.owl#NoEvidenceOfPrimaryColonAndRectumTumor"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonAndRectumStructureWithoutEvidenceOfPrimaryTumor"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1318,13 +1495,13 @@ introduced: TNMRepresentatinalUnit and (represents some MalignantAnatomicalEniti
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_T1 -->
+    <!-- http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cT1 -->
 
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_T1">
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cT1">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_T"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cT"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
                         <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_colorectal_7.owl#InvasiveTumorOfSubmucosaOfColonAndRectum"/>
@@ -1340,13 +1517,13 @@ introduced: TNMRepresentatinalUnit and (represents some MalignantAnatomicalEniti
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_T2 -->
+    <!-- http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cT2 -->
 
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_T2">
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cT2">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_T"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cT"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
                         <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_colorectal_7.owl#InvasiveTumorOfMuscularLayerOfColonAndRectum"/>
@@ -1358,18 +1535,18 @@ introduced: TNMRepresentatinalUnit and (represents some MalignantAnatomicalEniti
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_T"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cT"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_T3 -->
+    <!-- http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cT3 -->
 
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_T3">
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cT3">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_T"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cT"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
                         <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_colorectal_7.owl#InvasiveTumorOfSubserosaOfColonAndRectum"/>
@@ -1381,26 +1558,26 @@ introduced: TNMRepresentatinalUnit and (represents some MalignantAnatomicalEniti
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_T"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cT"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_T4 -->
+    <!-- http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cT4 -->
 
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_T4">
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_T"/>
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cT4">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cT"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_T4a -->
+    <!-- http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cT4a -->
 
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_T4a">
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cT4a">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_T4"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cT4"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
                         <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_colorectal_7.owl#InvasiveTumorOfVisceralPeritoneumOfColonAndRectum"/>
@@ -1412,18 +1589,18 @@ introduced: TNMRepresentatinalUnit and (represents some MalignantAnatomicalEniti
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <owl:disjointWith rdf:resource="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_T4b"/>
+        <owl:disjointWith rdf:resource="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cT4b"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_T4b -->
+    <!-- http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cT4b -->
 
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_T4b">
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cT4b">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_T4"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cT4"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
                         <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_colorectal_7.owl#InvasiveTumorOfOtherOrgansOrStructuresOfColonAndRectum"/>
@@ -1435,23 +1612,23 @@ introduced: TNMRepresentatinalUnit and (represents some MalignantAnatomicalEniti
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_T4"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cT4"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_TX -->
+    <!-- http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cTX -->
 
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_TX">
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_T"/>
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cTX">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cT"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_Tis -->
+    <!-- http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cTis -->
 
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_Tis">
-        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_T"/>
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cTis">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cT"/>
     </owl:Class>
     
 
@@ -1651,11 +1828,11 @@ introduced: TNMRepresentatinalUnit and (represents some MalignantAnatomicalEniti
                     <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_pN"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonAndRectumTumorAggregateWithNoAssessmentOfRegionalLymphNodes"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonAndRectumTumorWithNoAssessmentOfRegionalLymphNodes"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
-                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonAndRectumTumorAggregateWithNoAssessmentOfRegionalLymphNodes"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonAndRectumTumorWithNoAssessmentOfRegionalLymphNodes"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1681,11 +1858,11 @@ introduced: TNMRepresentatinalUnit and (represents some MalignantAnatomicalEniti
                     <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_pT"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_colorectal_7.owl#NoEvidenceOfPrimaryColonAndRectumTumor"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonAndRectumStructureWithoutEvidenceOfPrimaryTumor"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
-                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_colorectal_7.owl#NoEvidenceOfPrimaryColonAndRectumTumor"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonAndRectumStructureWithoutEvidenceOfPrimaryTumor"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1821,11 +1998,11 @@ introduced: TNMRepresentatinalUnit and (represents some MalignantAnatomicalEniti
                     <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_pT"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_colorectal_7.owl#NoAssessmentOfPrimaryColonAndRectumTumor"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonAndRectumStructureNotAssessedForMalignancy"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
-                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_colorectal_7.owl#NoAssessmentOfPrimaryColonAndRectumTumor"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonAndRectumStructureNotAssessedForMalignancy"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -2043,7 +2220,7 @@ introduced: TNMRepresentatinalUnit and (represents some MalignantAnatomicalEniti
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonAndRectumPrimaryTumor"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonAndRectumStructureAssessedForMalignancy"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isBearerOf"/>
                         <owl:someValuesFrom>
@@ -2079,7 +2256,7 @@ introduced: TNMRepresentatinalUnit and (represents some MalignantAnatomicalEniti
                 <owl:allValuesFrom>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_T2"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cT2"/>
                             <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_pT2"/>
                             <owl:Class>
                                 <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInTNM7Classification"/>
@@ -2099,7 +2276,7 @@ introduced: TNMRepresentatinalUnit and (represents some MalignantAnatomicalEniti
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonAndRectumPrimaryTumor"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonAndRectumStructureAssessedForMalignancy"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isBearerOf"/>
                         <owl:someValuesFrom>
@@ -2140,7 +2317,7 @@ introduced: TNMRepresentatinalUnit and (represents some MalignantAnatomicalEniti
                 <owl:allValuesFrom>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_T4b"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cT4b"/>
                             <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_pT4b"/>
                             <owl:Class>
                                 <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInTNM7Classification"/>
@@ -2160,7 +2337,7 @@ introduced: TNMRepresentatinalUnit and (represents some MalignantAnatomicalEniti
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonAndRectumPrimaryTumor"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonAndRectumStructureAssessedForMalignancy"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isBearerOf"/>
                         <owl:someValuesFrom>
@@ -2188,7 +2365,7 @@ introduced: TNMRepresentatinalUnit and (represents some MalignantAnatomicalEniti
                 <owl:allValuesFrom>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_T1"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cT1"/>
                             <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_pT1"/>
                             <owl:Class>
                                 <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInTNM7Classification"/>
@@ -2208,7 +2385,7 @@ introduced: TNMRepresentatinalUnit and (represents some MalignantAnatomicalEniti
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonAndRectumPrimaryTumor"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonAndRectumStructureAssessedForMalignancy"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isBearerOf"/>
                         <owl:someValuesFrom>
@@ -2243,7 +2420,7 @@ introduced: TNMRepresentatinalUnit and (represents some MalignantAnatomicalEniti
                 <owl:allValuesFrom>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_T3"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cT3"/>
                             <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_pT3"/>
                             <owl:Class>
                                 <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInTNM7Classification"/>
@@ -2263,7 +2440,7 @@ introduced: TNMRepresentatinalUnit and (represents some MalignantAnatomicalEniti
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonAndRectumPrimaryTumor"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonAndRectumStructureAssessedForMalignancy"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isBearerOf"/>
                         <owl:someValuesFrom>
@@ -2291,7 +2468,7 @@ introduced: TNMRepresentatinalUnit and (represents some MalignantAnatomicalEniti
                 <owl:allValuesFrom>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_T4a"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cT4a"/>
                             <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_pT4a"/>
                             <owl:Class>
                                 <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInTNM7Classification"/>
@@ -2513,76 +2690,6 @@ introduced: TNMRepresentatinalUnit and (represents some MalignantAnatomicalEniti
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/tnmo/TNM-O_colorectal_7.owl#NoAssessmentOfPrimaryColonAndRectumTumor -->
-
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#NoAssessmentOfPrimaryColonAndRectumTumor">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#NotAssessedMalignantAnatomicalStructure"/>
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonAndRectumPrimaryTumor"/>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
-                <owl:allValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_TX"/>
-                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_pTX"/>
-                            <owl:Class>
-                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInTNM7Classification"/>
-                            </owl:Class>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:allValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/tnmo/TNM-O_colorectal_7.owl#NoEvidenceOfPrimaryColonAndRectumTumor -->
-
-    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#NoEvidenceOfPrimaryColonAndRectumTumor">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonAndRectumPrimaryTumor"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isBearerOf"/>
-                        <owl:someValuesFrom>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#projectsOnto"/>
-                                <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O.owl#NoEvidence"/>
-                            </owl:Restriction>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
-                <owl:allValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_T0"/>
-                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_pT0"/>
-                            <owl:Class>
-                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInTNM7Classification"/>
-                            </owl:Class>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:allValuesFrom>
-            </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
@@ -4907,38 +5014,38 @@ introduced: TNMRepresentatinalUnit and (represents some MalignantAnatomicalEniti
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_M"/>
-            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_N"/>
-            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_T"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cM"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cN"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cT"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_N0"/>
-            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_N1"/>
-            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_N2"/>
-            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_NX"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cN0"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cN1"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cN2"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cNX"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_N1a"/>
-            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_N1b"/>
-            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_N1c"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cN1a"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cN1b"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cN1c"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_T0"/>
-            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_T1"/>
-            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_T2"/>
-            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_T3"/>
-            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_T4"/>
-            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_TX"/>
-            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_Tis"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cT0"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cT1"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cT2"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cT3"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cT4"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cTX"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_colorectal_7.owl#ColonRectumTNM7_cTis"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>

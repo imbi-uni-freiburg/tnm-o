@@ -1840,6 +1840,22 @@
     
 
 
+    <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#Stomach -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#Stomach">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#CavitatedOrgan"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#StomachLymphNode -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#StomachLymphNode">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Anatomy.owl#LymphNodeOfAbdomen"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/tnmo/TNM-O_Anatomy.owl#SubDivisionOfGastrointestinalSystem -->
 
     <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Anatomy.owl#SubDivisionOfGastrointestinalSystem">

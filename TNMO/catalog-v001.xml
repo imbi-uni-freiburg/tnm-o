@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://purl.org/tnmo/TNM-O_lung_7_new.owl" uri="TNMO7/lung_new_7.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.org/tnmo/TNM-O.owl/1" uri="TNM-O.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.org/tnmo/TNM-O_breast_8.owl/1.0" uri="TNMO8/breast.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.org/tnmo/TNM-O_lung_8_new.owl" uri="TNMO8/lung_new.owl"/>
+    <uri id="Imports Wizard Entry" name="http://putl.org/tnmo/TNMO_LiverTest/1.0" uri="TEST/TNMO8-TEST/liver(HCC)Test.owl"/>
+    <uri id="Imports Wizard Entry" name="http://putl.org/tnmo/TNMO_LiverTest/1.0" uri="file:/home/joe/imbi/test/test-surrounds/tnm-o/TNMO/TEST/TNMO8-TEST/liver(HCC)Test.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.org/tnmo/TNM-O_stomach_Test" uri="file:/home/joe/imbi/test/test-surrounds/tnm-o/TNMO/TEST/TNMO8-TEST/stomachTest.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.org/tnmo/TNM-O_Anatomy.owl/1" uri="TNM-O_Anatomy.owl"/>
     <uri id="Imports Wizard Entry" name="http://purl.org/tnmo/TNM-O_InferredPancreas.owl" uri="file:/C:/Users/Susi/ontologies/TNM-O_InferredPancreas/TNM-O_InferredPancreas.owl"/>
     <uri id="Imports Wizard Entry" name="http://purl.org/tnmo/Bridge2_Pancreas7to8.owl/1" uri="TNMOBridge_7_8/pancreasbridge.owl"/>
     <uri id="Imports Wizard Entry" name="http://purl.org/tnmo/Bridge2_Pancreas7to8.owl/1" uri="TNMOBridge_7_8/pancreasbridge%20-%20Kopie.owl"/>
